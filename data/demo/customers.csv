@@ -1,0 +1,9 @@
+id,name,preferred_categories,preferred_brands,budget_min,budget_max
+"C001","Demo Customer 1","[""Electronics"",""Footwear""]","[""SoundNest""]","0.00","3000.00"
+"C002","Demo Customer 2","[""Footwear"",""Apparel""]","[""StrideWay""]","0.00","5000.00"
+"C003","Demo Customer 3","[""Apparel"",""Home""]","[""ThreadHouse""]","0.00","2000.00"
+"C004","Demo Customer 4","[""Home"",""Sports""]","[""HomeHarbor""]","0.00","1500.00"
+"C005","Demo Customer 5","[""Sports"",""Accessories""]","[""MoveWell""]","0.00","2500.00"
+"C006","Demo Customer 6","[""Accessories"",""Electronics""]","[""CarryLane""]","0.00","6000.00"
+"C007","Demo Customer 7","[""Electronics"",""Footwear""]","[""SoundNest""]","0.00","1000.00"
+"C008","Demo Customer 8","[]","[]","0.00","4000.00"

@@ -1,0 +1,513 @@
+{
+  "note": "Actual deterministic results from the configured catalog. Bundled demo products and interactions are synthetic.",
+  "catalog_size": 24,
+  "examples": [
+    {
+      "request": {
+        "mode": "personalized",
+        "customer_id": "C001",
+        "product_id": null,
+        "query": "",
+        "category": null,
+        "brand": null,
+        "min_price": null,
+        "max_price": null,
+        "strict_budget": true,
+        "available_only": true,
+        "exclude_purchased": false,
+        "channel": "ecommerce",
+        "limit": 3,
+        "weights": {
+          "text_relevance": 0.4,
+          "customer_preference": 0.2,
+          "category_match": 0.15,
+          "brand_match": 0.1,
+          "budget_compatibility": 0.1,
+          "availability": 0.05
+        }
+      },
+      "recommendation_id": 8,
+      "created_at": "2026-11-04T07:22:08.749508+00:00",
+      "engine": "deterministic_tfidf",
+      "llm_used": false,
+      "context": {
+        "category": null,
+        "brand": null,
+        "category_source": null,
+        "brand_source": null,
+        "min_price": "0.00",
+        "max_price": "3000.00",
+        "min_exclusive": false,
+        "max_exclusive": false,
+        "budget_sources": {
+          "min_price": "declared_customer_budget",
+          "max_price": "declared_customer_budget"
+        },
+        "strict_budget": true,
+        "available_only": true,
+        "exclude_purchased": false,
+        "text_query": ""
+      },
+      "items": [
+        {
+          "product_id": "P003",
+          "name": "Pocket Wireless Earbuds",
+          "price_inr": "1799.00",
+          "available": true,
+          "source": "synthetic_demo",
+          "similarity_score": 0.0,
+          "relevance_score": 0.79844506,
+          "explanation": "Customer affinity 0.3953 uses declared preferences and 8 cross-channel interactions. Category affinity for Electronics: 1.0000. Brand affinity for WaveCraft: 1.0000. Meets the effective price bounds. INR 1799.00; in stock (42 units)."
+        },
+        {
+          "product_id": "P001",
+          "name": "Wireless Everyday Headphones",
+          "price_inr": "2499.00",
+          "available": true,
+          "source": "synthetic_demo",
+          "similarity_score": 0.0,
+          "relevance_score": 0.70915532,
+          "explanation": "Customer affinity 0.4206 uses declared preferences and 8 cross-channel interactions. Category affinity for Electronics: 1.0000. Brand affinity for SoundNest: 0.4138. Meets the effective price bounds. INR 2499.00; in stock (35 units)."
+        },
+        {
+          "product_id": "P005",
+          "name": "Everyday Running Shoes",
+          "price_inr": "2999.00",
+          "available": true,
+          "source": "synthetic_demo",
+          "similarity_score": 0.0,
+          "relevance_score": 0.27685147,
+          "explanation": "Customer affinity 0.0440 uses declared preferences and 8 cross-channel interactions. Category affinity for Footwear: 0.0488. Meets the effective price bounds. INR 2999.00; in stock (28 units)."
+        }
+      ]
+    },
+    {
+      "request": {
+        "mode": "similar",
+        "customer_id": null,
+        "product_id": "P001",
+        "query": "",
+        "category": null,
+        "brand": null,
+        "min_price": null,
+        "max_price": "3000",
+        "strict_budget": true,
+        "available_only": true,
+        "exclude_purchased": false,
+        "channel": "ecommerce",
+        "limit": 3,
+        "weights": {
+          "text_relevance": 0.4,
+          "customer_preference": 0.2,
+          "category_match": 0.15,
+          "brand_match": 0.1,
+          "budget_compatibility": 0.1,
+          "availability": 0.05
+        }
+      },
+      "recommendation_id": 9,
+      "created_at": "2026-11-04T07:22:08.807065+00:00",
+      "engine": "deterministic_tfidf",
+      "llm_used": false,
+      "context": {
+        "category": "Electronics",
+        "brand": null,
+        "category_source": "source_product",
+        "brand_source": null,
+        "min_price": null,
+        "max_price": "3000",
+        "min_exclusive": false,
+        "max_exclusive": false,
+        "budget_sources": {
+          "max_price": "explicit"
+        },
+        "strict_budget": true,
+        "available_only": true,
+        "exclude_purchased": false,
+        "text_query": ""
+      },
+      "items": [
+        {
+          "product_id": "P003",
+          "name": "Pocket Wireless Earbuds",
+          "price_inr": "1799.00",
+          "available": true,
+          "source": "synthetic_demo",
+          "similarity_score": 0.11101492,
+          "relevance_score": 0.45160597,
+          "explanation": "TF-IDF cosine similarity: 0.1110. Cold-start baseline: catalog popularity and rating. Matches category Electronics. Meets the effective price bounds. INR 1799.00; in stock (42 units)."
+        }
+      ]
+    },
+    {
+      "request": {
+        "mode": "budget",
+        "customer_id": null,
+        "product_id": null,
+        "query": "",
+        "category": null,
+        "brand": null,
+        "min_price": null,
+        "max_price": "1000",
+        "strict_budget": true,
+        "available_only": true,
+        "exclude_purchased": false,
+        "channel": "ecommerce",
+        "limit": 3,
+        "weights": {
+          "text_relevance": 0.4,
+          "customer_preference": 0.2,
+          "category_match": 0.15,
+          "brand_match": 0.1,
+          "budget_compatibility": 0.1,
+          "availability": 0.05
+        }
+      },
+      "recommendation_id": 10,
+      "created_at": "2026-11-04T07:22:08.851568+00:00",
+      "engine": "deterministic_tfidf",
+      "llm_used": false,
+      "context": {
+        "category": null,
+        "brand": null,
+        "category_source": null,
+        "brand_source": null,
+        "min_price": null,
+        "max_price": "1000",
+        "min_exclusive": false,
+        "max_exclusive": false,
+        "budget_sources": {
+          "max_price": "explicit"
+        },
+        "strict_budget": true,
+        "available_only": true,
+        "exclude_purchased": false,
+        "text_query": ""
+      },
+      "items": [
+        {
+          "product_id": "P024",
+          "name": "Minimal Everyday Wallet",
+          "price_inr": "799.00",
+          "available": true,
+          "source": "synthetic_demo",
+          "similarity_score": 0.0,
+          "relevance_score": 0.83542857,
+          "explanation": "Cold-start baseline: catalog popularity and rating. Meets the effective price bounds. INR 799.00; in stock (48 units)."
+        },
+        {
+          "product_id": "P016",
+          "name": "Compact Study Organizer",
+          "price_inr": "799.00",
+          "available": true,
+          "source": "synthetic_demo",
+          "similarity_score": 0.0,
+          "relevance_score": 0.76228571,
+          "explanation": "Cold-start baseline: catalog popularity and rating. Meets the effective price bounds. INR 799.00; in stock (22 units)."
+        },
+        {
+          "product_id": "P009",
+          "name": "Cotton Everyday T-Shirt",
+          "price_inr": "699.00",
+          "available": true,
+          "source": "synthetic_demo",
+          "similarity_score": 0.0,
+          "relevance_score": 0.67771429,
+          "explanation": "Cold-start baseline: catalog popularity and rating. Meets the effective price bounds. INR 699.00; in stock (80 units)."
+        }
+      ]
+    },
+    {
+      "request": {
+        "mode": "category",
+        "customer_id": null,
+        "product_id": null,
+        "query": "",
+        "category": "Footwear",
+        "brand": null,
+        "min_price": null,
+        "max_price": "3500",
+        "strict_budget": true,
+        "available_only": true,
+        "exclude_purchased": false,
+        "channel": "ecommerce",
+        "limit": 3,
+        "weights": {
+          "text_relevance": 0.4,
+          "customer_preference": 0.2,
+          "category_match": 0.15,
+          "brand_match": 0.1,
+          "budget_compatibility": 0.1,
+          "availability": 0.05
+        }
+      },
+      "recommendation_id": 11,
+      "created_at": "2026-11-04T07:22:08.898839+00:00",
+      "engine": "deterministic_tfidf",
+      "llm_used": false,
+      "context": {
+        "category": "Footwear",
+        "brand": null,
+        "category_source": "explicit",
+        "brand_source": null,
+        "min_price": null,
+        "max_price": "3500",
+        "min_exclusive": false,
+        "max_exclusive": false,
+        "budget_sources": {
+          "max_price": "explicit"
+        },
+        "strict_budget": true,
+        "available_only": true,
+        "exclude_purchased": false,
+        "text_query": ""
+      },
+      "items": [
+        {
+          "product_id": "P008",
+          "name": "Training Court Shoes",
+          "price_inr": "3499.00",
+          "available": true,
+          "source": "synthetic_demo",
+          "similarity_score": 0.0,
+          "relevance_score": 0.7952,
+          "explanation": "Cold-start baseline: catalog popularity and rating. Matches category Footwear. Meets the effective price bounds. INR 3499.00; in stock (20 units)."
+        },
+        {
+          "product_id": "P007",
+          "name": "Classic Casual Sneakers",
+          "price_inr": "1999.00",
+          "available": true,
+          "source": "synthetic_demo",
+          "similarity_score": 0.0,
+          "relevance_score": 0.736,
+          "explanation": "Cold-start baseline: catalog popularity and rating. Matches category Footwear. Meets the effective price bounds. INR 1999.00; in stock (50 units)."
+        },
+        {
+          "product_id": "P005",
+          "name": "Everyday Running Shoes",
+          "price_inr": "2999.00",
+          "available": true,
+          "source": "synthetic_demo",
+          "similarity_score": 0.0,
+          "relevance_score": 0.7328,
+          "explanation": "Cold-start baseline: catalog popularity and rating. Matches category Footwear. Meets the effective price bounds. INR 2999.00; in stock (28 units)."
+        }
+      ]
+    },
+    {
+      "request": {
+        "mode": "brand",
+        "customer_id": null,
+        "product_id": null,
+        "query": "",
+        "category": null,
+        "brand": "SoundNest",
+        "min_price": null,
+        "max_price": "7000",
+        "strict_budget": true,
+        "available_only": true,
+        "exclude_purchased": false,
+        "channel": "ecommerce",
+        "limit": 3,
+        "weights": {
+          "text_relevance": 0.4,
+          "customer_preference": 0.2,
+          "category_match": 0.15,
+          "brand_match": 0.1,
+          "budget_compatibility": 0.1,
+          "availability": 0.05
+        }
+      },
+      "recommendation_id": 12,
+      "created_at": "2026-11-04T07:22:08.937239+00:00",
+      "engine": "deterministic_tfidf",
+      "llm_used": false,
+      "context": {
+        "category": null,
+        "brand": "SoundNest",
+        "category_source": null,
+        "brand_source": "explicit",
+        "min_price": null,
+        "max_price": "7000",
+        "min_exclusive": false,
+        "max_exclusive": false,
+        "budget_sources": {
+          "max_price": "explicit"
+        },
+        "strict_budget": true,
+        "available_only": true,
+        "exclude_purchased": false,
+        "text_query": ""
+      },
+      "items": [
+        {
+          "product_id": "P001",
+          "name": "Wireless Everyday Headphones",
+          "price_inr": "2499.00",
+          "available": true,
+          "source": "synthetic_demo",
+          "similarity_score": 0.0,
+          "relevance_score": 0.76888889,
+          "explanation": "Cold-start baseline: catalog popularity and rating. Matches brand SoundNest. Meets the effective price bounds. INR 2499.00; in stock (35 units)."
+        },
+        {
+          "product_id": "P002",
+          "name": "Quiet Focus Headphones",
+          "price_inr": "5999.00",
+          "available": true,
+          "source": "synthetic_demo",
+          "similarity_score": 0.0,
+          "relevance_score": 0.66577778,
+          "explanation": "Cold-start baseline: catalog popularity and rating. Matches brand SoundNest. Meets the effective price bounds. INR 5999.00; in stock (12 units)."
+        }
+      ]
+    },
+    {
+      "request": {
+        "mode": "new_customer",
+        "customer_id": null,
+        "product_id": null,
+        "query": "",
+        "category": null,
+        "brand": null,
+        "min_price": null,
+        "max_price": "2000",
+        "strict_budget": true,
+        "available_only": true,
+        "exclude_purchased": false,
+        "channel": "ecommerce",
+        "limit": 3,
+        "weights": {
+          "text_relevance": 0.4,
+          "customer_preference": 0.2,
+          "category_match": 0.15,
+          "brand_match": 0.1,
+          "budget_compatibility": 0.1,
+          "availability": 0.05
+        }
+      },
+      "recommendation_id": 13,
+      "created_at": "2026-11-04T07:22:08.979621+00:00",
+      "engine": "deterministic_tfidf",
+      "llm_used": false,
+      "context": {
+        "category": null,
+        "brand": null,
+        "category_source": null,
+        "brand_source": null,
+        "min_price": null,
+        "max_price": "2000",
+        "min_exclusive": false,
+        "max_exclusive": false,
+        "budget_sources": {
+          "max_price": "explicit"
+        },
+        "strict_budget": true,
+        "available_only": true,
+        "exclude_purchased": false,
+        "text_query": ""
+      },
+      "items": [
+        {
+          "product_id": "P024",
+          "name": "Minimal Everyday Wallet",
+          "price_inr": "799.00",
+          "available": true,
+          "source": "synthetic_demo",
+          "similarity_score": 0.0,
+          "relevance_score": 0.83542857,
+          "explanation": "Cold-start baseline: catalog popularity and rating. Meets the effective price bounds. INR 799.00; in stock (48 units)."
+        },
+        {
+          "product_id": "P016",
+          "name": "Compact Study Organizer",
+          "price_inr": "799.00",
+          "available": true,
+          "source": "synthetic_demo",
+          "similarity_score": 0.0,
+          "relevance_score": 0.76228571,
+          "explanation": "Cold-start baseline: catalog popularity and rating. Meets the effective price bounds. INR 799.00; in stock (22 units)."
+        },
+        {
+          "product_id": "P003",
+          "name": "Pocket Wireless Earbuds",
+          "price_inr": "1799.00",
+          "available": true,
+          "source": "synthetic_demo",
+          "similarity_score": 0.0,
+          "relevance_score": 0.73485714,
+          "explanation": "Cold-start baseline: catalog popularity and rating. Meets the effective price bounds. INR 1799.00; in stock (42 units)."
+        }
+      ]
+    },
+    {
+      "request": {
+        "mode": "context_aware",
+        "customer_id": "C002",
+        "product_id": null,
+        "query": "running shoes under INR 3500",
+        "category": null,
+        "brand": null,
+        "min_price": null,
+        "max_price": null,
+        "strict_budget": true,
+        "available_only": true,
+        "exclude_purchased": false,
+        "channel": "mobile",
+        "limit": 3,
+        "weights": {
+          "text_relevance": 0.4,
+          "customer_preference": 0.2,
+          "category_match": 0.15,
+          "brand_match": 0.1,
+          "budget_compatibility": 0.1,
+          "availability": 0.05
+        }
+      },
+      "recommendation_id": 14,
+      "created_at": "2026-11-04T07:22:09.051174+00:00",
+      "engine": "deterministic_tfidf",
+      "llm_used": false,
+      "context": {
+        "category": null,
+        "brand": null,
+        "category_source": null,
+        "brand_source": null,
+        "min_price": null,
+        "max_price": "3500.00",
+        "min_exclusive": false,
+        "max_exclusive": true,
+        "budget_sources": {
+          "max_price": "query"
+        },
+        "strict_budget": true,
+        "available_only": true,
+        "exclude_purchased": false,
+        "text_query": "running shoes"
+      },
+      "items": [
+        {
+          "product_id": "P005",
+          "name": "Everyday Running Shoes",
+          "price_inr": "2999.00",
+          "available": true,
+          "source": "synthetic_demo",
+          "similarity_score": 0.52237797,
+          "relevance_score": 0.68509626,
+          "explanation": "TF-IDF cosine similarity: 0.5224. Customer affinity 0.4489 uses declared preferences and 8 cross-channel interactions. Category affinity for Footwear: 1.0000. Brand affinity for StrideWay: 0.8636. Meets the effective price bounds. INR 2999.00; in stock (28 units)."
+        },
+        {
+          "product_id": "P008",
+          "name": "Training Court Shoes",
+          "price_inr": "3499.00",
+          "available": true,
+          "source": "synthetic_demo",
+          "similarity_score": 0.13005157,
+          "relevance_score": 0.59419588,
+          "explanation": "TF-IDF cosine similarity: 0.1301. Customer affinity 0.7109 uses declared preferences and 8 cross-channel interactions. Category affinity for Footwear: 1.0000. Brand affinity for TrailForm: 1.0000. Meets the effective price bounds. INR 3499.00; in stock (20 units)."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,537 @@
+{
+  "index_status": {
+    "status": "ready",
+    "embedding": "local_lsa_v1",
+    "generation": "f90c43d4c610470dbf11343ad4005bfe",
+    "catalog_products": 24,
+    "indexed_products": 24,
+    "indexed_chunks": 24,
+    "updated_at": "2026-11-04T07:42:17.740493+00:00",
+    "missing_product_ids": [],
+    "deleted_catalog_product_ids": [],
+    "stale_product_ids": [],
+    "generation_mode": "deterministic",
+    "llm_configured": false
+  },
+  "note": "Actual retrieved synthetic demo catalog evidence; no recommendation history is written.",
+  "examples": [
+    {
+      "query": "wireless headphones under INR 3000",
+      "engine": "chroma_local_lsa",
+      "generation": "deterministic_fallback",
+      "llm_attempted": false,
+      "llm_used": false,
+      "llm_status": "disabled",
+      "index_generation": "f90c43d4c610470dbf11343ad4005bfe",
+      "context": {
+        "category": null,
+        "brand": null,
+        "category_source": null,
+        "brand_source": null,
+        "min_price": null,
+        "max_price": "3000.00",
+        "min_exclusive": false,
+        "max_exclusive": true,
+        "budget_sources": {
+          "max_price": "query"
+        },
+        "strict_budget": true,
+        "available_only": true,
+        "exclude_purchased": false,
+        "text_query": "wireless headphones"
+      },
+      "profile": null,
+      "metadata_filter": {
+        "$and": [
+          {
+            "available": {
+              "$eq": true
+            }
+          },
+          {
+            "price_cents": {
+              "$lt": 300000
+            }
+          }
+        ]
+      },
+      "warnings": [],
+      "answer": "Deterministic retrieval fallback; no LLM-generated facts.\n1. [P001] Wireless Everyday Headphones — INR 2499.00 — in stock (35 units). Brand: SoundNest. Category: Electronics. Retrieved product document P001:0:a49cba7e5f9d; cosine similarity 0.8158.\n2. [P003] Pocket Wireless Earbuds — INR 1799.00 — in stock (42 units). Brand: WaveCraft. Category: Electronics. Retrieved product document P003:0:840dc54c2556; cosine similarity 0.5430.",
+      "references": [
+        "P001",
+        "P003"
+      ],
+      "items": [
+        {
+          "rank": 1,
+          "product": {
+            "id": "P001",
+            "name": "Wireless Everyday Headphones",
+            "description": "Bluetooth headphones with cushioned ear cups and USB-C charging",
+            "category": "Electronics",
+            "brand": "SoundNest",
+            "price": "2499.00",
+            "currency": "INR",
+            "rating": 4.0,
+            "stock_quantity": 35,
+            "available": true,
+            "features": [
+              "wireless",
+              "over-ear",
+              "USB-C"
+            ],
+            "attributes": {
+              "connectivity": "Bluetooth",
+              "color": "navy"
+            },
+            "image_url": null,
+            "source": "synthetic_demo"
+          },
+          "similarity_score": 0.81575,
+          "relevance_score": 0.81575,
+          "document_id": "P001:0:a49cba7e5f9d",
+          "document": "Product ID: P001\nName: Wireless Everyday Headphones\nCategory: Electronics\nBrand: SoundNest\nPrice: INR 2499.00\nAvailability: in stock\nStock quantity: 35\nSource: synthetic_demo\nDescription: Bluetooth headphones with cushioned ear cups and USB-C charging\nFeatures: [\"wireless\", \"over-ear\", \"USB-C\"]\nAttributes: {\"color\": \"navy\", \"connectivity\": \"Bluetooth\"}",
+          "metadata": {
+            "category_key": "electronics",
+            "stock_quantity": 35,
+            "available": true,
+            "brand": "SoundNest",
+            "category": "Electronics",
+            "source": "synthetic_demo",
+            "currency": "INR",
+            "chunk": 0,
+            "price_cents": 249900,
+            "product_fingerprint": "b4c08cb9f3836d08d5edf093af5178e1af16aaef64cccfe3d7120103b63b3054",
+            "product_id": "P001",
+            "name": "Wireless Everyday Headphones",
+            "document_hash": "a49cba7e5f9d3e08889c94f1e78da87ef87e8b9b5c540435f855eead504dc511",
+            "brand_key": "soundnest"
+          },
+          "explanation": "Retrieved product document P001:0:a49cba7e5f9d; cosine similarity 0.8158."
+        },
+        {
+          "rank": 2,
+          "product": {
+            "id": "P003",
+            "name": "Pocket Wireless Earbuds",
+            "description": "Compact wireless earbuds with charging case for daily listening",
+            "category": "Electronics",
+            "brand": "WaveCraft",
+            "price": "1799.00",
+            "currency": "INR",
+            "rating": 4.4,
+            "stock_quantity": 42,
+            "available": true,
+            "features": [
+              "wireless",
+              "charging case"
+            ],
+            "attributes": {
+              "color": "white"
+            },
+            "image_url": null,
+            "source": "synthetic_demo"
+          },
+          "similarity_score": 0.5429796,
+          "relevance_score": 0.5429796,
+          "document_id": "P003:0:840dc54c2556",
+          "document": "Product ID: P003\nName: Pocket Wireless Earbuds\nCategory: Electronics\nBrand: WaveCraft\nPrice: INR 1799.00\nAvailability: in stock\nStock quantity: 42\nSource: synthetic_demo\nDescription: Compact wireless earbuds with charging case for daily listening\nFeatures: [\"wireless\", \"charging case\"]\nAttributes: {\"color\": \"white\"}",
+          "metadata": {
+            "brand": "WaveCraft",
+            "price_cents": 179900,
+            "source": "synthetic_demo",
+            "category": "Electronics",
+            "name": "Pocket Wireless Earbuds",
+            "currency": "INR",
+            "category_key": "electronics",
+            "stock_quantity": 42,
+            "product_fingerprint": "305f6ab0c8b2fd7b1564b40b83aeb95d152d153dc51ac62b423a3454e47d0573",
+            "product_id": "P003",
+            "chunk": 0,
+            "available": true,
+            "brand_key": "wavecraft",
+            "document_hash": "840dc54c2556c6183aadc7299e6d675f333efb340966eb6db9a5d9a145d7a18a"
+          },
+          "explanation": "Retrieved product document P003:0:840dc54c2556; cosine similarity 0.5430."
+        }
+      ]
+    },
+    {
+      "query": "running shoes",
+      "engine": "chroma_local_lsa",
+      "generation": "deterministic_fallback",
+      "llm_attempted": false,
+      "llm_used": false,
+      "llm_status": "disabled",
+      "index_generation": "f90c43d4c610470dbf11343ad4005bfe",
+      "context": {
+        "category": "Footwear",
+        "brand": null,
+        "category_source": "explicit",
+        "brand_source": null,
+        "min_price": null,
+        "max_price": "3500",
+        "min_exclusive": false,
+        "max_exclusive": false,
+        "budget_sources": {
+          "max_price": "explicit"
+        },
+        "strict_budget": true,
+        "available_only": true,
+        "exclude_purchased": false,
+        "text_query": "running shoes"
+      },
+      "profile": null,
+      "metadata_filter": {
+        "$and": [
+          {
+            "category_key": {
+              "$eq": "footwear"
+            }
+          },
+          {
+            "available": {
+              "$eq": true
+            }
+          },
+          {
+            "price_cents": {
+              "$lte": 350000
+            }
+          }
+        ]
+      },
+      "warnings": [],
+      "answer": "Deterministic retrieval fallback; no LLM-generated facts.\n1. [P005] Everyday Running Shoes — INR 2999.00 — in stock (28 units). Brand: StrideWay. Category: Footwear. Retrieved product document P005:0:1d569fa09761; cosine similarity 0.9442.\n2. [P008] Training Court Shoes — INR 3499.00 — in stock (20 units). Brand: TrailForm. Category: Footwear. Retrieved product document P008:0:8b394e4b911a; cosine similarity 0.4799.\n3. [P007] Classic Casual Sneakers — INR 1999.00 — in stock (50 units). Brand: StrideWay. Category: Footwear. Retrieved product document P007:0:8c756ae95e7d; cosine similarity 0.0560.",
+      "references": [
+        "P005",
+        "P008",
+        "P007"
+      ],
+      "items": [
+        {
+          "rank": 1,
+          "product": {
+            "id": "P005",
+            "name": "Everyday Running Shoes",
+            "description": "Lightweight running shoes with breathable mesh and cushioned soles",
+            "category": "Footwear",
+            "brand": "StrideWay",
+            "price": "2999.00",
+            "currency": "INR",
+            "rating": 4.8,
+            "stock_quantity": 28,
+            "available": true,
+            "features": [
+              "running",
+              "breathable",
+              "lightweight"
+            ],
+            "attributes": {
+              "size": "UK 8",
+              "color": "blue"
+            },
+            "image_url": null,
+            "source": "synthetic_demo"
+          },
+          "similarity_score": 0.94420886,
+          "relevance_score": 0.94420886,
+          "document_id": "P005:0:1d569fa09761",
+          "document": "Product ID: P005\nName: Everyday Running Shoes\nCategory: Footwear\nBrand: StrideWay\nPrice: INR 2999.00\nAvailability: in stock\nStock quantity: 28\nSource: synthetic_demo\nDescription: Lightweight running shoes with breathable mesh and cushioned soles\nFeatures: [\"running\", \"breathable\", \"lightweight\"]\nAttributes: {\"color\": \"blue\", \"size\": \"UK 8\"}",
+          "metadata": {
+            "category_key": "footwear",
+            "brand_key": "strideway",
+            "available": true,
+            "document_hash": "1d569fa0976158fd0e08792ad1873ede17b495246173345379859edfbd8dd923",
+            "product_fingerprint": "dfb457df9cec14b17b63fae2564f6f820b0bbe8f20ecf157d48404414bda9bda",
+            "name": "Everyday Running Shoes",
+            "product_id": "P005",
+            "price_cents": 299900,
+            "category": "Footwear",
+            "stock_quantity": 28,
+            "source": "synthetic_demo",
+            "currency": "INR",
+            "chunk": 0,
+            "brand": "StrideWay"
+          },
+          "explanation": "Retrieved product document P005:0:1d569fa09761; cosine similarity 0.9442."
+        },
+        {
+          "rank": 2,
+          "product": {
+            "id": "P008",
+            "name": "Training Court Shoes",
+            "description": "Supportive training shoes with a durable rubber outsole",
+            "category": "Footwear",
+            "brand": "TrailForm",
+            "price": "3499.00",
+            "currency": "INR",
+            "rating": 4.2,
+            "stock_quantity": 20,
+            "available": true,
+            "features": [
+              "training",
+              "support"
+            ],
+            "attributes": {
+              "size": "UK 8",
+              "color": "black"
+            },
+            "image_url": null,
+            "source": "synthetic_demo"
+          },
+          "similarity_score": 0.47985059,
+          "relevance_score": 0.47985059,
+          "document_id": "P008:0:8b394e4b911a",
+          "document": "Product ID: P008\nName: Training Court Shoes\nCategory: Footwear\nBrand: TrailForm\nPrice: INR 3499.00\nAvailability: in stock\nStock quantity: 20\nSource: synthetic_demo\nDescription: Supportive training shoes with a durable rubber outsole\nFeatures: [\"training\", \"support\"]\nAttributes: {\"color\": \"black\", \"size\": \"UK 8\"}",
+          "metadata": {
+            "category_key": "footwear",
+            "brand_key": "trailform",
+            "available": true,
+            "stock_quantity": 20,
+            "category": "Footwear",
+            "source": "synthetic_demo",
+            "currency": "INR",
+            "document_hash": "8b394e4b911a5edcd5e4c4c5f768d1f642e56f22144bde87183225562762c72e",
+            "product_id": "P008",
+            "price_cents": 349900,
+            "product_fingerprint": "d0ab55efab7b4098dcbd639ad20a747e85fdd7c0b31378c549b53c9e795bbcf4",
+            "brand": "TrailForm",
+            "chunk": 0,
+            "name": "Training Court Shoes"
+          },
+          "explanation": "Retrieved product document P008:0:8b394e4b911a; cosine similarity 0.4799."
+        },
+        {
+          "rank": 3,
+          "product": {
+            "id": "P007",
+            "name": "Classic Casual Sneakers",
+            "description": "Everyday casual sneakers with a soft fabric lining",
+            "category": "Footwear",
+            "brand": "StrideWay",
+            "price": "1999.00",
+            "currency": "INR",
+            "rating": 4.0,
+            "stock_quantity": 50,
+            "available": true,
+            "features": [
+              "casual",
+              "sneakers"
+            ],
+            "attributes": {
+              "size": "UK 7",
+              "color": "white"
+            },
+            "image_url": null,
+            "source": "synthetic_demo"
+          },
+          "similarity_score": 0.0560143,
+          "relevance_score": 0.0560143,
+          "document_id": "P007:0:8c756ae95e7d",
+          "document": "Product ID: P007\nName: Classic Casual Sneakers\nCategory: Footwear\nBrand: StrideWay\nPrice: INR 1999.00\nAvailability: in stock\nStock quantity: 50\nSource: synthetic_demo\nDescription: Everyday casual sneakers with a soft fabric lining\nFeatures: [\"casual\", \"sneakers\"]\nAttributes: {\"color\": \"white\", \"size\": \"UK 7\"}",
+          "metadata": {
+            "product_fingerprint": "199d44fbb900f25a5c78f5f60f5c5e257c278b70c236b3d1bd5b76d7c6608a42",
+            "chunk": 0,
+            "brand": "StrideWay",
+            "category": "Footwear",
+            "currency": "INR",
+            "brand_key": "strideway",
+            "source": "synthetic_demo",
+            "category_key": "footwear",
+            "available": true,
+            "product_id": "P007",
+            "document_hash": "8c756ae95e7d63c44f525aa15f48d5650dad573b73e2dfd9fffb75735f42d0b1",
+            "stock_quantity": 50,
+            "name": "Classic Casual Sneakers",
+            "price_cents": 199900
+          },
+          "explanation": "Retrieved product document P007:0:8c756ae95e7d; cosine similarity 0.0560."
+        }
+      ]
+    },
+    {
+      "query": "SoundNest headphones",
+      "engine": "chroma_local_lsa",
+      "generation": "deterministic_fallback",
+      "llm_attempted": false,
+      "llm_used": false,
+      "llm_status": "disabled",
+      "index_generation": "f90c43d4c610470dbf11343ad4005bfe",
+      "context": {
+        "category": null,
+        "brand": "SoundNest",
+        "category_source": null,
+        "brand_source": "explicit",
+        "min_price": null,
+        "max_price": "7000",
+        "min_exclusive": false,
+        "max_exclusive": false,
+        "budget_sources": {
+          "max_price": "explicit"
+        },
+        "strict_budget": true,
+        "available_only": true,
+        "exclude_purchased": false,
+        "text_query": "SoundNest headphones"
+      },
+      "profile": null,
+      "metadata_filter": {
+        "$and": [
+          {
+            "brand_key": {
+              "$eq": "soundnest"
+            }
+          },
+          {
+            "available": {
+              "$eq": true
+            }
+          },
+          {
+            "price_cents": {
+              "$lte": 700000
+            }
+          }
+        ]
+      },
+      "warnings": [],
+      "answer": "Deterministic retrieval fallback; no LLM-generated facts.\n1. [P002] Quiet Focus Headphones — INR 5999.00 — in stock (12 units). Brand: SoundNest. Category: Electronics. Retrieved product document P002:0:bf0bf03275ce; cosine similarity 0.8320.\n2. [P001] Wireless Everyday Headphones — INR 2499.00 — in stock (35 units). Brand: SoundNest. Category: Electronics. Retrieved product document P001:0:a49cba7e5f9d; cosine similarity 0.7335.",
+      "references": [
+        "P002",
+        "P001"
+      ],
+      "items": [
+        {
+          "rank": 1,
+          "product": {
+            "id": "P002",
+            "name": "Quiet Focus Headphones",
+            "description": "Over-ear headphones with active noise cancellation for focused work",
+            "category": "Electronics",
+            "brand": "SoundNest",
+            "price": "5999.00",
+            "currency": "INR",
+            "rating": 4.2,
+            "stock_quantity": 12,
+            "available": true,
+            "features": [
+              "noise cancellation",
+              "wireless",
+              "microphone"
+            ],
+            "attributes": {
+              "color": "black"
+            },
+            "image_url": null,
+            "source": "synthetic_demo"
+          },
+          "similarity_score": 0.83201694,
+          "relevance_score": 0.83201694,
+          "document_id": "P002:0:bf0bf03275ce",
+          "document": "Product ID: P002\nName: Quiet Focus Headphones\nCategory: Electronics\nBrand: SoundNest\nPrice: INR 5999.00\nAvailability: in stock\nStock quantity: 12\nSource: synthetic_demo\nDescription: Over-ear headphones with active noise cancellation for focused work\nFeatures: [\"noise cancellation\", \"wireless\", \"microphone\"]\nAttributes: {\"color\": \"black\"}",
+          "metadata": {
+            "name": "Quiet Focus Headphones",
+            "document_hash": "bf0bf03275ceb7464cf8d38d2921132643a8a2e130f3b2a74eb76deaa4b1d6ed",
+            "category_key": "electronics",
+            "product_fingerprint": "c8db00f67ccb841fcf01da94bae9fea3938459843fd2dc35cfee369234c86850",
+            "category": "Electronics",
+            "product_id": "P002",
+            "available": true,
+            "price_cents": 599900,
+            "brand": "SoundNest",
+            "source": "synthetic_demo",
+            "stock_quantity": 12,
+            "currency": "INR",
+            "brand_key": "soundnest",
+            "chunk": 0
+          },
+          "explanation": "Retrieved product document P002:0:bf0bf03275ce; cosine similarity 0.8320."
+        },
+        {
+          "rank": 2,
+          "product": {
+            "id": "P001",
+            "name": "Wireless Everyday Headphones",
+            "description": "Bluetooth headphones with cushioned ear cups and USB-C charging",
+            "category": "Electronics",
+            "brand": "SoundNest",
+            "price": "2499.00",
+            "currency": "INR",
+            "rating": 4.0,
+            "stock_quantity": 35,
+            "available": true,
+            "features": [
+              "wireless",
+              "over-ear",
+              "USB-C"
+            ],
+            "attributes": {
+              "connectivity": "Bluetooth",
+              "color": "navy"
+            },
+            "image_url": null,
+            "source": "synthetic_demo"
+          },
+          "similarity_score": 0.73346597,
+          "relevance_score": 0.73346597,
+          "document_id": "P001:0:a49cba7e5f9d",
+          "document": "Product ID: P001\nName: Wireless Everyday Headphones\nCategory: Electronics\nBrand: SoundNest\nPrice: INR 2499.00\nAvailability: in stock\nStock quantity: 35\nSource: synthetic_demo\nDescription: Bluetooth headphones with cushioned ear cups and USB-C charging\nFeatures: [\"wireless\", \"over-ear\", \"USB-C\"]\nAttributes: {\"color\": \"navy\", \"connectivity\": \"Bluetooth\"}",
+          "metadata": {
+            "product_fingerprint": "b4c08cb9f3836d08d5edf093af5178e1af16aaef64cccfe3d7120103b63b3054",
+            "name": "Wireless Everyday Headphones",
+            "stock_quantity": 35,
+            "chunk": 0,
+            "brand": "SoundNest",
+            "source": "synthetic_demo",
+            "available": true,
+            "category_key": "electronics",
+            "currency": "INR",
+            "document_hash": "a49cba7e5f9d3e08889c94f1e78da87ef87e8b9b5c540435f855eead504dc511",
+            "brand_key": "soundnest",
+            "category": "Electronics",
+            "product_id": "P001",
+            "price_cents": 249900
+          },
+          "explanation": "Retrieved product document P001:0:a49cba7e5f9d; cosine similarity 0.7335."
+        }
+      ]
+    },
+    {
+      "query": "qzxwunmatched",
+      "engine": "chroma_local_lsa",
+      "generation": "deterministic_fallback",
+      "llm_attempted": false,
+      "llm_used": false,
+      "llm_status": "disabled",
+      "index_generation": "f90c43d4c610470dbf11343ad4005bfe",
+      "context": {
+        "category": null,
+        "brand": null,
+        "category_source": null,
+        "brand_source": null,
+        "min_price": null,
+        "max_price": null,
+        "min_exclusive": false,
+        "max_exclusive": false,
+        "budget_sources": {},
+        "strict_budget": true,
+        "available_only": true,
+        "exclude_purchased": false,
+        "text_query": "qzxwunmatched"
+      },
+      "profile": null,
+      "metadata_filter": {
+        "available": {
+          "$eq": true
+        }
+      },
+      "warnings": [
+        "The local embedding vocabulary did not match the query; no unrelated products were substituted."
+      ],
+      "answer": "Deterministic retrieval fallback; no LLM-generated facts.\nNo indexed products matched the query and filters. No filters were relaxed.",
+      "references": [],
+      "items": []
+    }
+  ]
+}

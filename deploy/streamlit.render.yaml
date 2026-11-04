@@ -1,0 +1,18 @@
+# Optional companion service. Not required to build the Vercel client.
+services:
+  - type: web
+    name: retailrag-streamlit
+    runtime: python
+    region: singapore
+    plan: starter
+    autoDeployTrigger: 'off'
+    buildCommand: pip install .
+    startCommand: streamlit run src/retailrag/frontend.py --server.address 0.0.0.0 --server.port $PORT --server.headless true
+    healthCheckPath: /_stcore/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.18
+      - key: RETAILRAG_ENVIRONMENT
+        value: production
+      - key: RETAILRAG_API_BASE_URL
+        sync: false
