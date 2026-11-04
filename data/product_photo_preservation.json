@@ -1,0 +1,66 @@
+{
+  "unchanged": true,
+  "differences": [],
+  "protected_tables_and_files": {
+    "agent_executions": {
+      "rows": 26,
+      "sha256": "62103f647931e292173aab1e1dcd73be2bff59d408bc15b80ea94f4dc7bc9c5d"
+    },
+    "customer_interactions": {
+      "rows": 56,
+      "sha256": "18ba9e84321d45fc85cacdfa509c1a46644f7cbcab39f8fe10d4b3818e806a3d"
+    },
+    "customers": {
+      "rows": 8,
+      "sha256": "1da608dd7785199da47b119b118a52f7a7f04d6e75824c33e1186b5974376510"
+    },
+    "dataset_imports": {
+      "rows": 1,
+      "sha256": "681694dcf5d31d90ad3ab8e108dcb5fd6afa00b3965172539094e5aeafc5b362"
+    },
+    "omnichannel_simulations": {
+      "rows": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "products": {
+      "rows": 24,
+      "sha256": "6563a4a2b1fc5326347c30edf42e21ba643336b6e87663a72a16d3a73415a4b5"
+    },
+    "recommendation_items": {
+      "rows": 43,
+      "sha256": "575d80041bd11507ec66f07aea4dfdf8a2477905ec4c4c970282db653ee6f2d7"
+    },
+    "recommendation_snapshots": {
+      "rows": 18,
+      "sha256": "5c1fb2528e8dca78056269383bfc41cb77f3cf2ca81b3eec6384655cf0985ddf"
+    },
+    "recommendations": {
+      "rows": 18,
+      "sha256": "4e97b01f212f1a7e7aac199d3aed3a5e32a31df6e27c624e8dc602bc030494c3"
+    },
+    "tool_invocations": {
+      "rows": 11,
+      "sha256": "411817bb053189401fd024aa7be3cc9357299b1654e1a4d0becbd47c4b57bd23"
+    },
+    "workflow_runs": {
+      "rows": 3,
+      "sha256": "54097325d4c45250d022a11e420d15cb721bf0ff4ee65d46c87e1eec3c40a37b"
+    },
+    "workflow_steps": {
+      "rows": 26,
+      "sha256": "b630bc333ea185c6ecb71d4e95e28852e1120c8207f05db123f4952b85784a5c"
+    },
+    "data/demo/products.csv": {
+      "sha256": "1811c925dd4c7e3d9cc5858e10658498004f47021fcb6857195dfa9ce442e072"
+    },
+    "data/demo/customers.csv": {
+      "sha256": "94cd5f51980429541f9756f64b91104dbf257da81664af2d70602b40963aa5a3"
+    },
+    "data/demo/interactions.csv": {
+      "sha256": "7d4cae3e7134fa11c5de4f596413ff3da71757b2b876364f3c7a7a11cade20f9"
+    },
+    "data/chroma/retailrag_products.json": {
+      "sha256": "aebd9479093ecf94798b1d7d6cdf3da6f0ea3ab167aa6d1902fb71bd58b72a9e"
+    }
+  }
+}

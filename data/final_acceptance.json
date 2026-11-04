@@ -1,0 +1,4945 @@
+{
+  "status": "passed",
+  "checked_at": "2026-11-04T09:15:38.326797+00:00",
+  "scope": "isolated synthetic acceptance database; working application database preserved",
+  "directory": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\RetailRAG AI 3\\.runtime\\acceptance\\37748b35b15a460f85ac525155220a6a",
+  "health": {
+    "status": "ok",
+    "application": "RetailRAG AI",
+    "version": "0.1.0",
+    "environment": "test",
+    "phase": 14
+  },
+  "readiness": {
+    "status": "ready",
+    "database": "ok",
+    "rag_initialization": "explicit_ingestion_required",
+    "credentials_required": false
+  },
+  "database_tables": [
+    "agent_executions",
+    "customer_interactions",
+    "customers",
+    "dataset_imports",
+    "omnichannel_simulations",
+    "products",
+    "recommendation_items",
+    "recommendation_snapshots",
+    "recommendations",
+    "tool_invocations",
+    "workflow_runs",
+    "workflow_steps"
+  ],
+  "foreign_key_check": "passed",
+  "initial": {
+    "generated_at": "2026-11-04T09:15:34.056513Z",
+    "period": {
+      "date_from": null,
+      "date_to": null,
+      "timezone": "UTC"
+    },
+    "totals": {
+      "products": 24,
+      "customers": 8,
+      "interactions": 56,
+      "recommendations": 0,
+      "agent_executions": 0,
+      "tool_invocations": 0,
+      "simulations": 0
+    },
+    "inventory": {
+      "available": 21,
+      "unavailable": 3
+    },
+    "popular_products": [
+      {
+        "product_id": "P001",
+        "name": "Wireless Everyday Headphones",
+        "category": "Electronics",
+        "interactions": 4
+      },
+      {
+        "product_id": "P002",
+        "name": "Quiet Focus Headphones",
+        "category": "Electronics",
+        "interactions": 4
+      },
+      {
+        "product_id": "P003",
+        "name": "Pocket Wireless Earbuds",
+        "category": "Electronics",
+        "interactions": 4
+      },
+      {
+        "product_id": "P004",
+        "name": "Studio Wired Headphones",
+        "category": "Electronics",
+        "interactions": 4
+      },
+      {
+        "product_id": "P005",
+        "name": "Everyday Running Shoes",
+        "category": "Footwear",
+        "interactions": 2
+      },
+      {
+        "product_id": "P006",
+        "name": "Trail Walking Shoes",
+        "category": "Footwear",
+        "interactions": 2
+      },
+      {
+        "product_id": "P007",
+        "name": "Classic Casual Sneakers",
+        "category": "Footwear",
+        "interactions": 2
+      },
+      {
+        "product_id": "P008",
+        "name": "Training Court Shoes",
+        "category": "Footwear",
+        "interactions": 2
+      },
+      {
+        "product_id": "P009",
+        "name": "Cotton Everyday T-Shirt",
+        "category": "Apparel",
+        "interactions": 2
+      },
+      {
+        "product_id": "P010",
+        "name": "Lightweight Sports Jacket",
+        "category": "Apparel",
+        "interactions": 2
+      }
+    ],
+    "popular_categories": [
+      {
+        "category": "Electronics",
+        "count": 16
+      },
+      {
+        "category": "Accessories",
+        "count": 8
+      },
+      {
+        "category": "Apparel",
+        "count": 8
+      },
+      {
+        "category": "Footwear",
+        "count": 8
+      },
+      {
+        "category": "Home",
+        "count": 8
+      },
+      {
+        "category": "Sports",
+        "count": 8
+      }
+    ],
+    "channel_activity": [
+      {
+        "channel": "ecommerce",
+        "interactions": 19
+      },
+      {
+        "channel": "mobile",
+        "interactions": 19
+      },
+      {
+        "channel": "store",
+        "interactions": 18
+      }
+    ],
+    "provenance": [
+      {
+        "source": "synthetic_demo",
+        "count": 56
+      }
+    ],
+    "recent_recommendations": []
+  },
+  "personalized": {
+    "id": 1,
+    "created_at": "2026-11-04T09:15:34.188415Z",
+    "mode": "personalized",
+    "query": "",
+    "customer_id": "C001",
+    "channel": "ecommerce",
+    "engine": "deterministic_tfidf",
+    "llm_used": false,
+    "message": "Deterministic TF-IDF recommendations; no LLM was called.",
+    "warnings": [],
+    "context": {
+      "category": null,
+      "brand": null,
+      "category_source": null,
+      "brand_source": null,
+      "min_price": "0.00",
+      "max_price": "3000.00",
+      "min_exclusive": false,
+      "max_exclusive": false,
+      "budget_sources": {
+        "min_price": "declared_customer_budget",
+        "max_price": "declared_customer_budget"
+      },
+      "strict_budget": true,
+      "available_only": true,
+      "exclude_purchased": false,
+      "text_query": ""
+    },
+    "profile": {
+      "customer_id": "C001",
+      "name": "Demo Customer 1",
+      "channel": "ecommerce",
+      "cold_start": false,
+      "declared_categories": [
+        "Electronics",
+        "Footwear"
+      ],
+      "declared_brands": [
+        "SoundNest"
+      ],
+      "category_affinities": {
+        "Electronics": 1.0,
+        "Footwear": 0.04878049
+      },
+      "brand_affinities": {
+        "SoundNest": 0.4137931,
+        "WaveCraft": 1.0
+      },
+      "product_affinities": {
+        "P001": 0.4,
+        "P002": 0.1,
+        "P003": 0.45,
+        "P004": 1.0
+      },
+      "budget_min": "0.00",
+      "budget_max": "3000.00",
+      "observed_purchase_median_price": "1899.00",
+      "observed_price_basis": "current_catalog",
+      "event_counts": {
+        "view": 3,
+        "wishlist": 2,
+        "cart": 1,
+        "purchase": 2
+      },
+      "channel_counts": {
+        "ecommerce": 3,
+        "mobile": 3,
+        "store": 2
+      },
+      "viewed_product_ids": [
+        "P001",
+        "P002"
+      ],
+      "purchased_product_ids": [
+        "P001",
+        "P004"
+      ],
+      "wishlist_product_ids": [
+        "P003"
+      ],
+      "interaction_count": 8,
+      "source": "synthetic_demo"
+    },
+    "preference_basis": "customer_profile",
+    "active_weights": {
+      "customer_preference": 0.33333333333333337,
+      "category_match": 0.25,
+      "brand_match": 0.16666666666666669,
+      "budget_compatibility": 0.16666666666666669,
+      "availability": 0.08333333333333334
+    },
+    "catalog_size": 24,
+    "candidate_count": 18,
+    "items": [
+      {
+        "rank": 1,
+        "product": {
+          "id": "P003",
+          "name": "Pocket Wireless Earbuds",
+          "description": "Compact wireless earbuds with charging case for daily listening",
+          "category": "Electronics",
+          "brand": "WaveCraft",
+          "price": "1799.00",
+          "currency": "INR",
+          "rating": 4.4,
+          "stock_quantity": 42,
+          "available": true,
+          "features": [
+            "wireless",
+            "charging case"
+          ],
+          "attributes": {
+            "color": "white"
+          },
+          "image_url": null,
+          "source": "synthetic_demo"
+        },
+        "similarity_score": 0.0,
+        "relevance_score": 0.79844506,
+        "components": {
+          "text_relevance": 0.0,
+          "customer_preference": 0.39533517,
+          "category_match": 1.0,
+          "brand_match": 1.0,
+          "budget_compatibility": 1.0,
+          "availability": 1.0
+        },
+        "explanation": "Customer affinity 0.3953 uses declared preferences and 8 cross-channel interactions. Category affinity for Electronics: 1.0000. Brand affinity for WaveCraft: 1.0000. Meets the effective price bounds. INR 1799.00; in stock (42 units)."
+      },
+      {
+        "rank": 2,
+        "product": {
+          "id": "P001",
+          "name": "Wireless Everyday Headphones",
+          "description": "Bluetooth headphones with cushioned ear cups and USB-C charging",
+          "category": "Electronics",
+          "brand": "SoundNest",
+          "price": "2499.00",
+          "currency": "INR",
+          "rating": 4.0,
+          "stock_quantity": 35,
+          "available": true,
+          "features": [
+            "wireless",
+            "over-ear",
+            "USB-C"
+          ],
+          "attributes": {
+            "connectivity": "Bluetooth",
+            "color": "navy"
+          },
+          "image_url": null,
+          "source": "synthetic_demo"
+        },
+        "similarity_score": 0.0,
+        "relevance_score": 0.70915532,
+        "components": {
+          "text_relevance": 0.0,
+          "customer_preference": 0.42056942,
+          "category_match": 1.0,
+          "brand_match": 0.4137931,
+          "budget_compatibility": 1.0,
+          "availability": 1.0
+        },
+        "explanation": "Customer affinity 0.4206 uses declared preferences and 8 cross-channel interactions. Category affinity for Electronics: 1.0000. Brand affinity for SoundNest: 0.4138. Meets the effective price bounds. INR 2499.00; in stock (35 units)."
+      },
+      {
+        "rank": 3,
+        "product": {
+          "id": "P005",
+          "name": "Everyday Running Shoes",
+          "description": "Lightweight running shoes with breathable mesh and cushioned soles",
+          "category": "Footwear",
+          "brand": "StrideWay",
+          "price": "2999.00",
+          "currency": "INR",
+          "rating": 4.8,
+          "stock_quantity": 28,
+          "available": true,
+          "features": [
+            "running",
+            "breathable",
+            "lightweight"
+          ],
+          "attributes": {
+            "size": "UK 8",
+            "color": "blue"
+          },
+          "image_url": null,
+          "source": "synthetic_demo"
+        },
+        "similarity_score": 0.0,
+        "relevance_score": 0.27685147,
+        "components": {
+          "text_relevance": 0.0,
+          "customer_preference": 0.04396904,
+          "category_match": 0.04878049,
+          "brand_match": 0.0,
+          "budget_compatibility": 1.0,
+          "availability": 1.0
+        },
+        "explanation": "Customer affinity 0.0440 uses declared preferences and 8 cross-channel interactions. Category affinity for Footwear: 0.0488. Meets the effective price bounds. INR 2999.00; in stock (28 units)."
+      },
+      {
+        "rank": 4,
+        "product": {
+          "id": "P007",
+          "name": "Classic Casual Sneakers",
+          "description": "Everyday casual sneakers with a soft fabric lining",
+          "category": "Footwear",
+          "brand": "StrideWay",
+          "price": "1999.00",
+          "currency": "INR",
+          "rating": 4.0,
+          "stock_quantity": 50,
+          "available": true,
+          "features": [
+            "casual",
+            "sneakers"
+          ],
+          "attributes": {
+            "size": "UK 7",
+            "color": "white"
+          },
+          "image_url": null,
+          "source": "synthetic_demo"
+        },
+        "similarity_score": 0.0,
+        "relevance_score": 0.27648098,
+        "components": {
+          "text_relevance": 0.0,
+          "customer_preference": 0.04285758,
+          "category_match": 0.04878049,
+          "brand_match": 0.0,
+          "budget_compatibility": 1.0,
+          "availability": 1.0
+        },
+        "explanation": "Customer affinity 0.0429 uses declared preferences and 8 cross-channel interactions. Category affinity for Footwear: 0.0488. Meets the effective price bounds. INR 1999.00; in stock (50 units)."
+      },
+      {
+        "rank": 5,
+        "product": {
+          "id": "P022",
+          "name": "Compact Crossbody Bag",
+          "description": "Compact crossbody bag with adjustable strap",
+          "category": "Accessories",
+          "brand": "UrbanLoop",
+          "price": "1299.00",
+          "currency": "INR",
+          "rating": 4.6,
+          "stock_quantity": 38,
+          "available": true,
+          "features": [
+            "crossbody",
+            "adjustable strap"
+          ],
+          "attributes": {
+            "color": "tan"
+          },
+          "image_url": null,
+          "source": "synthetic_demo"
+        },
+        "similarity_score": 0.0,
+        "relevance_score": 0.26125131,
+        "components": {
+          "text_relevance": 0.0,
+          "customer_preference": 0.03375392,
+          "category_match": 0.0,
+          "brand_match": 0.0,
+          "budget_compatibility": 1.0,
+          "availability": 1.0
+        },
+        "explanation": "Customer affinity 0.0338 uses declared preferences and 8 cross-channel interactions. Meets the effective price bounds. INR 1299.00; in stock (38 units)."
+      }
+    ]
+  },
+  "rag_ingestion": {
+    "status": "ready",
+    "generation": "679b891b5564444aac9a36549ec8b710",
+    "products": 24,
+    "chunks": 24,
+    "added": 24,
+    "updated": 0,
+    "deleted": 0,
+    "unchanged": 0,
+    "warnings": []
+  },
+  "rag": {
+    "query": "wireless headphones under INR 3000",
+    "engine": "chroma_local_lsa",
+    "generation": "deterministic_fallback",
+    "llm_attempted": false,
+    "llm_used": false,
+    "llm_status": "disabled",
+    "index_generation": "679b891b5564444aac9a36549ec8b710",
+    "context": {
+      "category": null,
+      "brand": null,
+      "category_source": null,
+      "brand_source": null,
+      "min_price": null,
+      "max_price": "3000.00",
+      "min_exclusive": false,
+      "max_exclusive": true,
+      "budget_sources": {
+        "max_price": "query"
+      },
+      "strict_budget": true,
+      "available_only": true,
+      "exclude_purchased": false,
+      "text_query": "wireless headphones"
+    },
+    "profile": null,
+    "metadata_filter": {
+      "$and": [
+        {
+          "available": {
+            "$eq": true
+          }
+        },
+        {
+          "price_cents": {
+            "$lt": 300000
+          }
+        }
+      ]
+    },
+    "warnings": [],
+    "answer": "Deterministic retrieval fallback; no LLM-generated facts.\n1. [P001] Wireless Everyday Headphones — INR 2499.00 — in stock (35 units). Brand: SoundNest. Category: Electronics. Retrieved product document P001:0:a49cba7e5f9d; cosine similarity 0.8158.\n2. [P003] Pocket Wireless Earbuds — INR 1799.00 — in stock (42 units). Brand: WaveCraft. Category: Electronics. Retrieved product document P003:0:840dc54c2556; cosine similarity 0.5430.",
+    "references": [
+      "P001",
+      "P003"
+    ],
+    "items": [
+      {
+        "rank": 1,
+        "product": {
+          "id": "P001",
+          "name": "Wireless Everyday Headphones",
+          "description": "Bluetooth headphones with cushioned ear cups and USB-C charging",
+          "category": "Electronics",
+          "brand": "SoundNest",
+          "price": "2499.00",
+          "currency": "INR",
+          "rating": 4.0,
+          "stock_quantity": 35,
+          "available": true,
+          "features": [
+            "wireless",
+            "over-ear",
+            "USB-C"
+          ],
+          "attributes": {
+            "connectivity": "Bluetooth",
+            "color": "navy"
+          },
+          "image_url": null,
+          "source": "synthetic_demo"
+        },
+        "similarity_score": 0.81575,
+        "relevance_score": 0.81575,
+        "document_id": "P001:0:a49cba7e5f9d",
+        "document": "Product ID: P001\nName: Wireless Everyday Headphones\nCategory: Electronics\nBrand: SoundNest\nPrice: INR 2499.00\nAvailability: in stock\nStock quantity: 35\nSource: synthetic_demo\nDescription: Bluetooth headphones with cushioned ear cups and USB-C charging\nFeatures: [\"wireless\", \"over-ear\", \"USB-C\"]\nAttributes: {\"color\": \"navy\", \"connectivity\": \"Bluetooth\"}",
+        "metadata": {
+          "name": "Wireless Everyday Headphones",
+          "product_id": "P001",
+          "brand": "SoundNest",
+          "product_fingerprint": "b4c08cb9f3836d08d5edf093af5178e1af16aaef64cccfe3d7120103b63b3054",
+          "category_key": "electronics",
+          "available": true,
+          "source": "synthetic_demo",
+          "document_hash": "a49cba7e5f9d3e08889c94f1e78da87ef87e8b9b5c540435f855eead504dc511",
+          "stock_quantity": 35,
+          "currency": "INR",
+          "category": "Electronics",
+          "chunk": 0,
+          "price_cents": 249900,
+          "brand_key": "soundnest"
+        },
+        "explanation": "Retrieved product document P001:0:a49cba7e5f9d; cosine similarity 0.8158."
+      },
+      {
+        "rank": 2,
+        "product": {
+          "id": "P003",
+          "name": "Pocket Wireless Earbuds",
+          "description": "Compact wireless earbuds with charging case for daily listening",
+          "category": "Electronics",
+          "brand": "WaveCraft",
+          "price": "1799.00",
+          "currency": "INR",
+          "rating": 4.4,
+          "stock_quantity": 42,
+          "available": true,
+          "features": [
+            "wireless",
+            "charging case"
+          ],
+          "attributes": {
+            "color": "white"
+          },
+          "image_url": null,
+          "source": "synthetic_demo"
+        },
+        "similarity_score": 0.5429796,
+        "relevance_score": 0.5429796,
+        "document_id": "P003:0:840dc54c2556",
+        "document": "Product ID: P003\nName: Pocket Wireless Earbuds\nCategory: Electronics\nBrand: WaveCraft\nPrice: INR 1799.00\nAvailability: in stock\nStock quantity: 42\nSource: synthetic_demo\nDescription: Compact wireless earbuds with charging case for daily listening\nFeatures: [\"wireless\", \"charging case\"]\nAttributes: {\"color\": \"white\"}",
+        "metadata": {
+          "price_cents": 179900,
+          "brand": "WaveCraft",
+          "category": "Electronics",
+          "chunk": 0,
+          "available": true,
+          "product_id": "P003",
+          "name": "Pocket Wireless Earbuds",
+          "category_key": "electronics",
+          "document_hash": "840dc54c2556c6183aadc7299e6d675f333efb340966eb6db9a5d9a145d7a18a",
+          "stock_quantity": 42,
+          "currency": "INR",
+          "product_fingerprint": "305f6ab0c8b2fd7b1564b40b83aeb95d152d153dc51ac62b423a3454e47d0573",
+          "brand_key": "wavecraft",
+          "source": "synthetic_demo"
+        },
+        "explanation": "Retrieved product document P003:0:840dc54c2556; cosine similarity 0.5430."
+      }
+    ]
+  },
+  "workflow": {
+    "run_id": "2dbf65d7595f478a89816c178e4cd74a",
+    "status": "completed",
+    "started_at": "2026-11-04T09:15:36.717775+00:00",
+    "finished_at": "2026-11-04T09:15:37.453446+00:00",
+    "request": {
+      "mode": "context_aware",
+      "customer_id": "C001",
+      "product_id": null,
+      "query": "wireless headphones under INR 3000",
+      "category": null,
+      "brand": null,
+      "min_price": null,
+      "max_price": null,
+      "strict_budget": true,
+      "available_only": true,
+      "exclude_purchased": false,
+      "channel": "ecommerce",
+      "limit": 5,
+      "weights": {
+        "text_relevance": 0.4,
+        "customer_preference": 0.2,
+        "category_match": 0.15,
+        "brand_match": 0.1,
+        "budget_compatibility": 0.1,
+        "availability": 0.05
+      },
+      "retrieval_strategy": "rag"
+    },
+    "recommendation_id": 2,
+    "output": {
+      "id": 2,
+      "created_at": "2026-11-04T09:15:37.428957Z",
+      "run_id": "2dbf65d7595f478a89816c178e4cd74a",
+      "engine": "langgraph_workflow",
+      "llm_used": false,
+      "generation": "deterministic_agents",
+      "mode": "context_aware",
+      "query": "wireless headphones under INR 3000",
+      "customer_id": "C001",
+      "channel": "ecommerce",
+      "message": "Deterministic LangGraph agent workflow; no LLM was called.",
+      "answer": "Deterministic LangGraph agent workflow; no LLM was called.\n1. [P001] Wireless Everyday Headphones — INR 2499.00 — in stock. Chroma LSA cosine similarity: 0.8157. Customer affinity 0.4206 uses declared preferences and 8 cross-channel interactions. Category affinity for Electronics: 1.0000. Brand affinity for SoundNest: 0.4138. Meets the effective price bounds. INR 2499.00; in stock (35 units). Evidence: P001:0:a49cba7e5f9d.\n2. [P003] Pocket Wireless Earbuds — INR 1799.00 — in stock. Chroma LSA cosine similarity: 0.5430. Customer affinity 0.3953 uses declared preferences and 8 cross-channel interactions. Category affinity for Electronics: 1.0000. Brand affinity for WaveCraft: 1.0000. Meets the effective price bounds. INR 1799.00; in stock (42 units). Evidence: P003:0:840dc54c2556.",
+      "warnings": [],
+      "context": {
+        "category": null,
+        "brand": null,
+        "category_source": null,
+        "brand_source": null,
+        "min_price": null,
+        "max_price": "3000.00",
+        "min_exclusive": false,
+        "max_exclusive": true,
+        "budget_sources": {
+          "max_price": "query"
+        },
+        "strict_budget": true,
+        "available_only": true,
+        "exclude_purchased": false,
+        "text_query": "wireless headphones"
+      },
+      "profile": {
+        "customer_id": "C001",
+        "name": "Demo Customer 1",
+        "channel": "ecommerce",
+        "cold_start": false,
+        "declared_categories": [
+          "Electronics",
+          "Footwear"
+        ],
+        "declared_brands": [
+          "SoundNest"
+        ],
+        "category_affinities": {
+          "Electronics": 1.0,
+          "Footwear": 0.04878049
+        },
+        "brand_affinities": {
+          "SoundNest": 0.4137931,
+          "WaveCraft": 1.0
+        },
+        "product_affinities": {
+          "P001": 0.4,
+          "P002": 0.1,
+          "P003": 0.45,
+          "P004": 1.0
+        },
+        "budget_min": "0.00",
+        "budget_max": "3000.00",
+        "observed_purchase_median_price": "1899.00",
+        "observed_price_basis": "current_catalog",
+        "event_counts": {
+          "view": 3,
+          "wishlist": 2,
+          "cart": 1,
+          "purchase": 2
+        },
+        "channel_counts": {
+          "ecommerce": 3,
+          "mobile": 3,
+          "store": 2
+        },
+        "viewed_product_ids": [
+          "P001",
+          "P002"
+        ],
+        "purchased_product_ids": [
+          "P001",
+          "P004"
+        ],
+        "wishlist_product_ids": [
+          "P003"
+        ],
+        "interaction_count": 8,
+        "source": "synthetic_demo"
+      },
+      "active_weights": {
+        "text_relevance": 0.4,
+        "customer_preference": 0.2,
+        "category_match": 0.15,
+        "brand_match": 0.1,
+        "budget_compatibility": 0.1,
+        "availability": 0.05
+      },
+      "preference_basis": "customer_profile",
+      "retrieval_source": "rag",
+      "index_generation": "679b891b5564444aac9a36549ec8b710",
+      "validation": {
+        "valid": true,
+        "checked_products": 2,
+        "references": [
+          "P001",
+          "P003"
+        ]
+      },
+      "references": [
+        "P001",
+        "P003"
+      ],
+      "items": [
+        {
+          "rank": 1,
+          "product": {
+            "id": "P001",
+            "name": "Wireless Everyday Headphones",
+            "description": "Bluetooth headphones with cushioned ear cups and USB-C charging",
+            "category": "Electronics",
+            "brand": "SoundNest",
+            "price": "2499.00",
+            "currency": "INR",
+            "rating": 4.0,
+            "stock_quantity": 35,
+            "available": true,
+            "features": [
+              "wireless",
+              "over-ear",
+              "USB-C"
+            ],
+            "attributes": {
+              "connectivity": "Bluetooth",
+              "color": "navy"
+            },
+            "image_url": null,
+            "source": "synthetic_demo"
+          },
+          "similarity_score": 0.81575,
+          "relevance_score": 0.75179319,
+          "components": {
+            "text_relevance": 0.81575,
+            "customer_preference": 0.42056942,
+            "category_match": 1.0,
+            "brand_match": 0.4137931,
+            "budget_compatibility": 1.0,
+            "availability": 1.0
+          },
+          "explanation": "Chroma LSA cosine similarity: 0.8157. Customer affinity 0.4206 uses declared preferences and 8 cross-channel interactions. Category affinity for Electronics: 1.0000. Brand affinity for SoundNest: 0.4138. Meets the effective price bounds. INR 2499.00; in stock (35 units). Evidence: P001:0:a49cba7e5f9d.",
+          "retrieval_source": "chroma",
+          "document_id": "P001:0:a49cba7e5f9d",
+          "document": "Product ID: P001\nName: Wireless Everyday Headphones\nCategory: Electronics\nBrand: SoundNest\nPrice: INR 2499.00\nAvailability: in stock\nStock quantity: 35\nSource: synthetic_demo\nDescription: Bluetooth headphones with cushioned ear cups and USB-C charging\nFeatures: [\"wireless\", \"over-ear\", \"USB-C\"]\nAttributes: {\"color\": \"navy\", \"connectivity\": \"Bluetooth\"}",
+          "metadata": {
+            "category": "Electronics",
+            "document_hash": "a49cba7e5f9d3e08889c94f1e78da87ef87e8b9b5c540435f855eead504dc511",
+            "stock_quantity": 35,
+            "available": true,
+            "brand_key": "soundnest",
+            "brand": "SoundNest",
+            "currency": "INR",
+            "price_cents": 249900,
+            "name": "Wireless Everyday Headphones",
+            "category_key": "electronics",
+            "chunk": 0,
+            "product_id": "P001",
+            "product_fingerprint": "b4c08cb9f3836d08d5edf093af5178e1af16aaef64cccfe3d7120103b63b3054",
+            "source": "synthetic_demo"
+          }
+        },
+        {
+          "rank": 2,
+          "product": {
+            "id": "P003",
+            "name": "Pocket Wireless Earbuds",
+            "description": "Compact wireless earbuds with charging case for daily listening",
+            "category": "Electronics",
+            "brand": "WaveCraft",
+            "price": "1799.00",
+            "currency": "INR",
+            "rating": 4.4,
+            "stock_quantity": 42,
+            "available": true,
+            "features": [
+              "wireless",
+              "charging case"
+            ],
+            "attributes": {
+              "color": "white"
+            },
+            "image_url": null,
+            "source": "synthetic_demo"
+          },
+          "similarity_score": 0.5429796,
+          "relevance_score": 0.69625887,
+          "components": {
+            "text_relevance": 0.5429796,
+            "customer_preference": 0.39533517,
+            "category_match": 1.0,
+            "brand_match": 1.0,
+            "budget_compatibility": 1.0,
+            "availability": 1.0
+          },
+          "explanation": "Chroma LSA cosine similarity: 0.5430. Customer affinity 0.3953 uses declared preferences and 8 cross-channel interactions. Category affinity for Electronics: 1.0000. Brand affinity for WaveCraft: 1.0000. Meets the effective price bounds. INR 1799.00; in stock (42 units). Evidence: P003:0:840dc54c2556.",
+          "retrieval_source": "chroma",
+          "document_id": "P003:0:840dc54c2556",
+          "document": "Product ID: P003\nName: Pocket Wireless Earbuds\nCategory: Electronics\nBrand: WaveCraft\nPrice: INR 1799.00\nAvailability: in stock\nStock quantity: 42\nSource: synthetic_demo\nDescription: Compact wireless earbuds with charging case for daily listening\nFeatures: [\"wireless\", \"charging case\"]\nAttributes: {\"color\": \"white\"}",
+          "metadata": {
+            "category": "Electronics",
+            "product_id": "P003",
+            "product_fingerprint": "305f6ab0c8b2fd7b1564b40b83aeb95d152d153dc51ac62b423a3454e47d0573",
+            "chunk": 0,
+            "brand": "WaveCraft",
+            "document_hash": "840dc54c2556c6183aadc7299e6d675f333efb340966eb6db9a5d9a145d7a18a",
+            "name": "Pocket Wireless Earbuds",
+            "available": true,
+            "stock_quantity": 42,
+            "currency": "INR",
+            "source": "synthetic_demo",
+            "brand_key": "wavecraft",
+            "price_cents": 179900,
+            "category_key": "electronics"
+          }
+        }
+      ]
+    },
+    "error": null,
+    "steps": [
+      {
+        "sequence": 1,
+        "execution_id": 1,
+        "agent": "supervisor",
+        "status": "completed",
+        "started_at": "2026-11-04T09:15:36.766220+00:00",
+        "finished_at": "2026-11-04T09:15:36.805849+00:00",
+        "duration_ms": 39.629,
+        "tool_calls": [
+          {
+            "name": "get_rag_status",
+            "status": "completed",
+            "started_at": "2026-11-04T09:15:36.781180Z",
+            "finished_at": "2026-11-04T09:15:36.786772Z",
+            "duration_ms": 20.539,
+            "arguments": {},
+            "output_summary": {
+              "keys": [
+                "generation",
+                "indexed_chunks",
+                "indexed_products",
+                "status"
+              ],
+              "status": "ready",
+              "indexed_products": 24,
+              "indexed_chunks": 24
+            },
+            "output_sha256": "9c2af0e51fd93a6e8dc5ffd6094f435672168802ac988eb4b8ad4303f1e3de12",
+            "error": null
+          }
+        ],
+        "output_summary": "{\"counts\": {}, \"updated_state_fields\": [\"executed_agents\", \"plan\", \"warnings\"]}",
+        "error": null
+      },
+      {
+        "sequence": 2,
+        "execution_id": 2,
+        "agent": "query_understanding",
+        "status": "completed",
+        "started_at": "2026-11-04T09:15:36.820154+00:00",
+        "finished_at": "2026-11-04T09:15:36.848974+00:00",
+        "duration_ms": 28.82,
+        "tool_calls": [
+          {
+            "name": "understand_query",
+            "status": "completed",
+            "started_at": "2026-11-04T09:15:36.842992Z",
+            "finished_at": "2026-11-04T09:15:36.847977Z",
+            "duration_ms": 5.146,
+            "arguments": {
+              "request": {
+                "mode": "context_aware",
+                "customer_id": "C001",
+                "product_id": null,
+                "query": "wireless headphones under INR 3000",
+                "category": null,
+                "brand": null,
+                "min_price": null,
+                "max_price": null,
+                "strict_budget": true,
+                "available_only": true,
+                "exclude_purchased": false,
+                "channel": "ecommerce",
+                "limit": 5,
+                "weights": {
+                  "text_relevance": 0.4,
+                  "customer_preference": 0.2,
+                  "category_match": 0.15,
+                  "brand_match": 0.1,
+                  "budget_compatibility": 0.1,
+                  "availability": 0.05
+                },
+                "retrieval_strategy": "rag"
+              },
+              "profile": null
+            },
+            "output_summary": {
+              "keys": [
+                "context",
+                "warnings"
+              ]
+            },
+            "output_sha256": "211bbd0dd9313634506485deccec605c9e7897808d19a08b27049ed3bf960b51",
+            "error": null
+          }
+        ],
+        "output_summary": "{\"counts\": {}, \"updated_state_fields\": [\"context\", \"executed_agents\", \"warnings\"]}",
+        "error": null
+      },
+      {
+        "sequence": 3,
+        "execution_id": 3,
+        "agent": "customer_context",
+        "status": "completed",
+        "started_at": "2026-11-04T09:15:36.869066+00:00",
+        "finished_at": "2026-11-04T09:15:36.905337+00:00",
+        "duration_ms": 36.271,
+        "tool_calls": [
+          {
+            "name": "get_customer_profile",
+            "status": "completed",
+            "started_at": "2026-11-04T09:15:36.880121Z",
+            "finished_at": "2026-11-04T09:15:36.885110Z",
+            "duration_ms": 4.808,
+            "arguments": {
+              "customer_id": "C001",
+              "channel": "ecommerce"
+            },
+            "output_summary": {
+              "keys": [
+                "brand_affinities",
+                "budget_max",
+                "budget_min",
+                "category_affinities",
+                "channel",
+                "channel_counts",
+                "cold_start",
+                "customer_id",
+                "declared_brands",
+                "declared_categories",
+                "event_counts",
+                "interaction_count",
+                "name",
+                "observed_price_basis",
+                "observed_purchase_median_price",
+                "product_affinities",
+                "purchased_product_ids",
+                "source",
+                "viewed_product_ids",
+                "wishlist_product_ids"
+              ],
+              "customer_id": "C001",
+              "interaction_count": 8
+            },
+            "output_sha256": "d2622abd56cb84a82398dc5bafe51d26c68295c83957810b19cbd5524a719af5",
+            "error": null
+          },
+          {
+            "name": "get_customer_history",
+            "status": "completed",
+            "started_at": "2026-11-04T09:15:36.885110Z",
+            "finished_at": "2026-11-04T09:15:36.898354Z",
+            "duration_ms": 13.692,
+            "arguments": {
+              "customer_id": "C001",
+              "limit": 5
+            },
+            "output_summary": {
+              "keys": [
+                "items",
+                "limit",
+                "offset",
+                "total"
+              ],
+              "item_count": 5,
+              "product_ids": [
+                "P004",
+                "P003",
+                "P002",
+                "P001",
+                "P004"
+              ],
+              "total": 8
+            },
+            "output_sha256": "b772651dbb3bd0b7c1bb1780b27f694a54e581fd3469fc9aa2fbd7a6dd702a65",
+            "error": null
+          },
+          {
+            "name": "understand_query",
+            "status": "completed",
+            "started_at": "2026-11-04T09:15:36.898354Z",
+            "finished_at": "2026-11-04T09:15:36.904339Z",
+            "duration_ms": 5.241,
+            "arguments": {
+              "request": {
+                "mode": "context_aware",
+                "customer_id": "C001",
+                "product_id": null,
+                "query": "wireless headphones under INR 3000",
+                "category": null,
+                "brand": null,
+                "min_price": null,
+                "max_price": null,
+                "strict_budget": true,
+                "available_only": true,
+                "exclude_purchased": false,
+                "channel": "ecommerce",
+                "limit": 5,
+                "weights": {
+                  "text_relevance": 0.4,
+                  "customer_preference": 0.2,
+                  "category_match": 0.15,
+                  "brand_match": 0.1,
+                  "budget_compatibility": 0.1,
+                  "availability": 0.05
+                },
+                "retrieval_strategy": "rag"
+              },
+              "profile": {
+                "customer_id": "C001",
+                "name": "Demo Customer 1",
+                "channel": "ecommerce",
+                "cold_start": false,
+                "declared_categories": [
+                  "Electronics",
+                  "Footwear"
+                ],
+                "declared_brands": [
+                  "SoundNest"
+                ],
+                "category_affinities": {
+                  "Electronics": 1.0,
+                  "Footwear": 0.04878049
+                },
+                "brand_affinities": {
+                  "SoundNest": 0.4137931,
+                  "WaveCraft": 1.0
+                },
+                "product_affinities": {
+                  "P001": 0.4,
+                  "P002": 0.1,
+                  "P003": 0.45,
+                  "P004": 1.0
+                },
+                "budget_min": "0.00",
+                "budget_max": "3000.00",
+                "observed_purchase_median_price": "1899.00",
+                "observed_price_basis": "current_catalog",
+                "event_counts": {
+                  "view": 3,
+                  "wishlist": 2,
+                  "cart": 1,
+                  "purchase": 2
+                },
+                "channel_counts": {
+                  "ecommerce": 3,
+                  "mobile": 3,
+                  "store": 2
+                },
+                "viewed_product_ids": [
+                  "P001",
+                  "P002"
+                ],
+                "purchased_product_ids": [
+                  "P001",
+                  "P004"
+                ],
+                "wishlist_product_ids": [
+                  "P003"
+                ],
+                "interaction_count": 8,
+                "source": "synthetic_demo"
+              }
+            },
+            "output_summary": {
+              "keys": [
+                "context",
+                "warnings"
+              ]
+            },
+            "output_sha256": "211bbd0dd9313634506485deccec605c9e7897808d19a08b27049ed3bf960b51",
+            "error": null
+          }
+        ],
+        "output_summary": "{\"counts\": {}, \"updated_state_fields\": [\"context\", \"customer_history\", \"executed_agents\", \"profile\", \"warnings\"]}",
+        "error": null
+      },
+      {
+        "sequence": 4,
+        "execution_id": 4,
+        "agent": "product_retrieval",
+        "status": "completed",
+        "started_at": "2026-11-04T09:15:36.920141+00:00",
+        "finished_at": "2026-11-04T09:15:36.982510+00:00",
+        "duration_ms": 62.369,
+        "tool_calls": [
+          {
+            "name": "retrieve_product_documents",
+            "status": "completed",
+            "started_at": "2026-11-04T09:15:36.920141Z",
+            "finished_at": "2026-11-04T09:15:36.980517Z",
+            "duration_ms": 48.727,
+            "arguments": {
+              "request": {
+                "mode": "context_aware",
+                "customer_id": "C001",
+                "product_id": null,
+                "query": "wireless headphones under INR 3000",
+                "category": null,
+                "brand": null,
+                "min_price": null,
+                "max_price": null,
+                "strict_budget": true,
+                "available_only": true,
+                "exclude_purchased": false,
+                "channel": "ecommerce",
+                "limit": 5,
+                "weights": {
+                  "text_relevance": 0.4,
+                  "customer_preference": 0.2,
+                  "category_match": 0.15,
+                  "brand_match": 0.1,
+                  "budget_compatibility": 0.1,
+                  "availability": 0.05
+                },
+                "retrieval_strategy": "rag"
+              },
+              "profile": {
+                "customer_id": "C001",
+                "name": "Demo Customer 1",
+                "channel": "ecommerce",
+                "cold_start": false,
+                "declared_categories": [
+                  "Electronics",
+                  "Footwear"
+                ],
+                "declared_brands": [
+                  "SoundNest"
+                ],
+                "category_affinities": {
+                  "Electronics": 1.0,
+                  "Footwear": 0.04878049
+                },
+                "brand_affinities": {
+                  "SoundNest": 0.4137931,
+                  "WaveCraft": 1.0
+                },
+                "product_affinities": {
+                  "P001": 0.4,
+                  "P002": 0.1,
+                  "P003": 0.45,
+                  "P004": 1.0
+                },
+                "budget_min": "0.00",
+                "budget_max": "3000.00",
+                "observed_purchase_median_price": "1899.00",
+                "observed_price_basis": "current_catalog",
+                "event_counts": {
+                  "view": 3,
+                  "wishlist": 2,
+                  "cart": 1,
+                  "purchase": 2
+                },
+                "channel_counts": {
+                  "ecommerce": 3,
+                  "mobile": 3,
+                  "store": 2
+                },
+                "viewed_product_ids": [
+                  "P001",
+                  "P002"
+                ],
+                "purchased_product_ids": [
+                  "P001",
+                  "P004"
+                ],
+                "wishlist_product_ids": [
+                  "P003"
+                ],
+                "interaction_count": 8,
+                "source": "synthetic_demo"
+              },
+              "context": {
+                "category": null,
+                "brand": null,
+                "category_source": null,
+                "brand_source": null,
+                "min_price": null,
+                "max_price": "3000.00",
+                "min_exclusive": false,
+                "max_exclusive": true,
+                "budget_sources": {
+                  "max_price": "query"
+                },
+                "strict_budget": true,
+                "available_only": true,
+                "exclude_purchased": false,
+                "text_query": "wireless headphones"
+              }
+            },
+            "output_summary": {
+              "keys": [
+                "index_generation",
+                "items",
+                "warnings"
+              ],
+              "item_count": 2,
+              "product_ids": [
+                "P001",
+                "P003"
+              ]
+            },
+            "output_sha256": "7f28da947efceb2920d3212c0e46b1da3116af5632a66a8029878f8d8640e4ec",
+            "error": null
+          }
+        ],
+        "output_summary": "{\"counts\": {}, \"updated_state_fields\": [\"executed_agents\", \"retrieval\", \"warnings\"]}",
+        "error": null
+      },
+      {
+        "sequence": 5,
+        "execution_id": 5,
+        "agent": "recommendation",
+        "status": "completed",
+        "started_at": "2026-11-04T09:15:36.986777+00:00",
+        "finished_at": "2026-11-04T09:15:37.020075+00:00",
+        "duration_ms": 33.298,
+        "tool_calls": [
+          {
+            "name": "score_recommendation_candidates",
+            "status": "completed",
+            "started_at": "2026-11-04T09:15:37.008829Z",
+            "finished_at": "2026-11-04T09:15:37.020075Z",
+            "duration_ms": 22.242,
+            "arguments": {
+              "request": {
+                "mode": "context_aware",
+                "customer_id": "C001",
+                "product_id": null,
+                "query": "wireless headphones under INR 3000",
+                "category": null,
+                "brand": null,
+                "min_price": null,
+                "max_price": null,
+                "strict_budget": true,
+                "available_only": true,
+                "exclude_purchased": false,
+                "channel": "ecommerce",
+                "limit": 5,
+                "weights": {
+                  "text_relevance": 0.4,
+                  "customer_preference": 0.2,
+                  "category_match": 0.15,
+                  "brand_match": 0.1,
+                  "budget_compatibility": 0.1,
+                  "availability": 0.05
+                },
+                "retrieval_strategy": "rag"
+              },
+              "profile": {
+                "customer_id": "C001",
+                "name": "Demo Customer 1",
+                "channel": "ecommerce",
+                "cold_start": false,
+                "declared_categories": [
+                  "Electronics",
+                  "Footwear"
+                ],
+                "declared_brands": [
+                  "SoundNest"
+                ],
+                "category_affinities": {
+                  "Electronics": 1.0,
+                  "Footwear": 0.04878049
+                },
+                "brand_affinities": {
+                  "SoundNest": 0.4137931,
+                  "WaveCraft": 1.0
+                },
+                "product_affinities": {
+                  "P001": 0.4,
+                  "P002": 0.1,
+                  "P003": 0.45,
+                  "P004": 1.0
+                },
+                "budget_min": "0.00",
+                "budget_max": "3000.00",
+                "observed_purchase_median_price": "1899.00",
+                "observed_price_basis": "current_catalog",
+                "event_counts": {
+                  "view": 3,
+                  "wishlist": 2,
+                  "cart": 1,
+                  "purchase": 2
+                },
+                "channel_counts": {
+                  "ecommerce": 3,
+                  "mobile": 3,
+                  "store": 2
+                },
+                "viewed_product_ids": [
+                  "P001",
+                  "P002"
+                ],
+                "purchased_product_ids": [
+                  "P001",
+                  "P004"
+                ],
+                "wishlist_product_ids": [
+                  "P003"
+                ],
+                "interaction_count": 8,
+                "source": "synthetic_demo"
+              },
+              "context": {
+                "category": null,
+                "brand": null,
+                "category_source": null,
+                "brand_source": null,
+                "min_price": null,
+                "max_price": "3000.00",
+                "min_exclusive": false,
+                "max_exclusive": true,
+                "budget_sources": {
+                  "max_price": "query"
+                },
+                "strict_budget": true,
+                "available_only": true,
+                "exclude_purchased": false,
+                "text_query": "wireless headphones"
+              },
+              "items": [
+                {
+                  "rank": 0,
+                  "product": {
+                    "id": "P001",
+                    "name": "Wireless Everyday Headphones",
+                    "description": "Bluetooth headphones with cushioned ear cups and USB-C charging",
+                    "category": "Electronics",
+                    "brand": "SoundNest",
+                    "price": "2499.00",
+                    "currency": "INR",
+                    "rating": 4.0,
+                    "stock_quantity": 35,
+                    "available": true,
+                    "features": [
+                      "wireless",
+                      "over-ear",
+                      "USB-C"
+                    ],
+                    "attributes": {
+                      "connectivity": "Bluetooth",
+                      "color": "navy"
+                    },
+                    "image_url": null,
+                    "source": "synthetic_demo"
+                  },
+                  "similarity_score": 0.81575,
+                  "relevance_score": 0.0,
+                  "components": {},
+                  "explanation": "",
+                  "retrieval_source": "chroma",
+                  "document_id": "P001:0:a49cba7e5f9d",
+                  "document": "Product ID: P001\nName: Wireless Everyday Headphones\nCategory: Electronics\nBrand: SoundNest\nPrice: INR 2499.00\nAvailability: in stock\nStock quantity: 35\nSource: synthetic_demo\nDescription: Bluetooth headphones with cushioned ear cups and USB-C charging\nFeatures: [\"wireless\", \"over-ear\", \"USB-C\"]\nAttributes: {\"color\": \"navy\", \"connectivity\": \"Bluetooth\"}",
+                  "metadata": {
+                    "category": "Electronics",
+                    "document_hash": "a49cba7e5f9d3e08889c94f1e78da87ef87e8b9b5c540435f855eead504dc511",
+                    "stock_quantity": 35,
+                    "available": true,
+                    "brand_key": "soundnest",
+                    "brand": "SoundNest",
+                    "currency": "INR",
+                    "price_cents": 249900,
+                    "name": "Wireless Everyday Headphones",
+                    "category_key": "electronics",
+                    "chunk": 0,
+                    "product_id": "P001",
+                    "product_fingerprint": "b4c08cb9f3836d08d5edf093af5178e1af16aaef64cccfe3d7120103b63b3054",
+                    "source": "synthetic_demo"
+                  }
+                },
+                {
+                  "rank": 0,
+                  "product": {
+                    "id": "P003",
+                    "name": "Pocket Wireless Earbuds",
+                    "description": "Compact wireless earbuds with charging case for daily listening",
+                    "category": "Electronics",
+                    "brand": "WaveCraft",
+                    "price": "1799.00",
+                    "currency": "INR",
+                    "rating": 4.4,
+                    "stock_quantity": 42,
+                    "available": true,
+                    "features": [
+                      "wireless",
+                      "charging case"
+                    ],
+                    "attributes": {
+                      "color": "white"
+                    },
+                    "image_url": null,
+                    "source": "synthetic_demo"
+                  },
+                  "similarity_score": 0.5429796,
+                  "relevance_score": 0.0,
+                  "components": {},
+                  "explanation": "",
+                  "retrieval_source": "chroma",
+                  "document_id": "P003:0:840dc54c2556",
+                  "document": "Product ID: P003\nName: Pocket Wireless Earbuds\nCategory: Electronics\nBrand: WaveCraft\nPrice: INR 1799.00\nAvailability: in stock\nStock quantity: 42\nSource: synthetic_demo\nDescription: Compact wireless earbuds with charging case for daily listening\nFeatures: [\"wireless\", \"charging case\"]\nAttributes: {\"color\": \"white\"}",
+                  "metadata": {
+                    "category": "Electronics",
+                    "product_id": "P003",
+                    "product_fingerprint": "305f6ab0c8b2fd7b1564b40b83aeb95d152d153dc51ac62b423a3454e47d0573",
+                    "chunk": 0,
+                    "brand": "WaveCraft",
+                    "document_hash": "840dc54c2556c6183aadc7299e6d675f333efb340966eb6db9a5d9a145d7a18a",
+                    "name": "Pocket Wireless Earbuds",
+                    "available": true,
+                    "stock_quantity": 42,
+                    "currency": "INR",
+                    "source": "synthetic_demo",
+                    "brand_key": "wavecraft",
+                    "price_cents": 179900,
+                    "category_key": "electronics"
+                  }
+                }
+              ]
+            },
+            "output_summary": {
+              "keys": [
+                "active_weights",
+                "index_generation",
+                "items",
+                "preference_basis",
+                "warnings"
+              ],
+              "item_count": 2,
+              "product_ids": [
+                "P001",
+                "P003"
+              ]
+            },
+            "output_sha256": "dc36d9a9cb096f7db97c5f349cc184636cb7bea47fab865913291c221baa8298",
+            "error": null
+          }
+        ],
+        "output_summary": "{\"counts\": {\"candidates\": 2}, \"updated_state_fields\": [\"active_weights\", \"candidates\", \"executed_agents\", \"preference_basis\"]}",
+        "error": null
+      },
+      {
+        "sequence": 6,
+        "execution_id": 6,
+        "agent": "product_ranking",
+        "status": "completed",
+        "started_at": "2026-11-04T09:15:37.050862+00:00",
+        "finished_at": "2026-11-04T09:15:37.053444+00:00",
+        "duration_ms": 2.582,
+        "tool_calls": [
+          {
+            "name": "rank_recommendations",
+            "status": "completed",
+            "started_at": "2026-11-04T09:15:37.053444Z",
+            "finished_at": "2026-11-04T09:15:37.053444Z",
+            "duration_ms": 2.322,
+            "arguments": {
+              "items": [
+                {
+                  "rank": 0,
+                  "product": {
+                    "id": "P001",
+                    "name": "Wireless Everyday Headphones",
+                    "description": "Bluetooth headphones with cushioned ear cups and USB-C charging",
+                    "category": "Electronics",
+                    "brand": "SoundNest",
+                    "price": "2499.00",
+                    "currency": "INR",
+                    "rating": 4.0,
+                    "stock_quantity": 35,
+                    "available": true,
+                    "features": [
+                      "wireless",
+                      "over-ear",
+                      "USB-C"
+                    ],
+                    "attributes": {
+                      "connectivity": "Bluetooth",
+                      "color": "navy"
+                    },
+                    "image_url": null,
+                    "source": "synthetic_demo"
+                  },
+                  "similarity_score": 0.81575,
+                  "relevance_score": 0.75179319,
+                  "components": {
+                    "text_relevance": 0.81575,
+                    "customer_preference": 0.42056942,
+                    "category_match": 1.0,
+                    "brand_match": 0.4137931,
+                    "budget_compatibility": 1.0,
+                    "availability": 1.0
+                  },
+                  "explanation": "",
+                  "retrieval_source": "chroma",
+                  "document_id": "P001:0:a49cba7e5f9d",
+                  "document": "Product ID: P001\nName: Wireless Everyday Headphones\nCategory: Electronics\nBrand: SoundNest\nPrice: INR 2499.00\nAvailability: in stock\nStock quantity: 35\nSource: synthetic_demo\nDescription: Bluetooth headphones with cushioned ear cups and USB-C charging\nFeatures: [\"wireless\", \"over-ear\", \"USB-C\"]\nAttributes: {\"color\": \"navy\", \"connectivity\": \"Bluetooth\"}",
+                  "metadata": {
+                    "category": "Electronics",
+                    "document_hash": "a49cba7e5f9d3e08889c94f1e78da87ef87e8b9b5c540435f855eead504dc511",
+                    "stock_quantity": 35,
+                    "available": true,
+                    "brand_key": "soundnest",
+                    "brand": "SoundNest",
+                    "currency": "INR",
+                    "price_cents": 249900,
+                    "name": "Wireless Everyday Headphones",
+                    "category_key": "electronics",
+                    "chunk": 0,
+                    "product_id": "P001",
+                    "product_fingerprint": "b4c08cb9f3836d08d5edf093af5178e1af16aaef64cccfe3d7120103b63b3054",
+                    "source": "synthetic_demo"
+                  }
+                },
+                {
+                  "rank": 0,
+                  "product": {
+                    "id": "P003",
+                    "name": "Pocket Wireless Earbuds",
+                    "description": "Compact wireless earbuds with charging case for daily listening",
+                    "category": "Electronics",
+                    "brand": "WaveCraft",
+                    "price": "1799.00",
+                    "currency": "INR",
+                    "rating": 4.4,
+                    "stock_quantity": 42,
+                    "available": true,
+                    "features": [
+                      "wireless",
+                      "charging case"
+                    ],
+                    "attributes": {
+                      "color": "white"
+                    },
+                    "image_url": null,
+                    "source": "synthetic_demo"
+                  },
+                  "similarity_score": 0.5429796,
+                  "relevance_score": 0.69625887,
+                  "components": {
+                    "text_relevance": 0.5429796,
+                    "customer_preference": 0.39533517,
+                    "category_match": 1.0,
+                    "brand_match": 1.0,
+                    "budget_compatibility": 1.0,
+                    "availability": 1.0
+                  },
+                  "explanation": "",
+                  "retrieval_source": "chroma",
+                  "document_id": "P003:0:840dc54c2556",
+                  "document": "Product ID: P003\nName: Pocket Wireless Earbuds\nCategory: Electronics\nBrand: WaveCraft\nPrice: INR 1799.00\nAvailability: in stock\nStock quantity: 42\nSource: synthetic_demo\nDescription: Compact wireless earbuds with charging case for daily listening\nFeatures: [\"wireless\", \"charging case\"]\nAttributes: {\"color\": \"white\"}",
+                  "metadata": {
+                    "category": "Electronics",
+                    "product_id": "P003",
+                    "product_fingerprint": "305f6ab0c8b2fd7b1564b40b83aeb95d152d153dc51ac62b423a3454e47d0573",
+                    "chunk": 0,
+                    "brand": "WaveCraft",
+                    "document_hash": "840dc54c2556c6183aadc7299e6d675f333efb340966eb6db9a5d9a145d7a18a",
+                    "name": "Pocket Wireless Earbuds",
+                    "available": true,
+                    "stock_quantity": 42,
+                    "currency": "INR",
+                    "source": "synthetic_demo",
+                    "brand_key": "wavecraft",
+                    "price_cents": 179900,
+                    "category_key": "electronics"
+                  }
+                }
+              ]
+            },
+            "output_summary": {
+              "keys": [
+                "index_generation",
+                "items",
+                "warnings"
+              ],
+              "item_count": 2,
+              "product_ids": [
+                "P001",
+                "P003"
+              ]
+            },
+            "output_sha256": "deae43587cdbac3b8ba8c6f841676bfecb63ecbf5347dfa732a4240ed2043f77",
+            "error": null
+          }
+        ],
+        "output_summary": "{\"counts\": {\"ranked\": 2}, \"updated_state_fields\": [\"executed_agents\", \"ranked\"]}",
+        "error": null
+      },
+      {
+        "sequence": 7,
+        "execution_id": 7,
+        "agent": "availability",
+        "status": "completed",
+        "started_at": "2026-11-04T09:15:37.080524+00:00",
+        "finished_at": "2026-11-04T09:15:37.099549+00:00",
+        "duration_ms": 19.025,
+        "tool_calls": [
+          {
+            "name": "check_product_availability",
+            "status": "completed",
+            "started_at": "2026-11-04T09:15:37.093565Z",
+            "finished_at": "2026-11-04T09:15:37.098551Z",
+            "duration_ms": 5.264,
+            "arguments": {
+              "request": {
+                "mode": "context_aware",
+                "customer_id": "C001",
+                "product_id": null,
+                "query": "wireless headphones under INR 3000",
+                "category": null,
+                "brand": null,
+                "min_price": null,
+                "max_price": null,
+                "strict_budget": true,
+                "available_only": true,
+                "exclude_purchased": false,
+                "channel": "ecommerce",
+                "limit": 5,
+                "weights": {
+                  "text_relevance": 0.4,
+                  "customer_preference": 0.2,
+                  "category_match": 0.15,
+                  "brand_match": 0.1,
+                  "budget_compatibility": 0.1,
+                  "availability": 0.05
+                },
+                "retrieval_strategy": "rag"
+              },
+              "profile": {
+                "customer_id": "C001",
+                "name": "Demo Customer 1",
+                "channel": "ecommerce",
+                "cold_start": false,
+                "declared_categories": [
+                  "Electronics",
+                  "Footwear"
+                ],
+                "declared_brands": [
+                  "SoundNest"
+                ],
+                "category_affinities": {
+                  "Electronics": 1.0,
+                  "Footwear": 0.04878049
+                },
+                "brand_affinities": {
+                  "SoundNest": 0.4137931,
+                  "WaveCraft": 1.0
+                },
+                "product_affinities": {
+                  "P001": 0.4,
+                  "P002": 0.1,
+                  "P003": 0.45,
+                  "P004": 1.0
+                },
+                "budget_min": "0.00",
+                "budget_max": "3000.00",
+                "observed_purchase_median_price": "1899.00",
+                "observed_price_basis": "current_catalog",
+                "event_counts": {
+                  "view": 3,
+                  "wishlist": 2,
+                  "cart": 1,
+                  "purchase": 2
+                },
+                "channel_counts": {
+                  "ecommerce": 3,
+                  "mobile": 3,
+                  "store": 2
+                },
+                "viewed_product_ids": [
+                  "P001",
+                  "P002"
+                ],
+                "purchased_product_ids": [
+                  "P001",
+                  "P004"
+                ],
+                "wishlist_product_ids": [
+                  "P003"
+                ],
+                "interaction_count": 8,
+                "source": "synthetic_demo"
+              },
+              "context": {
+                "category": null,
+                "brand": null,
+                "category_source": null,
+                "brand_source": null,
+                "min_price": null,
+                "max_price": "3000.00",
+                "min_exclusive": false,
+                "max_exclusive": true,
+                "budget_sources": {
+                  "max_price": "query"
+                },
+                "strict_budget": true,
+                "available_only": true,
+                "exclude_purchased": false,
+                "text_query": "wireless headphones"
+              },
+              "items": [
+                {
+                  "rank": 1,
+                  "product": {
+                    "id": "P001",
+                    "name": "Wireless Everyday Headphones",
+                    "description": "Bluetooth headphones with cushioned ear cups and USB-C charging",
+                    "category": "Electronics",
+                    "brand": "SoundNest",
+                    "price": "2499.00",
+                    "currency": "INR",
+                    "rating": 4.0,
+                    "stock_quantity": 35,
+                    "available": true,
+                    "features": [
+                      "wireless",
+                      "over-ear",
+                      "USB-C"
+                    ],
+                    "attributes": {
+                      "connectivity": "Bluetooth",
+                      "color": "navy"
+                    },
+                    "image_url": null,
+                    "source": "synthetic_demo"
+                  },
+                  "similarity_score": 0.81575,
+                  "relevance_score": 0.75179319,
+                  "components": {
+                    "text_relevance": 0.81575,
+                    "customer_preference": 0.42056942,
+                    "category_match": 1.0,
+                    "brand_match": 0.4137931,
+                    "budget_compatibility": 1.0,
+                    "availability": 1.0
+                  },
+                  "explanation": "",
+                  "retrieval_source": "chroma",
+                  "document_id": "P001:0:a49cba7e5f9d",
+                  "document": "Product ID: P001\nName: Wireless Everyday Headphones\nCategory: Electronics\nBrand: SoundNest\nPrice: INR 2499.00\nAvailability: in stock\nStock quantity: 35\nSource: synthetic_demo\nDescription: Bluetooth headphones with cushioned ear cups and USB-C charging\nFeatures: [\"wireless\", \"over-ear\", \"USB-C\"]\nAttributes: {\"color\": \"navy\", \"connectivity\": \"Bluetooth\"}",
+                  "metadata": {
+                    "category": "Electronics",
+                    "document_hash": "a49cba7e5f9d3e08889c94f1e78da87ef87e8b9b5c540435f855eead504dc511",
+                    "stock_quantity": 35,
+                    "available": true,
+                    "brand_key": "soundnest",
+                    "brand": "SoundNest",
+                    "currency": "INR",
+                    "price_cents": 249900,
+                    "name": "Wireless Everyday Headphones",
+                    "category_key": "electronics",
+                    "chunk": 0,
+                    "product_id": "P001",
+                    "product_fingerprint": "b4c08cb9f3836d08d5edf093af5178e1af16aaef64cccfe3d7120103b63b3054",
+                    "source": "synthetic_demo"
+                  }
+                },
+                {
+                  "rank": 2,
+                  "product": {
+                    "id": "P003",
+                    "name": "Pocket Wireless Earbuds",
+                    "description": "Compact wireless earbuds with charging case for daily listening",
+                    "category": "Electronics",
+                    "brand": "WaveCraft",
+                    "price": "1799.00",
+                    "currency": "INR",
+                    "rating": 4.4,
+                    "stock_quantity": 42,
+                    "available": true,
+                    "features": [
+                      "wireless",
+                      "charging case"
+                    ],
+                    "attributes": {
+                      "color": "white"
+                    },
+                    "image_url": null,
+                    "source": "synthetic_demo"
+                  },
+                  "similarity_score": 0.5429796,
+                  "relevance_score": 0.69625887,
+                  "components": {
+                    "text_relevance": 0.5429796,
+                    "customer_preference": 0.39533517,
+                    "category_match": 1.0,
+                    "brand_match": 1.0,
+                    "budget_compatibility": 1.0,
+                    "availability": 1.0
+                  },
+                  "explanation": "",
+                  "retrieval_source": "chroma",
+                  "document_id": "P003:0:840dc54c2556",
+                  "document": "Product ID: P003\nName: Pocket Wireless Earbuds\nCategory: Electronics\nBrand: WaveCraft\nPrice: INR 1799.00\nAvailability: in stock\nStock quantity: 42\nSource: synthetic_demo\nDescription: Compact wireless earbuds with charging case for daily listening\nFeatures: [\"wireless\", \"charging case\"]\nAttributes: {\"color\": \"white\"}",
+                  "metadata": {
+                    "category": "Electronics",
+                    "product_id": "P003",
+                    "product_fingerprint": "305f6ab0c8b2fd7b1564b40b83aeb95d152d153dc51ac62b423a3454e47d0573",
+                    "chunk": 0,
+                    "brand": "WaveCraft",
+                    "document_hash": "840dc54c2556c6183aadc7299e6d675f333efb340966eb6db9a5d9a145d7a18a",
+                    "name": "Pocket Wireless Earbuds",
+                    "available": true,
+                    "stock_quantity": 42,
+                    "currency": "INR",
+                    "source": "synthetic_demo",
+                    "brand_key": "wavecraft",
+                    "price_cents": 179900,
+                    "category_key": "electronics"
+                  }
+                }
+              ]
+            },
+            "output_summary": {
+              "keys": [
+                "items",
+                "rejected_product_ids"
+              ],
+              "item_count": 2,
+              "product_ids": [
+                "P001",
+                "P003"
+              ]
+            },
+            "output_sha256": "c12fe98c26b33bc07c235db22cf0a4fd5fc788b30e8214da79e1663da0e89fdd",
+            "error": null
+          }
+        ],
+        "output_summary": "{\"counts\": {\"items\": 2}, \"updated_state_fields\": [\"executed_agents\", \"items\", \"warnings\"]}",
+        "error": null
+      },
+      {
+        "sequence": 8,
+        "execution_id": 8,
+        "agent": "explanation",
+        "status": "completed",
+        "started_at": "2026-11-04T09:15:37.118497+00:00",
+        "finished_at": "2026-11-04T09:15:37.302807+00:00",
+        "duration_ms": 184.31,
+        "tool_calls": [
+          {
+            "name": "explain_recommendations",
+            "status": "completed",
+            "started_at": "2026-11-04T09:15:37.123982Z",
+            "finished_at": "2026-11-04T09:15:37.123982Z",
+            "duration_ms": 2.61,
+            "arguments": {
+              "request": {
+                "mode": "context_aware",
+                "customer_id": "C001",
+                "product_id": null,
+                "query": "wireless headphones under INR 3000",
+                "category": null,
+                "brand": null,
+                "min_price": null,
+                "max_price": null,
+                "strict_budget": true,
+                "available_only": true,
+                "exclude_purchased": false,
+                "channel": "ecommerce",
+                "limit": 5,
+                "weights": {
+                  "text_relevance": 0.4,
+                  "customer_preference": 0.2,
+                  "category_match": 0.15,
+                  "brand_match": 0.1,
+                  "budget_compatibility": 0.1,
+                  "availability": 0.05
+                },
+                "retrieval_strategy": "rag"
+              },
+              "profile": {
+                "customer_id": "C001",
+                "name": "Demo Customer 1",
+                "channel": "ecommerce",
+                "cold_start": false,
+                "declared_categories": [
+                  "Electronics",
+                  "Footwear"
+                ],
+                "declared_brands": [
+                  "SoundNest"
+                ],
+                "category_affinities": {
+                  "Electronics": 1.0,
+                  "Footwear": 0.04878049
+                },
+                "brand_affinities": {
+                  "SoundNest": 0.4137931,
+                  "WaveCraft": 1.0
+                },
+                "product_affinities": {
+                  "P001": 0.4,
+                  "P002": 0.1,
+                  "P003": 0.45,
+                  "P004": 1.0
+                },
+                "budget_min": "0.00",
+                "budget_max": "3000.00",
+                "observed_purchase_median_price": "1899.00",
+                "observed_price_basis": "current_catalog",
+                "event_counts": {
+                  "view": 3,
+                  "wishlist": 2,
+                  "cart": 1,
+                  "purchase": 2
+                },
+                "channel_counts": {
+                  "ecommerce": 3,
+                  "mobile": 3,
+                  "store": 2
+                },
+                "viewed_product_ids": [
+                  "P001",
+                  "P002"
+                ],
+                "purchased_product_ids": [
+                  "P001",
+                  "P004"
+                ],
+                "wishlist_product_ids": [
+                  "P003"
+                ],
+                "interaction_count": 8,
+                "source": "synthetic_demo"
+              },
+              "context": {
+                "category": null,
+                "brand": null,
+                "category_source": null,
+                "brand_source": null,
+                "min_price": null,
+                "max_price": "3000.00",
+                "min_exclusive": false,
+                "max_exclusive": true,
+                "budget_sources": {
+                  "max_price": "query"
+                },
+                "strict_budget": true,
+                "available_only": true,
+                "exclude_purchased": false,
+                "text_query": "wireless headphones"
+              },
+              "items": [
+                {
+                  "rank": 1,
+                  "product": {
+                    "id": "P001",
+                    "name": "Wireless Everyday Headphones",
+                    "description": "Bluetooth headphones with cushioned ear cups and USB-C charging",
+                    "category": "Electronics",
+                    "brand": "SoundNest",
+                    "price": "2499.00",
+                    "currency": "INR",
+                    "rating": 4.0,
+                    "stock_quantity": 35,
+                    "available": true,
+                    "features": [
+                      "wireless",
+                      "over-ear",
+                      "USB-C"
+                    ],
+                    "attributes": {
+                      "connectivity": "Bluetooth",
+                      "color": "navy"
+                    },
+                    "image_url": null,
+                    "source": "synthetic_demo"
+                  },
+                  "similarity_score": 0.81575,
+                  "relevance_score": 0.75179319,
+                  "components": {
+                    "text_relevance": 0.81575,
+                    "customer_preference": 0.42056942,
+                    "category_match": 1.0,
+                    "brand_match": 0.4137931,
+                    "budget_compatibility": 1.0,
+                    "availability": 1.0
+                  },
+                  "explanation": "",
+                  "retrieval_source": "chroma",
+                  "document_id": "P001:0:a49cba7e5f9d",
+                  "document": "Product ID: P001\nName: Wireless Everyday Headphones\nCategory: Electronics\nBrand: SoundNest\nPrice: INR 2499.00\nAvailability: in stock\nStock quantity: 35\nSource: synthetic_demo\nDescription: Bluetooth headphones with cushioned ear cups and USB-C charging\nFeatures: [\"wireless\", \"over-ear\", \"USB-C\"]\nAttributes: {\"color\": \"navy\", \"connectivity\": \"Bluetooth\"}",
+                  "metadata": {
+                    "category": "Electronics",
+                    "document_hash": "a49cba7e5f9d3e08889c94f1e78da87ef87e8b9b5c540435f855eead504dc511",
+                    "stock_quantity": 35,
+                    "available": true,
+                    "brand_key": "soundnest",
+                    "brand": "SoundNest",
+                    "currency": "INR",
+                    "price_cents": 249900,
+                    "name": "Wireless Everyday Headphones",
+                    "category_key": "electronics",
+                    "chunk": 0,
+                    "product_id": "P001",
+                    "product_fingerprint": "b4c08cb9f3836d08d5edf093af5178e1af16aaef64cccfe3d7120103b63b3054",
+                    "source": "synthetic_demo"
+                  }
+                },
+                {
+                  "rank": 2,
+                  "product": {
+                    "id": "P003",
+                    "name": "Pocket Wireless Earbuds",
+                    "description": "Compact wireless earbuds with charging case for daily listening",
+                    "category": "Electronics",
+                    "brand": "WaveCraft",
+                    "price": "1799.00",
+                    "currency": "INR",
+                    "rating": 4.4,
+                    "stock_quantity": 42,
+                    "available": true,
+                    "features": [
+                      "wireless",
+                      "charging case"
+                    ],
+                    "attributes": {
+                      "color": "white"
+                    },
+                    "image_url": null,
+                    "source": "synthetic_demo"
+                  },
+                  "similarity_score": 0.5429796,
+                  "relevance_score": 0.69625887,
+                  "components": {
+                    "text_relevance": 0.5429796,
+                    "customer_preference": 0.39533517,
+                    "category_match": 1.0,
+                    "brand_match": 1.0,
+                    "budget_compatibility": 1.0,
+                    "availability": 1.0
+                  },
+                  "explanation": "",
+                  "retrieval_source": "chroma",
+                  "document_id": "P003:0:840dc54c2556",
+                  "document": "Product ID: P003\nName: Pocket Wireless Earbuds\nCategory: Electronics\nBrand: WaveCraft\nPrice: INR 1799.00\nAvailability: in stock\nStock quantity: 42\nSource: synthetic_demo\nDescription: Compact wireless earbuds with charging case for daily listening\nFeatures: [\"wireless\", \"charging case\"]\nAttributes: {\"color\": \"white\"}",
+                  "metadata": {
+                    "category": "Electronics",
+                    "product_id": "P003",
+                    "product_fingerprint": "305f6ab0c8b2fd7b1564b40b83aeb95d152d153dc51ac62b423a3454e47d0573",
+                    "chunk": 0,
+                    "brand": "WaveCraft",
+                    "document_hash": "840dc54c2556c6183aadc7299e6d675f333efb340966eb6db9a5d9a145d7a18a",
+                    "name": "Pocket Wireless Earbuds",
+                    "available": true,
+                    "stock_quantity": 42,
+                    "currency": "INR",
+                    "source": "synthetic_demo",
+                    "brand_key": "wavecraft",
+                    "price_cents": 179900,
+                    "category_key": "electronics"
+                  }
+                }
+              ],
+              "active_weights": {
+                "text_relevance": 0.4,
+                "customer_preference": 0.2,
+                "category_match": 0.15,
+                "brand_match": 0.1,
+                "budget_compatibility": 0.1,
+                "availability": 0.05
+              },
+              "preference_basis": "customer_profile"
+            },
+            "output_summary": {
+              "keys": [
+                "index_generation",
+                "items",
+                "warnings"
+              ],
+              "item_count": 2,
+              "product_ids": [
+                "P001",
+                "P003"
+              ]
+            },
+            "output_sha256": "b45e0cf8c4ba40da6eb55e417c3683fb94b4be63d830d7ca97c9e313b960e751",
+            "error": null
+          }
+        ],
+        "output_summary": "{\"counts\": {\"items\": 2}, \"updated_state_fields\": [\"executed_agents\", \"items\"]}",
+        "error": null
+      },
+      {
+        "sequence": 9,
+        "execution_id": 9,
+        "agent": "validation",
+        "status": "completed",
+        "started_at": "2026-11-04T09:15:37.320080+00:00",
+        "finished_at": "2026-11-04T09:15:37.353429+00:00",
+        "duration_ms": 33.349,
+        "tool_calls": [
+          {
+            "name": "validate_recommendations",
+            "status": "completed",
+            "started_at": "2026-11-04T09:15:37.337128Z",
+            "finished_at": "2026-11-04T09:15:37.353429Z",
+            "duration_ms": 26.523,
+            "arguments": {
+              "request": {
+                "mode": "context_aware",
+                "customer_id": "C001",
+                "product_id": null,
+                "query": "wireless headphones under INR 3000",
+                "category": null,
+                "brand": null,
+                "min_price": null,
+                "max_price": null,
+                "strict_budget": true,
+                "available_only": true,
+                "exclude_purchased": false,
+                "channel": "ecommerce",
+                "limit": 5,
+                "weights": {
+                  "text_relevance": 0.4,
+                  "customer_preference": 0.2,
+                  "category_match": 0.15,
+                  "brand_match": 0.1,
+                  "budget_compatibility": 0.1,
+                  "availability": 0.05
+                },
+                "retrieval_strategy": "rag"
+              },
+              "profile": {
+                "customer_id": "C001",
+                "name": "Demo Customer 1",
+                "channel": "ecommerce",
+                "cold_start": false,
+                "declared_categories": [
+                  "Electronics",
+                  "Footwear"
+                ],
+                "declared_brands": [
+                  "SoundNest"
+                ],
+                "category_affinities": {
+                  "Electronics": 1.0,
+                  "Footwear": 0.04878049
+                },
+                "brand_affinities": {
+                  "SoundNest": 0.4137931,
+                  "WaveCraft": 1.0
+                },
+                "product_affinities": {
+                  "P001": 0.4,
+                  "P002": 0.1,
+                  "P003": 0.45,
+                  "P004": 1.0
+                },
+                "budget_min": "0.00",
+                "budget_max": "3000.00",
+                "observed_purchase_median_price": "1899.00",
+                "observed_price_basis": "current_catalog",
+                "event_counts": {
+                  "view": 3,
+                  "wishlist": 2,
+                  "cart": 1,
+                  "purchase": 2
+                },
+                "channel_counts": {
+                  "ecommerce": 3,
+                  "mobile": 3,
+                  "store": 2
+                },
+                "viewed_product_ids": [
+                  "P001",
+                  "P002"
+                ],
+                "purchased_product_ids": [
+                  "P001",
+                  "P004"
+                ],
+                "wishlist_product_ids": [
+                  "P003"
+                ],
+                "interaction_count": 8,
+                "source": "synthetic_demo"
+              },
+              "context": {
+                "category": null,
+                "brand": null,
+                "category_source": null,
+                "brand_source": null,
+                "min_price": null,
+                "max_price": "3000.00",
+                "min_exclusive": false,
+                "max_exclusive": true,
+                "budget_sources": {
+                  "max_price": "query"
+                },
+                "strict_budget": true,
+                "available_only": true,
+                "exclude_purchased": false,
+                "text_query": "wireless headphones"
+              },
+              "items": [
+                {
+                  "rank": 1,
+                  "product": {
+                    "id": "P001",
+                    "name": "Wireless Everyday Headphones",
+                    "description": "Bluetooth headphones with cushioned ear cups and USB-C charging",
+                    "category": "Electronics",
+                    "brand": "SoundNest",
+                    "price": "2499.00",
+                    "currency": "INR",
+                    "rating": 4.0,
+                    "stock_quantity": 35,
+                    "available": true,
+                    "features": [
+                      "wireless",
+                      "over-ear",
+                      "USB-C"
+                    ],
+                    "attributes": {
+                      "connectivity": "Bluetooth",
+                      "color": "navy"
+                    },
+                    "image_url": null,
+                    "source": "synthetic_demo"
+                  },
+                  "similarity_score": 0.81575,
+                  "relevance_score": 0.75179319,
+                  "components": {
+                    "text_relevance": 0.81575,
+                    "customer_preference": 0.42056942,
+                    "category_match": 1.0,
+                    "brand_match": 0.4137931,
+                    "budget_compatibility": 1.0,
+                    "availability": 1.0
+                  },
+                  "explanation": "Chroma LSA cosine similarity: 0.8157. Customer affinity 0.4206 uses declared preferences and 8 cross-channel interactions. Category affinity for Electronics: 1.0000. Brand affinity for SoundNest: 0.4138. Meets the effective price bounds. INR 2499.00; in stock (35 units). Evidence: P001:0:a49cba7e5f9d.",
+                  "retrieval_source": "chroma",
+                  "document_id": "P001:0:a49cba7e5f9d",
+                  "document": "Product ID: P001\nName: Wireless Everyday Headphones\nCategory: Electronics\nBrand: SoundNest\nPrice: INR 2499.00\nAvailability: in stock\nStock quantity: 35\nSource: synthetic_demo\nDescription: Bluetooth headphones with cushioned ear cups and USB-C charging\nFeatures: [\"wireless\", \"over-ear\", \"USB-C\"]\nAttributes: {\"color\": \"navy\", \"connectivity\": \"Bluetooth\"}",
+                  "metadata": {
+                    "category": "Electronics",
+                    "document_hash": "a49cba7e5f9d3e08889c94f1e78da87ef87e8b9b5c540435f855eead504dc511",
+                    "stock_quantity": 35,
+                    "available": true,
+                    "brand_key": "soundnest",
+                    "brand": "SoundNest",
+                    "currency": "INR",
+                    "price_cents": 249900,
+                    "name": "Wireless Everyday Headphones",
+                    "category_key": "electronics",
+                    "chunk": 0,
+                    "product_id": "P001",
+                    "product_fingerprint": "b4c08cb9f3836d08d5edf093af5178e1af16aaef64cccfe3d7120103b63b3054",
+                    "source": "synthetic_demo"
+                  }
+                },
+                {
+                  "rank": 2,
+                  "product": {
+                    "id": "P003",
+                    "name": "Pocket Wireless Earbuds",
+                    "description": "Compact wireless earbuds with charging case for daily listening",
+                    "category": "Electronics",
+                    "brand": "WaveCraft",
+                    "price": "1799.00",
+                    "currency": "INR",
+                    "rating": 4.4,
+                    "stock_quantity": 42,
+                    "available": true,
+                    "features": [
+                      "wireless",
+                      "charging case"
+                    ],
+                    "attributes": {
+                      "color": "white"
+                    },
+                    "image_url": null,
+                    "source": "synthetic_demo"
+                  },
+                  "similarity_score": 0.5429796,
+                  "relevance_score": 0.69625887,
+                  "components": {
+                    "text_relevance": 0.5429796,
+                    "customer_preference": 0.39533517,
+                    "category_match": 1.0,
+                    "brand_match": 1.0,
+                    "budget_compatibility": 1.0,
+                    "availability": 1.0
+                  },
+                  "explanation": "Chroma LSA cosine similarity: 0.5430. Customer affinity 0.3953 uses declared preferences and 8 cross-channel interactions. Category affinity for Electronics: 1.0000. Brand affinity for WaveCraft: 1.0000. Meets the effective price bounds. INR 1799.00; in stock (42 units). Evidence: P003:0:840dc54c2556.",
+                  "retrieval_source": "chroma",
+                  "document_id": "P003:0:840dc54c2556",
+                  "document": "Product ID: P003\nName: Pocket Wireless Earbuds\nCategory: Electronics\nBrand: WaveCraft\nPrice: INR 1799.00\nAvailability: in stock\nStock quantity: 42\nSource: synthetic_demo\nDescription: Compact wireless earbuds with charging case for daily listening\nFeatures: [\"wireless\", \"charging case\"]\nAttributes: {\"color\": \"white\"}",
+                  "metadata": {
+                    "category": "Electronics",
+                    "product_id": "P003",
+                    "product_fingerprint": "305f6ab0c8b2fd7b1564b40b83aeb95d152d153dc51ac62b423a3454e47d0573",
+                    "chunk": 0,
+                    "brand": "WaveCraft",
+                    "document_hash": "840dc54c2556c6183aadc7299e6d675f333efb340966eb6db9a5d9a145d7a18a",
+                    "name": "Pocket Wireless Earbuds",
+                    "available": true,
+                    "stock_quantity": 42,
+                    "currency": "INR",
+                    "source": "synthetic_demo",
+                    "brand_key": "wavecraft",
+                    "price_cents": 179900,
+                    "category_key": "electronics"
+                  }
+                }
+              ],
+              "active_weights": {
+                "text_relevance": 0.4,
+                "customer_preference": 0.2,
+                "category_match": 0.15,
+                "brand_match": 0.1,
+                "budget_compatibility": 0.1,
+                "availability": 0.05
+              },
+              "preference_basis": "customer_profile"
+            },
+            "output_summary": {
+              "keys": [
+                "checked_products",
+                "references",
+                "valid"
+              ],
+              "valid": true,
+              "checked_products": 2
+            },
+            "output_sha256": "1d6cba71a22d9ac374d9e7483dbbd92d8f69a3bf3be60c9fc768f6cc6e309a9f",
+            "error": null
+          }
+        ],
+        "output_summary": "{\"counts\": {}, \"updated_state_fields\": [\"executed_agents\", \"validation\"]}",
+        "error": null
+      },
+      {
+        "sequence": 10,
+        "execution_id": 10,
+        "agent": "response",
+        "status": "completed",
+        "started_at": "2026-11-04T09:15:37.381418+00:00",
+        "finished_at": "2026-11-04T09:15:37.453446+00:00",
+        "duration_ms": 72.028,
+        "tool_calls": [
+          {
+            "name": "save_recommendation",
+            "status": "completed",
+            "started_at": "2026-11-04T09:15:37.386834Z",
+            "finished_at": "2026-11-04T09:15:37.453446Z",
+            "duration_ms": 62.944,
+            "arguments": {
+              "run_id": "2dbf65d7595f478a89816c178e4cd74a",
+              "request": {
+                "mode": "context_aware",
+                "customer_id": "C001",
+                "product_id": null,
+                "query": "wireless headphones under INR 3000",
+                "category": null,
+                "brand": null,
+                "min_price": null,
+                "max_price": null,
+                "strict_budget": true,
+                "available_only": true,
+                "exclude_purchased": false,
+                "channel": "ecommerce",
+                "limit": 5,
+                "weights": {
+                  "text_relevance": 0.4,
+                  "customer_preference": 0.2,
+                  "category_match": 0.15,
+                  "brand_match": 0.1,
+                  "budget_compatibility": 0.1,
+                  "availability": 0.05
+                },
+                "retrieval_strategy": "rag"
+              },
+              "output": {
+                "id": null,
+                "created_at": null,
+                "run_id": "2dbf65d7595f478a89816c178e4cd74a",
+                "engine": "langgraph_workflow",
+                "llm_used": false,
+                "generation": "deterministic_agents",
+                "mode": "context_aware",
+                "query": "wireless headphones under INR 3000",
+                "customer_id": "C001",
+                "channel": "ecommerce",
+                "message": "Deterministic LangGraph agent workflow; no LLM was called.",
+                "answer": "Deterministic LangGraph agent workflow; no LLM was called.\n1. [P001] Wireless Everyday Headphones — INR 2499.00 — in stock. Chroma LSA cosine similarity: 0.8157. Customer affinity 0.4206 uses declared preferences and 8 cross-channel interactions. Category affinity for Electronics: 1.0000. Brand affinity for SoundNest: 0.4138. Meets the effective price bounds. INR 2499.00; in stock (35 units). Evidence: P001:0:a49cba7e5f9d.\n2. [P003] Pocket Wireless Earbuds — INR 1799.00 — in stock. Chroma LSA cosine similarity: 0.5430. Customer affinity 0.3953 uses declared preferences and 8 cross-channel interactions. Category affinity for Electronics: 1.0000. Brand affinity for WaveCraft: 1.0000. Meets the effective price bounds. INR 1799.00; in stock (42 units). Evidence: P003:0:840dc54c2556.",
+                "warnings": [],
+                "context": {
+                  "category": null,
+                  "brand": null,
+                  "category_source": null,
+                  "brand_source": null,
+                  "min_price": null,
+                  "max_price": "3000.00",
+                  "min_exclusive": false,
+                  "max_exclusive": true,
+                  "budget_sources": {
+                    "max_price": "query"
+                  },
+                  "strict_budget": true,
+                  "available_only": true,
+                  "exclude_purchased": false,
+                  "text_query": "wireless headphones"
+                },
+                "profile": {
+                  "customer_id": "C001",
+                  "name": "Demo Customer 1",
+                  "channel": "ecommerce",
+                  "cold_start": false,
+                  "declared_categories": [
+                    "Electronics",
+                    "Footwear"
+                  ],
+                  "declared_brands": [
+                    "SoundNest"
+                  ],
+                  "category_affinities": {
+                    "Electronics": 1.0,
+                    "Footwear": 0.04878049
+                  },
+                  "brand_affinities": {
+                    "SoundNest": 0.4137931,
+                    "WaveCraft": 1.0
+                  },
+                  "product_affinities": {
+                    "P001": 0.4,
+                    "P002": 0.1,
+                    "P003": 0.45,
+                    "P004": 1.0
+                  },
+                  "budget_min": "0.00",
+                  "budget_max": "3000.00",
+                  "observed_purchase_median_price": "1899.00",
+                  "observed_price_basis": "current_catalog",
+                  "event_counts": {
+                    "view": 3,
+                    "wishlist": 2,
+                    "cart": 1,
+                    "purchase": 2
+                  },
+                  "channel_counts": {
+                    "ecommerce": 3,
+                    "mobile": 3,
+                    "store": 2
+                  },
+                  "viewed_product_ids": [
+                    "P001",
+                    "P002"
+                  ],
+                  "purchased_product_ids": [
+                    "P001",
+                    "P004"
+                  ],
+                  "wishlist_product_ids": [
+                    "P003"
+                  ],
+                  "interaction_count": 8,
+                  "source": "synthetic_demo"
+                },
+                "active_weights": {
+                  "text_relevance": 0.4,
+                  "customer_preference": 0.2,
+                  "category_match": 0.15,
+                  "brand_match": 0.1,
+                  "budget_compatibility": 0.1,
+                  "availability": 0.05
+                },
+                "preference_basis": "customer_profile",
+                "retrieval_source": "rag",
+                "index_generation": "679b891b5564444aac9a36549ec8b710",
+                "validation": {
+                  "valid": true,
+                  "checked_products": 2,
+                  "references": [
+                    "P001",
+                    "P003"
+                  ]
+                },
+                "references": [
+                  "P001",
+                  "P003"
+                ],
+                "items": [
+                  {
+                    "rank": 1,
+                    "product": {
+                      "id": "P001",
+                      "name": "Wireless Everyday Headphones",
+                      "description": "Bluetooth headphones with cushioned ear cups and USB-C charging",
+                      "category": "Electronics",
+                      "brand": "SoundNest",
+                      "price": "2499.00",
+                      "currency": "INR",
+                      "rating": 4.0,
+                      "stock_quantity": 35,
+                      "available": true,
+                      "features": [
+                        "wireless",
+                        "over-ear",
+                        "USB-C"
+                      ],
+                      "attributes": {
+                        "connectivity": "Bluetooth",
+                        "color": "navy"
+                      },
+                      "image_url": null,
+                      "source": "synthetic_demo"
+                    },
+                    "similarity_score": 0.81575,
+                    "relevance_score": 0.75179319,
+                    "components": {
+                      "text_relevance": 0.81575,
+                      "customer_preference": 0.42056942,
+                      "category_match": 1.0,
+                      "brand_match": 0.4137931,
+                      "budget_compatibility": 1.0,
+                      "availability": 1.0
+                    },
+                    "explanation": "Chroma LSA cosine similarity: 0.8157. Customer affinity 0.4206 uses declared preferences and 8 cross-channel interactions. Category affinity for Electronics: 1.0000. Brand affinity for SoundNest: 0.4138. Meets the effective price bounds. INR 2499.00; in stock (35 units). Evidence: P001:0:a49cba7e5f9d.",
+                    "retrieval_source": "chroma",
+                    "document_id": "P001:0:a49cba7e5f9d",
+                    "document": "Product ID: P001\nName: Wireless Everyday Headphones\nCategory: Electronics\nBrand: SoundNest\nPrice: INR 2499.00\nAvailability: in stock\nStock quantity: 35\nSource: synthetic_demo\nDescription: Bluetooth headphones with cushioned ear cups and USB-C charging\nFeatures: [\"wireless\", \"over-ear\", \"USB-C\"]\nAttributes: {\"color\": \"navy\", \"connectivity\": \"Bluetooth\"}",
+                    "metadata": {
+                      "category": "Electronics",
+                      "document_hash": "a49cba7e5f9d3e08889c94f1e78da87ef87e8b9b5c540435f855eead504dc511",
+                      "stock_quantity": 35,
+                      "available": true,
+                      "brand_key": "soundnest",
+                      "brand": "SoundNest",
+                      "currency": "INR",
+                      "price_cents": 249900,
+                      "name": "Wireless Everyday Headphones",
+                      "category_key": "electronics",
+                      "chunk": 0,
+                      "product_id": "P001",
+                      "product_fingerprint": "b4c08cb9f3836d08d5edf093af5178e1af16aaef64cccfe3d7120103b63b3054",
+                      "source": "synthetic_demo"
+                    }
+                  },
+                  {
+                    "rank": 2,
+                    "product": {
+                      "id": "P003",
+                      "name": "Pocket Wireless Earbuds",
+                      "description": "Compact wireless earbuds with charging case for daily listening",
+                      "category": "Electronics",
+                      "brand": "WaveCraft",
+                      "price": "1799.00",
+                      "currency": "INR",
+                      "rating": 4.4,
+                      "stock_quantity": 42,
+                      "available": true,
+                      "features": [
+                        "wireless",
+                        "charging case"
+                      ],
+                      "attributes": {
+                        "color": "white"
+                      },
+                      "image_url": null,
+                      "source": "synthetic_demo"
+                    },
+                    "similarity_score": 0.5429796,
+                    "relevance_score": 0.69625887,
+                    "components": {
+                      "text_relevance": 0.5429796,
+                      "customer_preference": 0.39533517,
+                      "category_match": 1.0,
+                      "brand_match": 1.0,
+                      "budget_compatibility": 1.0,
+                      "availability": 1.0
+                    },
+                    "explanation": "Chroma LSA cosine similarity: 0.5430. Customer affinity 0.3953 uses declared preferences and 8 cross-channel interactions. Category affinity for Electronics: 1.0000. Brand affinity for WaveCraft: 1.0000. Meets the effective price bounds. INR 1799.00; in stock (42 units). Evidence: P003:0:840dc54c2556.",
+                    "retrieval_source": "chroma",
+                    "document_id": "P003:0:840dc54c2556",
+                    "document": "Product ID: P003\nName: Pocket Wireless Earbuds\nCategory: Electronics\nBrand: WaveCraft\nPrice: INR 1799.00\nAvailability: in stock\nStock quantity: 42\nSource: synthetic_demo\nDescription: Compact wireless earbuds with charging case for daily listening\nFeatures: [\"wireless\", \"charging case\"]\nAttributes: {\"color\": \"white\"}",
+                    "metadata": {
+                      "category": "Electronics",
+                      "product_id": "P003",
+                      "product_fingerprint": "305f6ab0c8b2fd7b1564b40b83aeb95d152d153dc51ac62b423a3454e47d0573",
+                      "chunk": 0,
+                      "brand": "WaveCraft",
+                      "document_hash": "840dc54c2556c6183aadc7299e6d675f333efb340966eb6db9a5d9a145d7a18a",
+                      "name": "Pocket Wireless Earbuds",
+                      "available": true,
+                      "stock_quantity": 42,
+                      "currency": "INR",
+                      "source": "synthetic_demo",
+                      "brand_key": "wavecraft",
+                      "price_cents": 179900,
+                      "category_key": "electronics"
+                    }
+                  }
+                ]
+              }
+            },
+            "output_summary": {
+              "keys": [
+                "output"
+              ]
+            },
+            "output_sha256": "d78960cc70cf86341db254dcb138ba90d2f41ad84a7d6c0f03fda3ff616079f1",
+            "error": null
+          }
+        ],
+        "output_summary": "{\"counts\": {}, \"updated_state_fields\": [\"executed_agents\", \"output\"]}",
+        "error": null
+      }
+    ],
+    "checkpoint": {
+      "run_id": "2dbf65d7595f478a89816c178e4cd74a",
+      "request": {
+        "mode": "context_aware",
+        "customer_id": "C001",
+        "product_id": null,
+        "query": "wireless headphones under INR 3000",
+        "category": null,
+        "brand": null,
+        "min_price": null,
+        "max_price": null,
+        "strict_budget": true,
+        "available_only": true,
+        "exclude_purchased": false,
+        "channel": "ecommerce",
+        "limit": 5,
+        "weights": {
+          "text_relevance": 0.4,
+          "customer_preference": 0.2,
+          "category_match": 0.15,
+          "brand_match": 0.1,
+          "budget_compatibility": 0.1,
+          "availability": 0.05
+        },
+        "retrieval_strategy": "rag"
+      },
+      "plan": {
+        "requested_strategy": "rag",
+        "selected_strategy": "rag",
+        "reason": "A persisted vector index is available for the contextual query"
+      },
+      "context": {
+        "category": null,
+        "brand": null,
+        "category_source": null,
+        "brand_source": null,
+        "min_price": null,
+        "max_price": "3000.00",
+        "min_exclusive": false,
+        "max_exclusive": true,
+        "budget_sources": {
+          "max_price": "query"
+        },
+        "strict_budget": true,
+        "available_only": true,
+        "exclude_purchased": false,
+        "text_query": "wireless headphones"
+      },
+      "profile": {
+        "customer_id": "C001",
+        "name": "Demo Customer 1",
+        "channel": "ecommerce",
+        "cold_start": false,
+        "declared_categories": [
+          "Electronics",
+          "Footwear"
+        ],
+        "declared_brands": [
+          "SoundNest"
+        ],
+        "category_affinities": {
+          "Electronics": 1.0,
+          "Footwear": 0.04878049
+        },
+        "brand_affinities": {
+          "SoundNest": 0.4137931,
+          "WaveCraft": 1.0
+        },
+        "product_affinities": {
+          "P001": 0.4,
+          "P002": 0.1,
+          "P003": 0.45,
+          "P004": 1.0
+        },
+        "budget_min": "0.00",
+        "budget_max": "3000.00",
+        "observed_purchase_median_price": "1899.00",
+        "observed_price_basis": "current_catalog",
+        "event_counts": {
+          "view": 3,
+          "wishlist": 2,
+          "cart": 1,
+          "purchase": 2
+        },
+        "channel_counts": {
+          "ecommerce": 3,
+          "mobile": 3,
+          "store": 2
+        },
+        "viewed_product_ids": [
+          "P001",
+          "P002"
+        ],
+        "purchased_product_ids": [
+          "P001",
+          "P004"
+        ],
+        "wishlist_product_ids": [
+          "P003"
+        ],
+        "interaction_count": 8,
+        "source": "synthetic_demo"
+      },
+      "customer_history": {
+        "total": 8,
+        "limit": 5,
+        "offset": 0,
+        "items": [
+          {
+            "id": "I0008",
+            "customer_id": "C001",
+            "product_id": "P004",
+            "event_type": "purchase",
+            "channel": "mobile",
+            "quantity": 2,
+            "occurred_at": "2026-10-03T16:00:00Z",
+            "source": "synthetic_demo"
+          },
+          {
+            "id": "I0007",
+            "customer_id": "C001",
+            "product_id": "P003",
+            "event_type": "wishlist",
+            "channel": "ecommerce",
+            "quantity": 1,
+            "occurred_at": "2026-10-03T15:00:00Z",
+            "source": "synthetic_demo"
+          },
+          {
+            "id": "I0006",
+            "customer_id": "C001",
+            "product_id": "P002",
+            "event_type": "view",
+            "channel": "store",
+            "quantity": 1,
+            "occurred_at": "2026-10-02T14:00:00Z",
+            "source": "synthetic_demo"
+          },
+          {
+            "id": "I0005",
+            "customer_id": "C001",
+            "product_id": "P001",
+            "event_type": "purchase",
+            "channel": "mobile",
+            "quantity": 1,
+            "occurred_at": "2026-10-02T13:00:00Z",
+            "source": "synthetic_demo"
+          },
+          {
+            "id": "I0004",
+            "customer_id": "C001",
+            "product_id": "P004",
+            "event_type": "cart",
+            "channel": "ecommerce",
+            "quantity": 1,
+            "occurred_at": "2026-10-02T12:00:00Z",
+            "source": "synthetic_demo"
+          }
+        ]
+      },
+      "retrieval": {
+        "items": [
+          {
+            "rank": 0,
+            "product": {
+              "id": "P001",
+              "name": "Wireless Everyday Headphones",
+              "description": "Bluetooth headphones with cushioned ear cups and USB-C charging",
+              "category": "Electronics",
+              "brand": "SoundNest",
+              "price": "2499.00",
+              "currency": "INR",
+              "rating": 4.0,
+              "stock_quantity": 35,
+              "available": true,
+              "features": [
+                "wireless",
+                "over-ear",
+                "USB-C"
+              ],
+              "attributes": {
+                "connectivity": "Bluetooth",
+                "color": "navy"
+              },
+              "image_url": null,
+              "source": "synthetic_demo"
+            },
+            "similarity_score": 0.81575,
+            "relevance_score": 0.0,
+            "components": {},
+            "explanation": "",
+            "retrieval_source": "chroma",
+            "document_id": "P001:0:a49cba7e5f9d",
+            "document": "Product ID: P001\nName: Wireless Everyday Headphones\nCategory: Electronics\nBrand: SoundNest\nPrice: INR 2499.00\nAvailability: in stock\nStock quantity: 35\nSource: synthetic_demo\nDescription: Bluetooth headphones with cushioned ear cups and USB-C charging\nFeatures: [\"wireless\", \"over-ear\", \"USB-C\"]\nAttributes: {\"color\": \"navy\", \"connectivity\": \"Bluetooth\"}",
+            "metadata": {
+              "category": "Electronics",
+              "document_hash": "a49cba7e5f9d3e08889c94f1e78da87ef87e8b9b5c540435f855eead504dc511",
+              "stock_quantity": 35,
+              "available": true,
+              "brand_key": "soundnest",
+              "brand": "SoundNest",
+              "currency": "INR",
+              "price_cents": 249900,
+              "name": "Wireless Everyday Headphones",
+              "category_key": "electronics",
+              "chunk": 0,
+              "product_id": "P001",
+              "product_fingerprint": "b4c08cb9f3836d08d5edf093af5178e1af16aaef64cccfe3d7120103b63b3054",
+              "source": "synthetic_demo"
+            }
+          },
+          {
+            "rank": 0,
+            "product": {
+              "id": "P003",
+              "name": "Pocket Wireless Earbuds",
+              "description": "Compact wireless earbuds with charging case for daily listening",
+              "category": "Electronics",
+              "brand": "WaveCraft",
+              "price": "1799.00",
+              "currency": "INR",
+              "rating": 4.4,
+              "stock_quantity": 42,
+              "available": true,
+              "features": [
+                "wireless",
+                "charging case"
+              ],
+              "attributes": {
+                "color": "white"
+              },
+              "image_url": null,
+              "source": "synthetic_demo"
+            },
+            "similarity_score": 0.5429796,
+            "relevance_score": 0.0,
+            "components": {},
+            "explanation": "",
+            "retrieval_source": "chroma",
+            "document_id": "P003:0:840dc54c2556",
+            "document": "Product ID: P003\nName: Pocket Wireless Earbuds\nCategory: Electronics\nBrand: WaveCraft\nPrice: INR 1799.00\nAvailability: in stock\nStock quantity: 42\nSource: synthetic_demo\nDescription: Compact wireless earbuds with charging case for daily listening\nFeatures: [\"wireless\", \"charging case\"]\nAttributes: {\"color\": \"white\"}",
+            "metadata": {
+              "category": "Electronics",
+              "product_id": "P003",
+              "product_fingerprint": "305f6ab0c8b2fd7b1564b40b83aeb95d152d153dc51ac62b423a3454e47d0573",
+              "chunk": 0,
+              "brand": "WaveCraft",
+              "document_hash": "840dc54c2556c6183aadc7299e6d675f333efb340966eb6db9a5d9a145d7a18a",
+              "name": "Pocket Wireless Earbuds",
+              "available": true,
+              "stock_quantity": 42,
+              "currency": "INR",
+              "source": "synthetic_demo",
+              "brand_key": "wavecraft",
+              "price_cents": 179900,
+              "category_key": "electronics"
+            }
+          }
+        ],
+        "warnings": [],
+        "index_generation": "679b891b5564444aac9a36549ec8b710",
+        "source": "rag"
+      },
+      "candidates": [
+        {
+          "rank": 0,
+          "product": {
+            "id": "P001",
+            "name": "Wireless Everyday Headphones",
+            "description": "Bluetooth headphones with cushioned ear cups and USB-C charging",
+            "category": "Electronics",
+            "brand": "SoundNest",
+            "price": "2499.00",
+            "currency": "INR",
+            "rating": 4.0,
+            "stock_quantity": 35,
+            "available": true,
+            "features": [
+              "wireless",
+              "over-ear",
+              "USB-C"
+            ],
+            "attributes": {
+              "connectivity": "Bluetooth",
+              "color": "navy"
+            },
+            "image_url": null,
+            "source": "synthetic_demo"
+          },
+          "similarity_score": 0.81575,
+          "relevance_score": 0.75179319,
+          "components": {
+            "text_relevance": 0.81575,
+            "customer_preference": 0.42056942,
+            "category_match": 1.0,
+            "brand_match": 0.4137931,
+            "budget_compatibility": 1.0,
+            "availability": 1.0
+          },
+          "explanation": "",
+          "retrieval_source": "chroma",
+          "document_id": "P001:0:a49cba7e5f9d",
+          "document": "Product ID: P001\nName: Wireless Everyday Headphones\nCategory: Electronics\nBrand: SoundNest\nPrice: INR 2499.00\nAvailability: in stock\nStock quantity: 35\nSource: synthetic_demo\nDescription: Bluetooth headphones with cushioned ear cups and USB-C charging\nFeatures: [\"wireless\", \"over-ear\", \"USB-C\"]\nAttributes: {\"color\": \"navy\", \"connectivity\": \"Bluetooth\"}",
+          "metadata": {
+            "category": "Electronics",
+            "document_hash": "a49cba7e5f9d3e08889c94f1e78da87ef87e8b9b5c540435f855eead504dc511",
+            "stock_quantity": 35,
+            "available": true,
+            "brand_key": "soundnest",
+            "brand": "SoundNest",
+            "currency": "INR",
+            "price_cents": 249900,
+            "name": "Wireless Everyday Headphones",
+            "category_key": "electronics",
+            "chunk": 0,
+            "product_id": "P001",
+            "product_fingerprint": "b4c08cb9f3836d08d5edf093af5178e1af16aaef64cccfe3d7120103b63b3054",
+            "source": "synthetic_demo"
+          }
+        },
+        {
+          "rank": 0,
+          "product": {
+            "id": "P003",
+            "name": "Pocket Wireless Earbuds",
+            "description": "Compact wireless earbuds with charging case for daily listening",
+            "category": "Electronics",
+            "brand": "WaveCraft",
+            "price": "1799.00",
+            "currency": "INR",
+            "rating": 4.4,
+            "stock_quantity": 42,
+            "available": true,
+            "features": [
+              "wireless",
+              "charging case"
+            ],
+            "attributes": {
+              "color": "white"
+            },
+            "image_url": null,
+            "source": "synthetic_demo"
+          },
+          "similarity_score": 0.5429796,
+          "relevance_score": 0.69625887,
+          "components": {
+            "text_relevance": 0.5429796,
+            "customer_preference": 0.39533517,
+            "category_match": 1.0,
+            "brand_match": 1.0,
+            "budget_compatibility": 1.0,
+            "availability": 1.0
+          },
+          "explanation": "",
+          "retrieval_source": "chroma",
+          "document_id": "P003:0:840dc54c2556",
+          "document": "Product ID: P003\nName: Pocket Wireless Earbuds\nCategory: Electronics\nBrand: WaveCraft\nPrice: INR 1799.00\nAvailability: in stock\nStock quantity: 42\nSource: synthetic_demo\nDescription: Compact wireless earbuds with charging case for daily listening\nFeatures: [\"wireless\", \"charging case\"]\nAttributes: {\"color\": \"white\"}",
+          "metadata": {
+            "category": "Electronics",
+            "product_id": "P003",
+            "product_fingerprint": "305f6ab0c8b2fd7b1564b40b83aeb95d152d153dc51ac62b423a3454e47d0573",
+            "chunk": 0,
+            "brand": "WaveCraft",
+            "document_hash": "840dc54c2556c6183aadc7299e6d675f333efb340966eb6db9a5d9a145d7a18a",
+            "name": "Pocket Wireless Earbuds",
+            "available": true,
+            "stock_quantity": 42,
+            "currency": "INR",
+            "source": "synthetic_demo",
+            "brand_key": "wavecraft",
+            "price_cents": 179900,
+            "category_key": "electronics"
+          }
+        }
+      ],
+      "ranked": [
+        {
+          "rank": 1,
+          "product": {
+            "id": "P001",
+            "name": "Wireless Everyday Headphones",
+            "description": "Bluetooth headphones with cushioned ear cups and USB-C charging",
+            "category": "Electronics",
+            "brand": "SoundNest",
+            "price": "2499.00",
+            "currency": "INR",
+            "rating": 4.0,
+            "stock_quantity": 35,
+            "available": true,
+            "features": [
+              "wireless",
+              "over-ear",
+              "USB-C"
+            ],
+            "attributes": {
+              "connectivity": "Bluetooth",
+              "color": "navy"
+            },
+            "image_url": null,
+            "source": "synthetic_demo"
+          },
+          "similarity_score": 0.81575,
+          "relevance_score": 0.75179319,
+          "components": {
+            "text_relevance": 0.81575,
+            "customer_preference": 0.42056942,
+            "category_match": 1.0,
+            "brand_match": 0.4137931,
+            "budget_compatibility": 1.0,
+            "availability": 1.0
+          },
+          "explanation": "",
+          "retrieval_source": "chroma",
+          "document_id": "P001:0:a49cba7e5f9d",
+          "document": "Product ID: P001\nName: Wireless Everyday Headphones\nCategory: Electronics\nBrand: SoundNest\nPrice: INR 2499.00\nAvailability: in stock\nStock quantity: 35\nSource: synthetic_demo\nDescription: Bluetooth headphones with cushioned ear cups and USB-C charging\nFeatures: [\"wireless\", \"over-ear\", \"USB-C\"]\nAttributes: {\"color\": \"navy\", \"connectivity\": \"Bluetooth\"}",
+          "metadata": {
+            "category": "Electronics",
+            "document_hash": "a49cba7e5f9d3e08889c94f1e78da87ef87e8b9b5c540435f855eead504dc511",
+            "stock_quantity": 35,
+            "available": true,
+            "brand_key": "soundnest",
+            "brand": "SoundNest",
+            "currency": "INR",
+            "price_cents": 249900,
+            "name": "Wireless Everyday Headphones",
+            "category_key": "electronics",
+            "chunk": 0,
+            "product_id": "P001",
+            "product_fingerprint": "b4c08cb9f3836d08d5edf093af5178e1af16aaef64cccfe3d7120103b63b3054",
+            "source": "synthetic_demo"
+          }
+        },
+        {
+          "rank": 2,
+          "product": {
+            "id": "P003",
+            "name": "Pocket Wireless Earbuds",
+            "description": "Compact wireless earbuds with charging case for daily listening",
+            "category": "Electronics",
+            "brand": "WaveCraft",
+            "price": "1799.00",
+            "currency": "INR",
+            "rating": 4.4,
+            "stock_quantity": 42,
+            "available": true,
+            "features": [
+              "wireless",
+              "charging case"
+            ],
+            "attributes": {
+              "color": "white"
+            },
+            "image_url": null,
+            "source": "synthetic_demo"
+          },
+          "similarity_score": 0.5429796,
+          "relevance_score": 0.69625887,
+          "components": {
+            "text_relevance": 0.5429796,
+            "customer_preference": 0.39533517,
+            "category_match": 1.0,
+            "brand_match": 1.0,
+            "budget_compatibility": 1.0,
+            "availability": 1.0
+          },
+          "explanation": "",
+          "retrieval_source": "chroma",
+          "document_id": "P003:0:840dc54c2556",
+          "document": "Product ID: P003\nName: Pocket Wireless Earbuds\nCategory: Electronics\nBrand: WaveCraft\nPrice: INR 1799.00\nAvailability: in stock\nStock quantity: 42\nSource: synthetic_demo\nDescription: Compact wireless earbuds with charging case for daily listening\nFeatures: [\"wireless\", \"charging case\"]\nAttributes: {\"color\": \"white\"}",
+          "metadata": {
+            "category": "Electronics",
+            "product_id": "P003",
+            "product_fingerprint": "305f6ab0c8b2fd7b1564b40b83aeb95d152d153dc51ac62b423a3454e47d0573",
+            "chunk": 0,
+            "brand": "WaveCraft",
+            "document_hash": "840dc54c2556c6183aadc7299e6d675f333efb340966eb6db9a5d9a145d7a18a",
+            "name": "Pocket Wireless Earbuds",
+            "available": true,
+            "stock_quantity": 42,
+            "currency": "INR",
+            "source": "synthetic_demo",
+            "brand_key": "wavecraft",
+            "price_cents": 179900,
+            "category_key": "electronics"
+          }
+        }
+      ],
+      "items": [
+        {
+          "rank": 1,
+          "product": {
+            "id": "P001",
+            "name": "Wireless Everyday Headphones",
+            "description": "Bluetooth headphones with cushioned ear cups and USB-C charging",
+            "category": "Electronics",
+            "brand": "SoundNest",
+            "price": "2499.00",
+            "currency": "INR",
+            "rating": 4.0,
+            "stock_quantity": 35,
+            "available": true,
+            "features": [
+              "wireless",
+              "over-ear",
+              "USB-C"
+            ],
+            "attributes": {
+              "connectivity": "Bluetooth",
+              "color": "navy"
+            },
+            "image_url": null,
+            "source": "synthetic_demo"
+          },
+          "similarity_score": 0.81575,
+          "relevance_score": 0.75179319,
+          "components": {
+            "text_relevance": 0.81575,
+            "customer_preference": 0.42056942,
+            "category_match": 1.0,
+            "brand_match": 0.4137931,
+            "budget_compatibility": 1.0,
+            "availability": 1.0
+          },
+          "explanation": "Chroma LSA cosine similarity: 0.8157. Customer affinity 0.4206 uses declared preferences and 8 cross-channel interactions. Category affinity for Electronics: 1.0000. Brand affinity for SoundNest: 0.4138. Meets the effective price bounds. INR 2499.00; in stock (35 units). Evidence: P001:0:a49cba7e5f9d.",
+          "retrieval_source": "chroma",
+          "document_id": "P001:0:a49cba7e5f9d",
+          "document": "Product ID: P001\nName: Wireless Everyday Headphones\nCategory: Electronics\nBrand: SoundNest\nPrice: INR 2499.00\nAvailability: in stock\nStock quantity: 35\nSource: synthetic_demo\nDescription: Bluetooth headphones with cushioned ear cups and USB-C charging\nFeatures: [\"wireless\", \"over-ear\", \"USB-C\"]\nAttributes: {\"color\": \"navy\", \"connectivity\": \"Bluetooth\"}",
+          "metadata": {
+            "category": "Electronics",
+            "document_hash": "a49cba7e5f9d3e08889c94f1e78da87ef87e8b9b5c540435f855eead504dc511",
+            "stock_quantity": 35,
+            "available": true,
+            "brand_key": "soundnest",
+            "brand": "SoundNest",
+            "currency": "INR",
+            "price_cents": 249900,
+            "name": "Wireless Everyday Headphones",
+            "category_key": "electronics",
+            "chunk": 0,
+            "product_id": "P001",
+            "product_fingerprint": "b4c08cb9f3836d08d5edf093af5178e1af16aaef64cccfe3d7120103b63b3054",
+            "source": "synthetic_demo"
+          }
+        },
+        {
+          "rank": 2,
+          "product": {
+            "id": "P003",
+            "name": "Pocket Wireless Earbuds",
+            "description": "Compact wireless earbuds with charging case for daily listening",
+            "category": "Electronics",
+            "brand": "WaveCraft",
+            "price": "1799.00",
+            "currency": "INR",
+            "rating": 4.4,
+            "stock_quantity": 42,
+            "available": true,
+            "features": [
+              "wireless",
+              "charging case"
+            ],
+            "attributes": {
+              "color": "white"
+            },
+            "image_url": null,
+            "source": "synthetic_demo"
+          },
+          "similarity_score": 0.5429796,
+          "relevance_score": 0.69625887,
+          "components": {
+            "text_relevance": 0.5429796,
+            "customer_preference": 0.39533517,
+            "category_match": 1.0,
+            "brand_match": 1.0,
+            "budget_compatibility": 1.0,
+            "availability": 1.0
+          },
+          "explanation": "Chroma LSA cosine similarity: 0.5430. Customer affinity 0.3953 uses declared preferences and 8 cross-channel interactions. Category affinity for Electronics: 1.0000. Brand affinity for WaveCraft: 1.0000. Meets the effective price bounds. INR 1799.00; in stock (42 units). Evidence: P003:0:840dc54c2556.",
+          "retrieval_source": "chroma",
+          "document_id": "P003:0:840dc54c2556",
+          "document": "Product ID: P003\nName: Pocket Wireless Earbuds\nCategory: Electronics\nBrand: WaveCraft\nPrice: INR 1799.00\nAvailability: in stock\nStock quantity: 42\nSource: synthetic_demo\nDescription: Compact wireless earbuds with charging case for daily listening\nFeatures: [\"wireless\", \"charging case\"]\nAttributes: {\"color\": \"white\"}",
+          "metadata": {
+            "category": "Electronics",
+            "product_id": "P003",
+            "product_fingerprint": "305f6ab0c8b2fd7b1564b40b83aeb95d152d153dc51ac62b423a3454e47d0573",
+            "chunk": 0,
+            "brand": "WaveCraft",
+            "document_hash": "840dc54c2556c6183aadc7299e6d675f333efb340966eb6db9a5d9a145d7a18a",
+            "name": "Pocket Wireless Earbuds",
+            "available": true,
+            "stock_quantity": 42,
+            "currency": "INR",
+            "source": "synthetic_demo",
+            "brand_key": "wavecraft",
+            "price_cents": 179900,
+            "category_key": "electronics"
+          }
+        }
+      ],
+      "active_weights": {
+        "text_relevance": 0.4,
+        "customer_preference": 0.2,
+        "category_match": 0.15,
+        "brand_match": 0.1,
+        "budget_compatibility": 0.1,
+        "availability": 0.05
+      },
+      "preference_basis": "customer_profile",
+      "validation": {
+        "valid": true,
+        "checked_products": 2,
+        "references": [
+          "P001",
+          "P003"
+        ]
+      },
+      "error": null,
+      "warnings": [],
+      "executed_agents": [
+        "supervisor",
+        "query_understanding",
+        "customer_context",
+        "product_retrieval",
+        "recommendation",
+        "product_ranking",
+        "availability",
+        "explanation",
+        "validation",
+        "response"
+      ],
+      "output": {
+        "id": 2,
+        "created_at": "2026-11-04T09:15:37.428957Z",
+        "run_id": "2dbf65d7595f478a89816c178e4cd74a",
+        "engine": "langgraph_workflow",
+        "llm_used": false,
+        "generation": "deterministic_agents",
+        "mode": "context_aware",
+        "query": "wireless headphones under INR 3000",
+        "customer_id": "C001",
+        "channel": "ecommerce",
+        "message": "Deterministic LangGraph agent workflow; no LLM was called.",
+        "answer": "Deterministic LangGraph agent workflow; no LLM was called.\n1. [P001] Wireless Everyday Headphones — INR 2499.00 — in stock. Chroma LSA cosine similarity: 0.8157. Customer affinity 0.4206 uses declared preferences and 8 cross-channel interactions. Category affinity for Electronics: 1.0000. Brand affinity for SoundNest: 0.4138. Meets the effective price bounds. INR 2499.00; in stock (35 units). Evidence: P001:0:a49cba7e5f9d.\n2. [P003] Pocket Wireless Earbuds — INR 1799.00 — in stock. Chroma LSA cosine similarity: 0.5430. Customer affinity 0.3953 uses declared preferences and 8 cross-channel interactions. Category affinity for Electronics: 1.0000. Brand affinity for WaveCraft: 1.0000. Meets the effective price bounds. INR 1799.00; in stock (42 units). Evidence: P003:0:840dc54c2556.",
+        "warnings": [],
+        "context": {
+          "category": null,
+          "brand": null,
+          "category_source": null,
+          "brand_source": null,
+          "min_price": null,
+          "max_price": "3000.00",
+          "min_exclusive": false,
+          "max_exclusive": true,
+          "budget_sources": {
+            "max_price": "query"
+          },
+          "strict_budget": true,
+          "available_only": true,
+          "exclude_purchased": false,
+          "text_query": "wireless headphones"
+        },
+        "profile": {
+          "customer_id": "C001",
+          "name": "Demo Customer 1",
+          "channel": "ecommerce",
+          "cold_start": false,
+          "declared_categories": [
+            "Electronics",
+            "Footwear"
+          ],
+          "declared_brands": [
+            "SoundNest"
+          ],
+          "category_affinities": {
+            "Electronics": 1.0,
+            "Footwear": 0.04878049
+          },
+          "brand_affinities": {
+            "SoundNest": 0.4137931,
+            "WaveCraft": 1.0
+          },
+          "product_affinities": {
+            "P001": 0.4,
+            "P002": 0.1,
+            "P003": 0.45,
+            "P004": 1.0
+          },
+          "budget_min": "0.00",
+          "budget_max": "3000.00",
+          "observed_purchase_median_price": "1899.00",
+          "observed_price_basis": "current_catalog",
+          "event_counts": {
+            "view": 3,
+            "wishlist": 2,
+            "cart": 1,
+            "purchase": 2
+          },
+          "channel_counts": {
+            "ecommerce": 3,
+            "mobile": 3,
+            "store": 2
+          },
+          "viewed_product_ids": [
+            "P001",
+            "P002"
+          ],
+          "purchased_product_ids": [
+            "P001",
+            "P004"
+          ],
+          "wishlist_product_ids": [
+            "P003"
+          ],
+          "interaction_count": 8,
+          "source": "synthetic_demo"
+        },
+        "active_weights": {
+          "text_relevance": 0.4,
+          "customer_preference": 0.2,
+          "category_match": 0.15,
+          "brand_match": 0.1,
+          "budget_compatibility": 0.1,
+          "availability": 0.05
+        },
+        "preference_basis": "customer_profile",
+        "retrieval_source": "rag",
+        "index_generation": "679b891b5564444aac9a36549ec8b710",
+        "validation": {
+          "valid": true,
+          "checked_products": 2,
+          "references": [
+            "P001",
+            "P003"
+          ]
+        },
+        "references": [
+          "P001",
+          "P003"
+        ],
+        "items": [
+          {
+            "rank": 1,
+            "product": {
+              "id": "P001",
+              "name": "Wireless Everyday Headphones",
+              "description": "Bluetooth headphones with cushioned ear cups and USB-C charging",
+              "category": "Electronics",
+              "brand": "SoundNest",
+              "price": "2499.00",
+              "currency": "INR",
+              "rating": 4.0,
+              "stock_quantity": 35,
+              "available": true,
+              "features": [
+                "wireless",
+                "over-ear",
+                "USB-C"
+              ],
+              "attributes": {
+                "connectivity": "Bluetooth",
+                "color": "navy"
+              },
+              "image_url": null,
+              "source": "synthetic_demo"
+            },
+            "similarity_score": 0.81575,
+            "relevance_score": 0.75179319,
+            "components": {
+              "text_relevance": 0.81575,
+              "customer_preference": 0.42056942,
+              "category_match": 1.0,
+              "brand_match": 0.4137931,
+              "budget_compatibility": 1.0,
+              "availability": 1.0
+            },
+            "explanation": "Chroma LSA cosine similarity: 0.8157. Customer affinity 0.4206 uses declared preferences and 8 cross-channel interactions. Category affinity for Electronics: 1.0000. Brand affinity for SoundNest: 0.4138. Meets the effective price bounds. INR 2499.00; in stock (35 units). Evidence: P001:0:a49cba7e5f9d.",
+            "retrieval_source": "chroma",
+            "document_id": "P001:0:a49cba7e5f9d",
+            "document": "Product ID: P001\nName: Wireless Everyday Headphones\nCategory: Electronics\nBrand: SoundNest\nPrice: INR 2499.00\nAvailability: in stock\nStock quantity: 35\nSource: synthetic_demo\nDescription: Bluetooth headphones with cushioned ear cups and USB-C charging\nFeatures: [\"wireless\", \"over-ear\", \"USB-C\"]\nAttributes: {\"color\": \"navy\", \"connectivity\": \"Bluetooth\"}",
+            "metadata": {
+              "category": "Electronics",
+              "document_hash": "a49cba7e5f9d3e08889c94f1e78da87ef87e8b9b5c540435f855eead504dc511",
+              "stock_quantity": 35,
+              "available": true,
+              "brand_key": "soundnest",
+              "brand": "SoundNest",
+              "currency": "INR",
+              "price_cents": 249900,
+              "name": "Wireless Everyday Headphones",
+              "category_key": "electronics",
+              "chunk": 0,
+              "product_id": "P001",
+              "product_fingerprint": "b4c08cb9f3836d08d5edf093af5178e1af16aaef64cccfe3d7120103b63b3054",
+              "source": "synthetic_demo"
+            }
+          },
+          {
+            "rank": 2,
+            "product": {
+              "id": "P003",
+              "name": "Pocket Wireless Earbuds",
+              "description": "Compact wireless earbuds with charging case for daily listening",
+              "category": "Electronics",
+              "brand": "WaveCraft",
+              "price": "1799.00",
+              "currency": "INR",
+              "rating": 4.4,
+              "stock_quantity": 42,
+              "available": true,
+              "features": [
+                "wireless",
+                "charging case"
+              ],
+              "attributes": {
+                "color": "white"
+              },
+              "image_url": null,
+              "source": "synthetic_demo"
+            },
+            "similarity_score": 0.5429796,
+            "relevance_score": 0.69625887,
+            "components": {
+              "text_relevance": 0.5429796,
+              "customer_preference": 0.39533517,
+              "category_match": 1.0,
+              "brand_match": 1.0,
+              "budget_compatibility": 1.0,
+              "availability": 1.0
+            },
+            "explanation": "Chroma LSA cosine similarity: 0.5430. Customer affinity 0.3953 uses declared preferences and 8 cross-channel interactions. Category affinity for Electronics: 1.0000. Brand affinity for WaveCraft: 1.0000. Meets the effective price bounds. INR 1799.00; in stock (42 units). Evidence: P003:0:840dc54c2556.",
+            "retrieval_source": "chroma",
+            "document_id": "P003:0:840dc54c2556",
+            "document": "Product ID: P003\nName: Pocket Wireless Earbuds\nCategory: Electronics\nBrand: WaveCraft\nPrice: INR 1799.00\nAvailability: in stock\nStock quantity: 42\nSource: synthetic_demo\nDescription: Compact wireless earbuds with charging case for daily listening\nFeatures: [\"wireless\", \"charging case\"]\nAttributes: {\"color\": \"white\"}",
+            "metadata": {
+              "category": "Electronics",
+              "product_id": "P003",
+              "product_fingerprint": "305f6ab0c8b2fd7b1564b40b83aeb95d152d153dc51ac62b423a3454e47d0573",
+              "chunk": 0,
+              "brand": "WaveCraft",
+              "document_hash": "840dc54c2556c6183aadc7299e6d675f333efb340966eb6db9a5d9a145d7a18a",
+              "name": "Pocket Wireless Earbuds",
+              "available": true,
+              "stock_quantity": 42,
+              "currency": "INR",
+              "source": "synthetic_demo",
+              "brand_key": "wavecraft",
+              "price_cents": 179900,
+              "category_key": "electronics"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "tool": {
+    "call_id": "8f0d86e1b7944b7b88aea09c6b5ba29c",
+    "tool": "get_product_details",
+    "effect": "read",
+    "status": "completed",
+    "arguments": {
+      "product_id": "P001"
+    },
+    "started_at": "2026-11-04T09:15:37.714878+00:00",
+    "finished_at": "2026-11-04T09:15:37.743447+00:00",
+    "recommendation_id": null,
+    "result": {
+      "product": {
+        "id": "P001",
+        "name": "Wireless Everyday Headphones",
+        "description": "Bluetooth headphones with cushioned ear cups and USB-C charging",
+        "category": "Electronics",
+        "brand": "SoundNest",
+        "price": "2499.00",
+        "currency": "INR",
+        "rating": 4.0,
+        "stock_quantity": 35,
+        "available": true,
+        "features": [
+          "wireless",
+          "over-ear",
+          "USB-C"
+        ],
+        "attributes": {
+          "connectivity": "Bluetooth",
+          "color": "navy"
+        },
+        "image_url": null,
+        "source": "synthetic_demo"
+      }
+    },
+    "audit": {
+      "name": "get_product_details",
+      "status": "completed",
+      "started_at": "2026-11-04T09:15:37.720207Z",
+      "finished_at": "2026-11-04T09:15:37.737464Z",
+      "duration_ms": 5.379,
+      "arguments": {
+        "product_id": "P001"
+      },
+      "output_summary": {
+        "keys": [
+          "product"
+        ]
+      },
+      "output_sha256": "6316e0c4480fe8f0782e70da5ab10e7f29daea3ddf88274c022cd5ec41b3fa91",
+      "error": null
+    },
+    "error_code": null,
+    "error": null,
+    "replayed": false
+  },
+  "simulation": {
+    "simulation_id": "fb72bd947fb94859962425335ee7665f",
+    "customer_id": "C008",
+    "source": "synthetic_omnichannel",
+    "created_at": "2026-11-04T09:15:37.780348+00:00",
+    "replayed": false,
+    "events": [
+      {
+        "id": "sim_fb72bd947fb94859962425335ee7665f_0",
+        "customer_id": "C008",
+        "product_id": "P001",
+        "event_type": "view",
+        "channel": "ecommerce",
+        "quantity": 1,
+        "occurred_at": "2026-11-04T09:15:37.782344Z",
+        "source": "synthetic_omnichannel"
+      },
+      {
+        "id": "sim_fb72bd947fb94859962425335ee7665f_1",
+        "customer_id": "C008",
+        "product_id": "P005",
+        "event_type": "wishlist",
+        "channel": "mobile",
+        "quantity": 1,
+        "occurred_at": "2026-11-04T09:15:38.782344Z",
+        "source": "synthetic_omnichannel"
+      },
+      {
+        "id": "sim_fb72bd947fb94859962425335ee7665f_2",
+        "customer_id": "C008",
+        "product_id": "P013",
+        "event_type": "purchase",
+        "channel": "store",
+        "quantity": 2,
+        "occurred_at": "2026-11-04T09:15:39.782344Z",
+        "source": "synthetic_omnichannel"
+      }
+    ],
+    "profile_before": {
+      "customer_id": "C008",
+      "name": "Demo Customer 8",
+      "channel": null,
+      "cold_start": true,
+      "declared_categories": [],
+      "declared_brands": [],
+      "category_affinities": {},
+      "brand_affinities": {},
+      "product_affinities": {},
+      "budget_min": "0.00",
+      "budget_max": "4000.00",
+      "observed_purchase_median_price": null,
+      "observed_price_basis": "current_catalog",
+      "event_counts": {},
+      "channel_counts": {},
+      "viewed_product_ids": [],
+      "purchased_product_ids": [],
+      "wishlist_product_ids": [],
+      "interaction_count": 0,
+      "source": "synthetic_demo"
+    },
+    "profiles_after": {
+      "ecommerce": {
+        "customer_id": "C008",
+        "name": "Demo Customer 8",
+        "channel": "ecommerce",
+        "cold_start": false,
+        "declared_categories": [],
+        "declared_brands": [],
+        "category_affinities": {
+          "Electronics": 0.16666667,
+          "Footwear": 0.25,
+          "Home": 1.0
+        },
+        "brand_affinities": {
+          "HomeHarbor": 1.0,
+          "SoundNest": 0.16666667,
+          "StrideWay": 0.25
+        },
+        "product_affinities": {
+          "P001": 0.16666667,
+          "P005": 0.25,
+          "P013": 1.0
+        },
+        "budget_min": "0.00",
+        "budget_max": "4000.00",
+        "observed_purchase_median_price": "899.00",
+        "observed_price_basis": "current_catalog",
+        "event_counts": {
+          "view": 1,
+          "wishlist": 1,
+          "purchase": 1
+        },
+        "channel_counts": {
+          "ecommerce": 1,
+          "mobile": 1,
+          "store": 1
+        },
+        "viewed_product_ids": [
+          "P001"
+        ],
+        "purchased_product_ids": [
+          "P013"
+        ],
+        "wishlist_product_ids": [
+          "P005"
+        ],
+        "interaction_count": 3,
+        "source": "synthetic_demo"
+      },
+      "mobile": {
+        "customer_id": "C008",
+        "name": "Demo Customer 8",
+        "channel": "mobile",
+        "cold_start": false,
+        "declared_categories": [],
+        "declared_brands": [],
+        "category_affinities": {
+          "Electronics": 0.08333333,
+          "Footwear": 0.5,
+          "Home": 1.0
+        },
+        "brand_affinities": {
+          "HomeHarbor": 1.0,
+          "SoundNest": 0.08333333,
+          "StrideWay": 0.5
+        },
+        "product_affinities": {
+          "P001": 0.08333333,
+          "P005": 0.5,
+          "P013": 1.0
+        },
+        "budget_min": "0.00",
+        "budget_max": "4000.00",
+        "observed_purchase_median_price": "899.00",
+        "observed_price_basis": "current_catalog",
+        "event_counts": {
+          "view": 1,
+          "wishlist": 1,
+          "purchase": 1
+        },
+        "channel_counts": {
+          "ecommerce": 1,
+          "mobile": 1,
+          "store": 1
+        },
+        "viewed_product_ids": [
+          "P001"
+        ],
+        "purchased_product_ids": [
+          "P013"
+        ],
+        "wishlist_product_ids": [
+          "P005"
+        ],
+        "interaction_count": 3,
+        "source": "synthetic_demo"
+      },
+      "store": {
+        "customer_id": "C008",
+        "name": "Demo Customer 8",
+        "channel": "store",
+        "cold_start": false,
+        "declared_categories": [],
+        "declared_brands": [],
+        "category_affinities": {
+          "Electronics": 0.04166667,
+          "Footwear": 0.125,
+          "Home": 1.0
+        },
+        "brand_affinities": {
+          "HomeHarbor": 1.0,
+          "SoundNest": 0.04166667,
+          "StrideWay": 0.125
+        },
+        "product_affinities": {
+          "P001": 0.04166667,
+          "P005": 0.125,
+          "P013": 1.0
+        },
+        "budget_min": "0.00",
+        "budget_max": "4000.00",
+        "observed_purchase_median_price": "899.00",
+        "observed_price_basis": "current_catalog",
+        "event_counts": {
+          "view": 1,
+          "wishlist": 1,
+          "purchase": 1
+        },
+        "channel_counts": {
+          "ecommerce": 1,
+          "mobile": 1,
+          "store": 1
+        },
+        "viewed_product_ids": [
+          "P001"
+        ],
+        "purchased_product_ids": [
+          "P013"
+        ],
+        "wishlist_product_ids": [
+          "P005"
+        ],
+        "interaction_count": 3,
+        "source": "synthetic_demo"
+      }
+    },
+    "recommendations": {
+      "ecommerce": {
+        "id": 3,
+        "created_at": "2026-11-04T09:15:37.814712Z",
+        "mode": "context_aware",
+        "query": "wireless headphones under INR 3000",
+        "customer_id": "C008",
+        "channel": "ecommerce",
+        "engine": "deterministic_tfidf",
+        "llm_used": false,
+        "message": "Deterministic TF-IDF recommendations; no LLM was called.",
+        "warnings": [],
+        "context": {
+          "category": null,
+          "brand": null,
+          "category_source": null,
+          "brand_source": null,
+          "min_price": null,
+          "max_price": "3000.00",
+          "min_exclusive": false,
+          "max_exclusive": true,
+          "budget_sources": {
+            "max_price": "query"
+          },
+          "strict_budget": true,
+          "available_only": true,
+          "exclude_purchased": false,
+          "text_query": "wireless headphones"
+        },
+        "profile": {
+          "customer_id": "C008",
+          "name": "Demo Customer 8",
+          "channel": "ecommerce",
+          "cold_start": false,
+          "declared_categories": [],
+          "declared_brands": [],
+          "category_affinities": {
+            "Electronics": 0.16666667,
+            "Footwear": 0.25,
+            "Home": 1.0
+          },
+          "brand_affinities": {
+            "HomeHarbor": 1.0,
+            "SoundNest": 0.16666667,
+            "StrideWay": 0.25
+          },
+          "product_affinities": {
+            "P001": 0.16666667,
+            "P005": 0.25,
+            "P013": 1.0
+          },
+          "budget_min": "0.00",
+          "budget_max": "4000.00",
+          "observed_purchase_median_price": "899.00",
+          "observed_price_basis": "current_catalog",
+          "event_counts": {
+            "view": 1,
+            "wishlist": 1,
+            "purchase": 1
+          },
+          "channel_counts": {
+            "ecommerce": 1,
+            "mobile": 1,
+            "store": 1
+          },
+          "viewed_product_ids": [
+            "P001"
+          ],
+          "purchased_product_ids": [
+            "P013"
+          ],
+          "wishlist_product_ids": [
+            "P005"
+          ],
+          "interaction_count": 3,
+          "source": "synthetic_demo"
+        },
+        "preference_basis": "customer_profile",
+        "active_weights": {
+          "text_relevance": 0.4,
+          "customer_preference": 0.2,
+          "category_match": 0.15,
+          "brand_match": 0.1,
+          "budget_compatibility": 0.1,
+          "availability": 0.05
+        },
+        "catalog_size": 24,
+        "candidate_count": 2,
+        "items": [
+          {
+            "rank": 1,
+            "product": {
+              "id": "P001",
+              "name": "Wireless Everyday Headphones",
+              "description": "Bluetooth headphones with cushioned ear cups and USB-C charging",
+              "category": "Electronics",
+              "brand": "SoundNest",
+              "price": "2499.00",
+              "currency": "INR",
+              "rating": 4.0,
+              "stock_quantity": 35,
+              "available": true,
+              "features": [
+                "wireless",
+                "over-ear",
+                "USB-C"
+              ],
+              "attributes": {
+                "connectivity": "Bluetooth",
+                "color": "navy"
+              },
+              "image_url": null,
+              "source": "synthetic_demo"
+            },
+            "similarity_score": 0.33339601,
+            "relevance_score": 0.35928872,
+            "components": {
+              "text_relevance": 0.33339601,
+              "customer_preference": 0.17131822,
+              "category_match": 0.16666667,
+              "brand_match": 0.16666667,
+              "budget_compatibility": 1.0,
+              "availability": 1.0
+            },
+            "explanation": "TF-IDF cosine similarity: 0.3334. Customer affinity 0.1713 uses declared preferences and 3 cross-channel interactions. Category affinity for Electronics: 0.1667. Brand affinity for SoundNest: 0.1667. Meets the effective price bounds. INR 2499.00; in stock (35 units)."
+          },
+          {
+            "rank": 2,
+            "product": {
+              "id": "P003",
+              "name": "Pocket Wireless Earbuds",
+              "description": "Compact wireless earbuds with charging case for daily listening",
+              "category": "Electronics",
+              "brand": "WaveCraft",
+              "price": "1799.00",
+              "currency": "INR",
+              "rating": 4.4,
+              "stock_quantity": 42,
+              "available": true,
+              "features": [
+                "wireless",
+                "charging case"
+              ],
+              "attributes": {
+                "color": "white"
+              },
+              "image_url": null,
+              "source": "synthetic_demo"
+            },
+            "similarity_score": 0.20317057,
+            "relevance_score": 0.26033416,
+            "components": {
+              "text_relevance": 0.20317057,
+              "customer_preference": 0.02032966,
+              "category_match": 0.16666667,
+              "brand_match": 0.0,
+              "budget_compatibility": 1.0,
+              "availability": 1.0
+            },
+            "explanation": "TF-IDF cosine similarity: 0.2032. Customer affinity 0.0203 uses declared preferences and 3 cross-channel interactions. Category affinity for Electronics: 0.1667. Meets the effective price bounds. INR 1799.00; in stock (42 units)."
+          }
+        ]
+      },
+      "mobile": {
+        "id": 4,
+        "created_at": "2026-11-04T09:15:37.853133Z",
+        "mode": "context_aware",
+        "query": "wireless headphones under INR 3000",
+        "customer_id": "C008",
+        "channel": "mobile",
+        "engine": "deterministic_tfidf",
+        "llm_used": false,
+        "message": "Deterministic TF-IDF recommendations; no LLM was called.",
+        "warnings": [],
+        "context": {
+          "category": null,
+          "brand": null,
+          "category_source": null,
+          "brand_source": null,
+          "min_price": null,
+          "max_price": "3000.00",
+          "min_exclusive": false,
+          "max_exclusive": true,
+          "budget_sources": {
+            "max_price": "query"
+          },
+          "strict_budget": true,
+          "available_only": true,
+          "exclude_purchased": false,
+          "text_query": "wireless headphones"
+        },
+        "profile": {
+          "customer_id": "C008",
+          "name": "Demo Customer 8",
+          "channel": "mobile",
+          "cold_start": false,
+          "declared_categories": [],
+          "declared_brands": [],
+          "category_affinities": {
+            "Electronics": 0.08333333,
+            "Footwear": 0.5,
+            "Home": 1.0
+          },
+          "brand_affinities": {
+            "HomeHarbor": 1.0,
+            "SoundNest": 0.08333333,
+            "StrideWay": 0.5
+          },
+          "product_affinities": {
+            "P001": 0.08333333,
+            "P005": 0.5,
+            "P013": 1.0
+          },
+          "budget_min": "0.00",
+          "budget_max": "4000.00",
+          "observed_purchase_median_price": "899.00",
+          "observed_price_basis": "current_catalog",
+          "event_counts": {
+            "view": 1,
+            "wishlist": 1,
+            "purchase": 1
+          },
+          "channel_counts": {
+            "ecommerce": 1,
+            "mobile": 1,
+            "store": 1
+          },
+          "viewed_product_ids": [
+            "P001"
+          ],
+          "purchased_product_ids": [
+            "P013"
+          ],
+          "wishlist_product_ids": [
+            "P005"
+          ],
+          "interaction_count": 3,
+          "source": "synthetic_demo"
+        },
+        "preference_basis": "customer_profile",
+        "active_weights": {
+          "text_relevance": 0.4,
+          "customer_preference": 0.2,
+          "category_match": 0.15,
+          "brand_match": 0.1,
+          "budget_compatibility": 0.1,
+          "availability": 0.05
+        },
+        "catalog_size": 24,
+        "candidate_count": 2,
+        "items": [
+          {
+            "rank": 1,
+            "product": {
+              "id": "P001",
+              "name": "Wireless Everyday Headphones",
+              "description": "Bluetooth headphones with cushioned ear cups and USB-C charging",
+              "category": "Electronics",
+              "brand": "SoundNest",
+              "price": "2499.00",
+              "currency": "INR",
+              "rating": 4.0,
+              "stock_quantity": 35,
+              "available": true,
+              "features": [
+                "wireless",
+                "over-ear",
+                "USB-C"
+              ],
+              "attributes": {
+                "connectivity": "Bluetooth",
+                "color": "navy"
+              },
+              "image_url": null,
+              "source": "synthetic_demo"
+            },
+            "similarity_score": 0.33339601,
+            "relevance_score": 0.3232337,
+            "components": {
+              "text_relevance": 0.33339601,
+              "customer_preference": 0.09520981,
+              "category_match": 0.08333333,
+              "brand_match": 0.08333333,
+              "budget_compatibility": 1.0,
+              "availability": 1.0
+            },
+            "explanation": "TF-IDF cosine similarity: 0.3334. Customer affinity 0.0952 uses declared preferences and 3 cross-channel interactions. Category affinity for Electronics: 0.0833. Brand affinity for SoundNest: 0.0833. Meets the effective price bounds. INR 2499.00; in stock (35 units)."
+          },
+          {
+            "rank": 2,
+            "product": {
+              "id": "P003",
+              "name": "Pocket Wireless Earbuds",
+              "description": "Compact wireless earbuds with charging case for daily listening",
+              "category": "Electronics",
+              "brand": "WaveCraft",
+              "price": "1799.00",
+              "currency": "INR",
+              "rating": 4.4,
+              "stock_quantity": 42,
+              "available": true,
+              "features": [
+                "wireless",
+                "charging case"
+              ],
+              "attributes": {
+                "color": "white"
+              },
+              "image_url": null,
+              "source": "synthetic_demo"
+            },
+            "similarity_score": 0.20317057,
+            "relevance_score": 0.24609437,
+            "components": {
+              "text_relevance": 0.20317057,
+              "customer_preference": 0.01163071,
+              "category_match": 0.08333333,
+              "brand_match": 0.0,
+              "budget_compatibility": 1.0,
+              "availability": 1.0
+            },
+            "explanation": "TF-IDF cosine similarity: 0.2032. Customer affinity 0.0116 uses declared preferences and 3 cross-channel interactions. Category affinity for Electronics: 0.0833. Meets the effective price bounds. INR 1799.00; in stock (42 units)."
+          }
+        ]
+      },
+      "store": {
+        "id": 5,
+        "created_at": "2026-11-04T09:15:37.887388Z",
+        "mode": "context_aware",
+        "query": "wireless headphones under INR 3000",
+        "customer_id": "C008",
+        "channel": "store",
+        "engine": "deterministic_tfidf",
+        "llm_used": false,
+        "message": "Deterministic TF-IDF recommendations; no LLM was called.",
+        "warnings": [],
+        "context": {
+          "category": null,
+          "brand": null,
+          "category_source": null,
+          "brand_source": null,
+          "min_price": null,
+          "max_price": "3000.00",
+          "min_exclusive": false,
+          "max_exclusive": true,
+          "budget_sources": {
+            "max_price": "query"
+          },
+          "strict_budget": true,
+          "available_only": true,
+          "exclude_purchased": false,
+          "text_query": "wireless headphones"
+        },
+        "profile": {
+          "customer_id": "C008",
+          "name": "Demo Customer 8",
+          "channel": "store",
+          "cold_start": false,
+          "declared_categories": [],
+          "declared_brands": [],
+          "category_affinities": {
+            "Electronics": 0.04166667,
+            "Footwear": 0.125,
+            "Home": 1.0
+          },
+          "brand_affinities": {
+            "HomeHarbor": 1.0,
+            "SoundNest": 0.04166667,
+            "StrideWay": 0.125
+          },
+          "product_affinities": {
+            "P001": 0.04166667,
+            "P005": 0.125,
+            "P013": 1.0
+          },
+          "budget_min": "0.00",
+          "budget_max": "4000.00",
+          "observed_purchase_median_price": "899.00",
+          "observed_price_basis": "current_catalog",
+          "event_counts": {
+            "view": 1,
+            "wishlist": 1,
+            "purchase": 1
+          },
+          "channel_counts": {
+            "ecommerce": 1,
+            "mobile": 1,
+            "store": 1
+          },
+          "viewed_product_ids": [
+            "P001"
+          ],
+          "purchased_product_ids": [
+            "P013"
+          ],
+          "wishlist_product_ids": [
+            "P005"
+          ],
+          "interaction_count": 3,
+          "source": "synthetic_demo"
+        },
+        "preference_basis": "customer_profile",
+        "active_weights": {
+          "text_relevance": 0.4,
+          "customer_preference": 0.2,
+          "category_match": 0.15,
+          "brand_match": 0.1,
+          "budget_compatibility": 0.1,
+          "availability": 0.05
+        },
+        "catalog_size": 24,
+        "candidate_count": 2,
+        "items": [
+          {
+            "rank": 1,
+            "product": {
+              "id": "P001",
+              "name": "Wireless Everyday Headphones",
+              "description": "Bluetooth headphones with cushioned ear cups and USB-C charging",
+              "category": "Electronics",
+              "brand": "SoundNest",
+              "price": "2499.00",
+              "currency": "INR",
+              "rating": 4.0,
+              "stock_quantity": 35,
+              "available": true,
+              "features": [
+                "wireless",
+                "over-ear",
+                "USB-C"
+              ],
+              "attributes": {
+                "connectivity": "Bluetooth",
+                "color": "navy"
+              },
+              "image_url": null,
+              "source": "synthetic_demo"
+            },
+            "similarity_score": 0.33339601,
+            "relevance_score": 0.30344459,
+            "components": {
+              "text_relevance": 0.33339601,
+              "customer_preference": 0.04834759,
+              "category_match": 0.04166667,
+              "brand_match": 0.04166667,
+              "budget_compatibility": 1.0,
+              "availability": 1.0
+            },
+            "explanation": "TF-IDF cosine similarity: 0.3334. Customer affinity 0.0483 uses declared preferences and 3 cross-channel interactions. Category affinity for Electronics: 0.0417. Brand affinity for SoundNest: 0.0417. Meets the effective price bounds. INR 2499.00; in stock (35 units)."
+          },
+          {
+            "rank": 2,
+            "product": {
+              "id": "P003",
+              "name": "Pocket Wireless Earbuds",
+              "description": "Compact wireless earbuds with charging case for daily listening",
+              "category": "Electronics",
+              "brand": "WaveCraft",
+              "price": "1799.00",
+              "currency": "INR",
+              "rating": 4.4,
+              "stock_quantity": 42,
+              "available": true,
+              "features": [
+                "wireless",
+                "charging case"
+              ],
+              "attributes": {
+                "color": "white"
+              },
+              "image_url": null,
+              "source": "synthetic_demo"
+            },
+            "similarity_score": 0.20317057,
+            "relevance_score": 0.23888137,
+            "components": {
+              "text_relevance": 0.20317057,
+              "customer_preference": 0.00681572,
+              "category_match": 0.04166667,
+              "brand_match": 0.0,
+              "budget_compatibility": 1.0,
+              "availability": 1.0
+            },
+            "explanation": "TF-IDF cosine similarity: 0.2032. Customer affinity 0.0068 uses declared preferences and 3 cross-channel interactions. Category affinity for Electronics: 0.0417. Meets the effective price bounds. INR 1799.00; in stock (42 units)."
+          }
+        ]
+      }
+    },
+    "message": "Synthetic shopping history only; no external retail integration, payment, or inventory change occurred."
+  },
+  "simulation_retry": {
+    "replayed": true,
+    "simulation_id": "fb72bd947fb94859962425335ee7665f"
+  },
+  "analytics": {
+    "overview": {
+      "generated_at": "2026-11-04T09:15:37.938928Z",
+      "period": {
+        "date_from": null,
+        "date_to": null,
+        "timezone": "UTC"
+      },
+      "totals": {
+        "products": 24,
+        "customers": 8,
+        "interactions": 59,
+        "recommendations": 5,
+        "agent_executions": 10,
+        "tool_invocations": 1,
+        "simulations": 1
+      },
+      "inventory": {
+        "available": 21,
+        "unavailable": 3
+      },
+      "popular_products": [
+        {
+          "product_id": "P001",
+          "name": "Wireless Everyday Headphones",
+          "category": "Electronics",
+          "interactions": 5
+        },
+        {
+          "product_id": "P002",
+          "name": "Quiet Focus Headphones",
+          "category": "Electronics",
+          "interactions": 4
+        },
+        {
+          "product_id": "P003",
+          "name": "Pocket Wireless Earbuds",
+          "category": "Electronics",
+          "interactions": 4
+        },
+        {
+          "product_id": "P004",
+          "name": "Studio Wired Headphones",
+          "category": "Electronics",
+          "interactions": 4
+        },
+        {
+          "product_id": "P005",
+          "name": "Everyday Running Shoes",
+          "category": "Footwear",
+          "interactions": 3
+        },
+        {
+          "product_id": "P013",
+          "name": "Insulated Steel Bottle",
+          "category": "Home",
+          "interactions": 3
+        },
+        {
+          "product_id": "P006",
+          "name": "Trail Walking Shoes",
+          "category": "Footwear",
+          "interactions": 2
+        },
+        {
+          "product_id": "P007",
+          "name": "Classic Casual Sneakers",
+          "category": "Footwear",
+          "interactions": 2
+        },
+        {
+          "product_id": "P008",
+          "name": "Training Court Shoes",
+          "category": "Footwear",
+          "interactions": 2
+        },
+        {
+          "product_id": "P009",
+          "name": "Cotton Everyday T-Shirt",
+          "category": "Apparel",
+          "interactions": 2
+        }
+      ],
+      "popular_categories": [
+        {
+          "category": "Electronics",
+          "count": 17
+        },
+        {
+          "category": "Footwear",
+          "count": 9
+        },
+        {
+          "category": "Home",
+          "count": 9
+        },
+        {
+          "category": "Accessories",
+          "count": 8
+        },
+        {
+          "category": "Apparel",
+          "count": 8
+        },
+        {
+          "category": "Sports",
+          "count": 8
+        }
+      ],
+      "channel_activity": [
+        {
+          "channel": "ecommerce",
+          "interactions": 20
+        },
+        {
+          "channel": "mobile",
+          "interactions": 20
+        },
+        {
+          "channel": "store",
+          "interactions": 19
+        }
+      ],
+      "provenance": [
+        {
+          "source": "synthetic_demo",
+          "count": 56
+        },
+        {
+          "source": "synthetic_omnichannel",
+          "count": 3
+        }
+      ],
+      "recent_recommendations": [
+        {
+          "id": 5,
+          "customer_id": "C008",
+          "query": "wireless headphones under INR 3000",
+          "channel": "store",
+          "mode": "context_aware",
+          "created_at": "2026-11-04T09:15:37.887388Z",
+          "items": 2
+        },
+        {
+          "id": 4,
+          "customer_id": "C008",
+          "query": "wireless headphones under INR 3000",
+          "channel": "mobile",
+          "mode": "context_aware",
+          "created_at": "2026-11-04T09:15:37.853133Z",
+          "items": 2
+        },
+        {
+          "id": 3,
+          "customer_id": "C008",
+          "query": "wireless headphones under INR 3000",
+          "channel": "ecommerce",
+          "mode": "context_aware",
+          "created_at": "2026-11-04T09:15:37.814712Z",
+          "items": 2
+        },
+        {
+          "id": 2,
+          "customer_id": "C001",
+          "query": "wireless headphones under INR 3000",
+          "channel": "ecommerce",
+          "mode": "context_aware",
+          "created_at": "2026-11-04T09:15:37.428957Z",
+          "items": 2
+        },
+        {
+          "id": 1,
+          "customer_id": "C001",
+          "query": "",
+          "channel": "ecommerce",
+          "mode": "personalized",
+          "created_at": "2026-11-04T09:15:34.188415Z",
+          "items": 5
+        }
+      ]
+    },
+    "recommendations": {
+      "period": {
+        "date_from": null,
+        "date_to": null,
+        "timezone": "UTC"
+      },
+      "total_runs": 5,
+      "total_items": 13,
+      "average_items_per_run": 2.6,
+      "average_score": 0.4231933161538461,
+      "daily_trend": [
+        {
+          "date": "2026-11-04",
+          "runs": 5,
+          "items": 13
+        }
+      ],
+      "mode_distribution": [
+        {
+          "mode": "context_aware",
+          "count": 4
+        },
+        {
+          "mode": "personalized",
+          "count": 1
+        }
+      ],
+      "category_distribution": [
+        {
+          "category": "Electronics",
+          "count": 10
+        },
+        {
+          "category": "Footwear",
+          "count": 2
+        },
+        {
+          "category": "Accessories",
+          "count": 1
+        }
+      ],
+      "product_performance": [
+        {
+          "product_id": "P001",
+          "name": "Wireless Everyday Headphones",
+          "recommendation_count": 5,
+          "average_score": 0.489383104
+        },
+        {
+          "product_id": "P003",
+          "name": "Pocket Wireless Earbuds",
+          "recommendation_count": 5,
+          "average_score": 0.448002766
+        },
+        {
+          "product_id": "P005",
+          "name": "Everyday Running Shoes",
+          "recommendation_count": 1,
+          "average_score": 0.27685147
+        },
+        {
+          "product_id": "P007",
+          "name": "Classic Casual Sneakers",
+          "recommendation_count": 1,
+          "average_score": 0.27648098
+        },
+        {
+          "product_id": "P022",
+          "name": "Compact Crossbody Bag",
+          "recommendation_count": 1,
+          "average_score": 0.26125131
+        }
+      ],
+      "event_mix": [
+        {
+          "event_type": "view",
+          "count": 22
+        },
+        {
+          "event_type": "purchase",
+          "count": 15
+        },
+        {
+          "event_type": "wishlist",
+          "count": 15
+        },
+        {
+          "event_type": "cart",
+          "count": 7
+        }
+      ],
+      "active_customers": 8,
+      "category_basis": "current_catalog_taxonomy",
+      "measurement_notes": "Synthetic event and recommendation counts only. Recommendation clicks/exposures are not instrumented; CTR, attributed conversion, and revenue are not measured."
+    },
+    "channels": {
+      "period": {
+        "date_from": null,
+        "date_to": null,
+        "timezone": "UTC"
+      },
+      "channels": [
+        {
+          "channel": "ecommerce",
+          "interactions": 20,
+          "active_customers": 8,
+          "purchase_events": 4,
+          "units_in_purchase_events": 6,
+          "recommendation_runs": 3,
+          "recommendation_items": 9,
+          "average_score": 0.48776211999999997,
+          "workflow_runs": 1,
+          "synthetic_simulation_events": 1
+        },
+        {
+          "channel": "mobile",
+          "interactions": 20,
+          "active_customers": 8,
+          "purchase_events": 6,
+          "units_in_purchase_events": 9,
+          "recommendation_runs": 1,
+          "recommendation_items": 2,
+          "average_score": 0.28466403500000004,
+          "workflow_runs": 0,
+          "synthetic_simulation_events": 1
+        },
+        {
+          "channel": "store",
+          "interactions": 19,
+          "active_customers": 8,
+          "purchase_events": 5,
+          "units_in_purchase_events": 8,
+          "recommendation_runs": 1,
+          "recommendation_items": 2,
+          "average_score": 0.27116298,
+          "workflow_runs": 0,
+          "synthetic_simulation_events": 1
+        }
+      ],
+      "cross_channel_customers": 8,
+      "daily_activity": [
+        {
+          "date": "2026-10-01",
+          "channel": "ecommerce",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-01",
+          "channel": "mobile",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-01",
+          "channel": "store",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-02",
+          "channel": "ecommerce",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-02",
+          "channel": "mobile",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-02",
+          "channel": "store",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-03",
+          "channel": "ecommerce",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-03",
+          "channel": "mobile",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-04",
+          "channel": "ecommerce",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-04",
+          "channel": "mobile",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-04",
+          "channel": "store",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-05",
+          "channel": "ecommerce",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-05",
+          "channel": "mobile",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-05",
+          "channel": "store",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-06",
+          "channel": "mobile",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-06",
+          "channel": "store",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-07",
+          "channel": "ecommerce",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-07",
+          "channel": "mobile",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-07",
+          "channel": "store",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-08",
+          "channel": "ecommerce",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-08",
+          "channel": "mobile",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-08",
+          "channel": "store",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-09",
+          "channel": "ecommerce",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-09",
+          "channel": "store",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-10",
+          "channel": "ecommerce",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-10",
+          "channel": "mobile",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-10",
+          "channel": "store",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-11",
+          "channel": "ecommerce",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-11",
+          "channel": "mobile",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-11",
+          "channel": "store",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-12",
+          "channel": "ecommerce",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-12",
+          "channel": "mobile",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-13",
+          "channel": "ecommerce",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-13",
+          "channel": "mobile",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-13",
+          "channel": "store",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-14",
+          "channel": "ecommerce",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-14",
+          "channel": "mobile",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-14",
+          "channel": "store",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-15",
+          "channel": "mobile",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-15",
+          "channel": "store",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-16",
+          "channel": "ecommerce",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-16",
+          "channel": "mobile",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-16",
+          "channel": "store",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-17",
+          "channel": "ecommerce",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-17",
+          "channel": "mobile",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-17",
+          "channel": "store",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-18",
+          "channel": "ecommerce",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-18",
+          "channel": "store",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-19",
+          "channel": "ecommerce",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-19",
+          "channel": "mobile",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-19",
+          "channel": "store",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-20",
+          "channel": "ecommerce",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-20",
+          "channel": "mobile",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-20",
+          "channel": "store",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-21",
+          "channel": "ecommerce",
+          "interactions": 1
+        },
+        {
+          "date": "2026-10-21",
+          "channel": "mobile",
+          "interactions": 1
+        },
+        {
+          "date": "2026-11-04",
+          "channel": "ecommerce",
+          "interactions": 1
+        },
+        {
+          "date": "2026-11-04",
+          "channel": "mobile",
+          "interactions": 1
+        },
+        {
+          "date": "2026-11-04",
+          "channel": "store",
+          "interactions": 1
+        }
+      ],
+      "event_mix": [
+        {
+          "channel": "ecommerce",
+          "event_type": "view",
+          "count": 8
+        },
+        {
+          "channel": "ecommerce",
+          "event_type": "wishlist",
+          "count": 5
+        },
+        {
+          "channel": "ecommerce",
+          "event_type": "cart",
+          "count": 3
+        },
+        {
+          "channel": "ecommerce",
+          "event_type": "purchase",
+          "count": 4
+        },
+        {
+          "channel": "mobile",
+          "event_type": "view",
+          "count": 7
+        },
+        {
+          "channel": "mobile",
+          "event_type": "wishlist",
+          "count": 5
+        },
+        {
+          "channel": "mobile",
+          "event_type": "cart",
+          "count": 2
+        },
+        {
+          "channel": "mobile",
+          "event_type": "purchase",
+          "count": 6
+        },
+        {
+          "channel": "store",
+          "event_type": "view",
+          "count": 7
+        },
+        {
+          "channel": "store",
+          "event_type": "wishlist",
+          "count": 5
+        },
+        {
+          "channel": "store",
+          "event_type": "cart",
+          "count": 2
+        },
+        {
+          "channel": "store",
+          "event_type": "purchase",
+          "count": 5
+        }
+      ],
+      "measurement_notes": "All channels are synthetic simulations; purchase-event quantities are not verified orders or revenue."
+    }
+  },
+  "persistence_after_restart": "passed",
+  "llm_used": false
+}

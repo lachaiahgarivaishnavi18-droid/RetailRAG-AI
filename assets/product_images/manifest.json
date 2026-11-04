@@ -1,0 +1,610 @@
+{
+  "schema_version": 1,
+  "photo_policy": "Representative licensed stock photography for fictional demo products; no manufacturer identity or exact specifications claimed.",
+  "dimensions": [
+    960,
+    720
+  ],
+  "products": {
+    "P001": {
+      "id": "P001",
+      "name": "Wireless Everyday Headphones",
+      "category": "Electronics",
+      "description": "Bluetooth headphones with cushioned ear cups and USB-C charging",
+      "file": "electronics/P001-wireless-everyday-headphones.jpg",
+      "alt": "Wireless Everyday Headphones â€” representative stock photograph",
+      "photographer": "Berna",
+      "source_url": "https://www.pexels.com/photo/20285553/",
+      "download_url": "https://images.pexels.com/photos/20285553/pexels-photo-20285553.jpeg?auto=compress&cs=tinysrgb&w=1200&q=90",
+      "license": "Pexels License",
+      "license_url": "https://www.pexels.com/license/",
+      "original_size": [
+        1200,
+        1800
+      ],
+      "crop": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "sha256": "1a52f5a036142808168865725d01ce3792e10b3b2f48429e11b321e05430a906",
+      "original_sha256": "11937d73e60091e3edf0abe73d52b88fe3d12163d098813c591070aff5a24f27"
+    },
+    "P002": {
+      "id": "P002",
+      "name": "Quiet Focus Headphones",
+      "category": "Electronics",
+      "description": "Over-ear headphones with active noise cancellation for focused work",
+      "file": "electronics/P002-quiet-focus-headphones.jpg",
+      "alt": "Quiet Focus Headphones â€” representative stock photograph",
+      "photographer": "Andrey Matveev",
+      "source_url": "https://www.pexels.com/photo/33034333/",
+      "download_url": "https://images.pexels.com/photos/33034333/pexels-photo-33034333.jpeg?auto=compress&cs=tinysrgb&w=1600&q=90",
+      "license": "Pexels License",
+      "license_url": "https://www.pexels.com/license/",
+      "original_size": [
+        1600,
+        1200
+      ],
+      "crop": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "sha256": "dcdad6a96a46eada5998ce802deea6aa0477b1ebcfcae28e23deae599663792e",
+      "original_sha256": "66f2356d3b2eba20e61cbb0a4ea530ffd951eca33c53d0c13d81abc8668a9d01"
+    },
+    "P003": {
+      "id": "P003",
+      "name": "Pocket Wireless Earbuds",
+      "category": "Electronics",
+      "description": "Compact wireless earbuds with charging case for daily listening",
+      "file": "electronics/P003-pocket-wireless-earbuds.jpg",
+      "alt": "Pocket Wireless Earbuds â€” representative stock photograph",
+      "photographer": "Andrey Matveev",
+      "source_url": "https://www.pexels.com/photo/33444591/",
+      "download_url": "https://images.pexels.com/photos/33444591/pexels-photo-33444591.jpeg?auto=compress&cs=tinysrgb&w=1200&q=90",
+      "license": "Pexels License",
+      "license_url": "https://www.pexels.com/license/",
+      "original_size": [
+        1200,
+        900
+      ],
+      "crop": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "sha256": "d1bae489ae7160fe7ab68725dcf25c44497e14c328d24d76cb608ca3e5b1174c",
+      "original_sha256": "c1a3df93f8193cd970654726de456497e78e8516dec6d02c621cc539857e7a88"
+    },
+    "P004": {
+      "id": "P004",
+      "name": "Studio Wired Headphones",
+      "category": "Electronics",
+      "description": "Wired headphones with a 3.5mm connector for home listening",
+      "file": "electronics/P004-studio-wired-headphones.jpg",
+      "alt": "Studio Wired Headphones â€” representative stock photograph",
+      "photographer": "Paul Seling",
+      "source_url": "https://www.pexels.com/photo/12266870/",
+      "download_url": "https://images.pexels.com/photos/12266870/pexels-photo-12266870.jpeg?auto=compress&cs=tinysrgb&w=1200&q=90",
+      "license": "Pexels License",
+      "license_url": "https://www.pexels.com/license/",
+      "original_size": [
+        1200,
+        800
+      ],
+      "crop": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "sha256": "6940616f035e638217e683c503a7ea2e6cca1fb104b7cd033e8d9f44a08aca06",
+      "original_sha256": "5d6709ec4555f639dea2c9e2df357ea3efbf26241ee07be210f8eb7411c40c13"
+    },
+    "P005": {
+      "id": "P005",
+      "name": "Everyday Running Shoes",
+      "category": "Footwear",
+      "description": "Lightweight running shoes with breathable mesh and cushioned soles",
+      "file": "footwear/P005-everyday-running-shoes.jpg",
+      "alt": "Everyday Running Shoes â€” representative stock photograph",
+      "photographer": "Alexander Rotker",
+      "source_url": "https://unsplash.com/photos/blue-white-and-black-nike-running-shoes-l8p1aWZqHvE",
+      "download_url": "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?auto=format&fit=max&w=1200&q=90",
+      "license": "Unsplash License",
+      "license_url": "https://unsplash.com/license",
+      "original_size": [
+        1200,
+        800
+      ],
+      "crop": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "sha256": "2f93da748f45094126bf3ef4661a4ff7c0a1017693d6b48154fa6c4b29223614",
+      "original_sha256": "7c57b1f34347a0133d30563dc7cb3d52de2ba6ad5e0787a28475a55247722f0c"
+    },
+    "P006": {
+      "id": "P006",
+      "name": "Trail Walking Shoes",
+      "category": "Footwear",
+      "description": "Walking shoes with a textured outsole for outdoor trails",
+      "file": "footwear/P006-trail-walking-shoes.jpg",
+      "alt": "Trail Walking Shoes â€” representative stock photograph",
+      "photographer": "jiaxin ni",
+      "source_url": "https://www.pexels.com/photo/4942028/",
+      "download_url": "https://images.pexels.com/photos/4942028/pexels-photo-4942028.jpeg?auto=compress&cs=tinysrgb&w=1200&q=90",
+      "license": "Pexels License",
+      "license_url": "https://www.pexels.com/license/",
+      "original_size": [
+        1200,
+        1800
+      ],
+      "crop": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "sha256": "587dda9ccafcdaee99cdde9e18217893e4b20adf72dc141765e11e2a26c08105",
+      "original_sha256": "5706c943d6a86fd98abf7ffcb1caf0acaa4fcecf885e7e4ea09644d21875b9f4"
+    },
+    "P007": {
+      "id": "P007",
+      "name": "Classic Casual Sneakers",
+      "category": "Footwear",
+      "description": "Everyday casual sneakers with a soft fabric lining",
+      "file": "footwear/P007-classic-casual-sneakers.jpg",
+      "alt": "Classic Casual Sneakers â€” representative stock photograph",
+      "photographer": "Thang Nguyen",
+      "source_url": "https://www.pexels.com/photo/35618111/",
+      "download_url": "https://images.pexels.com/photos/35618111/pexels-photo-35618111.jpeg?auto=compress&cs=tinysrgb&w=1600&q=90",
+      "license": "Pexels License",
+      "license_url": "https://www.pexels.com/license/",
+      "original_size": [
+        1600,
+        1067
+      ],
+      "crop": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "sha256": "f1dda03071081a2d00baf2d840d4e3487ecaf8e1a9340c8ae3d1d2a340b75142",
+      "original_sha256": "70f78126695883fcf747dbaf6dc4da773ab8c694730972da89bbc5f7d8265330"
+    },
+    "P008": {
+      "id": "P008",
+      "name": "Training Court Shoes",
+      "category": "Footwear",
+      "description": "Supportive training shoes with a durable rubber outsole",
+      "file": "footwear/P008-training-court-shoes.jpg",
+      "alt": "Training Court Shoes â€” representative stock photograph",
+      "photographer": "Aman Jakhar",
+      "source_url": "https://www.pexels.com/photo/1124466/",
+      "download_url": "https://images.pexels.com/photos/1124466/pexels-photo-1124466.jpeg?auto=compress&cs=tinysrgb&w=1200&q=90",
+      "license": "Pexels License",
+      "license_url": "https://www.pexels.com/license/",
+      "original_size": [
+        1200,
+        800
+      ],
+      "crop": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "sha256": "e987d41a4b6f1c456abb954eec88a53f3a7273160cc206649ee061f6557f596f",
+      "original_sha256": "56b828c75132b7c3b20ab43a076495ae1a78ed593b6c65ef7abe5976f2d9f1d9"
+    },
+    "P009": {
+      "id": "P009",
+      "name": "Cotton Everyday T-Shirt",
+      "category": "Apparel",
+      "description": "Soft cotton crew-neck t-shirt for everyday wear",
+      "file": "apparel/P009-cotton-everyday-t-shirt.jpg",
+      "alt": "Cotton Everyday T-Shirt â€” representative stock photograph",
+      "photographer": "Maxwell Araujo",
+      "source_url": "https://www.pexels.com/photo/23285867/",
+      "download_url": "https://images.pexels.com/photos/23285867/pexels-photo-23285867.jpeg?auto=compress&cs=tinysrgb&w=1200&q=90",
+      "license": "Pexels License",
+      "license_url": "https://www.pexels.com/license/",
+      "original_size": [
+        1200,
+        1461
+      ],
+      "crop": [
+        0,
+        0.28,
+        1,
+        1
+      ],
+      "sha256": "c0ecb93e305a63f97c0aee12cae7b5b1a765e8abb4a1e81730840d2b01dd54cd",
+      "original_sha256": "3e3603c70cd4af0312591020a8b899250ce8e93d9a1a49552b7e082be59ec496"
+    },
+    "P010": {
+      "id": "P010",
+      "name": "Lightweight Sports Jacket",
+      "category": "Apparel",
+      "description": "Lightweight zip jacket with pockets for workouts",
+      "file": "apparel/P010-lightweight-sports-jacket.jpg",
+      "alt": "Lightweight Sports Jacket â€” representative stock photograph",
+      "photographer": "Ketut Subiyanto",
+      "source_url": "https://www.pexels.com/photo/4584653/",
+      "download_url": "https://images.pexels.com/photos/4584653/pexels-photo-4584653.jpeg?auto=compress&cs=tinysrgb&w=1600&q=90",
+      "license": "Pexels License",
+      "license_url": "https://www.pexels.com/license/",
+      "original_size": [
+        1600,
+        2405
+      ],
+      "crop": [
+        0,
+        0.34,
+        1,
+        1
+      ],
+      "sha256": "722a1553c739bf1a8d597f67a1d470a0ca129a23fd20eb0e9b31ba9be2f6a556",
+      "original_sha256": "92d0fd3d00fc6d93983a2ee530df88c29f43c8a922682f52a3ab18236495cf89"
+    },
+    "P011": {
+      "id": "P011",
+      "name": "Relaxed Cotton Trousers",
+      "category": "Apparel",
+      "description": "Relaxed fit trousers with cotton fabric and side pockets",
+      "file": "apparel/P011-relaxed-cotton-trousers.jpg",
+      "alt": "Relaxed Cotton Trousers â€” representative stock photograph",
+      "photographer": "Engin Akyurt",
+      "source_url": "https://www.pexels.com/photo/17135748/",
+      "download_url": "https://images.pexels.com/photos/17135748/pexels-photo-17135748.jpeg?auto=compress&cs=tinysrgb&w=1200&q=90",
+      "license": "Pexels License",
+      "license_url": "https://www.pexels.com/license/",
+      "original_size": [
+        1200,
+        1800
+      ],
+      "crop": [
+        0,
+        0.05,
+        1,
+        0.93
+      ],
+      "sha256": "1487872ca654a43081f2017081e67098c11bb8599c1720fd457640277a65f2b9",
+      "original_sha256": "d5f5a5a11c4ec36bbfaecb61a92d1928bddb64597e69c4979d0ebbc86587d592"
+    },
+    "P012": {
+      "id": "P012",
+      "name": "Warm Fleece Hoodie",
+      "category": "Apparel",
+      "description": "Warm fleece hoodie with an adjustable hood",
+      "file": "apparel/P012-warm-fleece-hoodie.jpg",
+      "alt": "Warm Fleece Hoodie â€” representative stock photograph",
+      "photographer": "Alena Shekhovtcova",
+      "source_url": "https://www.pexels.com/photo/6995857/",
+      "download_url": "https://images.pexels.com/photos/6995857/pexels-photo-6995857.jpeg?auto=compress&cs=tinysrgb&w=1600&q=90",
+      "license": "Pexels License",
+      "license_url": "https://www.pexels.com/license/",
+      "original_size": [
+        1600,
+        2400
+      ],
+      "crop": [
+        0.05,
+        0.2,
+        0.95,
+        0.79
+      ],
+      "sha256": "36e3bb461e6696f9395a8027e37d4c139e45b634072d3bde952817690fe9c56c",
+      "original_sha256": "52c57d707dfdc10e10da6024bdc8e47340d1c80444606911d18ded7289f384e1"
+    },
+    "P013": {
+      "id": "P013",
+      "name": "Insulated Steel Bottle",
+      "category": "Home",
+      "description": "Reusable insulated steel bottle with a screw-top lid",
+      "file": "home/P013-insulated-steel-bottle.jpg",
+      "alt": "Insulated Steel Bottle â€” representative stock photograph",
+      "photographer": "Ninety Seven Years",
+      "source_url": "https://www.pexels.com/photo/34140882/",
+      "download_url": "https://images.pexels.com/photos/34140882/pexels-photo-34140882.jpeg?auto=compress&cs=tinysrgb&w=1600&q=90",
+      "license": "Pexels License",
+      "license_url": "https://www.pexels.com/license/",
+      "original_size": [
+        1600,
+        1067
+      ],
+      "crop": [
+        0.38,
+        0.43,
+        0.66,
+        0.89
+      ],
+      "sha256": "dd1d1a8876bf65ad82e302e172707c699f7ed4210b407e67af904fad76d09e32",
+      "original_sha256": "1a440be922a7e731b0a4e3fafa3e640651ce0e6c4aa39a99653a6e8bff507e9e"
+    },
+    "P014": {
+      "id": "P014",
+      "name": "Adjustable Desk Lamp",
+      "category": "Home",
+      "description": "LED desk lamp with adjustable brightness for reading",
+      "file": "home/P014-adjustable-desk-lamp.jpg",
+      "alt": "Adjustable Desk Lamp â€” representative stock photograph",
+      "photographer": "kaboompics.com",
+      "source_url": "https://www.pexels.com/photo/7193648/",
+      "download_url": "https://images.pexels.com/photos/7193648/pexels-photo-7193648.jpeg?auto=compress&cs=tinysrgb&w=1600&q=90",
+      "license": "Pexels License",
+      "license_url": "https://www.pexels.com/license/",
+      "original_size": [
+        1600,
+        1067
+      ],
+      "crop": [
+        0.54,
+        0.22,
+        0.78,
+        0.55
+      ],
+      "sha256": "f2232cdd749234e69ca425eeaa63f2b5b2e6ac886d339e00a344414d6460010c",
+      "original_sha256": "781dda5f203165305cf1be7c6985098c689f1eca994dad122627f48e80de2453"
+    },
+    "P015": {
+      "id": "P015",
+      "name": "Cotton Cushion Cover Set",
+      "category": "Home",
+      "description": "Set of two cotton cushion covers for living rooms",
+      "file": "home/P015-cotton-cushion-cover-set.jpg",
+      "alt": "Cotton Cushion Cover Set â€” representative stock photograph",
+      "photographer": "kaboompics.com",
+      "source_url": "https://www.pexels.com/photo/6633537/",
+      "download_url": "https://images.pexels.com/photos/6633537/pexels-photo-6633537.jpeg?auto=compress&cs=tinysrgb&w=1200&q=90",
+      "license": "Pexels License",
+      "license_url": "https://www.pexels.com/license/",
+      "original_size": [
+        1200,
+        800
+      ],
+      "crop": [
+        0.04,
+        0.04,
+        0.96,
+        0.96
+      ],
+      "sha256": "ba7768c1063e574a9b44dfa575eb3230a3d430378cea894fc598cd63302e7718",
+      "original_sha256": "6ba122e8b41847d10c79101a00c9117c5cd04ba6d78773f24cf702ef1a1f0c23"
+    },
+    "P016": {
+      "id": "P016",
+      "name": "Compact Study Organizer",
+      "category": "Home",
+      "description": "Desk organizer with compartments for stationery",
+      "file": "home/P016-compact-study-organizer.jpg",
+      "alt": "Compact Study Organizer â€” representative stock photograph",
+      "photographer": "David Fintz",
+      "source_url": "https://unsplash.com/photos/brown-wooden-organizer-Jd1FFerkdhk",
+      "download_url": "https://images.unsplash.com/photo-1576697655732-470037f97d9d?auto=format&fit=max&w=1200&q=90",
+      "license": "Unsplash License",
+      "license_url": "https://unsplash.com/license",
+      "original_size": [
+        1200,
+        933
+      ],
+      "crop": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "sha256": "0f978607f9795c05131444eb1ebd1ef65514619c250c3ad4d276bcf32ab25683",
+      "original_sha256": "fa5b5f09e027f1ba932a834682470c48d8437992e02a5fea0f3865db547e6bf4"
+    },
+    "P017": {
+      "id": "P017",
+      "name": "Non-Slip Yoga Mat",
+      "category": "Sports",
+      "description": "Textured exercise mat for yoga and stretching",
+      "file": "sports/P017-non-slip-yoga-mat.jpg",
+      "alt": "Non-Slip Yoga Mat â€” representative stock photograph",
+      "photographer": "Anete Lusina",
+      "source_url": "https://www.pexels.com/photo/4793328/",
+      "download_url": "https://images.pexels.com/photos/4793328/pexels-photo-4793328.jpeg?auto=compress&cs=tinysrgb&w=1200&q=90",
+      "license": "Pexels License",
+      "license_url": "https://www.pexels.com/license/",
+      "original_size": [
+        1200,
+        801
+      ],
+      "crop": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "sha256": "0964b6fb5d313274ccdc86c769abdfff0009acc1fb2db68f0272b5a0bb356327",
+      "original_sha256": "d848f0fca0696516a2d2af1b7d6f848787b48b1aae7b27dae0b8681324dfb7b5"
+    },
+    "P018": {
+      "id": "P018",
+      "name": "Resistance Band Set",
+      "category": "Sports",
+      "description": "Set of three resistance bands for home training",
+      "file": "sports/P018-resistance-band-set.jpg",
+      "alt": "Resistance Band Set â€” representative stock photograph",
+      "photographer": "Russell Moore",
+      "source_url": "https://unsplash.com/photos/resistance-bands-with-rainbow-stripes-hang-4KX0FQqOGl4",
+      "download_url": "https://images.unsplash.com/photo-1767404890803-228d5390fcd4?auto=format&fit=max&w=1200&q=90",
+      "license": "Unsplash License",
+      "license_url": "https://unsplash.com/license",
+      "original_size": [
+        1200,
+        800
+      ],
+      "crop": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "sha256": "ce5dbccccccc0b223db5634d8dba6f0906b233832bed7dad03c172c2ffd68350",
+      "original_sha256": "9d140a6a7626439b1f752b182be3e9fc6f83c21cea0ce6cb264c8d2593512181"
+    },
+    "P019": {
+      "id": "P019",
+      "name": "Adjustable Skipping Rope",
+      "category": "Sports",
+      "description": "Adjustable skipping rope with comfortable handles",
+      "file": "sports/P019-adjustable-skipping-rope.jpg",
+      "alt": "Adjustable Skipping Rope â€” representative stock photograph",
+      "photographer": "MART PRODUCTION",
+      "source_url": "https://www.pexels.com/photo/8032841/",
+      "download_url": "https://images.pexels.com/photos/8032841/pexels-photo-8032841.jpeg?auto=compress&cs=tinysrgb&w=1200&q=90",
+      "license": "Pexels License",
+      "license_url": "https://www.pexels.com/license/",
+      "original_size": [
+        1200,
+        800
+      ],
+      "crop": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "sha256": "1f94378a1cca675bdf26b09cbbd36f3faaf5e660ed1e51a4aa55e3099f0beefd",
+      "original_sha256": "cc29c7cf0dd26c589011a17158dd5fb12bd0af24f2de63e39d9ed9071518ab3b"
+    },
+    "P020": {
+      "id": "P020",
+      "name": "Training Dumbbell Pair",
+      "category": "Sports",
+      "description": "Pair of fixed-weight dumbbells for strength training",
+      "file": "sports/P020-training-dumbbell-pair.jpg",
+      "alt": "Training Dumbbell Pair â€” representative stock photograph",
+      "photographer": "NicolÃ¡s Rueda",
+      "source_url": "https://www.pexels.com/photo/15713034/",
+      "download_url": "https://images.pexels.com/photos/15713034/pexels-photo-15713034.jpeg?auto=compress&cs=tinysrgb&w=1200&q=90",
+      "license": "Pexels License",
+      "license_url": "https://www.pexels.com/license/",
+      "original_size": [
+        1200,
+        1800
+      ],
+      "crop": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "sha256": "f136fe51b5b713b1f3a8c640cdd191ff91b1d03774fbbf19a9523edf4dd85f8c",
+      "original_sha256": "d82a0e7374198fafc50b6bae6d343c179e888c4114988e7011c17d8b9feb7b9e"
+    },
+    "P021": {
+      "id": "P021",
+      "name": "Everyday Laptop Backpack",
+      "category": "Accessories",
+      "description": "Padded laptop backpack with an organizer pocket",
+      "file": "accessories/P021-everyday-laptop-backpack.jpg",
+      "alt": "Everyday Laptop Backpack â€” representative stock photograph",
+      "photographer": "Matheus Bertelli",
+      "source_url": "https://www.pexels.com/photo/18999339/",
+      "download_url": "https://images.pexels.com/photos/18999339/pexels-photo-18999339.jpeg?auto=compress&cs=tinysrgb&w=1200&q=90",
+      "license": "Pexels License",
+      "license_url": "https://www.pexels.com/license/",
+      "original_size": [
+        1200,
+        1800
+      ],
+      "crop": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "sha256": "9e541da788ab7a972693af520deed6172ac41103929865fdf6201af181c3e56b",
+      "original_sha256": "ae3394554057b07eeb337424ddd6fb97570eca43eeb4126d37b8f2864e0a2ed5"
+    },
+    "P022": {
+      "id": "P022",
+      "name": "Compact Crossbody Bag",
+      "category": "Accessories",
+      "description": "Compact crossbody bag with adjustable strap",
+      "file": "accessories/P022-compact-crossbody-bag.jpg",
+      "alt": "Compact Crossbody Bag â€” representative stock photograph",
+      "photographer": "Quilia",
+      "source_url": "https://unsplash.com/photos/closeup-photo-of-brown-leather-crossbody-bag-6G7rmG8pDCs",
+      "download_url": "https://images.unsplash.com/photo-1517612228538-cefdbc2c01e7?auto=format&fit=max&w=1200&q=90",
+      "license": "Unsplash License",
+      "license_url": "https://unsplash.com/license",
+      "original_size": [
+        1200,
+        800
+      ],
+      "crop": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "sha256": "a1ee0cb493bff3bc73fc7006930aab14cf9f3bd44d8ffdf2c56e0b7fab29d171",
+      "original_sha256": "d8b23be51ffbf382570efcc4b323193e59e145f2fbc6e63b10a9cd94a39ec5dc"
+    },
+    "P023": {
+      "id": "P023",
+      "name": "Travel Packing Cubes",
+      "category": "Accessories",
+      "description": "Set of three packing cubes for organized travel",
+      "file": "accessories/P023-travel-packing-cubes.jpg",
+      "alt": "Travel Packing Cubes â€” representative stock photograph",
+      "photographer": "Timur Weber",
+      "source_url": "https://www.pexels.com/photo/9186169/",
+      "download_url": "https://images.pexels.com/photos/9186169/pexels-photo-9186169.jpeg?auto=compress&cs=tinysrgb&w=1200&q=90",
+      "license": "Pexels License",
+      "license_url": "https://www.pexels.com/license/",
+      "original_size": [
+        1200,
+        800
+      ],
+      "crop": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "sha256": "e5ad090811e3fc5cba8cd8579ed4d5ac584eba9e0d51b52443c04e270e05b868",
+      "original_sha256": "f485e1c985734bccac67864efbdca63b5794d8cb405df31c7a8dd05b9a9f7f2a"
+    },
+    "P024": {
+      "id": "P024",
+      "name": "Minimal Everyday Wallet",
+      "category": "Accessories",
+      "description": "Slim wallet with card slots and a note compartment",
+      "file": "accessories/P024-minimal-everyday-wallet.jpg",
+      "alt": "Minimal Everyday Wallet â€” representative stock photograph",
+      "photographer": "Emil Kalibradov",
+      "source_url": "https://www.pexels.com/photo/7085783/",
+      "download_url": "https://images.pexels.com/photos/7085783/pexels-photo-7085783.jpeg?auto=compress&cs=tinysrgb&w=1200&q=90",
+      "license": "Pexels License",
+      "license_url": "https://www.pexels.com/license/",
+      "original_size": [
+        1200,
+        801
+      ],
+      "crop": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "sha256": "ed37f32ba6637b52e28945061a179be60cd4e6225dfdd8c5e818c4aa7c917997",
+      "original_sha256": "347bb52afd54321d7e0538704d60749ec1c6c422b6874a1077275fad829b554a"
+    }
+  }
+}

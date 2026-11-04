@@ -1,0 +1,42 @@
+{
+  "root": "C:\\Users\\ADMIN\\Documents\\ChatGPT\\RetailRAG AI 3",
+  "files_scanned": {
+    ".json": 412,
+    ".db": 1636,
+    ".sqlite3": 203,
+    ".csv": 865
+  },
+  "catalog_sources": [
+    {
+      "path": "data\\retailrag.db",
+      "type": "database",
+      "table": "products",
+      "products": 24
+    },
+    {
+      "path": "data\\chroma\\retailrag_products.json",
+      "type": "json_mapping",
+      "key": "products",
+      "products": 24
+    },
+    {
+      "path": "data\\demo\\products.csv",
+      "type": "csv",
+      "products": 24
+    }
+  ],
+  "generated_catalogs": 2087,
+  "catalog_sizes": {
+    "24": 1820,
+    "25": 7,
+    "0": 255,
+    "23": 8
+  },
+  "catalogs_with_120_products": [],
+  "unreadable_files": [
+    {
+      "path": ".test-tmp\\phase4-api1\\test_corrupt_manifest_and_unwr0\\chroma\\retailrag_products.json",
+      "error": "JSONDecodeError"
+    }
+  ]
+}

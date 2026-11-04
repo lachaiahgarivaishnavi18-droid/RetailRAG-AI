@@ -1,0 +1,1672 @@
+{
+  "note": "Actual deterministic LangGraph executions against the configured synthetic demo catalog; no LLM is called.",
+  "definition": {
+    "engine": "LangGraph",
+    "version": "1.2.19",
+    "agent_mode": "deterministic_role_agents",
+    "llm_used": false,
+    "nodes": [
+      {
+        "name": "supervisor",
+        "task": "Select a retrieval strategy from request capabilities and actual index readiness"
+      },
+      {
+        "name": "query_understanding",
+        "task": "Extract and validate query budget, category, brand, and source-product constraints"
+      },
+      {
+        "name": "customer_context",
+        "task": "Analyze real cross-channel shopping history or read the anonymous catalog baseline"
+      },
+      {
+        "name": "product_retrieval",
+        "task": "Execute Chroma retrieval or content fallback with attributable product evidence"
+      },
+      {
+        "name": "recommendation",
+        "task": "Compute text, preference, category, brand, budget, and availability components"
+      },
+      {
+        "name": "product_ranking",
+        "task": "Sort candidates by the actual weighted scores with deterministic tie breakers"
+      },
+      {
+        "name": "availability",
+        "task": "Recheck current database stock/facts before selecting the requested number of products"
+      },
+      {
+        "name": "explanation",
+        "task": "Render product-specific explanations from actual component scores and evidence IDs"
+      },
+      {
+        "name": "validation",
+        "task": "Verify live facts, customer constraints, ranking arithmetic, references, and grounding"
+      },
+      {
+        "name": "response",
+        "task": "Render the final answer and atomically save validated recommendations, or report a real failure"
+      }
+    ],
+    "edges": [
+      {
+        "source": "__start__",
+        "target": "supervisor",
+        "conditional": false
+      },
+      {
+        "source": "availability",
+        "target": "explanation",
+        "conditional": true
+      },
+      {
+        "source": "availability",
+        "target": "response",
+        "conditional": true
+      },
+      {
+        "source": "availability",
+        "target": "validation",
+        "conditional": true
+      },
+      {
+        "source": "customer_context",
+        "target": "product_retrieval",
+        "conditional": true
+      },
+      {
+        "source": "customer_context",
+        "target": "response",
+        "conditional": true
+      },
+      {
+        "source": "explanation",
+        "target": "response",
+        "conditional": true
+      },
+      {
+        "source": "explanation",
+        "target": "validation",
+        "conditional": true
+      },
+      {
+        "source": "product_ranking",
+        "target": "availability",
+        "conditional": true
+      },
+      {
+        "source": "product_ranking",
+        "target": "response",
+        "conditional": true
+      },
+      {
+        "source": "product_retrieval",
+        "target": "recommendation",
+        "conditional": true
+      },
+      {
+        "source": "product_retrieval",
+        "target": "response",
+        "conditional": true
+      },
+      {
+        "source": "product_retrieval",
+        "target": "validation",
+        "conditional": true
+      },
+      {
+        "source": "query_understanding",
+        "target": "customer_context",
+        "conditional": true
+      },
+      {
+        "source": "query_understanding",
+        "target": "response",
+        "conditional": true
+      },
+      {
+        "source": "recommendation",
+        "target": "product_ranking",
+        "conditional": true
+      },
+      {
+        "source": "recommendation",
+        "target": "response",
+        "conditional": true
+      },
+      {
+        "source": "supervisor",
+        "target": "query_understanding",
+        "conditional": true
+      },
+      {
+        "source": "supervisor",
+        "target": "response",
+        "conditional": true
+      },
+      {
+        "source": "validation",
+        "target": "response",
+        "conditional": true
+      },
+      {
+        "source": "response",
+        "target": "__end__",
+        "conditional": false
+      }
+    ],
+    "mermaid": "---\nconfig:\n  flowchart:\n    curve: linear\n---\ngraph TD;\n\t__start__([<p>__start__</p>]):::first\n\tsupervisor(supervisor)\n\tquery_understanding(query_understanding)\n\tcustomer_context(customer_context)\n\tproduct_retrieval(product_retrieval)\n\trecommendation(recommendation)\n\tproduct_ranking(product_ranking)\n\tavailability(availability)\n\texplanation(explanation)\n\tvalidation(validation)\n\tresponse(response)\n\t__end__([<p>__end__</p>]):::last\n\t__start__ --> supervisor;\n\tavailability -.-> explanation;\n\tavailability -.-> response;\n\tavailability -.-> validation;\n\tcustomer_context -.-> product_retrieval;\n\tcustomer_context -.-> response;\n\texplanation -.-> response;\n\texplanation -.-> validation;\n\tproduct_ranking -.-> availability;\n\tproduct_ranking -.-> response;\n\tproduct_retrieval -.-> recommendation;\n\tproduct_retrieval -.-> response;\n\tproduct_retrieval -.-> validation;\n\tquery_understanding -.-> customer_context;\n\tquery_understanding -.-> response;\n\trecommendation -.-> product_ranking;\n\trecommendation -.-> response;\n\tsupervisor -.-> query_understanding;\n\tsupervisor -.-> response;\n\tvalidation -.-> response;\n\tresponse --> __end__;\n\tclassDef default fill:#f2f0ff,line-height:1.2\n\tclassDef first fill-opacity:0\n\tclassDef last fill:#bfb6fc\n"
+  },
+  "examples": [
+    {
+      "run_id": "834c489264584231924eaf2ae1d2bbd0",
+      "status": "completed",
+      "request": {
+        "mode": "context_aware",
+        "customer_id": "C001",
+        "product_id": null,
+        "query": "wireless headphones under INR 3000",
+        "category": null,
+        "brand": null,
+        "min_price": null,
+        "max_price": null,
+        "strict_budget": true,
+        "available_only": true,
+        "exclude_purchased": false,
+        "channel": "mobile",
+        "limit": 3,
+        "weights": {
+          "text_relevance": 0.4,
+          "customer_preference": 0.2,
+          "category_match": 0.15,
+          "brand_match": 0.1,
+          "budget_compatibility": 0.1,
+          "availability": 0.05
+        },
+        "retrieval_strategy": "auto"
+      },
+      "started_at": "2026-11-04T08:18:36.423344+00:00",
+      "finished_at": "2026-11-04T08:18:40.633518+00:00",
+      "recommendation_id": 15,
+      "output": {
+        "id": 15,
+        "created_at": "2026-11-04T08:18:40.595618Z",
+        "run_id": "834c489264584231924eaf2ae1d2bbd0",
+        "engine": "langgraph_workflow",
+        "llm_used": false,
+        "generation": "deterministic_agents",
+        "mode": "context_aware",
+        "query": "wireless headphones under INR 3000",
+        "customer_id": "C001",
+        "channel": "mobile",
+        "message": "Deterministic LangGraph agent workflow; no LLM was called.",
+        "answer": "Deterministic LangGraph agent workflow; no LLM was called.\n1. [P001] Wireless Everyday Headphones — INR 2499.00 — in stock. Chroma LSA cosine similarity: 0.8157. Customer affinity 0.4658 uses declared preferences and 8 cross-channel interactions. Category affinity for Electronics: 1.0000. Brand affinity for SoundNest: 0.5294. Meets the effective price bounds. INR 2499.00; in stock (35 units). Evidence: P001:0:a49cba7e5f9d.\n2. [P003] Pocket Wireless Earbuds — INR 1799.00 — in stock. Chroma LSA cosine similarity: 0.5430. Customer affinity 0.2649 uses declared preferences and 8 cross-channel interactions. Category affinity for Electronics: 1.0000. Brand affinity for WaveCraft: 1.0000. Meets the effective price bounds. INR 1799.00; in stock (42 units). Evidence: P003:0:840dc54c2556.",
+        "warnings": [],
+        "context": {
+          "category": null,
+          "brand": null,
+          "category_source": null,
+          "brand_source": null,
+          "min_price": null,
+          "max_price": "3000.00",
+          "min_exclusive": false,
+          "max_exclusive": true,
+          "budget_sources": {
+            "max_price": "query"
+          },
+          "strict_budget": true,
+          "available_only": true,
+          "exclude_purchased": false,
+          "text_query": "wireless headphones"
+        },
+        "profile": {
+          "customer_id": "C001",
+          "name": "Demo Customer 1",
+          "channel": "mobile",
+          "cold_start": false,
+          "declared_categories": [
+            "Electronics",
+            "Footwear"
+          ],
+          "declared_brands": [
+            "SoundNest"
+          ],
+          "category_affinities": {
+            "Electronics": 1.0,
+            "Footwear": 0.03846154
+          },
+          "brand_affinities": {
+            "SoundNest": 0.52941176,
+            "WaveCraft": 1.0
+          },
+          "product_affinities": {
+            "P001": 0.46428571,
+            "P002": 0.10714286,
+            "P003": 0.21428571,
+            "P004": 1.0
+          },
+          "budget_min": "0.00",
+          "budget_max": "3000.00",
+          "observed_purchase_median_price": "1899.00",
+          "observed_price_basis": "current_catalog",
+          "event_counts": {
+            "view": 3,
+            "wishlist": 2,
+            "cart": 1,
+            "purchase": 2
+          },
+          "channel_counts": {
+            "ecommerce": 3,
+            "mobile": 3,
+            "store": 2
+          },
+          "viewed_product_ids": [
+            "P001",
+            "P002"
+          ],
+          "purchased_product_ids": [
+            "P001",
+            "P004"
+          ],
+          "wishlist_product_ids": [
+            "P003"
+          ],
+          "interaction_count": 8,
+          "source": "synthetic_demo"
+        },
+        "active_weights": {
+          "text_relevance": 0.4,
+          "customer_preference": 0.2,
+          "category_match": 0.15,
+          "brand_match": 0.1,
+          "budget_compatibility": 0.1,
+          "availability": 0.05
+        },
+        "preference_basis": "customer_profile",
+        "retrieval_source": "rag",
+        "index_generation": "f90c43d4c610470dbf11343ad4005bfe",
+        "validation": {
+          "valid": true,
+          "checked_products": 2,
+          "references": [
+            "P001",
+            "P003"
+          ]
+        },
+        "references": [
+          "P001",
+          "P003"
+        ],
+        "items": [
+          {
+            "rank": 1,
+            "product": {
+              "id": "P001",
+              "name": "Wireless Everyday Headphones",
+              "description": "Bluetooth headphones with cushioned ear cups and USB-C charging",
+              "category": "Electronics",
+              "brand": "SoundNest",
+              "price": "2499.00",
+              "currency": "INR",
+              "rating": 4.0,
+              "stock_quantity": 35,
+              "available": true,
+              "features": [
+                "wireless",
+                "over-ear",
+                "USB-C"
+              ],
+              "attributes": {
+                "connectivity": "Bluetooth",
+                "color": "navy"
+              },
+              "image_url": null,
+              "source": "synthetic_demo"
+            },
+            "similarity_score": 0.81575,
+            "relevance_score": 0.77239405,
+            "components": {
+              "text_relevance": 0.81575,
+              "customer_preference": 0.46576439,
+              "category_match": 1.0,
+              "brand_match": 0.52941176,
+              "budget_compatibility": 1.0,
+              "availability": 1.0
+            },
+            "explanation": "Chroma LSA cosine similarity: 0.8157. Customer affinity 0.4658 uses declared preferences and 8 cross-channel interactions. Category affinity for Electronics: 1.0000. Brand affinity for SoundNest: 0.5294. Meets the effective price bounds. INR 2499.00; in stock (35 units). Evidence: P001:0:a49cba7e5f9d.",
+            "retrieval_source": "chroma",
+            "document_id": "P001:0:a49cba7e5f9d",
+            "document": "Product ID: P001\nName: Wireless Everyday Headphones\nCategory: Electronics\nBrand: SoundNest\nPrice: INR 2499.00\nAvailability: in stock\nStock quantity: 35\nSource: synthetic_demo\nDescription: Bluetooth headphones with cushioned ear cups and USB-C charging\nFeatures: [\"wireless\", \"over-ear\", \"USB-C\"]\nAttributes: {\"color\": \"navy\", \"connectivity\": \"Bluetooth\"}",
+            "metadata": {
+              "category_key": "electronics",
+              "product_id": "P001",
+              "brand": "SoundNest",
+              "brand_key": "soundnest",
+              "product_fingerprint": "b4c08cb9f3836d08d5edf093af5178e1af16aaef64cccfe3d7120103b63b3054",
+              "chunk": 0,
+              "name": "Wireless Everyday Headphones",
+              "category": "Electronics",
+              "currency": "INR",
+              "available": true,
+              "document_hash": "a49cba7e5f9d3e08889c94f1e78da87ef87e8b9b5c540435f855eead504dc511",
+              "price_cents": 249900,
+              "source": "synthetic_demo",
+              "stock_quantity": 35
+            }
+          },
+          {
+            "rank": 2,
+            "product": {
+              "id": "P003",
+              "name": "Pocket Wireless Earbuds",
+              "description": "Compact wireless earbuds with charging case for daily listening",
+              "category": "Electronics",
+              "brand": "WaveCraft",
+              "price": "1799.00",
+              "currency": "INR",
+              "rating": 4.4,
+              "stock_quantity": 42,
+              "available": true,
+              "features": [
+                "wireless",
+                "charging case"
+              ],
+              "attributes": {
+                "color": "white"
+              },
+              "image_url": null,
+              "source": "synthetic_demo"
+            },
+            "similarity_score": 0.5429796,
+            "relevance_score": 0.67017046,
+            "components": {
+              "text_relevance": 0.5429796,
+              "customer_preference": 0.26489309,
+              "category_match": 1.0,
+              "brand_match": 1.0,
+              "budget_compatibility": 1.0,
+              "availability": 1.0
+            },
+            "explanation": "Chroma LSA cosine similarity: 0.5430. Customer affinity 0.2649 uses declared preferences and 8 cross-channel interactions. Category affinity for Electronics: 1.0000. Brand affinity for WaveCraft: 1.0000. Meets the effective price bounds. INR 1799.00; in stock (42 units). Evidence: P003:0:840dc54c2556.",
+            "retrieval_source": "chroma",
+            "document_id": "P003:0:840dc54c2556",
+            "document": "Product ID: P003\nName: Pocket Wireless Earbuds\nCategory: Electronics\nBrand: WaveCraft\nPrice: INR 1799.00\nAvailability: in stock\nStock quantity: 42\nSource: synthetic_demo\nDescription: Compact wireless earbuds with charging case for daily listening\nFeatures: [\"wireless\", \"charging case\"]\nAttributes: {\"color\": \"white\"}",
+            "metadata": {
+              "price_cents": 179900,
+              "category_key": "electronics",
+              "chunk": 0,
+              "category": "Electronics",
+              "product_fingerprint": "305f6ab0c8b2fd7b1564b40b83aeb95d152d153dc51ac62b423a3454e47d0573",
+              "brand_key": "wavecraft",
+              "brand": "WaveCraft",
+              "currency": "INR",
+              "available": true,
+              "stock_quantity": 42,
+              "product_id": "P003",
+              "document_hash": "840dc54c2556c6183aadc7299e6d675f333efb340966eb6db9a5d9a145d7a18a",
+              "name": "Pocket Wireless Earbuds",
+              "source": "synthetic_demo"
+            }
+          }
+        ]
+      },
+      "error": null,
+      "steps": [
+        {
+          "sequence": 1,
+          "execution_id": 1,
+          "agent": "supervisor",
+          "status": "completed",
+          "started_at": "2026-11-04T08:18:36.467073+00:00",
+          "finished_at": "2026-11-04T08:18:39.951340+00:00",
+          "duration_ms": 3484.267,
+          "tool_calls": [
+            {
+              "name": "get_rag_status",
+              "status": "completed",
+              "duration_ms": 3466.78,
+              "output_summary": {
+                "keys": [
+                  "generation",
+                  "indexed_chunks",
+                  "indexed_products",
+                  "status"
+                ],
+                "status": "ready",
+                "indexed_products": 24,
+                "indexed_chunks": 24
+              },
+              "output_sha256": "92e7a5678b13f99a462806842488158db45044c93d6b75471aed3ca117735bcd",
+              "error": null
+            }
+          ],
+          "output_summary": "{\"counts\": {}, \"updated_state_fields\": [\"executed_agents\", \"plan\", \"warnings\"]}",
+          "error": null
+        },
+        {
+          "sequence": 2,
+          "execution_id": 2,
+          "agent": "query_understanding",
+          "status": "completed",
+          "started_at": "2026-11-04T08:18:39.975276+00:00",
+          "finished_at": "2026-11-04T08:18:40.009185+00:00",
+          "duration_ms": 33.909,
+          "tool_calls": [
+            {
+              "name": "understand_query",
+              "status": "completed",
+              "duration_ms": 18.987,
+              "output_summary": {
+                "keys": [
+                  "context",
+                  "warnings"
+                ]
+              },
+              "output_sha256": "211bbd0dd9313634506485deccec605c9e7897808d19a08b27049ed3bf960b51",
+              "error": null
+            }
+          ],
+          "output_summary": "{\"counts\": {}, \"updated_state_fields\": [\"context\", \"executed_agents\", \"warnings\"]}",
+          "error": null
+        },
+        {
+          "sequence": 3,
+          "execution_id": 3,
+          "agent": "customer_context",
+          "status": "completed",
+          "started_at": "2026-11-04T08:18:40.027138+00:00",
+          "finished_at": "2026-11-04T08:18:40.071020+00:00",
+          "duration_ms": 43.882,
+          "tool_calls": [
+            {
+              "name": "get_customer_profile",
+              "status": "completed",
+              "duration_ms": 21.498,
+              "output_summary": {
+                "keys": [
+                  "brand_affinities",
+                  "budget_max",
+                  "budget_min",
+                  "category_affinities",
+                  "channel",
+                  "channel_counts",
+                  "cold_start",
+                  "customer_id",
+                  "declared_brands",
+                  "declared_categories",
+                  "event_counts",
+                  "interaction_count",
+                  "name",
+                  "observed_price_basis",
+                  "observed_purchase_median_price",
+                  "product_affinities",
+                  "purchased_product_ids",
+                  "source",
+                  "viewed_product_ids",
+                  "wishlist_product_ids"
+                ],
+                "customer_id": "C001",
+                "interaction_count": 8
+              },
+              "output_sha256": "144c3b8da8f5c34ccfa9cdb8c10597cc1c25b6afa8766ad960f87c829a9bd680",
+              "error": null
+            },
+            {
+              "name": "understand_query",
+              "status": "completed",
+              "duration_ms": 6.304,
+              "output_summary": {
+                "keys": [
+                  "context",
+                  "warnings"
+                ]
+              },
+              "output_sha256": "211bbd0dd9313634506485deccec605c9e7897808d19a08b27049ed3bf960b51",
+              "error": null
+            }
+          ],
+          "output_summary": "{\"counts\": {}, \"updated_state_fields\": [\"context\", \"executed_agents\", \"profile\", \"warnings\"]}",
+          "error": null
+        },
+        {
+          "sequence": 4,
+          "execution_id": 4,
+          "agent": "product_retrieval",
+          "status": "completed",
+          "started_at": "2026-11-04T08:18:40.087974+00:00",
+          "finished_at": "2026-11-04T08:18:40.252533+00:00",
+          "duration_ms": 164.559,
+          "tool_calls": [
+            {
+              "name": "retrieve_product_documents",
+              "status": "completed",
+              "duration_ms": 144.367,
+              "output_summary": {
+                "keys": [
+                  "index_generation",
+                  "items",
+                  "warnings"
+                ],
+                "item_count": 2,
+                "product_ids": [
+                  "P001",
+                  "P003"
+                ]
+              },
+              "output_sha256": "ea5638d2e2238b96ed5d96559af53b381b4c04e607450595dfbad92be05dc307",
+              "error": null
+            }
+          ],
+          "output_summary": "{\"counts\": {}, \"updated_state_fields\": [\"executed_agents\", \"retrieval\", \"warnings\"]}",
+          "error": null
+        },
+        {
+          "sequence": 5,
+          "execution_id": 5,
+          "agent": "recommendation",
+          "status": "completed",
+          "started_at": "2026-11-04T08:18:40.279462+00:00",
+          "finished_at": "2026-11-04T08:18:40.317361+00:00",
+          "duration_ms": 37.899,
+          "tool_calls": [
+            {
+              "name": "score_recommendation_candidates",
+              "status": "completed",
+              "duration_ms": 27.489,
+              "output_summary": {
+                "keys": [
+                  "active_weights",
+                  "index_generation",
+                  "items",
+                  "preference_basis",
+                  "warnings"
+                ],
+                "item_count": 2,
+                "product_ids": [
+                  "P001",
+                  "P003"
+                ]
+              },
+              "output_sha256": "a96a5418127ab24f8cd7895bcc1373eb7fb7ea70f98ddb6f81e3f39ec0076cae",
+              "error": null
+            }
+          ],
+          "output_summary": "{\"counts\": {\"candidates\": 2}, \"updated_state_fields\": [\"active_weights\", \"candidates\", \"executed_agents\", \"preference_basis\"]}",
+          "error": null
+        },
+        {
+          "sequence": 6,
+          "execution_id": 6,
+          "agent": "product_ranking",
+          "status": "completed",
+          "started_at": "2026-11-04T08:18:40.353265+00:00",
+          "finished_at": "2026-11-04T08:18:40.370219+00:00",
+          "duration_ms": 16.954,
+          "tool_calls": [
+            {
+              "name": "rank_recommendations",
+              "status": "completed",
+              "duration_ms": 2.615,
+              "output_summary": {
+                "keys": [
+                  "index_generation",
+                  "items",
+                  "warnings"
+                ],
+                "item_count": 2,
+                "product_ids": [
+                  "P001",
+                  "P003"
+                ]
+              },
+              "output_sha256": "b203d083965375aa89919fcb0f2e9afbe94224f3db91e752d36f523488dd604f",
+              "error": null
+            }
+          ],
+          "output_summary": "{\"counts\": {\"ranked\": 2}, \"updated_state_fields\": [\"executed_agents\", \"ranked\"]}",
+          "error": null
+        },
+        {
+          "sequence": 7,
+          "execution_id": 7,
+          "agent": "availability",
+          "status": "completed",
+          "started_at": "2026-11-04T08:18:40.387175+00:00",
+          "finished_at": "2026-11-04T08:18:40.406123+00:00",
+          "duration_ms": 18.948,
+          "tool_calls": [
+            {
+              "name": "check_product_availability",
+              "status": "completed",
+              "duration_ms": 7.679,
+              "output_summary": {
+                "keys": [
+                  "items",
+                  "rejected_product_ids"
+                ],
+                "item_count": 2,
+                "product_ids": [
+                  "P001",
+                  "P003"
+                ]
+              },
+              "output_sha256": "f59493c2050fcaa48aafcade67677dbe58d8d9882be216583ad37a1ecb6276ee",
+              "error": null
+            }
+          ],
+          "output_summary": "{\"counts\": {\"items\": 2}, \"updated_state_fields\": [\"executed_agents\", \"items\", \"warnings\"]}",
+          "error": null
+        },
+        {
+          "sequence": 8,
+          "execution_id": 8,
+          "agent": "explanation",
+          "status": "completed",
+          "started_at": "2026-11-04T08:18:40.430060+00:00",
+          "finished_at": "2026-11-04T08:18:40.446030+00:00",
+          "duration_ms": 15.97,
+          "tool_calls": [
+            {
+              "name": "explain_recommendations",
+              "status": "completed",
+              "duration_ms": 3.398,
+              "output_summary": {
+                "keys": [
+                  "index_generation",
+                  "items",
+                  "warnings"
+                ],
+                "item_count": 2,
+                "product_ids": [
+                  "P001",
+                  "P003"
+                ]
+              },
+              "output_sha256": "42a24f623e503241dc09aeabc3de7fd189f0a9c6d7a5cccd340f084792534c25",
+              "error": null
+            }
+          ],
+          "output_summary": "{\"counts\": {\"items\": 2}, \"updated_state_fields\": [\"executed_agents\", \"items\"]}",
+          "error": null
+        },
+        {
+          "sequence": 9,
+          "execution_id": 9,
+          "agent": "validation",
+          "status": "completed",
+          "started_at": "2026-11-04T08:18:40.462971+00:00",
+          "finished_at": "2026-11-04T08:18:40.519818+00:00",
+          "duration_ms": 56.847,
+          "tool_calls": [
+            {
+              "name": "validate_recommendations",
+              "status": "completed",
+              "duration_ms": 43.295,
+              "output_summary": {
+                "keys": [
+                  "checked_products",
+                  "references",
+                  "valid"
+                ],
+                "valid": true,
+                "checked_products": 2
+              },
+              "output_sha256": "1d6cba71a22d9ac374d9e7483dbbd92d8f69a3bf3be60c9fc768f6cc6e309a9f",
+              "error": null
+            }
+          ],
+          "output_summary": "{\"counts\": {}, \"updated_state_fields\": [\"executed_agents\", \"validation\"]}",
+          "error": null
+        },
+        {
+          "sequence": 10,
+          "execution_id": 10,
+          "agent": "response",
+          "status": "completed",
+          "started_at": "2026-11-04T08:18:40.540763+00:00",
+          "finished_at": "2026-11-04T08:18:40.627533+00:00",
+          "duration_ms": 86.77,
+          "tool_calls": [
+            {
+              "name": "save_recommendation",
+              "status": "completed",
+              "duration_ms": 73.139,
+              "output_summary": {
+                "keys": [
+                  "output"
+                ]
+              },
+              "output_sha256": "c5e9032bb3ad3312095bb0681cb58834309612a1687c5ece5a8cab22b610f1fd",
+              "error": null
+            }
+          ],
+          "output_summary": "{\"counts\": {}, \"updated_state_fields\": [\"executed_agents\", \"output\"]}",
+          "error": null
+        }
+      ]
+    },
+    {
+      "run_id": "46b272f09c2a404f806ab50b97d41fcc",
+      "status": "completed",
+      "request": {
+        "mode": "personalized",
+        "customer_id": "C002",
+        "product_id": null,
+        "query": "",
+        "category": null,
+        "brand": null,
+        "min_price": null,
+        "max_price": null,
+        "strict_budget": true,
+        "available_only": true,
+        "exclude_purchased": false,
+        "channel": "ecommerce",
+        "limit": 3,
+        "weights": {
+          "text_relevance": 0.4,
+          "customer_preference": 0.2,
+          "category_match": 0.15,
+          "brand_match": 0.1,
+          "budget_compatibility": 0.1,
+          "availability": 0.05
+        },
+        "retrieval_strategy": "content"
+      },
+      "started_at": "2026-11-04T08:18:40.653461+00:00",
+      "finished_at": "2026-11-04T08:18:41.291129+00:00",
+      "recommendation_id": 16,
+      "output": {
+        "id": 16,
+        "created_at": "2026-11-04T08:18:41.250867Z",
+        "run_id": "46b272f09c2a404f806ab50b97d41fcc",
+        "engine": "langgraph_workflow",
+        "llm_used": false,
+        "generation": "deterministic_agents",
+        "mode": "personalized",
+        "query": "",
+        "customer_id": "C002",
+        "channel": "ecommerce",
+        "message": "Deterministic LangGraph agent workflow; no LLM was called.",
+        "answer": "Deterministic LangGraph agent workflow; no LLM was called.\n1. [P008] Training Court Shoes — INR 3499.00 — in stock. Customer affinity 0.6685 uses declared preferences and 8 cross-channel interactions. Category affinity for Footwear: 1.0000. Brand affinity for TrailForm: 1.0000. Meets the effective price bounds. INR 3499.00; in stock (20 units). Evidence: P008:0:8b394e4b911a.\n2. [P007] Classic Casual Sneakers — INR 1999.00 — in stock. Customer affinity 0.4554 uses declared preferences and 8 cross-channel interactions. Category affinity for Footwear: 1.0000. Brand affinity for StrideWay: 0.9474. Meets the effective price bounds. INR 1999.00; in stock (50 units). Evidence: P007:0:8c756ae95e7d.\n3. [P005] Everyday Running Shoes — INR 2999.00 — in stock. Customer affinity 0.4513 uses declared preferences and 8 cross-channel interactions. Category affinity for Footwear: 1.0000. Brand affinity for StrideWay: 0.9474. Meets the effective price bounds. INR 2999.00; in stock (28 units). Evidence: P005:0:1d569fa09761.",
+        "warnings": [],
+        "context": {
+          "category": null,
+          "brand": null,
+          "category_source": null,
+          "brand_source": null,
+          "min_price": "0.00",
+          "max_price": "5000.00",
+          "min_exclusive": false,
+          "max_exclusive": false,
+          "budget_sources": {
+            "min_price": "declared_customer_budget",
+            "max_price": "declared_customer_budget"
+          },
+          "strict_budget": true,
+          "available_only": true,
+          "exclude_purchased": false,
+          "text_query": ""
+        },
+        "profile": {
+          "customer_id": "C002",
+          "name": "Demo Customer 2",
+          "channel": "ecommerce",
+          "cold_start": false,
+          "declared_categories": [
+            "Footwear",
+            "Apparel"
+          ],
+          "declared_brands": [
+            "StrideWay"
+          ],
+          "category_affinities": {
+            "Apparel": 0.05405405,
+            "Footwear": 1.0
+          },
+          "brand_affinities": {
+            "StrideWay": 0.94736842,
+            "TrailForm": 1.0
+          },
+          "product_affinities": {
+            "P005": 0.4375,
+            "P006": 0.1875,
+            "P007": 0.5625,
+            "P008": 1.0
+          },
+          "budget_min": "0.00",
+          "budget_max": "5000.00",
+          "observed_purchase_median_price": "3249.00",
+          "observed_price_basis": "current_catalog",
+          "event_counts": {
+            "view": 3,
+            "wishlist": 2,
+            "cart": 1,
+            "purchase": 2
+          },
+          "channel_counts": {
+            "mobile": 3,
+            "store": 3,
+            "ecommerce": 2
+          },
+          "viewed_product_ids": [
+            "P005",
+            "P006"
+          ],
+          "purchased_product_ids": [
+            "P005",
+            "P008"
+          ],
+          "wishlist_product_ids": [
+            "P007"
+          ],
+          "interaction_count": 8,
+          "source": "synthetic_demo"
+        },
+        "active_weights": {
+          "customer_preference": 0.33333333333333337,
+          "category_match": 0.25,
+          "brand_match": 0.16666666666666669,
+          "budget_compatibility": 0.16666666666666669,
+          "availability": 0.08333333333333334
+        },
+        "preference_basis": "customer_profile",
+        "retrieval_source": "content",
+        "index_generation": null,
+        "validation": {
+          "valid": true,
+          "checked_products": 3,
+          "references": [
+            "P008",
+            "P007",
+            "P005"
+          ]
+        },
+        "references": [
+          "P008",
+          "P007",
+          "P005"
+        ],
+        "items": [
+          {
+            "rank": 1,
+            "product": {
+              "id": "P008",
+              "name": "Training Court Shoes",
+              "description": "Supportive training shoes with a durable rubber outsole",
+              "category": "Footwear",
+              "brand": "TrailForm",
+              "price": "3499.00",
+              "currency": "INR",
+              "rating": 4.2,
+              "stock_quantity": 20,
+              "available": true,
+              "features": [
+                "training",
+                "support"
+              ],
+              "attributes": {
+                "size": "UK 8",
+                "color": "black"
+              },
+              "image_url": null,
+              "source": "synthetic_demo"
+            },
+            "similarity_score": 0.0,
+            "relevance_score": 0.8894961,
+            "components": {
+              "text_relevance": 0.0,
+              "customer_preference": 0.66848831,
+              "category_match": 1.0,
+              "brand_match": 1.0,
+              "budget_compatibility": 1.0,
+              "availability": 1.0
+            },
+            "explanation": "Customer affinity 0.6685 uses declared preferences and 8 cross-channel interactions. Category affinity for Footwear: 1.0000. Brand affinity for TrailForm: 1.0000. Meets the effective price bounds. INR 3499.00; in stock (20 units). Evidence: P008:0:8b394e4b911a.",
+            "retrieval_source": "content",
+            "document_id": "P008:0:8b394e4b911a",
+            "document": "Product ID: P008\nName: Training Court Shoes\nCategory: Footwear\nBrand: TrailForm\nPrice: INR 3499.00\nAvailability: in stock\nStock quantity: 20\nSource: synthetic_demo\nDescription: Supportive training shoes with a durable rubber outsole\nFeatures: [\"training\", \"support\"]\nAttributes: {\"color\": \"black\", \"size\": \"UK 8\"}",
+            "metadata": {
+              "product_id": "P008",
+              "name": "Training Court Shoes",
+              "category": "Footwear",
+              "category_key": "footwear",
+              "brand": "TrailForm",
+              "brand_key": "trailform",
+              "price_cents": 349900,
+              "currency": "INR",
+              "available": true,
+              "stock_quantity": 20,
+              "source": "synthetic_demo",
+              "chunk": 0,
+              "product_fingerprint": "d0ab55efab7b4098dcbd639ad20a747e85fdd7c0b31378c549b53c9e795bbcf4",
+              "document_hash": "8b394e4b911a5edcd5e4c4c5f768d1f642e56f22144bde87183225562762c72e"
+            }
+          },
+          {
+            "rank": 2,
+            "product": {
+              "id": "P007",
+              "name": "Classic Casual Sneakers",
+              "description": "Everyday casual sneakers with a soft fabric lining",
+              "category": "Footwear",
+              "brand": "StrideWay",
+              "price": "1999.00",
+              "currency": "INR",
+              "rating": 4.0,
+              "stock_quantity": 50,
+              "available": true,
+              "features": [
+                "casual",
+                "sneakers"
+              ],
+              "attributes": {
+                "size": "UK 7",
+                "color": "white"
+              },
+              "image_url": null,
+              "source": "synthetic_demo"
+            },
+            "similarity_score": 0.0,
+            "relevance_score": 0.80968136,
+            "components": {
+              "text_relevance": 0.0,
+              "customer_preference": 0.45535986,
+              "category_match": 1.0,
+              "brand_match": 0.94736842,
+              "budget_compatibility": 1.0,
+              "availability": 1.0
+            },
+            "explanation": "Customer affinity 0.4554 uses declared preferences and 8 cross-channel interactions. Category affinity for Footwear: 1.0000. Brand affinity for StrideWay: 0.9474. Meets the effective price bounds. INR 1999.00; in stock (50 units). Evidence: P007:0:8c756ae95e7d.",
+            "retrieval_source": "content",
+            "document_id": "P007:0:8c756ae95e7d",
+            "document": "Product ID: P007\nName: Classic Casual Sneakers\nCategory: Footwear\nBrand: StrideWay\nPrice: INR 1999.00\nAvailability: in stock\nStock quantity: 50\nSource: synthetic_demo\nDescription: Everyday casual sneakers with a soft fabric lining\nFeatures: [\"casual\", \"sneakers\"]\nAttributes: {\"color\": \"white\", \"size\": \"UK 7\"}",
+            "metadata": {
+              "product_id": "P007",
+              "name": "Classic Casual Sneakers",
+              "category": "Footwear",
+              "category_key": "footwear",
+              "brand": "StrideWay",
+              "brand_key": "strideway",
+              "price_cents": 199900,
+              "currency": "INR",
+              "available": true,
+              "stock_quantity": 50,
+              "source": "synthetic_demo",
+              "chunk": 0,
+              "product_fingerprint": "199d44fbb900f25a5c78f5f60f5c5e257c278b70c236b3d1bd5b76d7c6608a42",
+              "document_hash": "8c756ae95e7d63c44f525aa15f48d5650dad573b73e2dfd9fffb75735f42d0b1"
+            }
+          },
+          {
+            "rank": 3,
+            "product": {
+              "id": "P005",
+              "name": "Everyday Running Shoes",
+              "description": "Lightweight running shoes with breathable mesh and cushioned soles",
+              "category": "Footwear",
+              "brand": "StrideWay",
+              "price": "2999.00",
+              "currency": "INR",
+              "rating": 4.8,
+              "stock_quantity": 28,
+              "available": true,
+              "features": [
+                "running",
+                "breathable",
+                "lightweight"
+              ],
+              "attributes": {
+                "size": "UK 8",
+                "color": "blue"
+              },
+              "image_url": null,
+              "source": "synthetic_demo"
+            },
+            "similarity_score": 0.0,
+            "relevance_score": 0.80831763,
+            "components": {
+              "text_relevance": 0.0,
+              "customer_preference": 0.45126869,
+              "category_match": 1.0,
+              "brand_match": 0.94736842,
+              "budget_compatibility": 1.0,
+              "availability": 1.0
+            },
+            "explanation": "Customer affinity 0.4513 uses declared preferences and 8 cross-channel interactions. Category affinity for Footwear: 1.0000. Brand affinity for StrideWay: 0.9474. Meets the effective price bounds. INR 2999.00; in stock (28 units). Evidence: P005:0:1d569fa09761.",
+            "retrieval_source": "content",
+            "document_id": "P005:0:1d569fa09761",
+            "document": "Product ID: P005\nName: Everyday Running Shoes\nCategory: Footwear\nBrand: StrideWay\nPrice: INR 2999.00\nAvailability: in stock\nStock quantity: 28\nSource: synthetic_demo\nDescription: Lightweight running shoes with breathable mesh and cushioned soles\nFeatures: [\"running\", \"breathable\", \"lightweight\"]\nAttributes: {\"color\": \"blue\", \"size\": \"UK 8\"}",
+            "metadata": {
+              "product_id": "P005",
+              "name": "Everyday Running Shoes",
+              "category": "Footwear",
+              "category_key": "footwear",
+              "brand": "StrideWay",
+              "brand_key": "strideway",
+              "price_cents": 299900,
+              "currency": "INR",
+              "available": true,
+              "stock_quantity": 28,
+              "source": "synthetic_demo",
+              "chunk": 0,
+              "product_fingerprint": "dfb457df9cec14b17b63fae2564f6f820b0bbe8f20ecf157d48404414bda9bda",
+              "document_hash": "1d569fa0976158fd0e08792ad1873ede17b495246173345379859edfbd8dd923"
+            }
+          }
+        ]
+      },
+      "error": null,
+      "steps": [
+        {
+          "sequence": 1,
+          "execution_id": 11,
+          "agent": "supervisor",
+          "status": "completed",
+          "started_at": "2026-11-04T08:18:40.683381+00:00",
+          "finished_at": "2026-11-04T08:18:40.695350+00:00",
+          "duration_ms": 11.969,
+          "tool_calls": [],
+          "output_summary": "{\"counts\": {}, \"updated_state_fields\": [\"executed_agents\", \"plan\", \"warnings\"]}",
+          "error": null
+        },
+        {
+          "sequence": 2,
+          "execution_id": 12,
+          "agent": "query_understanding",
+          "status": "completed",
+          "started_at": "2026-11-04T08:18:40.710317+00:00",
+          "finished_at": "2026-11-04T08:18:40.730257+00:00",
+          "duration_ms": 19.94,
+          "tool_calls": [
+            {
+              "name": "understand_query",
+              "status": "completed",
+              "duration_ms": 6.07,
+              "output_summary": {
+                "keys": [
+                  "context",
+                  "warnings"
+                ]
+              },
+              "output_sha256": "538f8c7c5aed62b4873d9d1c6ea675bcf82caec12e609e814338b8812cc57a14",
+              "error": null
+            }
+          ],
+          "output_summary": "{\"counts\": {}, \"updated_state_fields\": [\"context\", \"executed_agents\", \"warnings\"]}",
+          "error": null
+        },
+        {
+          "sequence": 3,
+          "execution_id": 13,
+          "agent": "customer_context",
+          "status": "completed",
+          "started_at": "2026-11-04T08:18:40.748208+00:00",
+          "finished_at": "2026-11-04T08:18:40.775136+00:00",
+          "duration_ms": 26.928,
+          "tool_calls": [
+            {
+              "name": "get_customer_profile",
+              "status": "completed",
+              "duration_ms": 6.008,
+              "output_summary": {
+                "keys": [
+                  "brand_affinities",
+                  "budget_max",
+                  "budget_min",
+                  "category_affinities",
+                  "channel",
+                  "channel_counts",
+                  "cold_start",
+                  "customer_id",
+                  "declared_brands",
+                  "declared_categories",
+                  "event_counts",
+                  "interaction_count",
+                  "name",
+                  "observed_price_basis",
+                  "observed_purchase_median_price",
+                  "product_affinities",
+                  "purchased_product_ids",
+                  "source",
+                  "viewed_product_ids",
+                  "wishlist_product_ids"
+                ],
+                "customer_id": "C002",
+                "interaction_count": 8
+              },
+              "output_sha256": "182d36d153988bccec7ef5eb22dd6331bdb031519cf1b7cb6b91064efaa8d0d5",
+              "error": null
+            },
+            {
+              "name": "understand_query",
+              "status": "completed",
+              "duration_ms": 4.154,
+              "output_summary": {
+                "keys": [
+                  "context",
+                  "warnings"
+                ]
+              },
+              "output_sha256": "7fb993590ae474306d719d910c696732b3df3949ca6ee632cd720f42a15fb527",
+              "error": null
+            }
+          ],
+          "output_summary": "{\"counts\": {}, \"updated_state_fields\": [\"context\", \"executed_agents\", \"profile\", \"warnings\"]}",
+          "error": null
+        },
+        {
+          "sequence": 4,
+          "execution_id": 14,
+          "agent": "product_retrieval",
+          "status": "completed",
+          "started_at": "2026-11-04T08:18:40.791094+00:00",
+          "finished_at": "2026-11-04T08:18:40.836971+00:00",
+          "duration_ms": 45.877,
+          "tool_calls": [
+            {
+              "name": "search_products",
+              "status": "completed",
+              "duration_ms": 27.763,
+              "output_summary": {
+                "keys": [
+                  "index_generation",
+                  "items",
+                  "warnings"
+                ],
+                "item_count": 20,
+                "product_ids": [
+                  "P001",
+                  "P003",
+                  "P005",
+                  "P006",
+                  "P007",
+                  "P008",
+                  "P009",
+                  "P010",
+                  "P011",
+                  "P013",
+                  "P014",
+                  "P015",
+                  "P016",
+                  "P017",
+                  "P018",
+                  "P019",
+                  "P021",
+                  "P022",
+                  "P023",
+                  "P024"
+                ]
+              },
+              "output_sha256": "3b59d9fff1fbe1380222c71c4127f050b1adc2bf394b36f605d18e190f2a6fef",
+              "error": null
+            }
+          ],
+          "output_summary": "{\"counts\": {}, \"updated_state_fields\": [\"executed_agents\", \"retrieval\", \"warnings\"]}",
+          "error": null
+        },
+        {
+          "sequence": 5,
+          "execution_id": 15,
+          "agent": "recommendation",
+          "status": "completed",
+          "started_at": "2026-11-04T08:18:40.859910+00:00",
+          "finished_at": "2026-11-04T08:18:40.964629+00:00",
+          "duration_ms": 104.719,
+          "tool_calls": [
+            {
+              "name": "score_recommendation_candidates",
+              "status": "completed",
+              "duration_ms": 87.275,
+              "output_summary": {
+                "keys": [
+                  "active_weights",
+                  "index_generation",
+                  "items",
+                  "preference_basis",
+                  "warnings"
+                ],
+                "item_count": 20,
+                "product_ids": [
+                  "P001",
+                  "P003",
+                  "P005",
+                  "P006",
+                  "P007",
+                  "P008",
+                  "P009",
+                  "P010",
+                  "P011",
+                  "P013",
+                  "P014",
+                  "P015",
+                  "P016",
+                  "P017",
+                  "P018",
+                  "P019",
+                  "P021",
+                  "P022",
+                  "P023",
+                  "P024"
+                ]
+              },
+              "output_sha256": "b926a982d97ec0baa1f044d2d40689bfab73d4e9c45e70221a8b6def47704aab",
+              "error": null
+            }
+          ],
+          "output_summary": "{\"counts\": {\"candidates\": 20}, \"updated_state_fields\": [\"active_weights\", \"candidates\", \"executed_agents\", \"preference_basis\"]}",
+          "error": null
+        },
+        {
+          "sequence": 6,
+          "execution_id": 16,
+          "agent": "product_ranking",
+          "status": "completed",
+          "started_at": "2026-11-04T08:18:40.986571+00:00",
+          "finished_at": "2026-11-04T08:18:41.006517+00:00",
+          "duration_ms": 19.946,
+          "tool_calls": [
+            {
+              "name": "rank_recommendations",
+              "status": "completed",
+              "duration_ms": 5.998,
+              "output_summary": {
+                "keys": [
+                  "index_generation",
+                  "items",
+                  "warnings"
+                ],
+                "item_count": 20,
+                "product_ids": [
+                  "P008",
+                  "P007",
+                  "P005",
+                  "P006",
+                  "P009",
+                  "P010",
+                  "P011",
+                  "P021",
+                  "P018",
+                  "P015",
+                  "P001",
+                  "P024",
+                  "P019",
+                  "P014",
+                  "P003",
+                  "P023",
+                  "P017",
+                  "P016",
+                  "P022",
+                  "P013"
+                ]
+              },
+              "output_sha256": "4e09679887980dbd5bb222bc7fa1074ea39c60febf2bb8ca7b8cd72f2cf0ee29",
+              "error": null
+            }
+          ],
+          "output_summary": "{\"counts\": {\"ranked\": 20}, \"updated_state_fields\": [\"executed_agents\", \"ranked\"]}",
+          "error": null
+        },
+        {
+          "sequence": 7,
+          "execution_id": 17,
+          "agent": "availability",
+          "status": "completed",
+          "started_at": "2026-11-04T08:18:41.030454+00:00",
+          "finished_at": "2026-11-04T08:18:41.089297+00:00",
+          "duration_ms": 58.843,
+          "tool_calls": [
+            {
+              "name": "check_product_availability",
+              "status": "completed",
+              "duration_ms": 46.785,
+              "output_summary": {
+                "keys": [
+                  "items",
+                  "rejected_product_ids"
+                ],
+                "item_count": 20,
+                "product_ids": [
+                  "P008",
+                  "P007",
+                  "P005",
+                  "P006",
+                  "P009",
+                  "P010",
+                  "P011",
+                  "P021",
+                  "P018",
+                  "P015",
+                  "P001",
+                  "P024",
+                  "P019",
+                  "P014",
+                  "P003",
+                  "P023",
+                  "P017",
+                  "P016",
+                  "P022",
+                  "P013"
+                ]
+              },
+              "output_sha256": "96462c806b29d6488ce98860fc1a1f2f8905e43b34156a63900a56b36fe3736f",
+              "error": null
+            }
+          ],
+          "output_summary": "{\"counts\": {\"items\": 3}, \"updated_state_fields\": [\"executed_agents\", \"items\", \"warnings\"]}",
+          "error": null
+        },
+        {
+          "sequence": 8,
+          "execution_id": 18,
+          "agent": "explanation",
+          "status": "completed",
+          "started_at": "2026-11-04T08:18:41.126197+00:00",
+          "finished_at": "2026-11-04T08:18:41.144150+00:00",
+          "duration_ms": 17.953,
+          "tool_calls": [
+            {
+              "name": "explain_recommendations",
+              "status": "completed",
+              "duration_ms": 3.203,
+              "output_summary": {
+                "keys": [
+                  "index_generation",
+                  "items",
+                  "warnings"
+                ],
+                "item_count": 3,
+                "product_ids": [
+                  "P008",
+                  "P007",
+                  "P005"
+                ]
+              },
+              "output_sha256": "69dfe60a9a6eea010b7a694da662d0b69ca317164f76e570a6e590e68b8c6d28",
+              "error": null
+            }
+          ],
+          "output_summary": "{\"counts\": {\"items\": 3}, \"updated_state_fields\": [\"executed_agents\", \"items\"]}",
+          "error": null
+        },
+        {
+          "sequence": 9,
+          "execution_id": 19,
+          "agent": "validation",
+          "status": "completed",
+          "started_at": "2026-11-04T08:18:41.168085+00:00",
+          "finished_at": "2026-11-04T08:18:41.195014+00:00",
+          "duration_ms": 26.929,
+          "tool_calls": [
+            {
+              "name": "validate_recommendations",
+              "status": "completed",
+              "duration_ms": 11.829,
+              "output_summary": {
+                "keys": [
+                  "checked_products",
+                  "references",
+                  "valid"
+                ],
+                "valid": true,
+                "checked_products": 3
+              },
+              "output_sha256": "fd13c4ca5f11868e5fccfc6f64766914fcf2160132bb09d9b44a0b83587ea424",
+              "error": null
+            }
+          ],
+          "output_summary": "{\"counts\": {}, \"updated_state_fields\": [\"executed_agents\", \"validation\"]}",
+          "error": null
+        },
+        {
+          "sequence": 10,
+          "execution_id": 20,
+          "agent": "response",
+          "status": "completed",
+          "started_at": "2026-11-04T08:18:41.221941+00:00",
+          "finished_at": "2026-11-04T08:18:41.284149+00:00",
+          "duration_ms": 62.208,
+          "tool_calls": [
+            {
+              "name": "save_recommendation",
+              "status": "completed",
+              "duration_ms": 49.546,
+              "output_summary": {
+                "keys": [
+                  "output"
+                ]
+              },
+              "output_sha256": "3b307ee57d4d47035922f10f056770d71c4b03eb9f82ba2e786eba6af3ffa754",
+              "error": null
+            }
+          ],
+          "output_summary": "{\"counts\": {}, \"updated_state_fields\": [\"executed_agents\", \"output\"]}",
+          "error": null
+        }
+      ]
+    },
+    {
+      "run_id": "130a0e4f861e40789eec20f2c463f504",
+      "status": "completed",
+      "request": {
+        "mode": "context_aware",
+        "customer_id": null,
+        "product_id": null,
+        "query": "qzxwunmatched",
+        "category": null,
+        "brand": null,
+        "min_price": null,
+        "max_price": null,
+        "strict_budget": true,
+        "available_only": true,
+        "exclude_purchased": false,
+        "channel": "ecommerce",
+        "limit": 3,
+        "weights": {
+          "text_relevance": 0.4,
+          "customer_preference": 0.2,
+          "category_match": 0.15,
+          "brand_match": 0.1,
+          "budget_compatibility": 0.1,
+          "availability": 0.05
+        },
+        "retrieval_strategy": "content"
+      },
+      "started_at": "2026-11-04T08:18:41.319139+00:00",
+      "finished_at": "2026-11-04T08:18:41.575453+00:00",
+      "recommendation_id": 17,
+      "output": {
+        "id": 17,
+        "created_at": "2026-11-04T08:18:41.550520Z",
+        "run_id": "130a0e4f861e40789eec20f2c463f504",
+        "engine": "langgraph_workflow",
+        "llm_used": false,
+        "generation": "deterministic_agents",
+        "mode": "context_aware",
+        "query": "qzxwunmatched",
+        "customer_id": null,
+        "channel": "ecommerce",
+        "message": "No products match the current evidence and requested constraints. No filters were relaxed.",
+        "answer": "Deterministic LangGraph agent workflow; no LLM was called.\nNo products match the current evidence and requested constraints. No filters were relaxed.",
+        "warnings": [],
+        "context": {
+          "category": null,
+          "brand": null,
+          "category_source": null,
+          "brand_source": null,
+          "min_price": null,
+          "max_price": null,
+          "min_exclusive": false,
+          "max_exclusive": false,
+          "budget_sources": {},
+          "strict_budget": true,
+          "available_only": true,
+          "exclude_purchased": false,
+          "text_query": "qzxwunmatched"
+        },
+        "profile": null,
+        "active_weights": {},
+        "preference_basis": "not_scored",
+        "retrieval_source": "content",
+        "index_generation": null,
+        "validation": {
+          "valid": true,
+          "checked_products": 0,
+          "references": []
+        },
+        "references": [],
+        "items": []
+      },
+      "error": null,
+      "steps": [
+        {
+          "sequence": 1,
+          "execution_id": 21,
+          "agent": "supervisor",
+          "status": "completed",
+          "started_at": "2026-11-04T08:18:41.349058+00:00",
+          "finished_at": "2026-11-04T08:18:41.362026+00:00",
+          "duration_ms": 12.968,
+          "tool_calls": [],
+          "output_summary": "{\"counts\": {}, \"updated_state_fields\": [\"executed_agents\", \"plan\", \"warnings\"]}",
+          "error": null
+        },
+        {
+          "sequence": 2,
+          "execution_id": 22,
+          "agent": "query_understanding",
+          "status": "completed",
+          "started_at": "2026-11-04T08:18:41.375987+00:00",
+          "finished_at": "2026-11-04T08:18:41.395935+00:00",
+          "duration_ms": 19.948,
+          "tool_calls": [
+            {
+              "name": "understand_query",
+              "status": "completed",
+              "duration_ms": 5.181,
+              "output_summary": {
+                "keys": [
+                  "context",
+                  "warnings"
+                ]
+              },
+              "output_sha256": "289e6947cb605f5452da54673db66e7322632ec0e15592db40fb4ab6ce5e1dc3",
+              "error": null
+            }
+          ],
+          "output_summary": "{\"counts\": {}, \"updated_state_fields\": [\"context\", \"executed_agents\", \"warnings\"]}",
+          "error": null
+        },
+        {
+          "sequence": 3,
+          "execution_id": 23,
+          "agent": "customer_context",
+          "status": "completed",
+          "started_at": "2026-11-04T08:18:41.412889+00:00",
+          "finished_at": "2026-11-04T08:18:41.429842+00:00",
+          "duration_ms": 16.953,
+          "tool_calls": [
+            {
+              "name": "get_catalog_context",
+              "status": "completed",
+              "duration_ms": 6.535,
+              "output_summary": {
+                "keys": [
+                  "interactions",
+                  "products"
+                ],
+                "products": 24,
+                "interactions": 56
+              },
+              "output_sha256": "c7d14802fbe13882e94b84605928ed23e3c8b2f0350eeab849b08a4deb4bb2c6",
+              "error": null
+            }
+          ],
+          "output_summary": "{\"counts\": {}, \"updated_state_fields\": [\"executed_agents\", \"plan\", \"profile\"]}",
+          "error": null
+        },
+        {
+          "sequence": 4,
+          "execution_id": 24,
+          "agent": "product_retrieval",
+          "status": "completed",
+          "started_at": "2026-11-04T08:18:41.443806+00:00",
+          "finished_at": "2026-11-04T08:18:41.478717+00:00",
+          "duration_ms": 34.911,
+          "tool_calls": [
+            {
+              "name": "search_products",
+              "status": "completed",
+              "duration_ms": 22.866,
+              "output_summary": {
+                "keys": [
+                  "index_generation",
+                  "items",
+                  "warnings"
+                ],
+                "item_count": 0,
+                "product_ids": []
+              },
+              "output_sha256": "44a835a4153c0b05d456424b4976ae036a081cf8c7300359984ce1d3957fcc6e",
+              "error": null
+            }
+          ],
+          "output_summary": "{\"counts\": {}, \"updated_state_fields\": [\"executed_agents\", \"retrieval\", \"warnings\"]}",
+          "error": null
+        },
+        {
+          "sequence": 5,
+          "execution_id": 25,
+          "agent": "validation",
+          "status": "completed",
+          "started_at": "2026-11-04T08:18:41.496666+00:00",
+          "finished_at": "2026-11-04T08:18:41.515613+00:00",
+          "duration_ms": 18.947,
+          "tool_calls": [
+            {
+              "name": "validate_recommendations",
+              "status": "completed",
+              "duration_ms": 6.819,
+              "output_summary": {
+                "keys": [
+                  "checked_products",
+                  "references",
+                  "valid"
+                ],
+                "valid": true,
+                "checked_products": 0
+              },
+              "output_sha256": "a447c59b22f5922d28f968592d3984095d2d63a650722817cfd70eb8c7efd9eb",
+              "error": null
+            }
+          ],
+          "output_summary": "{\"counts\": {}, \"updated_state_fields\": [\"executed_agents\", \"validation\"]}",
+          "error": null
+        },
+        {
+          "sequence": 6,
+          "execution_id": 26,
+          "agent": "response",
+          "status": "completed",
+          "started_at": "2026-11-04T08:18:41.530573+00:00",
+          "finished_at": "2026-11-04T08:18:41.569468+00:00",
+          "duration_ms": 38.895,
+          "tool_calls": [
+            {
+              "name": "save_recommendation",
+              "status": "completed",
+              "duration_ms": 24.905,
+              "output_summary": {
+                "keys": [
+                  "output"
+                ]
+              },
+              "output_sha256": "1c8f42bbd522f9dce23375769caf5d87d99bbb7c2604032f9f4fb6a830210246",
+              "error": null
+            }
+          ],
+          "output_summary": "{\"counts\": {}, \"updated_state_fields\": [\"executed_agents\", \"output\"]}",
+          "error": null
+        }
+      ]
+    }
+  ]
+}

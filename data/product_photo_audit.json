@@ -1,0 +1,248 @@
+{
+  "total_products": 24,
+  "real_local_photos": 24,
+  "missing": [],
+  "duplicate_photos": [],
+  "products": [
+    {
+      "id": "P001",
+      "file": "electronics/P001-wireless-everyday-headphones.jpg",
+      "dimensions": [
+        960,
+        720
+      ],
+      "sha256": "1a52f5a036142808168865725d01ce3792e10b3b2f48429e11b321e05430a906",
+      "source_url": "https://www.pexels.com/photo/20285553/"
+    },
+    {
+      "id": "P002",
+      "file": "electronics/P002-quiet-focus-headphones.jpg",
+      "dimensions": [
+        960,
+        720
+      ],
+      "sha256": "dcdad6a96a46eada5998ce802deea6aa0477b1ebcfcae28e23deae599663792e",
+      "source_url": "https://www.pexels.com/photo/33034333/"
+    },
+    {
+      "id": "P003",
+      "file": "electronics/P003-pocket-wireless-earbuds.jpg",
+      "dimensions": [
+        960,
+        720
+      ],
+      "sha256": "d1bae489ae7160fe7ab68725dcf25c44497e14c328d24d76cb608ca3e5b1174c",
+      "source_url": "https://www.pexels.com/photo/33444591/"
+    },
+    {
+      "id": "P004",
+      "file": "electronics/P004-studio-wired-headphones.jpg",
+      "dimensions": [
+        960,
+        720
+      ],
+      "sha256": "6940616f035e638217e683c503a7ea2e6cca1fb104b7cd033e8d9f44a08aca06",
+      "source_url": "https://www.pexels.com/photo/12266870/"
+    },
+    {
+      "id": "P005",
+      "file": "footwear/P005-everyday-running-shoes.jpg",
+      "dimensions": [
+        960,
+        720
+      ],
+      "sha256": "2f93da748f45094126bf3ef4661a4ff7c0a1017693d6b48154fa6c4b29223614",
+      "source_url": "https://unsplash.com/photos/blue-white-and-black-nike-running-shoes-l8p1aWZqHvE"
+    },
+    {
+      "id": "P006",
+      "file": "footwear/P006-trail-walking-shoes.jpg",
+      "dimensions": [
+        960,
+        720
+      ],
+      "sha256": "587dda9ccafcdaee99cdde9e18217893e4b20adf72dc141765e11e2a26c08105",
+      "source_url": "https://www.pexels.com/photo/4942028/"
+    },
+    {
+      "id": "P007",
+      "file": "footwear/P007-classic-casual-sneakers.jpg",
+      "dimensions": [
+        960,
+        720
+      ],
+      "sha256": "f1dda03071081a2d00baf2d840d4e3487ecaf8e1a9340c8ae3d1d2a340b75142",
+      "source_url": "https://www.pexels.com/photo/35618111/"
+    },
+    {
+      "id": "P008",
+      "file": "footwear/P008-training-court-shoes.jpg",
+      "dimensions": [
+        960,
+        720
+      ],
+      "sha256": "e987d41a4b6f1c456abb954eec88a53f3a7273160cc206649ee061f6557f596f",
+      "source_url": "https://www.pexels.com/photo/1124466/"
+    },
+    {
+      "id": "P009",
+      "file": "apparel/P009-cotton-everyday-t-shirt.jpg",
+      "dimensions": [
+        960,
+        720
+      ],
+      "sha256": "c0ecb93e305a63f97c0aee12cae7b5b1a765e8abb4a1e81730840d2b01dd54cd",
+      "source_url": "https://www.pexels.com/photo/23285867/"
+    },
+    {
+      "id": "P010",
+      "file": "apparel/P010-lightweight-sports-jacket.jpg",
+      "dimensions": [
+        960,
+        720
+      ],
+      "sha256": "722a1553c739bf1a8d597f67a1d470a0ca129a23fd20eb0e9b31ba9be2f6a556",
+      "source_url": "https://www.pexels.com/photo/4584653/"
+    },
+    {
+      "id": "P011",
+      "file": "apparel/P011-relaxed-cotton-trousers.jpg",
+      "dimensions": [
+        960,
+        720
+      ],
+      "sha256": "1487872ca654a43081f2017081e67098c11bb8599c1720fd457640277a65f2b9",
+      "source_url": "https://www.pexels.com/photo/17135748/"
+    },
+    {
+      "id": "P012",
+      "file": "apparel/P012-warm-fleece-hoodie.jpg",
+      "dimensions": [
+        960,
+        720
+      ],
+      "sha256": "36e3bb461e6696f9395a8027e37d4c139e45b634072d3bde952817690fe9c56c",
+      "source_url": "https://www.pexels.com/photo/6995857/"
+    },
+    {
+      "id": "P013",
+      "file": "home/P013-insulated-steel-bottle.jpg",
+      "dimensions": [
+        960,
+        720
+      ],
+      "sha256": "dd1d1a8876bf65ad82e302e172707c699f7ed4210b407e67af904fad76d09e32",
+      "source_url": "https://www.pexels.com/photo/34140882/"
+    },
+    {
+      "id": "P014",
+      "file": "home/P014-adjustable-desk-lamp.jpg",
+      "dimensions": [
+        960,
+        720
+      ],
+      "sha256": "f2232cdd749234e69ca425eeaa63f2b5b2e6ac886d339e00a344414d6460010c",
+      "source_url": "https://www.pexels.com/photo/7193648/"
+    },
+    {
+      "id": "P015",
+      "file": "home/P015-cotton-cushion-cover-set.jpg",
+      "dimensions": [
+        960,
+        720
+      ],
+      "sha256": "ba7768c1063e574a9b44dfa575eb3230a3d430378cea894fc598cd63302e7718",
+      "source_url": "https://www.pexels.com/photo/6633537/"
+    },
+    {
+      "id": "P016",
+      "file": "home/P016-compact-study-organizer.jpg",
+      "dimensions": [
+        960,
+        720
+      ],
+      "sha256": "0f978607f9795c05131444eb1ebd1ef65514619c250c3ad4d276bcf32ab25683",
+      "source_url": "https://unsplash.com/photos/brown-wooden-organizer-Jd1FFerkdhk"
+    },
+    {
+      "id": "P017",
+      "file": "sports/P017-non-slip-yoga-mat.jpg",
+      "dimensions": [
+        960,
+        720
+      ],
+      "sha256": "0964b6fb5d313274ccdc86c769abdfff0009acc1fb2db68f0272b5a0bb356327",
+      "source_url": "https://www.pexels.com/photo/4793328/"
+    },
+    {
+      "id": "P018",
+      "file": "sports/P018-resistance-band-set.jpg",
+      "dimensions": [
+        960,
+        720
+      ],
+      "sha256": "ce5dbccccccc0b223db5634d8dba6f0906b233832bed7dad03c172c2ffd68350",
+      "source_url": "https://unsplash.com/photos/resistance-bands-with-rainbow-stripes-hang-4KX0FQqOGl4"
+    },
+    {
+      "id": "P019",
+      "file": "sports/P019-adjustable-skipping-rope.jpg",
+      "dimensions": [
+        960,
+        720
+      ],
+      "sha256": "1f94378a1cca675bdf26b09cbbd36f3faaf5e660ed1e51a4aa55e3099f0beefd",
+      "source_url": "https://www.pexels.com/photo/8032841/"
+    },
+    {
+      "id": "P020",
+      "file": "sports/P020-training-dumbbell-pair.jpg",
+      "dimensions": [
+        960,
+        720
+      ],
+      "sha256": "f136fe51b5b713b1f3a8c640cdd191ff91b1d03774fbbf19a9523edf4dd85f8c",
+      "source_url": "https://www.pexels.com/photo/15713034/"
+    },
+    {
+      "id": "P021",
+      "file": "accessories/P021-everyday-laptop-backpack.jpg",
+      "dimensions": [
+        960,
+        720
+      ],
+      "sha256": "9e541da788ab7a972693af520deed6172ac41103929865fdf6201af181c3e56b",
+      "source_url": "https://www.pexels.com/photo/18999339/"
+    },
+    {
+      "id": "P022",
+      "file": "accessories/P022-compact-crossbody-bag.jpg",
+      "dimensions": [
+        960,
+        720
+      ],
+      "sha256": "a1ee0cb493bff3bc73fc7006930aab14cf9f3bd44d8ffdf2c56e0b7fab29d171",
+      "source_url": "https://unsplash.com/photos/closeup-photo-of-brown-leather-crossbody-bag-6G7rmG8pDCs"
+    },
+    {
+      "id": "P023",
+      "file": "accessories/P023-travel-packing-cubes.jpg",
+      "dimensions": [
+        960,
+        720
+      ],
+      "sha256": "e5ad090811e3fc5cba8cd8579ed4d5ac584eba9e0d51b52443c04e270e05b868",
+      "source_url": "https://www.pexels.com/photo/9186169/"
+    },
+    {
+      "id": "P024",
+      "file": "accessories/P024-minimal-everyday-wallet.jpg",
+      "dimensions": [
+        960,
+        720
+      ],
+      "sha256": "ed37f32ba6637b52e28945061a179be60cd4e6225dfdd8c5e818c4aa7c917997",
+      "source_url": "https://www.pexels.com/photo/7085783/"
+    }
+  ]
+}
