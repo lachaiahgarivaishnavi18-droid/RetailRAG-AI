@@ -500,6 +500,5506 @@
       },
       "image_url": "",
       "available": true
+    },
+    {
+      "id": "D001",
+      "name": "CarryLane Metro Laptop Backpack",
+      "description": "CarryLane Metro Laptop Backpack for daily commuting. 13-inch padded laptop sleeve. 20 L capacity. Internal organizer pockets.",
+      "category": "Accessories",
+      "brand": "CarryLane",
+      "price": "1502.00",
+      "currency": "INR",
+      "rating": 3.8,
+      "stock_quantity": 8,
+      "available": true,
+      "features": [
+        "13-inch padded laptop sleeve",
+        "20 L capacity",
+        "Internal organizer pockets"
+      ],
+      "attributes": {
+        "series": "Metro",
+        "catalog": "Synthetic demonstration",
+        "model": "CAR-101"
+      },
+      "image_url": "/product_images/expanded/backpacks/MuAhf9ZX-vs.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Laptop Backpack"
+    },
+    {
+      "id": "D002",
+      "name": "CarryLane Summit Laptop Backpack",
+      "description": "CarryLane Summit Laptop Backpack for work and study. 14-inch padded laptop sleeve. 21 L capacity. Internal organizer pockets.",
+      "category": "Accessories",
+      "brand": "CarryLane",
+      "price": "1637.00",
+      "currency": "INR",
+      "rating": 3.85,
+      "stock_quantity": 18,
+      "available": true,
+      "features": [
+        "14-inch padded laptop sleeve",
+        "21 L capacity",
+        "Internal organizer pockets"
+      ],
+      "attributes": {
+        "series": "Summit",
+        "catalog": "Synthetic demonstration",
+        "model": "CAR-102"
+      },
+      "image_url": "/product_images/expanded/backpacks/Ev-I0AnJlS4.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Laptop Backpack"
+    },
+    {
+      "id": "D003",
+      "name": "CarryLane Harbor Laptop Backpack",
+      "description": "CarryLane Harbor Laptop Backpack for weekend use. 15.6-inch padded laptop sleeve. 22 L capacity. Internal organizer pockets.",
+      "category": "Accessories",
+      "brand": "CarryLane",
+      "price": "1775.00",
+      "currency": "INR",
+      "rating": 3.9,
+      "stock_quantity": 28,
+      "available": true,
+      "features": [
+        "15.6-inch padded laptop sleeve",
+        "22 L capacity",
+        "Internal organizer pockets"
+      ],
+      "attributes": {
+        "series": "Harbor",
+        "catalog": "Synthetic demonstration",
+        "model": "CAR-103"
+      },
+      "image_url": "/product_images/expanded/backpacks/GQQ6BRJxysU.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Laptop Backpack"
+    },
+    {
+      "id": "D004",
+      "name": "CarryLane Studio Laptop Backpack",
+      "description": "CarryLane Studio Laptop Backpack for comfortable everyday use. 16-inch padded laptop sleeve. 23 L capacity. Internal organizer pockets.",
+      "category": "Accessories",
+      "brand": "CarryLane",
+      "price": "1913.00",
+      "currency": "INR",
+      "rating": 3.95,
+      "stock_quantity": 38,
+      "available": true,
+      "features": [
+        "16-inch padded laptop sleeve",
+        "23 L capacity",
+        "Internal organizer pockets"
+      ],
+      "attributes": {
+        "series": "Studio",
+        "catalog": "Synthetic demonstration",
+        "model": "CAR-104"
+      },
+      "image_url": "/product_images/expanded/backpacks/d-BTL93LsGg.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Laptop Backpack"
+    },
+    {
+      "id": "D005",
+      "name": "CarryLane Vista Laptop Backpack",
+      "description": "CarryLane Vista Laptop Backpack for daily commuting. 17-inch padded laptop sleeve. 24 L capacity. Internal organizer pockets.",
+      "category": "Accessories",
+      "brand": "CarryLane",
+      "price": "2051.00",
+      "currency": "INR",
+      "rating": 4.0,
+      "stock_quantity": 48,
+      "available": true,
+      "features": [
+        "17-inch padded laptop sleeve",
+        "24 L capacity",
+        "Internal organizer pockets"
+      ],
+      "attributes": {
+        "series": "Vista",
+        "catalog": "Synthetic demonstration",
+        "model": "CAR-105"
+      },
+      "image_url": "/product_images/expanded/backpacks/DWTzfqz9S1A.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Laptop Backpack"
+    },
+    {
+      "id": "D006",
+      "name": "CarryLane Roam Laptop Backpack",
+      "description": "CarryLane Roam Laptop Backpack for work and study. 13-inch padded laptop sleeve. 25 L capacity. Internal organizer pockets.",
+      "category": "Accessories",
+      "brand": "CarryLane",
+      "price": "2189.00",
+      "currency": "INR",
+      "rating": 4.05,
+      "stock_quantity": 58,
+      "available": true,
+      "features": [
+        "13-inch padded laptop sleeve",
+        "25 L capacity",
+        "Internal organizer pockets"
+      ],
+      "attributes": {
+        "series": "Roam",
+        "catalog": "Synthetic demonstration",
+        "model": "CAR-106"
+      },
+      "image_url": "/product_images/expanded/backpacks/0V1m7in4dvM.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Laptop Backpack"
+    },
+    {
+      "id": "D007",
+      "name": "CarryLane Pulse Laptop Backpack",
+      "description": "CarryLane Pulse Laptop Backpack for weekend use. 14-inch padded laptop sleeve. 26 L capacity. Internal organizer pockets.",
+      "category": "Accessories",
+      "brand": "CarryLane",
+      "price": "2327.00",
+      "currency": "INR",
+      "rating": 4.1,
+      "stock_quantity": 68,
+      "available": true,
+      "features": [
+        "14-inch padded laptop sleeve",
+        "26 L capacity",
+        "Internal organizer pockets"
+      ],
+      "attributes": {
+        "series": "Pulse",
+        "catalog": "Synthetic demonstration",
+        "model": "CAR-107"
+      },
+      "image_url": "/product_images/expanded/backpacks/S1mSsru32QM.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Laptop Backpack"
+    },
+    {
+      "id": "D008",
+      "name": "CarryLane Atlas Laptop Backpack",
+      "description": "CarryLane Atlas Laptop Backpack for comfortable everyday use. 15.6-inch padded laptop sleeve. 27 L capacity. Internal organizer pockets.",
+      "category": "Accessories",
+      "brand": "CarryLane",
+      "price": "2465.00",
+      "currency": "INR",
+      "rating": 4.15,
+      "stock_quantity": 78,
+      "available": true,
+      "features": [
+        "15.6-inch padded laptop sleeve",
+        "27 L capacity",
+        "Internal organizer pockets"
+      ],
+      "attributes": {
+        "series": "Atlas",
+        "catalog": "Synthetic demonstration",
+        "model": "CAR-108"
+      },
+      "image_url": "/product_images/expanded/backpacks/j5ed3VKPAYQ.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Laptop Backpack"
+    },
+    {
+      "id": "D009",
+      "name": "CarryLane Breeze Laptop Backpack",
+      "description": "CarryLane Breeze Laptop Backpack for daily commuting. 16-inch padded laptop sleeve. 28 L capacity. Internal organizer pockets.",
+      "category": "Accessories",
+      "brand": "CarryLane",
+      "price": "2603.00",
+      "currency": "INR",
+      "rating": 4.2,
+      "stock_quantity": 88,
+      "available": true,
+      "features": [
+        "16-inch padded laptop sleeve",
+        "28 L capacity",
+        "Internal organizer pockets"
+      ],
+      "attributes": {
+        "series": "Breeze",
+        "catalog": "Synthetic demonstration",
+        "model": "CAR-109"
+      },
+      "image_url": "/product_images/expanded/backpacks/HcVfH3Nx00U.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Laptop Backpack"
+    },
+    {
+      "id": "D010",
+      "name": "CarryLane Cove Laptop Backpack",
+      "description": "CarryLane Cove Laptop Backpack for work and study. 17-inch padded laptop sleeve. 29 L capacity. Internal organizer pockets.",
+      "category": "Accessories",
+      "brand": "CarryLane",
+      "price": "2741.00",
+      "currency": "INR",
+      "rating": 4.25,
+      "stock_quantity": 98,
+      "available": true,
+      "features": [
+        "17-inch padded laptop sleeve",
+        "29 L capacity",
+        "Internal organizer pockets"
+      ],
+      "attributes": {
+        "series": "Cove",
+        "catalog": "Synthetic demonstration",
+        "model": "CAR-110"
+      },
+      "image_url": "/product_images/expanded/backpacks/2sAg0mMzevw.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Laptop Backpack"
+    },
+    {
+      "id": "D011",
+      "name": "CarryLane Stride Laptop Backpack",
+      "description": "CarryLane Stride Laptop Backpack for weekend use. 13-inch padded laptop sleeve. 30 L capacity. Internal organizer pockets.",
+      "category": "Accessories",
+      "brand": "CarryLane",
+      "price": "2879.00",
+      "currency": "INR",
+      "rating": 4.3,
+      "stock_quantity": 0,
+      "available": false,
+      "features": [
+        "13-inch padded laptop sleeve",
+        "30 L capacity",
+        "Internal organizer pockets"
+      ],
+      "attributes": {
+        "series": "Stride",
+        "catalog": "Synthetic demonstration",
+        "model": "CAR-111"
+      },
+      "image_url": "/product_images/expanded/backpacks/SwWCo1k92M4.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Laptop Backpack"
+    },
+    {
+      "id": "D012",
+      "name": "CarryLane Orbit Laptop Backpack",
+      "description": "CarryLane Orbit Laptop Backpack for comfortable everyday use. 14-inch padded laptop sleeve. 31 L capacity. Internal organizer pockets.",
+      "category": "Accessories",
+      "brand": "CarryLane",
+      "price": "3017.00",
+      "currency": "INR",
+      "rating": 4.35,
+      "stock_quantity": 25,
+      "available": true,
+      "features": [
+        "14-inch padded laptop sleeve",
+        "31 L capacity",
+        "Internal organizer pockets"
+      ],
+      "attributes": {
+        "series": "Orbit",
+        "catalog": "Synthetic demonstration",
+        "model": "CAR-112"
+      },
+      "image_url": "/product_images/expanded/backpacks/OFHkPCkhYEY.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Laptop Backpack"
+    },
+    {
+      "id": "D013",
+      "name": "CarryLane Drift Laptop Backpack",
+      "description": "CarryLane Drift Laptop Backpack for daily commuting. 15.6-inch padded laptop sleeve. 32 L capacity. Internal organizer pockets.",
+      "category": "Accessories",
+      "brand": "CarryLane",
+      "price": "3155.00",
+      "currency": "INR",
+      "rating": 4.4,
+      "stock_quantity": 35,
+      "available": true,
+      "features": [
+        "15.6-inch padded laptop sleeve",
+        "32 L capacity",
+        "Internal organizer pockets"
+      ],
+      "attributes": {
+        "series": "Drift",
+        "catalog": "Synthetic demonstration",
+        "model": "CAR-113"
+      },
+      "image_url": "/product_images/expanded/backpacks/RHXSJ09YD9o.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Laptop Backpack"
+    },
+    {
+      "id": "D014",
+      "name": "CarryLane Trail Laptop Backpack",
+      "description": "CarryLane Trail Laptop Backpack for work and study. 16-inch padded laptop sleeve. 20 L capacity. Internal organizer pockets.",
+      "category": "Accessories",
+      "brand": "CarryLane",
+      "price": "3293.00",
+      "currency": "INR",
+      "rating": 4.45,
+      "stock_quantity": 45,
+      "available": true,
+      "features": [
+        "16-inch padded laptop sleeve",
+        "20 L capacity",
+        "Internal organizer pockets"
+      ],
+      "attributes": {
+        "series": "Trail",
+        "catalog": "Synthetic demonstration",
+        "model": "CAR-114"
+      },
+      "image_url": "/product_images/expanded/backpacks/a-k2PQJ4_4U.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Laptop Backpack"
+    },
+    {
+      "id": "D015",
+      "name": "CarryLane Tempo Laptop Backpack",
+      "description": "CarryLane Tempo Laptop Backpack for weekend use. 17-inch padded laptop sleeve. 21 L capacity. Internal organizer pockets.",
+      "category": "Accessories",
+      "brand": "CarryLane",
+      "price": "3431.00",
+      "currency": "INR",
+      "rating": 4.5,
+      "stock_quantity": 55,
+      "available": true,
+      "features": [
+        "17-inch padded laptop sleeve",
+        "21 L capacity",
+        "Internal organizer pockets"
+      ],
+      "attributes": {
+        "series": "Tempo",
+        "catalog": "Synthetic demonstration",
+        "model": "CAR-115"
+      },
+      "image_url": "/product_images/expanded/backpacks/3o-X8WJOP5E.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Laptop Backpack"
+    },
+    {
+      "id": "D016",
+      "name": "CarryLane Urban Laptop Backpack",
+      "description": "CarryLane Urban Laptop Backpack for comfortable everyday use. 13-inch padded laptop sleeve. 22 L capacity. Internal organizer pockets.",
+      "category": "Accessories",
+      "brand": "CarryLane",
+      "price": "3569.00",
+      "currency": "INR",
+      "rating": 4.55,
+      "stock_quantity": 65,
+      "available": true,
+      "features": [
+        "13-inch padded laptop sleeve",
+        "22 L capacity",
+        "Internal organizer pockets"
+      ],
+      "attributes": {
+        "series": "Urban",
+        "catalog": "Synthetic demonstration",
+        "model": "CAR-116"
+      },
+      "image_url": "/product_images/expanded/backpacks/hzc0bePG4F4.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Laptop Backpack"
+    },
+    {
+      "id": "D017",
+      "name": "CarryLane Prime Laptop Backpack",
+      "description": "CarryLane Prime Laptop Backpack for daily commuting. 14-inch padded laptop sleeve. 23 L capacity. Internal organizer pockets.",
+      "category": "Accessories",
+      "brand": "CarryLane",
+      "price": "3707.00",
+      "currency": "INR",
+      "rating": 4.6,
+      "stock_quantity": 75,
+      "available": true,
+      "features": [
+        "14-inch padded laptop sleeve",
+        "23 L capacity",
+        "Internal organizer pockets"
+      ],
+      "attributes": {
+        "series": "Prime",
+        "catalog": "Synthetic demonstration",
+        "model": "CAR-117"
+      },
+      "image_url": "/product_images/expanded/backpacks/ysu9athq_BU.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Laptop Backpack"
+    },
+    {
+      "id": "D018",
+      "name": "CarryLane Nova Laptop Backpack",
+      "description": "CarryLane Nova Laptop Backpack for work and study. 15.6-inch padded laptop sleeve. 24 L capacity. Internal organizer pockets.",
+      "category": "Accessories",
+      "brand": "CarryLane",
+      "price": "3845.00",
+      "currency": "INR",
+      "rating": 4.65,
+      "stock_quantity": 85,
+      "available": true,
+      "features": [
+        "15.6-inch padded laptop sleeve",
+        "24 L capacity",
+        "Internal organizer pockets"
+      ],
+      "attributes": {
+        "series": "Nova",
+        "catalog": "Synthetic demonstration",
+        "model": "CAR-118"
+      },
+      "image_url": "/product_images/expanded/backpacks/OiYQLzhmnXg.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Laptop Backpack"
+    },
+    {
+      "id": "D019",
+      "name": "CarryLane Focus Laptop Backpack",
+      "description": "CarryLane Focus Laptop Backpack for weekend use. 16-inch padded laptop sleeve. 25 L capacity. Internal organizer pockets.",
+      "category": "Accessories",
+      "brand": "CarryLane",
+      "price": "3983.00",
+      "currency": "INR",
+      "rating": 4.7,
+      "stock_quantity": 95,
+      "available": true,
+      "features": [
+        "16-inch padded laptop sleeve",
+        "25 L capacity",
+        "Internal organizer pockets"
+      ],
+      "attributes": {
+        "series": "Focus",
+        "catalog": "Synthetic demonstration",
+        "model": "CAR-119"
+      },
+      "image_url": "/product_images/expanded/backpacks/_y0tTb95xeY.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Laptop Backpack"
+    },
+    {
+      "id": "D020",
+      "name": "CarryLane Voyage Laptop Backpack",
+      "description": "CarryLane Voyage Laptop Backpack for comfortable everyday use. 17-inch padded laptop sleeve. 26 L capacity. Internal organizer pockets.",
+      "category": "Accessories",
+      "brand": "CarryLane",
+      "price": "4121.00",
+      "currency": "INR",
+      "rating": 4.75,
+      "stock_quantity": 12,
+      "available": true,
+      "features": [
+        "17-inch padded laptop sleeve",
+        "26 L capacity",
+        "Internal organizer pockets"
+      ],
+      "attributes": {
+        "series": "Voyage",
+        "catalog": "Synthetic demonstration",
+        "model": "CAR-120"
+      },
+      "image_url": "/product_images/expanded/backpacks/iFelMiWMuO4.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Laptop Backpack"
+    },
+    {
+      "id": "D021",
+      "name": "UrbanLoop Metro Crossbody Bag",
+      "description": "UrbanLoop Metro Crossbody Bag for daily commuting. Adjustable shoulder strap. Zipped essentials pocket. 2 L everyday capacity.",
+      "category": "Accessories",
+      "brand": "UrbanLoop",
+      "price": "919.00",
+      "currency": "INR",
+      "rating": 4.8,
+      "stock_quantity": 68,
+      "available": true,
+      "features": [
+        "Adjustable shoulder strap",
+        "Zipped essentials pocket",
+        "2 L everyday capacity"
+      ],
+      "attributes": {
+        "series": "Metro",
+        "catalog": "Synthetic demonstration",
+        "model": "URB-101"
+      },
+      "image_url": "/product_images/expanded/crossbody/s6M63HPGb5E.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Crossbody Bag"
+    },
+    {
+      "id": "D022",
+      "name": "UrbanLoop Summit Crossbody Bag",
+      "description": "UrbanLoop Summit Crossbody Bag for work and study. Adjustable shoulder strap. Zipped essentials pocket. 3 L everyday capacity.",
+      "category": "Accessories",
+      "brand": "UrbanLoop",
+      "price": "1033.00",
+      "currency": "INR",
+      "rating": 3.8,
+      "stock_quantity": 78,
+      "available": true,
+      "features": [
+        "Adjustable shoulder strap",
+        "Zipped essentials pocket",
+        "3 L everyday capacity"
+      ],
+      "attributes": {
+        "series": "Summit",
+        "catalog": "Synthetic demonstration",
+        "model": "URB-102"
+      },
+      "image_url": "/product_images/expanded/crossbody/hLwkfi3oPp0.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Crossbody Bag"
+    },
+    {
+      "id": "D023",
+      "name": "UrbanLoop Harbor Crossbody Bag",
+      "description": "UrbanLoop Harbor Crossbody Bag for weekend use. Adjustable shoulder strap. Zipped essentials pocket. 4 L everyday capacity.",
+      "category": "Accessories",
+      "brand": "UrbanLoop",
+      "price": "1147.00",
+      "currency": "INR",
+      "rating": 3.85,
+      "stock_quantity": 88,
+      "available": true,
+      "features": [
+        "Adjustable shoulder strap",
+        "Zipped essentials pocket",
+        "4 L everyday capacity"
+      ],
+      "attributes": {
+        "series": "Harbor",
+        "catalog": "Synthetic demonstration",
+        "model": "URB-103"
+      },
+      "image_url": "/product_images/expanded/crossbody/kTozgN5CQHc.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Crossbody Bag"
+    },
+    {
+      "id": "D024",
+      "name": "UrbanLoop Studio Crossbody Bag",
+      "description": "UrbanLoop Studio Crossbody Bag for comfortable everyday use. Adjustable shoulder strap. Zipped essentials pocket. 5 L everyday capacity.",
+      "category": "Accessories",
+      "brand": "UrbanLoop",
+      "price": "1261.00",
+      "currency": "INR",
+      "rating": 3.9,
+      "stock_quantity": 98,
+      "available": true,
+      "features": [
+        "Adjustable shoulder strap",
+        "Zipped essentials pocket",
+        "5 L everyday capacity"
+      ],
+      "attributes": {
+        "series": "Studio",
+        "catalog": "Synthetic demonstration",
+        "model": "URB-104"
+      },
+      "image_url": "/product_images/expanded/crossbody/QWIJ50qBAJ8.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Crossbody Bag"
+    },
+    {
+      "id": "D025",
+      "name": "UrbanLoop Vista Crossbody Bag",
+      "description": "UrbanLoop Vista Crossbody Bag for daily commuting. Adjustable shoulder strap. Zipped essentials pocket. 6 L everyday capacity.",
+      "category": "Accessories",
+      "brand": "UrbanLoop",
+      "price": "1375.00",
+      "currency": "INR",
+      "rating": 3.95,
+      "stock_quantity": 15,
+      "available": true,
+      "features": [
+        "Adjustable shoulder strap",
+        "Zipped essentials pocket",
+        "6 L everyday capacity"
+      ],
+      "attributes": {
+        "series": "Vista",
+        "catalog": "Synthetic demonstration",
+        "model": "URB-105"
+      },
+      "image_url": "/product_images/expanded/crossbody/APNnyM36puU.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Crossbody Bag"
+    },
+    {
+      "id": "D026",
+      "name": "UrbanLoop Roam Crossbody Bag",
+      "description": "UrbanLoop Roam Crossbody Bag for work and study. Adjustable shoulder strap. Zipped essentials pocket. 7 L everyday capacity.",
+      "category": "Accessories",
+      "brand": "UrbanLoop",
+      "price": "1489.00",
+      "currency": "INR",
+      "rating": 4.0,
+      "stock_quantity": 25,
+      "available": true,
+      "features": [
+        "Adjustable shoulder strap",
+        "Zipped essentials pocket",
+        "7 L everyday capacity"
+      ],
+      "attributes": {
+        "series": "Roam",
+        "catalog": "Synthetic demonstration",
+        "model": "URB-106"
+      },
+      "image_url": "/product_images/expanded/crossbody/ZB4eQcNqVUs.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Crossbody Bag"
+    },
+    {
+      "id": "D027",
+      "name": "UrbanLoop Pulse Crossbody Bag",
+      "description": "UrbanLoop Pulse Crossbody Bag for weekend use. Adjustable shoulder strap. Zipped essentials pocket. 8 L everyday capacity.",
+      "category": "Accessories",
+      "brand": "UrbanLoop",
+      "price": "1603.00",
+      "currency": "INR",
+      "rating": 4.05,
+      "stock_quantity": 35,
+      "available": true,
+      "features": [
+        "Adjustable shoulder strap",
+        "Zipped essentials pocket",
+        "8 L everyday capacity"
+      ],
+      "attributes": {
+        "series": "Pulse",
+        "catalog": "Synthetic demonstration",
+        "model": "URB-107"
+      },
+      "image_url": "/product_images/expanded/crossbody/K-F80I95Twk.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Crossbody Bag"
+    },
+    {
+      "id": "D028",
+      "name": "UrbanLoop Atlas Crossbody Bag",
+      "description": "UrbanLoop Atlas Crossbody Bag for comfortable everyday use. Adjustable shoulder strap. Zipped essentials pocket. 2 L everyday capacity.",
+      "category": "Accessories",
+      "brand": "UrbanLoop",
+      "price": "1717.00",
+      "currency": "INR",
+      "rating": 4.1,
+      "stock_quantity": 45,
+      "available": true,
+      "features": [
+        "Adjustable shoulder strap",
+        "Zipped essentials pocket",
+        "2 L everyday capacity"
+      ],
+      "attributes": {
+        "series": "Atlas",
+        "catalog": "Synthetic demonstration",
+        "model": "URB-108"
+      },
+      "image_url": "/product_images/expanded/crossbody/kIfPF4dDrF4.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Crossbody Bag"
+    },
+    {
+      "id": "D029",
+      "name": "UrbanLoop Breeze Crossbody Bag",
+      "description": "UrbanLoop Breeze Crossbody Bag for daily commuting. Adjustable shoulder strap. Zipped essentials pocket. 3 L everyday capacity.",
+      "category": "Accessories",
+      "brand": "UrbanLoop",
+      "price": "1831.00",
+      "currency": "INR",
+      "rating": 4.15,
+      "stock_quantity": 55,
+      "available": true,
+      "features": [
+        "Adjustable shoulder strap",
+        "Zipped essentials pocket",
+        "3 L everyday capacity"
+      ],
+      "attributes": {
+        "series": "Breeze",
+        "catalog": "Synthetic demonstration",
+        "model": "URB-109"
+      },
+      "image_url": "/product_images/expanded/crossbody/9hx1l-iFSoQ.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Crossbody Bag"
+    },
+    {
+      "id": "D030",
+      "name": "UrbanLoop Cove Crossbody Bag",
+      "description": "UrbanLoop Cove Crossbody Bag for work and study. Adjustable shoulder strap. Zipped essentials pocket. 4 L everyday capacity.",
+      "category": "Accessories",
+      "brand": "UrbanLoop",
+      "price": "1945.00",
+      "currency": "INR",
+      "rating": 4.2,
+      "stock_quantity": 65,
+      "available": true,
+      "features": [
+        "Adjustable shoulder strap",
+        "Zipped essentials pocket",
+        "4 L everyday capacity"
+      ],
+      "attributes": {
+        "series": "Cove",
+        "catalog": "Synthetic demonstration",
+        "model": "URB-110"
+      },
+      "image_url": "/product_images/expanded/crossbody/xzrJCS4grC4.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Crossbody Bag"
+    },
+    {
+      "id": "D031",
+      "name": "UrbanLoop Stride Crossbody Bag",
+      "description": "UrbanLoop Stride Crossbody Bag for weekend use. Adjustable shoulder strap. Zipped essentials pocket. 5 L everyday capacity.",
+      "category": "Accessories",
+      "brand": "UrbanLoop",
+      "price": "2059.00",
+      "currency": "INR",
+      "rating": 4.25,
+      "stock_quantity": 0,
+      "available": false,
+      "features": [
+        "Adjustable shoulder strap",
+        "Zipped essentials pocket",
+        "5 L everyday capacity"
+      ],
+      "attributes": {
+        "series": "Stride",
+        "catalog": "Synthetic demonstration",
+        "model": "URB-111"
+      },
+      "image_url": "/product_images/expanded/crossbody/LW2iqpHzr8Y.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Crossbody Bag"
+    },
+    {
+      "id": "D032",
+      "name": "UrbanLoop Orbit Crossbody Bag",
+      "description": "UrbanLoop Orbit Crossbody Bag for comfortable everyday use. Adjustable shoulder strap. Zipped essentials pocket. 6 L everyday capacity.",
+      "category": "Accessories",
+      "brand": "UrbanLoop",
+      "price": "2173.00",
+      "currency": "INR",
+      "rating": 4.3,
+      "stock_quantity": 85,
+      "available": true,
+      "features": [
+        "Adjustable shoulder strap",
+        "Zipped essentials pocket",
+        "6 L everyday capacity"
+      ],
+      "attributes": {
+        "series": "Orbit",
+        "catalog": "Synthetic demonstration",
+        "model": "URB-112"
+      },
+      "image_url": "/product_images/expanded/crossbody/ZmeFtu11Hpc.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Crossbody Bag"
+    },
+    {
+      "id": "D033",
+      "name": "UrbanLoop Drift Crossbody Bag",
+      "description": "UrbanLoop Drift Crossbody Bag for daily commuting. Adjustable shoulder strap. Zipped essentials pocket. 7 L everyday capacity.",
+      "category": "Accessories",
+      "brand": "UrbanLoop",
+      "price": "2287.00",
+      "currency": "INR",
+      "rating": 4.35,
+      "stock_quantity": 95,
+      "available": true,
+      "features": [
+        "Adjustable shoulder strap",
+        "Zipped essentials pocket",
+        "7 L everyday capacity"
+      ],
+      "attributes": {
+        "series": "Drift",
+        "catalog": "Synthetic demonstration",
+        "model": "URB-113"
+      },
+      "image_url": "/product_images/expanded/crossbody/hWs4qKwJkD4.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Crossbody Bag"
+    },
+    {
+      "id": "D034",
+      "name": "UrbanLoop Trail Crossbody Bag",
+      "description": "UrbanLoop Trail Crossbody Bag for work and study. Adjustable shoulder strap. Zipped essentials pocket. 8 L everyday capacity.",
+      "category": "Accessories",
+      "brand": "UrbanLoop",
+      "price": "2401.00",
+      "currency": "INR",
+      "rating": 4.4,
+      "stock_quantity": 12,
+      "available": true,
+      "features": [
+        "Adjustable shoulder strap",
+        "Zipped essentials pocket",
+        "8 L everyday capacity"
+      ],
+      "attributes": {
+        "series": "Trail",
+        "catalog": "Synthetic demonstration",
+        "model": "URB-114"
+      },
+      "image_url": "/product_images/expanded/crossbody/BnG4KWAzt9c.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Crossbody Bag"
+    },
+    {
+      "id": "D035",
+      "name": "UrbanLoop Tempo Crossbody Bag",
+      "description": "UrbanLoop Tempo Crossbody Bag for weekend use. Adjustable shoulder strap. Zipped essentials pocket. 2 L everyday capacity.",
+      "category": "Accessories",
+      "brand": "UrbanLoop",
+      "price": "2515.00",
+      "currency": "INR",
+      "rating": 4.45,
+      "stock_quantity": 22,
+      "available": true,
+      "features": [
+        "Adjustable shoulder strap",
+        "Zipped essentials pocket",
+        "2 L everyday capacity"
+      ],
+      "attributes": {
+        "series": "Tempo",
+        "catalog": "Synthetic demonstration",
+        "model": "URB-115"
+      },
+      "image_url": "/product_images/expanded/crossbody/SNPDQAE4EHY.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Crossbody Bag"
+    },
+    {
+      "id": "D036",
+      "name": "UrbanLoop Urban Crossbody Bag",
+      "description": "UrbanLoop Urban Crossbody Bag for comfortable everyday use. Adjustable shoulder strap. Zipped essentials pocket. 3 L everyday capacity.",
+      "category": "Accessories",
+      "brand": "UrbanLoop",
+      "price": "2629.00",
+      "currency": "INR",
+      "rating": 4.5,
+      "stock_quantity": 32,
+      "available": true,
+      "features": [
+        "Adjustable shoulder strap",
+        "Zipped essentials pocket",
+        "3 L everyday capacity"
+      ],
+      "attributes": {
+        "series": "Urban",
+        "catalog": "Synthetic demonstration",
+        "model": "URB-116"
+      },
+      "image_url": "/product_images/expanded/crossbody/ERbIn4320ic.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Crossbody Bag"
+    },
+    {
+      "id": "D037",
+      "name": "UrbanLoop Prime Crossbody Bag",
+      "description": "UrbanLoop Prime Crossbody Bag for daily commuting. Adjustable shoulder strap. Zipped essentials pocket. 4 L everyday capacity.",
+      "category": "Accessories",
+      "brand": "UrbanLoop",
+      "price": "2743.00",
+      "currency": "INR",
+      "rating": 4.55,
+      "stock_quantity": 42,
+      "available": true,
+      "features": [
+        "Adjustable shoulder strap",
+        "Zipped essentials pocket",
+        "4 L everyday capacity"
+      ],
+      "attributes": {
+        "series": "Prime",
+        "catalog": "Synthetic demonstration",
+        "model": "URB-117"
+      },
+      "image_url": "/product_images/expanded/crossbody/9YzA4cFSCdE.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Crossbody Bag"
+    },
+    {
+      "id": "D038",
+      "name": "UrbanLoop Nova Crossbody Bag",
+      "description": "UrbanLoop Nova Crossbody Bag for work and study. Adjustable shoulder strap. Zipped essentials pocket. 5 L everyday capacity.",
+      "category": "Accessories",
+      "brand": "UrbanLoop",
+      "price": "2857.00",
+      "currency": "INR",
+      "rating": 4.6,
+      "stock_quantity": 52,
+      "available": true,
+      "features": [
+        "Adjustable shoulder strap",
+        "Zipped essentials pocket",
+        "5 L everyday capacity"
+      ],
+      "attributes": {
+        "series": "Nova",
+        "catalog": "Synthetic demonstration",
+        "model": "URB-118"
+      },
+      "image_url": "/product_images/expanded/crossbody/Zha2jqwxzMY.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Crossbody Bag"
+    },
+    {
+      "id": "D039",
+      "name": "UrbanLoop Focus Crossbody Bag",
+      "description": "UrbanLoop Focus Crossbody Bag for weekend use. Adjustable shoulder strap. Zipped essentials pocket. 6 L everyday capacity.",
+      "category": "Accessories",
+      "brand": "UrbanLoop",
+      "price": "2971.00",
+      "currency": "INR",
+      "rating": 4.65,
+      "stock_quantity": 62,
+      "available": true,
+      "features": [
+        "Adjustable shoulder strap",
+        "Zipped essentials pocket",
+        "6 L everyday capacity"
+      ],
+      "attributes": {
+        "series": "Focus",
+        "catalog": "Synthetic demonstration",
+        "model": "URB-119"
+      },
+      "image_url": "/product_images/expanded/crossbody/FYWNzQnXgsk.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Crossbody Bag"
+    },
+    {
+      "id": "D040",
+      "name": "UrbanLoop Voyage Crossbody Bag",
+      "description": "UrbanLoop Voyage Crossbody Bag for comfortable everyday use. Adjustable shoulder strap. Zipped essentials pocket. 7 L everyday capacity.",
+      "category": "Accessories",
+      "brand": "UrbanLoop",
+      "price": "3085.00",
+      "currency": "INR",
+      "rating": 4.7,
+      "stock_quantity": 72,
+      "available": true,
+      "features": [
+        "Adjustable shoulder strap",
+        "Zipped essentials pocket",
+        "7 L everyday capacity"
+      ],
+      "attributes": {
+        "series": "Voyage",
+        "catalog": "Synthetic demonstration",
+        "model": "URB-120"
+      },
+      "image_url": "/product_images/expanded/crossbody/34mc9TqRznQ.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Crossbody Bag"
+    },
+    {
+      "id": "D041",
+      "name": "RoamCraft Metro Travel Tote Bag",
+      "description": "RoamCraft Metro Travel Tote Bag for short city breaks. 28 L packing capacity. Carry handle. Organized travel bag compartment.",
+      "category": "Accessories",
+      "brand": "RoamCraft",
+      "price": "2039.00",
+      "currency": "INR",
+      "rating": 4.75,
+      "stock_quantity": 35,
+      "available": true,
+      "features": [
+        "28 L packing capacity",
+        "Carry handle",
+        "Organized travel bag compartment"
+      ],
+      "attributes": {
+        "series": "Metro",
+        "catalog": "Synthetic demonstration",
+        "model": "ROA-101"
+      },
+      "image_url": "/product_images/expanded/travel/9aZC_v4mLwE.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Travel Tote Bag"
+    },
+    {
+      "id": "D042",
+      "name": "RoamCraft Summit Travel Suitcase",
+      "description": "RoamCraft Summit Travel Suitcase for weekend getaways. 30 L packing capacity. Carry handle. Organized travel bag compartment.",
+      "category": "Accessories",
+      "brand": "RoamCraft",
+      "price": "2221.00",
+      "currency": "INR",
+      "rating": 4.8,
+      "stock_quantity": 45,
+      "available": true,
+      "features": [
+        "30 L packing capacity",
+        "Carry handle",
+        "Organized travel bag compartment"
+      ],
+      "attributes": {
+        "series": "Summit",
+        "catalog": "Synthetic demonstration",
+        "model": "ROA-102"
+      },
+      "image_url": "/product_images/expanded/travel/Pll7gOlLTpQ.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Travel Suitcase"
+    },
+    {
+      "id": "D043",
+      "name": "RoamCraft Harbor Travel Suitcase",
+      "description": "RoamCraft Harbor Travel Suitcase for organized packing. 32 L packing capacity. Carry handle. Organized travel bag compartment.",
+      "category": "Accessories",
+      "brand": "RoamCraft",
+      "price": "2403.00",
+      "currency": "INR",
+      "rating": 3.8,
+      "stock_quantity": 55,
+      "available": true,
+      "features": [
+        "32 L packing capacity",
+        "Carry handle",
+        "Organized travel bag compartment"
+      ],
+      "attributes": {
+        "series": "Harbor",
+        "catalog": "Synthetic demonstration",
+        "model": "ROA-103"
+      },
+      "image_url": "/product_images/expanded/travel/q-4fbq8pUO4.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Travel Suitcase"
+    },
+    {
+      "id": "D044",
+      "name": "RoamCraft Studio Travel Duffel Bag",
+      "description": "RoamCraft Studio Travel Duffel Bag for regular trips. 34 L packing capacity. Carry handle. Organized travel bag compartment.",
+      "category": "Accessories",
+      "brand": "RoamCraft",
+      "price": "2585.00",
+      "currency": "INR",
+      "rating": 3.85,
+      "stock_quantity": 65,
+      "available": true,
+      "features": [
+        "34 L packing capacity",
+        "Carry handle",
+        "Organized travel bag compartment"
+      ],
+      "attributes": {
+        "series": "Studio",
+        "catalog": "Synthetic demonstration",
+        "model": "ROA-104"
+      },
+      "image_url": "/product_images/expanded/travel/1JNk998-g70.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Travel Duffel Bag"
+    },
+    {
+      "id": "D045",
+      "name": "RoamCraft Vista Travel Suitcase",
+      "description": "RoamCraft Vista Travel Suitcase for short city breaks. 36 L packing capacity. Carry handle. Organized travel bag compartment.",
+      "category": "Accessories",
+      "brand": "RoamCraft",
+      "price": "2767.00",
+      "currency": "INR",
+      "rating": 3.9,
+      "stock_quantity": 75,
+      "available": true,
+      "features": [
+        "36 L packing capacity",
+        "Carry handle",
+        "Organized travel bag compartment"
+      ],
+      "attributes": {
+        "series": "Vista",
+        "catalog": "Synthetic demonstration",
+        "model": "ROA-105"
+      },
+      "image_url": "/product_images/expanded/travel/B-OOn5a5ZSE.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Travel Suitcase"
+    },
+    {
+      "id": "D046",
+      "name": "RoamCraft Roam Travel Duffel Bag",
+      "description": "RoamCraft Roam Travel Duffel Bag for weekend getaways. 38 L packing capacity. Carry handle. Organized travel bag compartment.",
+      "category": "Accessories",
+      "brand": "RoamCraft",
+      "price": "2949.00",
+      "currency": "INR",
+      "rating": 3.95,
+      "stock_quantity": 85,
+      "available": true,
+      "features": [
+        "38 L packing capacity",
+        "Carry handle",
+        "Organized travel bag compartment"
+      ],
+      "attributes": {
+        "series": "Roam",
+        "catalog": "Synthetic demonstration",
+        "model": "ROA-106"
+      },
+      "image_url": "/product_images/expanded/travel/q21JALixJNs.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Travel Duffel Bag"
+    },
+    {
+      "id": "D047",
+      "name": "RoamCraft Pulse Travel Duffel Bag",
+      "description": "RoamCraft Pulse Travel Duffel Bag for organized packing. 40 L packing capacity. Carry handle. Organized travel bag compartment.",
+      "category": "Accessories",
+      "brand": "RoamCraft",
+      "price": "3131.00",
+      "currency": "INR",
+      "rating": 4.0,
+      "stock_quantity": 95,
+      "available": true,
+      "features": [
+        "40 L packing capacity",
+        "Carry handle",
+        "Organized travel bag compartment"
+      ],
+      "attributes": {
+        "series": "Pulse",
+        "catalog": "Synthetic demonstration",
+        "model": "ROA-107"
+      },
+      "image_url": "/product_images/expanded/travel/V_vgvY8ZSsk.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Travel Duffel Bag"
+    },
+    {
+      "id": "D048",
+      "name": "RoamCraft Atlas Travel Duffel Bag",
+      "description": "RoamCraft Atlas Travel Duffel Bag for regular trips. 42 L packing capacity. Carry handle. Organized travel bag compartment.",
+      "category": "Accessories",
+      "brand": "RoamCraft",
+      "price": "3313.00",
+      "currency": "INR",
+      "rating": 4.05,
+      "stock_quantity": 12,
+      "available": true,
+      "features": [
+        "42 L packing capacity",
+        "Carry handle",
+        "Organized travel bag compartment"
+      ],
+      "attributes": {
+        "series": "Atlas",
+        "catalog": "Synthetic demonstration",
+        "model": "ROA-108"
+      },
+      "image_url": "/product_images/expanded/travel/GOZxrAlNIt4.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Travel Duffel Bag"
+    },
+    {
+      "id": "D049",
+      "name": "RoamCraft Breeze Travel Suitcase",
+      "description": "RoamCraft Breeze Travel Suitcase for short city breaks. 44 L packing capacity. Carry handle. Organized travel bag compartment.",
+      "category": "Accessories",
+      "brand": "RoamCraft",
+      "price": "3495.00",
+      "currency": "INR",
+      "rating": 4.1,
+      "stock_quantity": 22,
+      "available": true,
+      "features": [
+        "44 L packing capacity",
+        "Carry handle",
+        "Organized travel bag compartment"
+      ],
+      "attributes": {
+        "series": "Breeze",
+        "catalog": "Synthetic demonstration",
+        "model": "ROA-109"
+      },
+      "image_url": "/product_images/expanded/travel/NhFBRL_BFxI.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Travel Suitcase"
+    },
+    {
+      "id": "D050",
+      "name": "RoamCraft Cove Travel Suitcase",
+      "description": "RoamCraft Cove Travel Suitcase for weekend getaways. 46 L packing capacity. Carry handle. Organized travel bag compartment.",
+      "category": "Accessories",
+      "brand": "RoamCraft",
+      "price": "3677.00",
+      "currency": "INR",
+      "rating": 4.15,
+      "stock_quantity": 32,
+      "available": true,
+      "features": [
+        "46 L packing capacity",
+        "Carry handle",
+        "Organized travel bag compartment"
+      ],
+      "attributes": {
+        "series": "Cove",
+        "catalog": "Synthetic demonstration",
+        "model": "ROA-110"
+      },
+      "image_url": "/product_images/expanded/travel/iGXIjzloB2k.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Travel Suitcase"
+    },
+    {
+      "id": "D051",
+      "name": "RoamCraft Stride Travel Suitcase",
+      "description": "RoamCraft Stride Travel Suitcase for organized packing. 48 L packing capacity. Carry handle. Organized travel bag compartment.",
+      "category": "Accessories",
+      "brand": "RoamCraft",
+      "price": "3859.00",
+      "currency": "INR",
+      "rating": 4.2,
+      "stock_quantity": 0,
+      "available": false,
+      "features": [
+        "48 L packing capacity",
+        "Carry handle",
+        "Organized travel bag compartment"
+      ],
+      "attributes": {
+        "series": "Stride",
+        "catalog": "Synthetic demonstration",
+        "model": "ROA-111"
+      },
+      "image_url": "/product_images/expanded/travel/GtsIq_mGwFI.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Travel Suitcase"
+    },
+    {
+      "id": "D052",
+      "name": "RoamCraft Orbit Travel Suitcase",
+      "description": "RoamCraft Orbit Travel Suitcase for regular trips. 50 L packing capacity. Carry handle. Organized travel bag compartment.",
+      "category": "Accessories",
+      "brand": "RoamCraft",
+      "price": "4041.00",
+      "currency": "INR",
+      "rating": 4.25,
+      "stock_quantity": 52,
+      "available": true,
+      "features": [
+        "50 L packing capacity",
+        "Carry handle",
+        "Organized travel bag compartment"
+      ],
+      "attributes": {
+        "series": "Orbit",
+        "catalog": "Synthetic demonstration",
+        "model": "ROA-112"
+      },
+      "image_url": "/product_images/expanded/travel/Av4dIOkbe9o.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Travel Suitcase"
+    },
+    {
+      "id": "D053",
+      "name": "RoamCraft Drift Travel Suitcase",
+      "description": "RoamCraft Drift Travel Suitcase for short city breaks. 52 L packing capacity. Carry handle. Organized travel bag compartment.",
+      "category": "Accessories",
+      "brand": "RoamCraft",
+      "price": "4223.00",
+      "currency": "INR",
+      "rating": 4.3,
+      "stock_quantity": 62,
+      "available": true,
+      "features": [
+        "52 L packing capacity",
+        "Carry handle",
+        "Organized travel bag compartment"
+      ],
+      "attributes": {
+        "series": "Drift",
+        "catalog": "Synthetic demonstration",
+        "model": "ROA-113"
+      },
+      "image_url": "/product_images/expanded/travel/TVllFyGaLEA.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Travel Suitcase"
+    },
+    {
+      "id": "D054",
+      "name": "RoamCraft Trail Travel Suitcase",
+      "description": "RoamCraft Trail Travel Suitcase for weekend getaways. 54 L packing capacity. Carry handle. Organized travel bag compartment.",
+      "category": "Accessories",
+      "brand": "RoamCraft",
+      "price": "4405.00",
+      "currency": "INR",
+      "rating": 4.35,
+      "stock_quantity": 72,
+      "available": true,
+      "features": [
+        "54 L packing capacity",
+        "Carry handle",
+        "Organized travel bag compartment"
+      ],
+      "attributes": {
+        "series": "Trail",
+        "catalog": "Synthetic demonstration",
+        "model": "ROA-114"
+      },
+      "image_url": "/product_images/expanded/travel/rzC06csRSCk.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Travel Suitcase"
+    },
+    {
+      "id": "D055",
+      "name": "RoamCraft Tempo Travel Suitcase",
+      "description": "RoamCraft Tempo Travel Suitcase for organized packing. 56 L packing capacity. Carry handle. Organized travel bag compartment.",
+      "category": "Accessories",
+      "brand": "RoamCraft",
+      "price": "4587.00",
+      "currency": "INR",
+      "rating": 4.4,
+      "stock_quantity": 82,
+      "available": true,
+      "features": [
+        "56 L packing capacity",
+        "Carry handle",
+        "Organized travel bag compartment"
+      ],
+      "attributes": {
+        "series": "Tempo",
+        "catalog": "Synthetic demonstration",
+        "model": "ROA-115"
+      },
+      "image_url": "/product_images/expanded/travel/-ZYrzZocV4Q.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Travel Suitcase"
+    },
+    {
+      "id": "D056",
+      "name": "RoamCraft Urban Travel Suitcase",
+      "description": "RoamCraft Urban Travel Suitcase for regular trips. 58 L packing capacity. Carry handle. Organized travel bag compartment.",
+      "category": "Accessories",
+      "brand": "RoamCraft",
+      "price": "4769.00",
+      "currency": "INR",
+      "rating": 4.45,
+      "stock_quantity": 92,
+      "available": true,
+      "features": [
+        "58 L packing capacity",
+        "Carry handle",
+        "Organized travel bag compartment"
+      ],
+      "attributes": {
+        "series": "Urban",
+        "catalog": "Synthetic demonstration",
+        "model": "ROA-116"
+      },
+      "image_url": "/product_images/expanded/travel/166umbWL6Ec.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Travel Suitcase"
+    },
+    {
+      "id": "D057",
+      "name": "RoamCraft Prime Travel Duffel Bag",
+      "description": "RoamCraft Prime Travel Duffel Bag for short city breaks. 60 L packing capacity. Carry handle. Organized travel bag compartment.",
+      "category": "Accessories",
+      "brand": "RoamCraft",
+      "price": "4951.00",
+      "currency": "INR",
+      "rating": 4.5,
+      "stock_quantity": 9,
+      "available": true,
+      "features": [
+        "60 L packing capacity",
+        "Carry handle",
+        "Organized travel bag compartment"
+      ],
+      "attributes": {
+        "series": "Prime",
+        "catalog": "Synthetic demonstration",
+        "model": "ROA-117"
+      },
+      "image_url": "/product_images/expanded/travel/ewfTDxL0iXc.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Travel Duffel Bag"
+    },
+    {
+      "id": "D058",
+      "name": "RoamCraft Nova Travel Suitcase",
+      "description": "RoamCraft Nova Travel Suitcase for weekend getaways. 62 L packing capacity. Carry handle. Organized travel bag compartment.",
+      "category": "Accessories",
+      "brand": "RoamCraft",
+      "price": "5133.00",
+      "currency": "INR",
+      "rating": 4.55,
+      "stock_quantity": 19,
+      "available": true,
+      "features": [
+        "62 L packing capacity",
+        "Carry handle",
+        "Organized travel bag compartment"
+      ],
+      "attributes": {
+        "series": "Nova",
+        "catalog": "Synthetic demonstration",
+        "model": "ROA-118"
+      },
+      "image_url": "/product_images/expanded/travel/xFItahF3CY4.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Travel Suitcase"
+    },
+    {
+      "id": "D059",
+      "name": "RoamCraft Focus Travel Suitcase",
+      "description": "RoamCraft Focus Travel Suitcase for organized packing. 64 L packing capacity. Carry handle. Organized travel bag compartment.",
+      "category": "Accessories",
+      "brand": "RoamCraft",
+      "price": "5315.00",
+      "currency": "INR",
+      "rating": 4.6,
+      "stock_quantity": 29,
+      "available": true,
+      "features": [
+        "64 L packing capacity",
+        "Carry handle",
+        "Organized travel bag compartment"
+      ],
+      "attributes": {
+        "series": "Focus",
+        "catalog": "Synthetic demonstration",
+        "model": "ROA-119"
+      },
+      "image_url": "/product_images/expanded/travel/eZAvjULkrsY.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Travel Suitcase"
+    },
+    {
+      "id": "D060",
+      "name": "RoamCraft Voyage Travel Duffel Bag",
+      "description": "RoamCraft Voyage Travel Duffel Bag for regular trips. 66 L packing capacity. Carry handle. Organized travel bag compartment.",
+      "category": "Accessories",
+      "brand": "RoamCraft",
+      "price": "5497.00",
+      "currency": "INR",
+      "rating": 4.65,
+      "stock_quantity": 39,
+      "available": true,
+      "features": [
+        "66 L packing capacity",
+        "Carry handle",
+        "Organized travel bag compartment"
+      ],
+      "attributes": {
+        "series": "Voyage",
+        "catalog": "Synthetic demonstration",
+        "model": "ROA-120"
+      },
+      "image_url": "/product_images/expanded/travel/7vRbOLuM9i0.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Travel Duffel Bag"
+    },
+    {
+      "id": "D061",
+      "name": "SoundNest Metro Wireless Headphones",
+      "description": "SoundNest Metro Wireless Headphones for daily commuting. Up to 18 hours battery. Bluetooth audio. Over-ear cushions.",
+      "category": "Electronics",
+      "brand": "SoundNest",
+      "price": "1459.00",
+      "currency": "INR",
+      "rating": 4.7,
+      "stock_quantity": 95,
+      "available": true,
+      "features": [
+        "Up to 18 hours battery",
+        "Bluetooth audio",
+        "Over-ear cushions"
+      ],
+      "attributes": {
+        "series": "Metro",
+        "catalog": "Synthetic demonstration",
+        "model": "SOU-101"
+      },
+      "image_url": "/product_images/expanded/headphones/uNC9-RgzjTA.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Wireless Headphones"
+    },
+    {
+      "id": "D062",
+      "name": "SoundNest Summit Wireless Headphones",
+      "description": "SoundNest Summit Wireless Headphones for work and study. Up to 19 hours battery. Bluetooth audio. Over-ear cushions.",
+      "category": "Electronics",
+      "brand": "SoundNest",
+      "price": "1723.00",
+      "currency": "INR",
+      "rating": 4.75,
+      "stock_quantity": 12,
+      "available": true,
+      "features": [
+        "Up to 19 hours battery",
+        "Bluetooth audio",
+        "Over-ear cushions"
+      ],
+      "attributes": {
+        "series": "Summit",
+        "catalog": "Synthetic demonstration",
+        "model": "SOU-102"
+      },
+      "image_url": "/product_images/expanded/headphones/NehdOHCXsjs.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Wireless Headphones"
+    },
+    {
+      "id": "D063",
+      "name": "SoundNest Harbor Wireless Headphones",
+      "description": "SoundNest Harbor Wireless Headphones for weekend use. Up to 20 hours battery. Bluetooth audio. Over-ear cushions.",
+      "category": "Electronics",
+      "brand": "SoundNest",
+      "price": "1987.00",
+      "currency": "INR",
+      "rating": 4.8,
+      "stock_quantity": 22,
+      "available": true,
+      "features": [
+        "Up to 20 hours battery",
+        "Bluetooth audio",
+        "Over-ear cushions"
+      ],
+      "attributes": {
+        "series": "Harbor",
+        "catalog": "Synthetic demonstration",
+        "model": "SOU-103"
+      },
+      "image_url": "/product_images/expanded/headphones/dBwadhWa-lI.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Wireless Headphones"
+    },
+    {
+      "id": "D064",
+      "name": "SoundNest Studio Wireless Headphones",
+      "description": "SoundNest Studio Wireless Headphones for comfortable everyday use. Up to 21 hours battery. Bluetooth audio. Over-ear cushions.",
+      "category": "Electronics",
+      "brand": "SoundNest",
+      "price": "2251.00",
+      "currency": "INR",
+      "rating": 3.8,
+      "stock_quantity": 32,
+      "available": true,
+      "features": [
+        "Up to 21 hours battery",
+        "Bluetooth audio",
+        "Over-ear cushions"
+      ],
+      "attributes": {
+        "series": "Studio",
+        "catalog": "Synthetic demonstration",
+        "model": "SOU-104"
+      },
+      "image_url": "/product_images/expanded/headphones/r2uugFQvAZ0.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Wireless Headphones"
+    },
+    {
+      "id": "D065",
+      "name": "SoundNest Vista Wireless Headphones",
+      "description": "SoundNest Vista Wireless Headphones for daily commuting. Up to 22 hours battery. Bluetooth audio. Over-ear cushions.",
+      "category": "Electronics",
+      "brand": "SoundNest",
+      "price": "2518.00",
+      "currency": "INR",
+      "rating": 3.85,
+      "stock_quantity": 42,
+      "available": true,
+      "features": [
+        "Up to 22 hours battery",
+        "Bluetooth audio",
+        "Over-ear cushions"
+      ],
+      "attributes": {
+        "series": "Vista",
+        "catalog": "Synthetic demonstration",
+        "model": "SOU-105"
+      },
+      "image_url": "/product_images/expanded/headphones/y_ZSh37KkBQ.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Wireless Headphones"
+    },
+    {
+      "id": "D066",
+      "name": "SoundNest Roam Wireless Headphones",
+      "description": "SoundNest Roam Wireless Headphones for work and study. Up to 23 hours battery. Bluetooth audio. Over-ear cushions.",
+      "category": "Electronics",
+      "brand": "SoundNest",
+      "price": "2779.00",
+      "currency": "INR",
+      "rating": 3.9,
+      "stock_quantity": 52,
+      "available": true,
+      "features": [
+        "Up to 23 hours battery",
+        "Bluetooth audio",
+        "Over-ear cushions"
+      ],
+      "attributes": {
+        "series": "Roam",
+        "catalog": "Synthetic demonstration",
+        "model": "SOU-106"
+      },
+      "image_url": "/product_images/expanded/headphones/bWZAPKm0zZE.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Wireless Headphones"
+    },
+    {
+      "id": "D067",
+      "name": "SoundNest Pulse Wireless Headphones",
+      "description": "SoundNest Pulse Wireless Headphones for weekend use. Up to 24 hours battery. Bluetooth audio. Over-ear cushions.",
+      "category": "Electronics",
+      "brand": "SoundNest",
+      "price": "3043.00",
+      "currency": "INR",
+      "rating": 3.95,
+      "stock_quantity": 62,
+      "available": true,
+      "features": [
+        "Up to 24 hours battery",
+        "Bluetooth audio",
+        "Over-ear cushions"
+      ],
+      "attributes": {
+        "series": "Pulse",
+        "catalog": "Synthetic demonstration",
+        "model": "SOU-107"
+      },
+      "image_url": "/product_images/expanded/headphones/Qrspubmx6kE.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Wireless Headphones"
+    },
+    {
+      "id": "D068",
+      "name": "SoundNest Atlas Wireless Headphones",
+      "description": "SoundNest Atlas Wireless Headphones for comfortable everyday use. Up to 25 hours battery. Bluetooth audio. Over-ear cushions.",
+      "category": "Electronics",
+      "brand": "SoundNest",
+      "price": "3307.00",
+      "currency": "INR",
+      "rating": 4.0,
+      "stock_quantity": 72,
+      "available": true,
+      "features": [
+        "Up to 25 hours battery",
+        "Bluetooth audio",
+        "Over-ear cushions"
+      ],
+      "attributes": {
+        "series": "Atlas",
+        "catalog": "Synthetic demonstration",
+        "model": "SOU-108"
+      },
+      "image_url": "/product_images/expanded/headphones/por3FNwFCbs.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Wireless Headphones"
+    },
+    {
+      "id": "D069",
+      "name": "SoundNest Breeze Wireless Headphones",
+      "description": "SoundNest Breeze Wireless Headphones for daily commuting. Up to 26 hours battery. Bluetooth audio. Over-ear cushions.",
+      "category": "Electronics",
+      "brand": "SoundNest",
+      "price": "3571.00",
+      "currency": "INR",
+      "rating": 4.05,
+      "stock_quantity": 82,
+      "available": true,
+      "features": [
+        "Up to 26 hours battery",
+        "Bluetooth audio",
+        "Over-ear cushions"
+      ],
+      "attributes": {
+        "series": "Breeze",
+        "catalog": "Synthetic demonstration",
+        "model": "SOU-109"
+      },
+      "image_url": "/product_images/expanded/headphones/Q2uV5TkjNz8.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Wireless Headphones"
+    },
+    {
+      "id": "D070",
+      "name": "SoundNest Cove Wireless Headphones",
+      "description": "SoundNest Cove Wireless Headphones for work and study. Up to 27 hours battery. Bluetooth audio. Over-ear cushions.",
+      "category": "Electronics",
+      "brand": "SoundNest",
+      "price": "3835.00",
+      "currency": "INR",
+      "rating": 4.1,
+      "stock_quantity": 92,
+      "available": true,
+      "features": [
+        "Up to 27 hours battery",
+        "Bluetooth audio",
+        "Over-ear cushions"
+      ],
+      "attributes": {
+        "series": "Cove",
+        "catalog": "Synthetic demonstration",
+        "model": "SOU-110"
+      },
+      "image_url": "/product_images/expanded/headphones/Zam8TvEgN5o.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Wireless Headphones"
+    },
+    {
+      "id": "D071",
+      "name": "SoundNest Stride Wireless Headphones",
+      "description": "SoundNest Stride Wireless Headphones for weekend use. Up to 28 hours battery. Bluetooth audio. Over-ear cushions.",
+      "category": "Electronics",
+      "brand": "SoundNest",
+      "price": "4099.00",
+      "currency": "INR",
+      "rating": 4.15,
+      "stock_quantity": 0,
+      "available": false,
+      "features": [
+        "Up to 28 hours battery",
+        "Bluetooth audio",
+        "Over-ear cushions"
+      ],
+      "attributes": {
+        "series": "Stride",
+        "catalog": "Synthetic demonstration",
+        "model": "SOU-111"
+      },
+      "image_url": "/product_images/expanded/headphones/oXXc-s5nNy8.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Wireless Headphones"
+    },
+    {
+      "id": "D072",
+      "name": "SoundNest Orbit Wireless Headphones",
+      "description": "SoundNest Orbit Wireless Headphones for comfortable everyday use. Up to 29 hours battery. Bluetooth audio. Over-ear cushions.",
+      "category": "Electronics",
+      "brand": "SoundNest",
+      "price": "4363.00",
+      "currency": "INR",
+      "rating": 4.2,
+      "stock_quantity": 19,
+      "available": true,
+      "features": [
+        "Up to 29 hours battery",
+        "Bluetooth audio",
+        "Over-ear cushions"
+      ],
+      "attributes": {
+        "series": "Orbit",
+        "catalog": "Synthetic demonstration",
+        "model": "SOU-112"
+      },
+      "image_url": "/product_images/expanded/headphones/PDX_a_82obo.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Wireless Headphones"
+    },
+    {
+      "id": "D073",
+      "name": "SoundNest Drift Wireless Headphones",
+      "description": "SoundNest Drift Wireless Headphones for daily commuting. Up to 30 hours battery. Bluetooth audio. Over-ear cushions.",
+      "category": "Electronics",
+      "brand": "SoundNest",
+      "price": "4627.00",
+      "currency": "INR",
+      "rating": 4.25,
+      "stock_quantity": 29,
+      "available": true,
+      "features": [
+        "Up to 30 hours battery",
+        "Bluetooth audio",
+        "Over-ear cushions"
+      ],
+      "attributes": {
+        "series": "Drift",
+        "catalog": "Synthetic demonstration",
+        "model": "SOU-113"
+      },
+      "image_url": "/product_images/expanded/headphones/P7KF3cTRKcE.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Wireless Headphones"
+    },
+    {
+      "id": "D074",
+      "name": "SoundNest Trail Wireless Headphones",
+      "description": "SoundNest Trail Wireless Headphones for work and study. Up to 31 hours battery. Bluetooth audio. Over-ear cushions.",
+      "category": "Electronics",
+      "brand": "SoundNest",
+      "price": "4891.00",
+      "currency": "INR",
+      "rating": 4.3,
+      "stock_quantity": 39,
+      "available": true,
+      "features": [
+        "Up to 31 hours battery",
+        "Bluetooth audio",
+        "Over-ear cushions"
+      ],
+      "attributes": {
+        "series": "Trail",
+        "catalog": "Synthetic demonstration",
+        "model": "SOU-114"
+      },
+      "image_url": "/product_images/expanded/headphones/W_lXhs-q-sI.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Wireless Headphones"
+    },
+    {
+      "id": "D075",
+      "name": "SoundNest Tempo Wireless Headphones",
+      "description": "SoundNest Tempo Wireless Headphones for weekend use. Up to 32 hours battery. Bluetooth audio. Over-ear cushions.",
+      "category": "Electronics",
+      "brand": "SoundNest",
+      "price": "5155.00",
+      "currency": "INR",
+      "rating": 4.35,
+      "stock_quantity": 49,
+      "available": true,
+      "features": [
+        "Up to 32 hours battery",
+        "Bluetooth audio",
+        "Over-ear cushions"
+      ],
+      "attributes": {
+        "series": "Tempo",
+        "catalog": "Synthetic demonstration",
+        "model": "SOU-115"
+      },
+      "image_url": "/product_images/expanded/headphones/ax23KYiUdJc.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Wireless Headphones"
+    },
+    {
+      "id": "D076",
+      "name": "SoundNest Urban Wireless Headphones",
+      "description": "SoundNest Urban Wireless Headphones for comfortable everyday use. Up to 33 hours battery. Bluetooth audio. Over-ear cushions.",
+      "category": "Electronics",
+      "brand": "SoundNest",
+      "price": "5419.00",
+      "currency": "INR",
+      "rating": 4.4,
+      "stock_quantity": 59,
+      "available": true,
+      "features": [
+        "Up to 33 hours battery",
+        "Bluetooth audio",
+        "Over-ear cushions"
+      ],
+      "attributes": {
+        "series": "Urban",
+        "catalog": "Synthetic demonstration",
+        "model": "SOU-116"
+      },
+      "image_url": "/product_images/expanded/headphones/lUMj2Zv5HUE.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Wireless Headphones"
+    },
+    {
+      "id": "D077",
+      "name": "WaveCraft Metro Bluetooth Speaker",
+      "description": "WaveCraft Metro Bluetooth Speaker for daily commuting. 5 W rated output. Up to 6 hours battery. Wireless playback.",
+      "category": "Bluetooth Speakers",
+      "brand": "WaveCraft",
+      "price": "1175.00",
+      "currency": "INR",
+      "rating": 4.45,
+      "stock_quantity": 50,
+      "available": true,
+      "features": [
+        "5 W rated output",
+        "Up to 6 hours battery",
+        "Wireless playback"
+      ],
+      "attributes": {
+        "series": "Metro",
+        "catalog": "Synthetic demonstration",
+        "model": "WAV-101"
+      },
+      "image_url": "/product_images/expanded/speakers/AKrZkFJ5HOM.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Bluetooth Speaker"
+    },
+    {
+      "id": "D078",
+      "name": "WaveCraft Summit Bluetooth Speaker",
+      "description": "WaveCraft Summit Bluetooth Speaker for work and study. 7 W rated output. Up to 7 hours battery. Wireless playback.",
+      "category": "Bluetooth Speakers",
+      "brand": "WaveCraft",
+      "price": "1415.00",
+      "currency": "INR",
+      "rating": 4.5,
+      "stock_quantity": 60,
+      "available": true,
+      "features": [
+        "7 W rated output",
+        "Up to 7 hours battery",
+        "Wireless playback"
+      ],
+      "attributes": {
+        "series": "Summit",
+        "catalog": "Synthetic demonstration",
+        "model": "WAV-102"
+      },
+      "image_url": "/product_images/expanded/speakers/BMest61rcqs.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Bluetooth Speaker"
+    },
+    {
+      "id": "D079",
+      "name": "WaveCraft Harbor Bluetooth Speaker",
+      "description": "WaveCraft Harbor Bluetooth Speaker for weekend use. 9 W rated output. Up to 8 hours battery. Wireless playback.",
+      "category": "Bluetooth Speakers",
+      "brand": "WaveCraft",
+      "price": "1655.00",
+      "currency": "INR",
+      "rating": 4.55,
+      "stock_quantity": 70,
+      "available": true,
+      "features": [
+        "9 W rated output",
+        "Up to 8 hours battery",
+        "Wireless playback"
+      ],
+      "attributes": {
+        "series": "Harbor",
+        "catalog": "Synthetic demonstration",
+        "model": "WAV-103"
+      },
+      "image_url": "/product_images/expanded/speakers/04TYM24Wi2c.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Bluetooth Speaker"
+    },
+    {
+      "id": "D080",
+      "name": "WaveCraft Studio Bluetooth Speaker",
+      "description": "WaveCraft Studio Bluetooth Speaker for comfortable everyday use. 11 W rated output. Up to 9 hours battery. Wireless playback.",
+      "category": "Bluetooth Speakers",
+      "brand": "WaveCraft",
+      "price": "1895.00",
+      "currency": "INR",
+      "rating": 4.6,
+      "stock_quantity": 80,
+      "available": true,
+      "features": [
+        "11 W rated output",
+        "Up to 9 hours battery",
+        "Wireless playback"
+      ],
+      "attributes": {
+        "series": "Studio",
+        "catalog": "Synthetic demonstration",
+        "model": "WAV-104"
+      },
+      "image_url": "/product_images/expanded/speakers/ALf_DGUsgro.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Bluetooth Speaker"
+    },
+    {
+      "id": "D081",
+      "name": "WaveCraft Vista Bluetooth Speaker",
+      "description": "WaveCraft Vista Bluetooth Speaker for daily commuting. 13 W rated output. Up to 10 hours battery. Wireless playback.",
+      "category": "Bluetooth Speakers",
+      "brand": "WaveCraft",
+      "price": "2135.00",
+      "currency": "INR",
+      "rating": 4.65,
+      "stock_quantity": 90,
+      "available": true,
+      "features": [
+        "13 W rated output",
+        "Up to 10 hours battery",
+        "Wireless playback"
+      ],
+      "attributes": {
+        "series": "Vista",
+        "catalog": "Synthetic demonstration",
+        "model": "WAV-105"
+      },
+      "image_url": "/product_images/expanded/speakers/xzV9lfNVSmY.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Bluetooth Speaker"
+    },
+    {
+      "id": "D082",
+      "name": "WaveCraft Roam Bluetooth Speaker",
+      "description": "WaveCraft Roam Bluetooth Speaker for work and study. 15 W rated output. Up to 11 hours battery. Wireless playback.",
+      "category": "Bluetooth Speakers",
+      "brand": "WaveCraft",
+      "price": "2375.00",
+      "currency": "INR",
+      "rating": 4.7,
+      "stock_quantity": 100,
+      "available": true,
+      "features": [
+        "15 W rated output",
+        "Up to 11 hours battery",
+        "Wireless playback"
+      ],
+      "attributes": {
+        "series": "Roam",
+        "catalog": "Synthetic demonstration",
+        "model": "WAV-106"
+      },
+      "image_url": "/product_images/expanded/speakers/mS95of4-oV0.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Bluetooth Speaker"
+    },
+    {
+      "id": "D083",
+      "name": "WaveCraft Pulse Bluetooth Speaker",
+      "description": "WaveCraft Pulse Bluetooth Speaker for weekend use. 17 W rated output. Up to 12 hours battery. Wireless playback.",
+      "category": "Bluetooth Speakers",
+      "brand": "WaveCraft",
+      "price": "2615.00",
+      "currency": "INR",
+      "rating": 4.75,
+      "stock_quantity": 17,
+      "available": true,
+      "features": [
+        "17 W rated output",
+        "Up to 12 hours battery",
+        "Wireless playback"
+      ],
+      "attributes": {
+        "series": "Pulse",
+        "catalog": "Synthetic demonstration",
+        "model": "WAV-107"
+      },
+      "image_url": "/product_images/expanded/speakers/6HDoRL0Y_-w.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Bluetooth Speaker"
+    },
+    {
+      "id": "D084",
+      "name": "WaveCraft Atlas Bluetooth Speaker",
+      "description": "WaveCraft Atlas Bluetooth Speaker for comfortable everyday use. 19 W rated output. Up to 13 hours battery. Wireless playback.",
+      "category": "Bluetooth Speakers",
+      "brand": "WaveCraft",
+      "price": "2855.00",
+      "currency": "INR",
+      "rating": 4.8,
+      "stock_quantity": 27,
+      "available": true,
+      "features": [
+        "19 W rated output",
+        "Up to 13 hours battery",
+        "Wireless playback"
+      ],
+      "attributes": {
+        "series": "Atlas",
+        "catalog": "Synthetic demonstration",
+        "model": "WAV-108"
+      },
+      "image_url": "/product_images/expanded/speakers/RJ5wFOc8C3o.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Bluetooth Speaker"
+    },
+    {
+      "id": "D085",
+      "name": "WaveCraft Breeze Bluetooth Speaker",
+      "description": "WaveCraft Breeze Bluetooth Speaker for daily commuting. 21 W rated output. Up to 14 hours battery. Wireless playback.",
+      "category": "Bluetooth Speakers",
+      "brand": "WaveCraft",
+      "price": "3095.00",
+      "currency": "INR",
+      "rating": 3.8,
+      "stock_quantity": 37,
+      "available": true,
+      "features": [
+        "21 W rated output",
+        "Up to 14 hours battery",
+        "Wireless playback"
+      ],
+      "attributes": {
+        "series": "Breeze",
+        "catalog": "Synthetic demonstration",
+        "model": "WAV-109"
+      },
+      "image_url": "/product_images/expanded/speakers/S0B-pmGjdVA.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Bluetooth Speaker"
+    },
+    {
+      "id": "D086",
+      "name": "WaveCraft Cove Bluetooth Speaker",
+      "description": "WaveCraft Cove Bluetooth Speaker for work and study. 23 W rated output. Up to 15 hours battery. Wireless playback.",
+      "category": "Bluetooth Speakers",
+      "brand": "WaveCraft",
+      "price": "3335.00",
+      "currency": "INR",
+      "rating": 3.85,
+      "stock_quantity": 47,
+      "available": true,
+      "features": [
+        "23 W rated output",
+        "Up to 15 hours battery",
+        "Wireless playback"
+      ],
+      "attributes": {
+        "series": "Cove",
+        "catalog": "Synthetic demonstration",
+        "model": "WAV-110"
+      },
+      "image_url": "/product_images/expanded/speakers/zxvnrxl5OXc.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Bluetooth Speaker"
+    },
+    {
+      "id": "D087",
+      "name": "WaveCraft Stride Bluetooth Speaker",
+      "description": "WaveCraft Stride Bluetooth Speaker for weekend use. 25 W rated output. Up to 16 hours battery. Wireless playback.",
+      "category": "Bluetooth Speakers",
+      "brand": "WaveCraft",
+      "price": "3575.00",
+      "currency": "INR",
+      "rating": 3.9,
+      "stock_quantity": 0,
+      "available": false,
+      "features": [
+        "25 W rated output",
+        "Up to 16 hours battery",
+        "Wireless playback"
+      ],
+      "attributes": {
+        "series": "Stride",
+        "catalog": "Synthetic demonstration",
+        "model": "WAV-111"
+      },
+      "image_url": "/product_images/expanded/speakers/Lr4diye5bnQ.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Bluetooth Speaker"
+    },
+    {
+      "id": "D088",
+      "name": "WaveCraft Orbit Bluetooth Speaker",
+      "description": "WaveCraft Orbit Bluetooth Speaker for comfortable everyday use. 27 W rated output. Up to 17 hours battery. Wireless playback.",
+      "category": "Bluetooth Speakers",
+      "brand": "WaveCraft",
+      "price": "3815.00",
+      "currency": "INR",
+      "rating": 3.95,
+      "stock_quantity": 67,
+      "available": true,
+      "features": [
+        "27 W rated output",
+        "Up to 17 hours battery",
+        "Wireless playback"
+      ],
+      "attributes": {
+        "series": "Orbit",
+        "catalog": "Synthetic demonstration",
+        "model": "WAV-112"
+      },
+      "image_url": "/product_images/expanded/speakers/cSAiU8zbm5Y.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Bluetooth Speaker"
+    },
+    {
+      "id": "D089",
+      "name": "WaveCraft Drift Bluetooth Speaker",
+      "description": "WaveCraft Drift Bluetooth Speaker for daily commuting. 29 W rated output. Up to 18 hours battery. Wireless playback.",
+      "category": "Bluetooth Speakers",
+      "brand": "WaveCraft",
+      "price": "4055.00",
+      "currency": "INR",
+      "rating": 4.0,
+      "stock_quantity": 77,
+      "available": true,
+      "features": [
+        "29 W rated output",
+        "Up to 18 hours battery",
+        "Wireless playback"
+      ],
+      "attributes": {
+        "series": "Drift",
+        "catalog": "Synthetic demonstration",
+        "model": "WAV-113"
+      },
+      "image_url": "/product_images/expanded/speakers/876c-F8YBrg.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Bluetooth Speaker"
+    },
+    {
+      "id": "D090",
+      "name": "WaveCraft Trail Bluetooth Speaker",
+      "description": "WaveCraft Trail Bluetooth Speaker for work and study. 31 W rated output. Up to 6 hours battery. Wireless playback.",
+      "category": "Bluetooth Speakers",
+      "brand": "WaveCraft",
+      "price": "4295.00",
+      "currency": "INR",
+      "rating": 4.05,
+      "stock_quantity": 87,
+      "available": true,
+      "features": [
+        "31 W rated output",
+        "Up to 6 hours battery",
+        "Wireless playback"
+      ],
+      "attributes": {
+        "series": "Trail",
+        "catalog": "Synthetic demonstration",
+        "model": "WAV-114"
+      },
+      "image_url": "/product_images/expanded/speakers/N0J3X_z5dyQ.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Bluetooth Speaker"
+    },
+    {
+      "id": "D091",
+      "name": "WaveCraft Tempo Bluetooth Speaker",
+      "description": "WaveCraft Tempo Bluetooth Speaker for weekend use. 33 W rated output. Up to 7 hours battery. Wireless playback.",
+      "category": "Bluetooth Speakers",
+      "brand": "WaveCraft",
+      "price": "4535.00",
+      "currency": "INR",
+      "rating": 4.1,
+      "stock_quantity": 97,
+      "available": true,
+      "features": [
+        "33 W rated output",
+        "Up to 7 hours battery",
+        "Wireless playback"
+      ],
+      "attributes": {
+        "series": "Tempo",
+        "catalog": "Synthetic demonstration",
+        "model": "WAV-115"
+      },
+      "image_url": "/product_images/expanded/speakers/_bWH-4OjrYA.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Bluetooth Speaker"
+    },
+    {
+      "id": "D092",
+      "name": "WaveCraft Urban Bluetooth Speaker",
+      "description": "WaveCraft Urban Bluetooth Speaker for comfortable everyday use. 35 W rated output. Up to 8 hours battery. Wireless playback.",
+      "category": "Bluetooth Speakers",
+      "brand": "WaveCraft",
+      "price": "4775.00",
+      "currency": "INR",
+      "rating": 4.15,
+      "stock_quantity": 14,
+      "available": true,
+      "features": [
+        "35 W rated output",
+        "Up to 8 hours battery",
+        "Wireless playback"
+      ],
+      "attributes": {
+        "series": "Urban",
+        "catalog": "Synthetic demonstration",
+        "model": "WAV-116"
+      },
+      "image_url": "/product_images/expanded/speakers/f4qyr3FWB1w.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Bluetooth Speaker"
+    },
+    {
+      "id": "D093",
+      "name": "WaveCraft Prime Bluetooth Speaker",
+      "description": "WaveCraft Prime Bluetooth Speaker for daily commuting. 37 W rated output. Up to 9 hours battery. Wireless playback.",
+      "category": "Bluetooth Speakers",
+      "brand": "WaveCraft",
+      "price": "5015.00",
+      "currency": "INR",
+      "rating": 4.2,
+      "stock_quantity": 24,
+      "available": true,
+      "features": [
+        "37 W rated output",
+        "Up to 9 hours battery",
+        "Wireless playback"
+      ],
+      "attributes": {
+        "series": "Prime",
+        "catalog": "Synthetic demonstration",
+        "model": "WAV-117"
+      },
+      "image_url": "/product_images/expanded/speakers/eMw1fBx4_Wk.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Bluetooth Speaker"
+    },
+    {
+      "id": "D094",
+      "name": "WaveCraft Nova Bluetooth Speaker",
+      "description": "WaveCraft Nova Bluetooth Speaker for work and study. 39 W rated output. Up to 10 hours battery. Wireless playback.",
+      "category": "Bluetooth Speakers",
+      "brand": "WaveCraft",
+      "price": "5255.00",
+      "currency": "INR",
+      "rating": 4.25,
+      "stock_quantity": 34,
+      "available": true,
+      "features": [
+        "39 W rated output",
+        "Up to 10 hours battery",
+        "Wireless playback"
+      ],
+      "attributes": {
+        "series": "Nova",
+        "catalog": "Synthetic demonstration",
+        "model": "WAV-118"
+      },
+      "image_url": "/product_images/expanded/speakers/g5Y5kjOwGwQ.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Bluetooth Speaker"
+    },
+    {
+      "id": "D095",
+      "name": "WaveCraft Focus Bluetooth Speaker",
+      "description": "WaveCraft Focus Bluetooth Speaker for weekend use. 41 W rated output. Up to 11 hours battery. Wireless playback.",
+      "category": "Bluetooth Speakers",
+      "brand": "WaveCraft",
+      "price": "5495.00",
+      "currency": "INR",
+      "rating": 4.3,
+      "stock_quantity": 44,
+      "available": true,
+      "features": [
+        "41 W rated output",
+        "Up to 11 hours battery",
+        "Wireless playback"
+      ],
+      "attributes": {
+        "series": "Focus",
+        "catalog": "Synthetic demonstration",
+        "model": "WAV-119"
+      },
+      "image_url": "/product_images/expanded/speakers/kDCIBGqU0_0.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Bluetooth Speaker"
+    },
+    {
+      "id": "D096",
+      "name": "WaveCraft Voyage Bluetooth Speaker",
+      "description": "WaveCraft Voyage Bluetooth Speaker for comfortable everyday use. 43 W rated output. Up to 12 hours battery. Wireless playback.",
+      "category": "Bluetooth Speakers",
+      "brand": "WaveCraft",
+      "price": "5735.00",
+      "currency": "INR",
+      "rating": 4.35,
+      "stock_quantity": 54,
+      "available": true,
+      "features": [
+        "43 W rated output",
+        "Up to 12 hours battery",
+        "Wireless playback"
+      ],
+      "attributes": {
+        "series": "Voyage",
+        "catalog": "Synthetic demonstration",
+        "model": "WAV-120"
+      },
+      "image_url": "/product_images/expanded/speakers/-WB52caEpmI.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Bluetooth Speaker"
+    },
+    {
+      "id": "D097",
+      "name": "NovaLink Metro Smartphone",
+      "description": "NovaLink Metro Smartphone for daily commuting. 64 GB storage. 4 GB RAM. 6.0-inch display.",
+      "category": "Smartphones",
+      "brand": "NovaLink",
+      "price": "10095.00",
+      "currency": "INR",
+      "rating": 4.4,
+      "stock_quantity": 17,
+      "available": true,
+      "features": [
+        "64 GB storage",
+        "4 GB RAM",
+        "6.0-inch display"
+      ],
+      "attributes": {
+        "series": "Metro",
+        "catalog": "Synthetic demonstration",
+        "model": "NOV-101"
+      },
+      "image_url": "/product_images/expanded/smartphones/LEtrhrME07g.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Smartphone"
+    },
+    {
+      "id": "D098",
+      "name": "NovaLink Summit Smartphone",
+      "description": "NovaLink Summit Smartphone for work and study. 128 GB storage. 6 GB RAM. 6.1-inch display.",
+      "category": "Smartphones",
+      "brand": "NovaLink",
+      "price": "11546.00",
+      "currency": "INR",
+      "rating": 4.45,
+      "stock_quantity": 27,
+      "available": true,
+      "features": [
+        "128 GB storage",
+        "6 GB RAM",
+        "6.1-inch display"
+      ],
+      "attributes": {
+        "series": "Summit",
+        "catalog": "Synthetic demonstration",
+        "model": "NOV-102"
+      },
+      "image_url": "/product_images/expanded/smartphones/dBESAHgPL6c.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Smartphone"
+    },
+    {
+      "id": "D099",
+      "name": "NovaLink Harbor Smartphone",
+      "description": "NovaLink Harbor Smartphone for weekend use. 256 GB storage. 8 GB RAM. 6.2-inch display.",
+      "category": "Smartphones",
+      "brand": "NovaLink",
+      "price": "13094.00",
+      "currency": "INR",
+      "rating": 4.5,
+      "stock_quantity": 37,
+      "available": true,
+      "features": [
+        "256 GB storage",
+        "8 GB RAM",
+        "6.2-inch display"
+      ],
+      "attributes": {
+        "series": "Harbor",
+        "catalog": "Synthetic demonstration",
+        "model": "NOV-103"
+      },
+      "image_url": "/product_images/expanded/smartphones/9e9PD9blAto.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Smartphone"
+    },
+    {
+      "id": "D100",
+      "name": "NovaLink Studio Smartphone",
+      "description": "NovaLink Studio Smartphone for comfortable everyday use. 64 GB storage. 10 GB RAM. 6.3-inch display.",
+      "category": "Smartphones",
+      "brand": "NovaLink",
+      "price": "14642.00",
+      "currency": "INR",
+      "rating": 4.55,
+      "stock_quantity": 47,
+      "available": true,
+      "features": [
+        "64 GB storage",
+        "10 GB RAM",
+        "6.3-inch display"
+      ],
+      "attributes": {
+        "series": "Studio",
+        "catalog": "Synthetic demonstration",
+        "model": "NOV-104"
+      },
+      "image_url": "/product_images/expanded/smartphones/sPBRRwT_fKA.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Smartphone"
+    },
+    {
+      "id": "D101",
+      "name": "NovaLink Vista Smartphone",
+      "description": "NovaLink Vista Smartphone for daily commuting. 128 GB storage. 4 GB RAM. 6.4-inch display.",
+      "category": "Smartphones",
+      "brand": "NovaLink",
+      "price": "16190.00",
+      "currency": "INR",
+      "rating": 4.6,
+      "stock_quantity": 57,
+      "available": true,
+      "features": [
+        "128 GB storage",
+        "4 GB RAM",
+        "6.4-inch display"
+      ],
+      "attributes": {
+        "series": "Vista",
+        "catalog": "Synthetic demonstration",
+        "model": "NOV-105"
+      },
+      "image_url": "/product_images/expanded/smartphones/o6elTKWZ5bI.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Smartphone"
+    },
+    {
+      "id": "D102",
+      "name": "NovaLink Roam Smartphone",
+      "description": "NovaLink Roam Smartphone for work and study. 256 GB storage. 6 GB RAM. 6.5-inch display.",
+      "category": "Smartphones",
+      "brand": "NovaLink",
+      "price": "17738.00",
+      "currency": "INR",
+      "rating": 4.65,
+      "stock_quantity": 67,
+      "available": true,
+      "features": [
+        "256 GB storage",
+        "6 GB RAM",
+        "6.5-inch display"
+      ],
+      "attributes": {
+        "series": "Roam",
+        "catalog": "Synthetic demonstration",
+        "model": "NOV-106"
+      },
+      "image_url": "/product_images/expanded/smartphones/-baMCm2CLKM.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Smartphone"
+    },
+    {
+      "id": "D103",
+      "name": "NovaLink Pulse Smartphone",
+      "description": "NovaLink Pulse Smartphone for weekend use. 64 GB storage. 8 GB RAM. 6.6-inch display.",
+      "category": "Smartphones",
+      "brand": "NovaLink",
+      "price": "19286.00",
+      "currency": "INR",
+      "rating": 4.7,
+      "stock_quantity": 77,
+      "available": true,
+      "features": [
+        "64 GB storage",
+        "8 GB RAM",
+        "6.6-inch display"
+      ],
+      "attributes": {
+        "series": "Pulse",
+        "catalog": "Synthetic demonstration",
+        "model": "NOV-107"
+      },
+      "image_url": "/product_images/expanded/smartphones/w33-zg-dNL4.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Smartphone"
+    },
+    {
+      "id": "D104",
+      "name": "NovaLink Atlas Smartphone",
+      "description": "NovaLink Atlas Smartphone for comfortable everyday use. 128 GB storage. 10 GB RAM. 6.7-inch display.",
+      "category": "Smartphones",
+      "brand": "NovaLink",
+      "price": "20834.00",
+      "currency": "INR",
+      "rating": 4.75,
+      "stock_quantity": 87,
+      "available": true,
+      "features": [
+        "128 GB storage",
+        "10 GB RAM",
+        "6.7-inch display"
+      ],
+      "attributes": {
+        "series": "Atlas",
+        "catalog": "Synthetic demonstration",
+        "model": "NOV-108"
+      },
+      "image_url": "/product_images/expanded/smartphones/1NZcjdo2hKQ.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Smartphone"
+    },
+    {
+      "id": "D105",
+      "name": "NovaLink Breeze Smartphone",
+      "description": "NovaLink Breeze Smartphone for daily commuting. 256 GB storage. 4 GB RAM. 6.0-inch display.",
+      "category": "Smartphones",
+      "brand": "NovaLink",
+      "price": "22382.00",
+      "currency": "INR",
+      "rating": 4.8,
+      "stock_quantity": 97,
+      "available": true,
+      "features": [
+        "256 GB storage",
+        "4 GB RAM",
+        "6.0-inch display"
+      ],
+      "attributes": {
+        "series": "Breeze",
+        "catalog": "Synthetic demonstration",
+        "model": "NOV-109"
+      },
+      "image_url": "/product_images/expanded/smartphones/Wzs4-QEmCUQ.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Smartphone"
+    },
+    {
+      "id": "D106",
+      "name": "NovaLink Cove Smartphone",
+      "description": "NovaLink Cove Smartphone for work and study. 64 GB storage. 6 GB RAM. 6.1-inch display.",
+      "category": "Smartphones",
+      "brand": "NovaLink",
+      "price": "23930.00",
+      "currency": "INR",
+      "rating": 3.8,
+      "stock_quantity": 14,
+      "available": true,
+      "features": [
+        "64 GB storage",
+        "6 GB RAM",
+        "6.1-inch display"
+      ],
+      "attributes": {
+        "series": "Cove",
+        "catalog": "Synthetic demonstration",
+        "model": "NOV-110"
+      },
+      "image_url": "/product_images/expanded/smartphones/8l9VxXI28tY.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Smartphone"
+    },
+    {
+      "id": "D107",
+      "name": "NovaLink Stride Smartphone",
+      "description": "NovaLink Stride Smartphone for weekend use. 128 GB storage. 8 GB RAM. 6.2-inch display.",
+      "category": "Smartphones",
+      "brand": "NovaLink",
+      "price": "25478.00",
+      "currency": "INR",
+      "rating": 3.85,
+      "stock_quantity": 0,
+      "available": false,
+      "features": [
+        "128 GB storage",
+        "8 GB RAM",
+        "6.2-inch display"
+      ],
+      "attributes": {
+        "series": "Stride",
+        "catalog": "Synthetic demonstration",
+        "model": "NOV-111"
+      },
+      "image_url": "/product_images/expanded/smartphones/ZwKCWVFdrcs.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Smartphone"
+    },
+    {
+      "id": "D108",
+      "name": "NovaLink Orbit Smartphone",
+      "description": "NovaLink Orbit Smartphone for comfortable everyday use. 256 GB storage. 10 GB RAM. 6.3-inch display.",
+      "category": "Smartphones",
+      "brand": "NovaLink",
+      "price": "27026.00",
+      "currency": "INR",
+      "rating": 3.9,
+      "stock_quantity": 34,
+      "available": true,
+      "features": [
+        "256 GB storage",
+        "10 GB RAM",
+        "6.3-inch display"
+      ],
+      "attributes": {
+        "series": "Orbit",
+        "catalog": "Synthetic demonstration",
+        "model": "NOV-112"
+      },
+      "image_url": "/product_images/expanded/smartphones/F_cfF1uX7qY.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Smartphone"
+    },
+    {
+      "id": "D109",
+      "name": "NovaLink Drift Smartphone",
+      "description": "NovaLink Drift Smartphone for daily commuting. 64 GB storage. 4 GB RAM. 6.4-inch display.",
+      "category": "Smartphones",
+      "brand": "NovaLink",
+      "price": "28574.00",
+      "currency": "INR",
+      "rating": 3.95,
+      "stock_quantity": 44,
+      "available": true,
+      "features": [
+        "64 GB storage",
+        "4 GB RAM",
+        "6.4-inch display"
+      ],
+      "attributes": {
+        "series": "Drift",
+        "catalog": "Synthetic demonstration",
+        "model": "NOV-113"
+      },
+      "image_url": "/product_images/expanded/smartphones/6wdRuK7bVTE.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Smartphone"
+    },
+    {
+      "id": "D110",
+      "name": "NovaLink Trail Smartphone",
+      "description": "NovaLink Trail Smartphone for work and study. 128 GB storage. 6 GB RAM. 6.5-inch display.",
+      "category": "Smartphones",
+      "brand": "NovaLink",
+      "price": "30122.00",
+      "currency": "INR",
+      "rating": 4.0,
+      "stock_quantity": 54,
+      "available": true,
+      "features": [
+        "128 GB storage",
+        "6 GB RAM",
+        "6.5-inch display"
+      ],
+      "attributes": {
+        "series": "Trail",
+        "catalog": "Synthetic demonstration",
+        "model": "NOV-114"
+      },
+      "image_url": "/product_images/expanded/smartphones/xdLXPic3Wfk.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Smartphone"
+    },
+    {
+      "id": "D111",
+      "name": "NovaLink Tempo Smartphone",
+      "description": "NovaLink Tempo Smartphone for weekend use. 256 GB storage. 8 GB RAM. 6.6-inch display.",
+      "category": "Smartphones",
+      "brand": "NovaLink",
+      "price": "31670.00",
+      "currency": "INR",
+      "rating": 4.05,
+      "stock_quantity": 64,
+      "available": true,
+      "features": [
+        "256 GB storage",
+        "8 GB RAM",
+        "6.6-inch display"
+      ],
+      "attributes": {
+        "series": "Tempo",
+        "catalog": "Synthetic demonstration",
+        "model": "NOV-115"
+      },
+      "image_url": "/product_images/expanded/smartphones/JZrebB7aHyQ.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Smartphone"
+    },
+    {
+      "id": "D112",
+      "name": "NovaLink Urban Smartphone",
+      "description": "NovaLink Urban Smartphone for comfortable everyday use. 64 GB storage. 10 GB RAM. 6.7-inch display.",
+      "category": "Smartphones",
+      "brand": "NovaLink",
+      "price": "33218.00",
+      "currency": "INR",
+      "rating": 4.1,
+      "stock_quantity": 74,
+      "available": true,
+      "features": [
+        "64 GB storage",
+        "10 GB RAM",
+        "6.7-inch display"
+      ],
+      "attributes": {
+        "series": "Urban",
+        "catalog": "Synthetic demonstration",
+        "model": "NOV-116"
+      },
+      "image_url": "/product_images/expanded/smartphones/J7xrBW_oYJc.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Smartphone"
+    },
+    {
+      "id": "D113",
+      "name": "NovaLink Prime Smartphone",
+      "description": "NovaLink Prime Smartphone for daily commuting. 128 GB storage. 4 GB RAM. 6.0-inch display.",
+      "category": "Smartphones",
+      "brand": "NovaLink",
+      "price": "34766.00",
+      "currency": "INR",
+      "rating": 4.15,
+      "stock_quantity": 84,
+      "available": true,
+      "features": [
+        "128 GB storage",
+        "4 GB RAM",
+        "6.0-inch display"
+      ],
+      "attributes": {
+        "series": "Prime",
+        "catalog": "Synthetic demonstration",
+        "model": "NOV-117"
+      },
+      "image_url": "/product_images/expanded/smartphones/mJif93InGaU.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Smartphone"
+    },
+    {
+      "id": "D114",
+      "name": "NovaLink Nova Smartphone",
+      "description": "NovaLink Nova Smartphone for work and study. 256 GB storage. 6 GB RAM. 6.1-inch display.",
+      "category": "Smartphones",
+      "brand": "NovaLink",
+      "price": "36314.00",
+      "currency": "INR",
+      "rating": 4.2,
+      "stock_quantity": 94,
+      "available": true,
+      "features": [
+        "256 GB storage",
+        "6 GB RAM",
+        "6.1-inch display"
+      ],
+      "attributes": {
+        "series": "Nova",
+        "catalog": "Synthetic demonstration",
+        "model": "NOV-118"
+      },
+      "image_url": "/product_images/expanded/smartphones/-CiY8Zce7qI.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Smartphone"
+    },
+    {
+      "id": "D115",
+      "name": "NovaLink Focus Smartphone",
+      "description": "NovaLink Focus Smartphone for weekend use. 64 GB storage. 8 GB RAM. 6.2-inch display.",
+      "category": "Smartphones",
+      "brand": "NovaLink",
+      "price": "37862.00",
+      "currency": "INR",
+      "rating": 4.25,
+      "stock_quantity": 11,
+      "available": true,
+      "features": [
+        "64 GB storage",
+        "8 GB RAM",
+        "6.2-inch display"
+      ],
+      "attributes": {
+        "series": "Focus",
+        "catalog": "Synthetic demonstration",
+        "model": "NOV-119"
+      },
+      "image_url": "/product_images/expanded/smartphones/3EYu6B86yWk.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Smartphone"
+    },
+    {
+      "id": "D116",
+      "name": "NovaLink Voyage Smartphone",
+      "description": "NovaLink Voyage Smartphone for comfortable everyday use. 128 GB storage. 10 GB RAM. 6.3-inch display.",
+      "category": "Smartphones",
+      "brand": "NovaLink",
+      "price": "39410.00",
+      "currency": "INR",
+      "rating": 4.3,
+      "stock_quantity": 21,
+      "available": true,
+      "features": [
+        "128 GB storage",
+        "10 GB RAM",
+        "6.3-inch display"
+      ],
+      "attributes": {
+        "series": "Voyage",
+        "catalog": "Synthetic demonstration",
+        "model": "NOV-120"
+      },
+      "image_url": "/product_images/expanded/smartphones/X4S-G_Q9U9g.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Smartphone"
+    },
+    {
+      "id": "D117",
+      "name": "CoreVista Metro Laptop",
+      "description": "CoreVista Metro Laptop for work and study. 8 GB RAM. 256 GB SSD. 13.3-inch display.",
+      "category": "Laptops",
+      "brand": "CoreVista",
+      "price": "30018.00",
+      "currency": "INR",
+      "rating": 4.35,
+      "stock_quantity": 77,
+      "available": true,
+      "features": [
+        "8 GB RAM",
+        "256 GB SSD",
+        "13.3-inch display"
+      ],
+      "attributes": {
+        "series": "Metro",
+        "catalog": "Synthetic demonstration",
+        "model": "COR-101"
+      },
+      "image_url": "/product_images/expanded/laptops/JO_S6ewBqAk.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Laptop"
+    },
+    {
+      "id": "D118",
+      "name": "CoreVista Summit Laptop",
+      "description": "CoreVista Summit Laptop for everyday productivity. 16 GB RAM. 512 GB SSD. 14-inch display.",
+      "category": "Laptops",
+      "brand": "CoreVista",
+      "price": "32658.00",
+      "currency": "INR",
+      "rating": 4.4,
+      "stock_quantity": 87,
+      "available": true,
+      "features": [
+        "16 GB RAM",
+        "512 GB SSD",
+        "14-inch display"
+      ],
+      "attributes": {
+        "series": "Summit",
+        "catalog": "Synthetic demonstration",
+        "model": "COR-102"
+      },
+      "image_url": "/product_images/expanded/laptops/_sg8nXmpWDM.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Laptop"
+    },
+    {
+      "id": "D119",
+      "name": "CoreVista Harbor Laptop",
+      "description": "CoreVista Harbor Laptop for home-office tasks. 32 GB RAM. 1024 GB SSD. 15.6-inch display.",
+      "category": "Laptops",
+      "brand": "CoreVista",
+      "price": "35298.00",
+      "currency": "INR",
+      "rating": 4.45,
+      "stock_quantity": 97,
+      "available": true,
+      "features": [
+        "32 GB RAM",
+        "1024 GB SSD",
+        "15.6-inch display"
+      ],
+      "attributes": {
+        "series": "Harbor",
+        "catalog": "Synthetic demonstration",
+        "model": "COR-103"
+      },
+      "image_url": "/product_images/expanded/laptops/tpuAo8gVs58.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Laptop"
+    },
+    {
+      "id": "D120",
+      "name": "CoreVista Studio Laptop",
+      "description": "CoreVista Studio Laptop for portable computing. 8 GB RAM. 256 GB SSD. 16-inch display.",
+      "category": "Laptops",
+      "brand": "CoreVista",
+      "price": "37938.00",
+      "currency": "INR",
+      "rating": 4.5,
+      "stock_quantity": 14,
+      "available": true,
+      "features": [
+        "8 GB RAM",
+        "256 GB SSD",
+        "16-inch display"
+      ],
+      "attributes": {
+        "series": "Studio",
+        "catalog": "Synthetic demonstration",
+        "model": "COR-104"
+      },
+      "image_url": "/product_images/expanded/laptops/S2r2Ex8jv2o.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Laptop"
+    },
+    {
+      "id": "D121",
+      "name": "CoreVista Vista Laptop",
+      "description": "CoreVista Vista Laptop for work and study. 16 GB RAM. 512 GB SSD. 13.3-inch display.",
+      "category": "Laptops",
+      "brand": "CoreVista",
+      "price": "40578.00",
+      "currency": "INR",
+      "rating": 4.55,
+      "stock_quantity": 24,
+      "available": true,
+      "features": [
+        "16 GB RAM",
+        "512 GB SSD",
+        "13.3-inch display"
+      ],
+      "attributes": {
+        "series": "Vista",
+        "catalog": "Synthetic demonstration",
+        "model": "COR-105"
+      },
+      "image_url": "/product_images/expanded/laptops/Bd7gNnWJBkU.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Laptop"
+    },
+    {
+      "id": "D122",
+      "name": "CoreVista Roam Laptop",
+      "description": "CoreVista Roam Laptop for everyday productivity. 32 GB RAM. 1024 GB SSD. 14-inch display.",
+      "category": "Laptops",
+      "brand": "CoreVista",
+      "price": "43218.00",
+      "currency": "INR",
+      "rating": 4.6,
+      "stock_quantity": 34,
+      "available": true,
+      "features": [
+        "32 GB RAM",
+        "1024 GB SSD",
+        "14-inch display"
+      ],
+      "attributes": {
+        "series": "Roam",
+        "catalog": "Synthetic demonstration",
+        "model": "COR-106"
+      },
+      "image_url": "/product_images/expanded/laptops/Gi3iUJ1FwxI.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Laptop"
+    },
+    {
+      "id": "D123",
+      "name": "CoreVista Pulse Laptop",
+      "description": "CoreVista Pulse Laptop for home-office tasks. 8 GB RAM. 256 GB SSD. 15.6-inch display.",
+      "category": "Laptops",
+      "brand": "CoreVista",
+      "price": "45858.00",
+      "currency": "INR",
+      "rating": 4.65,
+      "stock_quantity": 44,
+      "available": true,
+      "features": [
+        "8 GB RAM",
+        "256 GB SSD",
+        "15.6-inch display"
+      ],
+      "attributes": {
+        "series": "Pulse",
+        "catalog": "Synthetic demonstration",
+        "model": "COR-107"
+      },
+      "image_url": "/product_images/expanded/laptops/HyTwtsk8XqA.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Laptop"
+    },
+    {
+      "id": "D124",
+      "name": "CoreVista Atlas Laptop",
+      "description": "CoreVista Atlas Laptop for portable computing. 16 GB RAM. 512 GB SSD. 16-inch display.",
+      "category": "Laptops",
+      "brand": "CoreVista",
+      "price": "48498.00",
+      "currency": "INR",
+      "rating": 4.7,
+      "stock_quantity": 54,
+      "available": true,
+      "features": [
+        "16 GB RAM",
+        "512 GB SSD",
+        "16-inch display"
+      ],
+      "attributes": {
+        "series": "Atlas",
+        "catalog": "Synthetic demonstration",
+        "model": "COR-108"
+      },
+      "image_url": "/product_images/expanded/laptops/1eRS74C-alQ.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Laptop"
+    },
+    {
+      "id": "D125",
+      "name": "CoreVista Breeze Laptop",
+      "description": "CoreVista Breeze Laptop for work and study. 32 GB RAM. 1024 GB SSD. 13.3-inch display.",
+      "category": "Laptops",
+      "brand": "CoreVista",
+      "price": "51138.00",
+      "currency": "INR",
+      "rating": 4.75,
+      "stock_quantity": 64,
+      "available": true,
+      "features": [
+        "32 GB RAM",
+        "1024 GB SSD",
+        "13.3-inch display"
+      ],
+      "attributes": {
+        "series": "Breeze",
+        "catalog": "Synthetic demonstration",
+        "model": "COR-109"
+      },
+      "image_url": "/product_images/expanded/laptops/8krX0HkXw8c.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Laptop"
+    },
+    {
+      "id": "D126",
+      "name": "CoreVista Cove Laptop",
+      "description": "CoreVista Cove Laptop for everyday productivity. 8 GB RAM. 256 GB SSD. 14-inch display.",
+      "category": "Laptops",
+      "brand": "CoreVista",
+      "price": "53778.00",
+      "currency": "INR",
+      "rating": 4.8,
+      "stock_quantity": 74,
+      "available": true,
+      "features": [
+        "8 GB RAM",
+        "256 GB SSD",
+        "14-inch display"
+      ],
+      "attributes": {
+        "series": "Cove",
+        "catalog": "Synthetic demonstration",
+        "model": "COR-110"
+      },
+      "image_url": "/product_images/expanded/laptops/SqLyNHbsLKQ.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Laptop"
+    },
+    {
+      "id": "D127",
+      "name": "CoreVista Stride Laptop",
+      "description": "CoreVista Stride Laptop for home-office tasks. 16 GB RAM. 512 GB SSD. 15.6-inch display.",
+      "category": "Laptops",
+      "brand": "CoreVista",
+      "price": "56418.00",
+      "currency": "INR",
+      "rating": 3.8,
+      "stock_quantity": 0,
+      "available": false,
+      "features": [
+        "16 GB RAM",
+        "512 GB SSD",
+        "15.6-inch display"
+      ],
+      "attributes": {
+        "series": "Stride",
+        "catalog": "Synthetic demonstration",
+        "model": "COR-111"
+      },
+      "image_url": "/product_images/expanded/laptops/TPn8jvj4PYo.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Laptop"
+    },
+    {
+      "id": "D128",
+      "name": "CoreVista Orbit Laptop",
+      "description": "CoreVista Orbit Laptop for portable computing. 32 GB RAM. 1024 GB SSD. 16-inch display.",
+      "category": "Laptops",
+      "brand": "CoreVista",
+      "price": "59058.00",
+      "currency": "INR",
+      "rating": 3.85,
+      "stock_quantity": 94,
+      "available": true,
+      "features": [
+        "32 GB RAM",
+        "1024 GB SSD",
+        "16-inch display"
+      ],
+      "attributes": {
+        "series": "Orbit",
+        "catalog": "Synthetic demonstration",
+        "model": "COR-112"
+      },
+      "image_url": "/product_images/expanded/laptops/WiONHd_zYI4.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Laptop"
+    },
+    {
+      "id": "D129",
+      "name": "CoreVista Drift Laptop",
+      "description": "CoreVista Drift Laptop for work and study. 8 GB RAM. 256 GB SSD. 13.3-inch display.",
+      "category": "Laptops",
+      "brand": "CoreVista",
+      "price": "61698.00",
+      "currency": "INR",
+      "rating": 3.9,
+      "stock_quantity": 11,
+      "available": true,
+      "features": [
+        "8 GB RAM",
+        "256 GB SSD",
+        "13.3-inch display"
+      ],
+      "attributes": {
+        "series": "Drift",
+        "catalog": "Synthetic demonstration",
+        "model": "COR-113"
+      },
+      "image_url": "/product_images/expanded/laptops/Hin-rzhOdWs.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Laptop"
+    },
+    {
+      "id": "D130",
+      "name": "CoreVista Trail Laptop",
+      "description": "CoreVista Trail Laptop for everyday productivity. 16 GB RAM. 512 GB SSD. 14-inch display.",
+      "category": "Laptops",
+      "brand": "CoreVista",
+      "price": "64338.00",
+      "currency": "INR",
+      "rating": 3.95,
+      "stock_quantity": 21,
+      "available": true,
+      "features": [
+        "16 GB RAM",
+        "512 GB SSD",
+        "14-inch display"
+      ],
+      "attributes": {
+        "series": "Trail",
+        "catalog": "Synthetic demonstration",
+        "model": "COR-114"
+      },
+      "image_url": "/product_images/expanded/laptops/mP7aPSUm7aE.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Laptop"
+    },
+    {
+      "id": "D131",
+      "name": "CoreVista Tempo Laptop",
+      "description": "CoreVista Tempo Laptop for home-office tasks. 32 GB RAM. 1024 GB SSD. 15.6-inch display.",
+      "category": "Laptops",
+      "brand": "CoreVista",
+      "price": "66978.00",
+      "currency": "INR",
+      "rating": 4.0,
+      "stock_quantity": 31,
+      "available": true,
+      "features": [
+        "32 GB RAM",
+        "1024 GB SSD",
+        "15.6-inch display"
+      ],
+      "attributes": {
+        "series": "Tempo",
+        "catalog": "Synthetic demonstration",
+        "model": "COR-115"
+      },
+      "image_url": "/product_images/expanded/laptops/RSCirJ70NDM.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Laptop"
+    },
+    {
+      "id": "D132",
+      "name": "CoreVista Urban Laptop",
+      "description": "CoreVista Urban Laptop for portable computing. 8 GB RAM. 256 GB SSD. 16-inch display.",
+      "category": "Laptops",
+      "brand": "CoreVista",
+      "price": "69618.00",
+      "currency": "INR",
+      "rating": 4.05,
+      "stock_quantity": 41,
+      "available": true,
+      "features": [
+        "8 GB RAM",
+        "256 GB SSD",
+        "16-inch display"
+      ],
+      "attributes": {
+        "series": "Urban",
+        "catalog": "Synthetic demonstration",
+        "model": "COR-116"
+      },
+      "image_url": "/product_images/expanded/laptops/1SAnrIxw5OY.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Laptop"
+    },
+    {
+      "id": "D133",
+      "name": "CoreVista Prime Laptop",
+      "description": "CoreVista Prime Laptop for work and study. 16 GB RAM. 512 GB SSD. 13.3-inch display.",
+      "category": "Laptops",
+      "brand": "CoreVista",
+      "price": "72258.00",
+      "currency": "INR",
+      "rating": 4.1,
+      "stock_quantity": 51,
+      "available": true,
+      "features": [
+        "16 GB RAM",
+        "512 GB SSD",
+        "13.3-inch display"
+      ],
+      "attributes": {
+        "series": "Prime",
+        "catalog": "Synthetic demonstration",
+        "model": "COR-117"
+      },
+      "image_url": "/product_images/expanded/laptops/j4uuKnN43_M.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Laptop"
+    },
+    {
+      "id": "D134",
+      "name": "CoreVista Nova Laptop",
+      "description": "CoreVista Nova Laptop for everyday productivity. 32 GB RAM. 1024 GB SSD. 14-inch display.",
+      "category": "Laptops",
+      "brand": "CoreVista",
+      "price": "74898.00",
+      "currency": "INR",
+      "rating": 4.15,
+      "stock_quantity": 61,
+      "available": true,
+      "features": [
+        "32 GB RAM",
+        "1024 GB SSD",
+        "14-inch display"
+      ],
+      "attributes": {
+        "series": "Nova",
+        "catalog": "Synthetic demonstration",
+        "model": "COR-118"
+      },
+      "image_url": "/product_images/expanded/laptops/MuP--rlVZaA.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Laptop"
+    },
+    {
+      "id": "D135",
+      "name": "CoreVista Focus Laptop",
+      "description": "CoreVista Focus Laptop for home-office tasks. 8 GB RAM. 256 GB SSD. 15.6-inch display.",
+      "category": "Laptops",
+      "brand": "CoreVista",
+      "price": "77538.00",
+      "currency": "INR",
+      "rating": 4.2,
+      "stock_quantity": 71,
+      "available": true,
+      "features": [
+        "8 GB RAM",
+        "256 GB SSD",
+        "15.6-inch display"
+      ],
+      "attributes": {
+        "series": "Focus",
+        "catalog": "Synthetic demonstration",
+        "model": "COR-119"
+      },
+      "image_url": "/product_images/expanded/laptops/tsyO2_Q-kTU.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Laptop"
+    },
+    {
+      "id": "D136",
+      "name": "CoreVista Voyage Laptop",
+      "description": "CoreVista Voyage Laptop for portable computing. 16 GB RAM. 512 GB SSD. 16-inch display.",
+      "category": "Laptops",
+      "brand": "CoreVista",
+      "price": "80178.00",
+      "currency": "INR",
+      "rating": 4.25,
+      "stock_quantity": 81,
+      "available": true,
+      "features": [
+        "16 GB RAM",
+        "512 GB SSD",
+        "16-inch display"
+      ],
+      "attributes": {
+        "series": "Voyage",
+        "catalog": "Synthetic demonstration",
+        "model": "COR-120"
+      },
+      "image_url": "/product_images/expanded/laptops/zwsHjakE_iI.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Laptop"
+    },
+    {
+      "id": "D137",
+      "name": "PulseForge Metro Smartwatch",
+      "description": "PulseForge Metro Smartwatch for daily activity tracking. Daily activity tracking. Phone notification support. Up to 3 days battery.",
+      "category": "Smartwatches",
+      "brand": "PulseForge",
+      "price": "2038.00",
+      "currency": "INR",
+      "rating": 4.3,
+      "stock_quantity": 44,
+      "available": true,
+      "features": [
+        "Daily activity tracking",
+        "Phone notification support",
+        "Up to 3 days battery"
+      ],
+      "attributes": {
+        "series": "Metro",
+        "catalog": "Synthetic demonstration",
+        "model": "PUL-101"
+      },
+      "image_url": "/product_images/expanded/smartwatches/HM-Y497t5CU.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Smartwatch"
+    },
+    {
+      "id": "D138",
+      "name": "PulseForge Summit Smartwatch",
+      "description": "PulseForge Summit Smartwatch for a connected daily routine. Daily activity tracking. Phone notification support. Up to 4 days battery.",
+      "category": "Smartwatches",
+      "brand": "PulseForge",
+      "price": "2458.00",
+      "currency": "INR",
+      "rating": 4.35,
+      "stock_quantity": 54,
+      "available": true,
+      "features": [
+        "Daily activity tracking",
+        "Phone notification support",
+        "Up to 4 days battery"
+      ],
+      "attributes": {
+        "series": "Summit",
+        "catalog": "Synthetic demonstration",
+        "model": "PUL-102"
+      },
+      "image_url": "/product_images/expanded/smartwatches/QhF3YGsDrYk.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Smartwatch"
+    },
+    {
+      "id": "D139",
+      "name": "PulseForge Harbor Smartwatch",
+      "description": "PulseForge Harbor Smartwatch for fitness reminders. Daily activity tracking. Phone notification support. Up to 5 days battery.",
+      "category": "Smartwatches",
+      "brand": "PulseForge",
+      "price": "2878.00",
+      "currency": "INR",
+      "rating": 4.4,
+      "stock_quantity": 64,
+      "available": true,
+      "features": [
+        "Daily activity tracking",
+        "Phone notification support",
+        "Up to 5 days battery"
+      ],
+      "attributes": {
+        "series": "Harbor",
+        "catalog": "Synthetic demonstration",
+        "model": "PUL-103"
+      },
+      "image_url": "/product_images/expanded/smartwatches/PKnn-nXCNhs.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Smartwatch"
+    },
+    {
+      "id": "D140",
+      "name": "PulseForge Studio Smartwatch",
+      "description": "PulseForge Studio Smartwatch for everyday wearable use. Daily activity tracking. Phone notification support. Up to 6 days battery.",
+      "category": "Smartwatches",
+      "brand": "PulseForge",
+      "price": "3298.00",
+      "currency": "INR",
+      "rating": 4.45,
+      "stock_quantity": 74,
+      "available": true,
+      "features": [
+        "Daily activity tracking",
+        "Phone notification support",
+        "Up to 6 days battery"
+      ],
+      "attributes": {
+        "series": "Studio",
+        "catalog": "Synthetic demonstration",
+        "model": "PUL-104"
+      },
+      "image_url": "/product_images/expanded/smartwatches/FPEBZJLD8Rs.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Smartwatch"
+    },
+    {
+      "id": "D141",
+      "name": "PulseForge Vista Smartwatch",
+      "description": "PulseForge Vista Smartwatch for daily activity tracking. Daily activity tracking. Phone notification support. Up to 7 days battery.",
+      "category": "Smartwatches",
+      "brand": "PulseForge",
+      "price": "3718.00",
+      "currency": "INR",
+      "rating": 4.5,
+      "stock_quantity": 84,
+      "available": true,
+      "features": [
+        "Daily activity tracking",
+        "Phone notification support",
+        "Up to 7 days battery"
+      ],
+      "attributes": {
+        "series": "Vista",
+        "catalog": "Synthetic demonstration",
+        "model": "PUL-105"
+      },
+      "image_url": "/product_images/expanded/smartwatches/KiAYZZjpjkQ.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Smartwatch"
+    },
+    {
+      "id": "D142",
+      "name": "PulseForge Roam Smartwatch",
+      "description": "PulseForge Roam Smartwatch for a connected daily routine. Daily activity tracking. Phone notification support. Up to 8 days battery.",
+      "category": "Smartwatches",
+      "brand": "PulseForge",
+      "price": "4138.00",
+      "currency": "INR",
+      "rating": 4.55,
+      "stock_quantity": 94,
+      "available": true,
+      "features": [
+        "Daily activity tracking",
+        "Phone notification support",
+        "Up to 8 days battery"
+      ],
+      "attributes": {
+        "series": "Roam",
+        "catalog": "Synthetic demonstration",
+        "model": "PUL-106"
+      },
+      "image_url": "/product_images/expanded/smartwatches/KjsRBYfj9hA.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Smartwatch"
+    },
+    {
+      "id": "D143",
+      "name": "PulseForge Pulse Smartwatch",
+      "description": "PulseForge Pulse Smartwatch for fitness reminders. Daily activity tracking. Phone notification support. Up to 9 days battery.",
+      "category": "Smartwatches",
+      "brand": "PulseForge",
+      "price": "4558.00",
+      "currency": "INR",
+      "rating": 4.6,
+      "stock_quantity": 11,
+      "available": true,
+      "features": [
+        "Daily activity tracking",
+        "Phone notification support",
+        "Up to 9 days battery"
+      ],
+      "attributes": {
+        "series": "Pulse",
+        "catalog": "Synthetic demonstration",
+        "model": "PUL-107"
+      },
+      "image_url": "/product_images/expanded/smartwatches/8OQt1zTnJeE.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Smartwatch"
+    },
+    {
+      "id": "D144",
+      "name": "PulseForge Atlas Smartwatch",
+      "description": "PulseForge Atlas Smartwatch for everyday wearable use. Daily activity tracking. Phone notification support. Up to 10 days battery.",
+      "category": "Smartwatches",
+      "brand": "PulseForge",
+      "price": "4978.00",
+      "currency": "INR",
+      "rating": 4.65,
+      "stock_quantity": 21,
+      "available": true,
+      "features": [
+        "Daily activity tracking",
+        "Phone notification support",
+        "Up to 10 days battery"
+      ],
+      "attributes": {
+        "series": "Atlas",
+        "catalog": "Synthetic demonstration",
+        "model": "PUL-108"
+      },
+      "image_url": "/product_images/expanded/smartwatches/XqCPROiO7Fw.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Smartwatch"
+    },
+    {
+      "id": "D145",
+      "name": "PulseForge Breeze Smartwatch",
+      "description": "PulseForge Breeze Smartwatch for daily activity tracking. Daily activity tracking. Phone notification support. Up to 11 days battery.",
+      "category": "Smartwatches",
+      "brand": "PulseForge",
+      "price": "5398.00",
+      "currency": "INR",
+      "rating": 4.7,
+      "stock_quantity": 31,
+      "available": true,
+      "features": [
+        "Daily activity tracking",
+        "Phone notification support",
+        "Up to 11 days battery"
+      ],
+      "attributes": {
+        "series": "Breeze",
+        "catalog": "Synthetic demonstration",
+        "model": "PUL-109"
+      },
+      "image_url": "/product_images/expanded/smartwatches/Odhl-kitI2c.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Smartwatch"
+    },
+    {
+      "id": "D146",
+      "name": "PulseForge Cove Smartwatch",
+      "description": "PulseForge Cove Smartwatch for a connected daily routine. Daily activity tracking. Phone notification support. Up to 12 days battery.",
+      "category": "Smartwatches",
+      "brand": "PulseForge",
+      "price": "5818.00",
+      "currency": "INR",
+      "rating": 4.75,
+      "stock_quantity": 41,
+      "available": true,
+      "features": [
+        "Daily activity tracking",
+        "Phone notification support",
+        "Up to 12 days battery"
+      ],
+      "attributes": {
+        "series": "Cove",
+        "catalog": "Synthetic demonstration",
+        "model": "PUL-110"
+      },
+      "image_url": "/product_images/expanded/smartwatches/jRM_bQIb_80.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Smartwatch"
+    },
+    {
+      "id": "D147",
+      "name": "PulseForge Stride Smartwatch",
+      "description": "PulseForge Stride Smartwatch for fitness reminders. Daily activity tracking. Phone notification support. Up to 3 days battery.",
+      "category": "Smartwatches",
+      "brand": "PulseForge",
+      "price": "6238.00",
+      "currency": "INR",
+      "rating": 4.8,
+      "stock_quantity": 0,
+      "available": false,
+      "features": [
+        "Daily activity tracking",
+        "Phone notification support",
+        "Up to 3 days battery"
+      ],
+      "attributes": {
+        "series": "Stride",
+        "catalog": "Synthetic demonstration",
+        "model": "PUL-111"
+      },
+      "image_url": "/product_images/expanded/smartwatches/O43D6CYzxqM.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Smartwatch"
+    },
+    {
+      "id": "D148",
+      "name": "PulseForge Orbit Smartwatch",
+      "description": "PulseForge Orbit Smartwatch for everyday wearable use. Daily activity tracking. Phone notification support. Up to 4 days battery.",
+      "category": "Smartwatches",
+      "brand": "PulseForge",
+      "price": "6658.00",
+      "currency": "INR",
+      "rating": 3.8,
+      "stock_quantity": 61,
+      "available": true,
+      "features": [
+        "Daily activity tracking",
+        "Phone notification support",
+        "Up to 4 days battery"
+      ],
+      "attributes": {
+        "series": "Orbit",
+        "catalog": "Synthetic demonstration",
+        "model": "PUL-112"
+      },
+      "image_url": "/product_images/expanded/smartwatches/rqtXC3EHoSE.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Smartwatch"
+    },
+    {
+      "id": "D149",
+      "name": "PulseForge Drift Smartwatch",
+      "description": "PulseForge Drift Smartwatch for daily activity tracking. Daily activity tracking. Phone notification support. Up to 5 days battery.",
+      "category": "Smartwatches",
+      "brand": "PulseForge",
+      "price": "7078.00",
+      "currency": "INR",
+      "rating": 3.85,
+      "stock_quantity": 71,
+      "available": true,
+      "features": [
+        "Daily activity tracking",
+        "Phone notification support",
+        "Up to 5 days battery"
+      ],
+      "attributes": {
+        "series": "Drift",
+        "catalog": "Synthetic demonstration",
+        "model": "PUL-113"
+      },
+      "image_url": "/product_images/expanded/smartwatches/IGO10LkxP_g.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Smartwatch"
+    },
+    {
+      "id": "D150",
+      "name": "PulseForge Trail Smartwatch",
+      "description": "PulseForge Trail Smartwatch for a connected daily routine. Daily activity tracking. Phone notification support. Up to 6 days battery.",
+      "category": "Smartwatches",
+      "brand": "PulseForge",
+      "price": "7498.00",
+      "currency": "INR",
+      "rating": 3.9,
+      "stock_quantity": 81,
+      "available": true,
+      "features": [
+        "Daily activity tracking",
+        "Phone notification support",
+        "Up to 6 days battery"
+      ],
+      "attributes": {
+        "series": "Trail",
+        "catalog": "Synthetic demonstration",
+        "model": "PUL-114"
+      },
+      "image_url": "/product_images/expanded/smartwatches/hbTKIbuMmBI.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Smartwatch"
+    },
+    {
+      "id": "D151",
+      "name": "PulseForge Tempo Smartwatch",
+      "description": "PulseForge Tempo Smartwatch for fitness reminders. Daily activity tracking. Phone notification support. Up to 7 days battery.",
+      "category": "Smartwatches",
+      "brand": "PulseForge",
+      "price": "7918.00",
+      "currency": "INR",
+      "rating": 3.95,
+      "stock_quantity": 91,
+      "available": true,
+      "features": [
+        "Daily activity tracking",
+        "Phone notification support",
+        "Up to 7 days battery"
+      ],
+      "attributes": {
+        "series": "Tempo",
+        "catalog": "Synthetic demonstration",
+        "model": "PUL-115"
+      },
+      "image_url": "/product_images/expanded/smartwatches/o-Hudp-vLok.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Smartwatch"
+    },
+    {
+      "id": "D152",
+      "name": "PulseForge Urban Smartwatch",
+      "description": "PulseForge Urban Smartwatch for everyday wearable use. Daily activity tracking. Phone notification support. Up to 8 days battery.",
+      "category": "Smartwatches",
+      "brand": "PulseForge",
+      "price": "8338.00",
+      "currency": "INR",
+      "rating": 4.0,
+      "stock_quantity": 8,
+      "available": true,
+      "features": [
+        "Daily activity tracking",
+        "Phone notification support",
+        "Up to 8 days battery"
+      ],
+      "attributes": {
+        "series": "Urban",
+        "catalog": "Synthetic demonstration",
+        "model": "PUL-116"
+      },
+      "image_url": "/product_images/expanded/smartwatches/2wFoa040m8g.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Smartwatch"
+    },
+    {
+      "id": "D153",
+      "name": "PulseForge Prime Smartwatch",
+      "description": "PulseForge Prime Smartwatch for daily activity tracking. Daily activity tracking. Phone notification support. Up to 9 days battery.",
+      "category": "Smartwatches",
+      "brand": "PulseForge",
+      "price": "8758.00",
+      "currency": "INR",
+      "rating": 4.05,
+      "stock_quantity": 18,
+      "available": true,
+      "features": [
+        "Daily activity tracking",
+        "Phone notification support",
+        "Up to 9 days battery"
+      ],
+      "attributes": {
+        "series": "Prime",
+        "catalog": "Synthetic demonstration",
+        "model": "PUL-117"
+      },
+      "image_url": "/product_images/expanded/smartwatches/uFTRn_Ki5jM.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Smartwatch"
+    },
+    {
+      "id": "D154",
+      "name": "PulseForge Nova Smartwatch",
+      "description": "PulseForge Nova Smartwatch for a connected daily routine. Daily activity tracking. Phone notification support. Up to 10 days battery.",
+      "category": "Smartwatches",
+      "brand": "PulseForge",
+      "price": "9178.00",
+      "currency": "INR",
+      "rating": 4.1,
+      "stock_quantity": 28,
+      "available": true,
+      "features": [
+        "Daily activity tracking",
+        "Phone notification support",
+        "Up to 10 days battery"
+      ],
+      "attributes": {
+        "series": "Nova",
+        "catalog": "Synthetic demonstration",
+        "model": "PUL-118"
+      },
+      "image_url": "/product_images/expanded/smartwatches/3_PaUEEcwMc.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Smartwatch"
+    },
+    {
+      "id": "D155",
+      "name": "PulseForge Focus Smartwatch",
+      "description": "PulseForge Focus Smartwatch for fitness reminders. Daily activity tracking. Phone notification support. Up to 11 days battery.",
+      "category": "Smartwatches",
+      "brand": "PulseForge",
+      "price": "9598.00",
+      "currency": "INR",
+      "rating": 4.15,
+      "stock_quantity": 38,
+      "available": true,
+      "features": [
+        "Daily activity tracking",
+        "Phone notification support",
+        "Up to 11 days battery"
+      ],
+      "attributes": {
+        "series": "Focus",
+        "catalog": "Synthetic demonstration",
+        "model": "PUL-119"
+      },
+      "image_url": "/product_images/expanded/smartwatches/LAacfd1Hn8g.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Smartwatch"
+    },
+    {
+      "id": "D156",
+      "name": "PulseForge Voyage Smartwatch",
+      "description": "PulseForge Voyage Smartwatch for everyday wearable use. Daily activity tracking. Phone notification support. Up to 12 days battery.",
+      "category": "Smartwatches",
+      "brand": "PulseForge",
+      "price": "10018.00",
+      "currency": "INR",
+      "rating": 4.2,
+      "stock_quantity": 48,
+      "available": true,
+      "features": [
+        "Daily activity tracking",
+        "Phone notification support",
+        "Up to 12 days battery"
+      ],
+      "attributes": {
+        "series": "Voyage",
+        "catalog": "Synthetic demonstration",
+        "model": "PUL-120"
+      },
+      "image_url": "/product_images/expanded/smartwatches/z-sIt0N_YlY.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Smartwatch"
+    },
+    {
+      "id": "D157",
+      "name": "ThreadHouse Metro Everyday T-Shirt Pack",
+      "description": "ThreadHouse Metro Everyday T-Shirt Pack for comfortable everyday wear. Everyday regular fit. Size XS. Machine-washable fabric.",
+      "category": "Apparel",
+      "brand": "ThreadHouse",
+      "price": "658.00",
+      "currency": "INR",
+      "rating": 4.25,
+      "stock_quantity": 11,
+      "available": true,
+      "features": [
+        "Everyday regular fit",
+        "Size XS",
+        "Machine-washable fabric"
+      ],
+      "attributes": {
+        "series": "Metro",
+        "catalog": "Synthetic demonstration",
+        "model": "THR-101"
+      },
+      "image_url": "/product_images/expanded/apparel/Cs4GVbMqKGY.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Everyday T-Shirt Pack"
+    },
+    {
+      "id": "D158",
+      "name": "ThreadHouse Summit Everyday T-Shirt",
+      "description": "ThreadHouse Summit Everyday T-Shirt for a relaxed weekend wardrobe. Everyday regular fit. Size S. Machine-washable fabric.",
+      "category": "Apparel",
+      "brand": "ThreadHouse",
+      "price": "766.00",
+      "currency": "INR",
+      "rating": 4.3,
+      "stock_quantity": 21,
+      "available": true,
+      "features": [
+        "Everyday regular fit",
+        "Size S",
+        "Machine-washable fabric"
+      ],
+      "attributes": {
+        "series": "Summit",
+        "catalog": "Synthetic demonstration",
+        "model": "THR-102"
+      },
+      "image_url": "/product_images/expanded/apparel/acn5ERAeSb4.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Everyday T-Shirt"
+    },
+    {
+      "id": "D159",
+      "name": "ThreadHouse Harbor Everyday T-Shirt",
+      "description": "ThreadHouse Harbor Everyday T-Shirt for casual layering. Everyday regular fit. Size M. Machine-washable fabric.",
+      "category": "Apparel",
+      "brand": "ThreadHouse",
+      "price": "874.00",
+      "currency": "INR",
+      "rating": 4.35,
+      "stock_quantity": 31,
+      "available": true,
+      "features": [
+        "Everyday regular fit",
+        "Size M",
+        "Machine-washable fabric"
+      ],
+      "attributes": {
+        "series": "Harbor",
+        "catalog": "Synthetic demonstration",
+        "model": "THR-103"
+      },
+      "image_url": "/product_images/expanded/apparel/gEupiRvyxh0.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Everyday T-Shirt"
+    },
+    {
+      "id": "D160",
+      "name": "ThreadHouse Studio Everyday T-Shirt",
+      "description": "ThreadHouse Studio Everyday T-Shirt for work-from-home comfort. Everyday regular fit. Size L. Machine-washable fabric.",
+      "category": "Apparel",
+      "brand": "ThreadHouse",
+      "price": "982.00",
+      "currency": "INR",
+      "rating": 4.4,
+      "stock_quantity": 41,
+      "available": true,
+      "features": [
+        "Everyday regular fit",
+        "Size L",
+        "Machine-washable fabric"
+      ],
+      "attributes": {
+        "series": "Studio",
+        "catalog": "Synthetic demonstration",
+        "model": "THR-104"
+      },
+      "image_url": "/product_images/expanded/apparel/6Nub980bI3I.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Everyday T-Shirt"
+    },
+    {
+      "id": "D161",
+      "name": "ThreadHouse Vista Hoodie Jacket",
+      "description": "ThreadHouse Vista Hoodie Jacket for comfortable everyday wear. Everyday regular fit. Size XL. Machine-washable fabric.",
+      "category": "Apparel",
+      "brand": "ThreadHouse",
+      "price": "1090.00",
+      "currency": "INR",
+      "rating": 4.45,
+      "stock_quantity": 51,
+      "available": true,
+      "features": [
+        "Everyday regular fit",
+        "Size XL",
+        "Machine-washable fabric"
+      ],
+      "attributes": {
+        "series": "Vista",
+        "catalog": "Synthetic demonstration",
+        "model": "THR-105"
+      },
+      "image_url": "/product_images/expanded/apparel/TcRaVI3LXds.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Hoodie Jacket"
+    },
+    {
+      "id": "D162",
+      "name": "ThreadHouse Roam Everyday T-Shirt",
+      "description": "ThreadHouse Roam Everyday T-Shirt for a relaxed weekend wardrobe. Everyday regular fit. Size XS. Machine-washable fabric.",
+      "category": "Apparel",
+      "brand": "ThreadHouse",
+      "price": "1198.00",
+      "currency": "INR",
+      "rating": 4.5,
+      "stock_quantity": 61,
+      "available": true,
+      "features": [
+        "Everyday regular fit",
+        "Size XS",
+        "Machine-washable fabric"
+      ],
+      "attributes": {
+        "series": "Roam",
+        "catalog": "Synthetic demonstration",
+        "model": "THR-106"
+      },
+      "image_url": "/product_images/expanded/apparel/hjm3MIXeVR8.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Everyday T-Shirt"
+    },
+    {
+      "id": "D163",
+      "name": "ThreadHouse Pulse Hoodie Jacket",
+      "description": "ThreadHouse Pulse Hoodie Jacket for casual layering. Everyday regular fit. Size S. Machine-washable fabric.",
+      "category": "Apparel",
+      "brand": "ThreadHouse",
+      "price": "1306.00",
+      "currency": "INR",
+      "rating": 4.55,
+      "stock_quantity": 71,
+      "available": true,
+      "features": [
+        "Everyday regular fit",
+        "Size S",
+        "Machine-washable fabric"
+      ],
+      "attributes": {
+        "series": "Pulse",
+        "catalog": "Synthetic demonstration",
+        "model": "THR-107"
+      },
+      "image_url": "/product_images/expanded/apparel/J3-4aCOLOdg.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Hoodie Jacket"
+    },
+    {
+      "id": "D164",
+      "name": "ThreadHouse Atlas Everyday T-Shirt",
+      "description": "ThreadHouse Atlas Everyday T-Shirt for work-from-home comfort. Everyday regular fit. Size M. Machine-washable fabric.",
+      "category": "Apparel",
+      "brand": "ThreadHouse",
+      "price": "1414.00",
+      "currency": "INR",
+      "rating": 4.6,
+      "stock_quantity": 81,
+      "available": true,
+      "features": [
+        "Everyday regular fit",
+        "Size M",
+        "Machine-washable fabric"
+      ],
+      "attributes": {
+        "series": "Atlas",
+        "catalog": "Synthetic demonstration",
+        "model": "THR-108"
+      },
+      "image_url": "/product_images/expanded/apparel/Wr0TpKqf26s.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Everyday T-Shirt"
+    },
+    {
+      "id": "D165",
+      "name": "ThreadHouse Breeze Everyday T-Shirt Pack",
+      "description": "ThreadHouse Breeze Everyday T-Shirt Pack for comfortable everyday wear. Everyday regular fit. Size L. Machine-washable fabric.",
+      "category": "Apparel",
+      "brand": "ThreadHouse",
+      "price": "1522.00",
+      "currency": "INR",
+      "rating": 4.65,
+      "stock_quantity": 91,
+      "available": true,
+      "features": [
+        "Everyday regular fit",
+        "Size L",
+        "Machine-washable fabric"
+      ],
+      "attributes": {
+        "series": "Breeze",
+        "catalog": "Synthetic demonstration",
+        "model": "THR-109"
+      },
+      "image_url": "/product_images/expanded/apparel/iiqg2xbmvk0.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Everyday T-Shirt Pack"
+    },
+    {
+      "id": "D166",
+      "name": "ThreadHouse Cove Everyday T-Shirt",
+      "description": "ThreadHouse Cove Everyday T-Shirt for a relaxed weekend wardrobe. Everyday regular fit. Size XL. Machine-washable fabric.",
+      "category": "Apparel",
+      "brand": "ThreadHouse",
+      "price": "1630.00",
+      "currency": "INR",
+      "rating": 4.7,
+      "stock_quantity": 8,
+      "available": true,
+      "features": [
+        "Everyday regular fit",
+        "Size XL",
+        "Machine-washable fabric"
+      ],
+      "attributes": {
+        "series": "Cove",
+        "catalog": "Synthetic demonstration",
+        "model": "THR-110"
+      },
+      "image_url": "/product_images/expanded/apparel/eD8PIv_7CTg.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Everyday T-Shirt"
+    },
+    {
+      "id": "D167",
+      "name": "ThreadHouse Stride Casual Jacket",
+      "description": "ThreadHouse Stride Casual Jacket for casual layering. Everyday regular fit. Size XS. Machine-washable fabric.",
+      "category": "Apparel",
+      "brand": "ThreadHouse",
+      "price": "1738.00",
+      "currency": "INR",
+      "rating": 4.75,
+      "stock_quantity": 0,
+      "available": false,
+      "features": [
+        "Everyday regular fit",
+        "Size XS",
+        "Machine-washable fabric"
+      ],
+      "attributes": {
+        "series": "Stride",
+        "catalog": "Synthetic demonstration",
+        "model": "THR-111"
+      },
+      "image_url": "/product_images/expanded/apparel/SbHt5T4C1Ys.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Casual Jacket"
+    },
+    {
+      "id": "D168",
+      "name": "ThreadHouse Orbit Everyday T-Shirt",
+      "description": "ThreadHouse Orbit Everyday T-Shirt for work-from-home comfort. Everyday regular fit. Size S. Machine-washable fabric.",
+      "category": "Apparel",
+      "brand": "ThreadHouse",
+      "price": "1846.00",
+      "currency": "INR",
+      "rating": 4.8,
+      "stock_quantity": 28,
+      "available": true,
+      "features": [
+        "Everyday regular fit",
+        "Size S",
+        "Machine-washable fabric"
+      ],
+      "attributes": {
+        "series": "Orbit",
+        "catalog": "Synthetic demonstration",
+        "model": "THR-112"
+      },
+      "image_url": "/product_images/expanded/apparel/4rUYuwJ2vGw.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Everyday T-Shirt"
+    },
+    {
+      "id": "D169",
+      "name": "ThreadHouse Drift Everyday T-Shirt",
+      "description": "ThreadHouse Drift Everyday T-Shirt for comfortable everyday wear. Everyday regular fit. Size M. Machine-washable fabric.",
+      "category": "Apparel",
+      "brand": "ThreadHouse",
+      "price": "1954.00",
+      "currency": "INR",
+      "rating": 3.8,
+      "stock_quantity": 38,
+      "available": true,
+      "features": [
+        "Everyday regular fit",
+        "Size M",
+        "Machine-washable fabric"
+      ],
+      "attributes": {
+        "series": "Drift",
+        "catalog": "Synthetic demonstration",
+        "model": "THR-113"
+      },
+      "image_url": "/product_images/expanded/apparel/wUyPvjTbInM.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Everyday T-Shirt"
+    },
+    {
+      "id": "D170",
+      "name": "ThreadHouse Trail Everyday T-Shirt",
+      "description": "ThreadHouse Trail Everyday T-Shirt for a relaxed weekend wardrobe. Everyday regular fit. Size L. Machine-washable fabric.",
+      "category": "Apparel",
+      "brand": "ThreadHouse",
+      "price": "2062.00",
+      "currency": "INR",
+      "rating": 3.85,
+      "stock_quantity": 48,
+      "available": true,
+      "features": [
+        "Everyday regular fit",
+        "Size L",
+        "Machine-washable fabric"
+      ],
+      "attributes": {
+        "series": "Trail",
+        "catalog": "Synthetic demonstration",
+        "model": "THR-114"
+      },
+      "image_url": "/product_images/expanded/apparel/7kFil4v3PoE.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Everyday T-Shirt"
+    },
+    {
+      "id": "D171",
+      "name": "ThreadHouse Tempo Everyday T-Shirt",
+      "description": "ThreadHouse Tempo Everyday T-Shirt for casual layering. Everyday regular fit. Size XL. Machine-washable fabric.",
+      "category": "Apparel",
+      "brand": "ThreadHouse",
+      "price": "2170.00",
+      "currency": "INR",
+      "rating": 3.9,
+      "stock_quantity": 58,
+      "available": true,
+      "features": [
+        "Everyday regular fit",
+        "Size XL",
+        "Machine-washable fabric"
+      ],
+      "attributes": {
+        "series": "Tempo",
+        "catalog": "Synthetic demonstration",
+        "model": "THR-115"
+      },
+      "image_url": "/product_images/expanded/apparel/AqLIkOzWDAk.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Everyday T-Shirt"
+    },
+    {
+      "id": "D172",
+      "name": "ThreadHouse Urban Casual Jacket",
+      "description": "ThreadHouse Urban Casual Jacket for work-from-home comfort. Everyday regular fit. Size XS. Machine-washable fabric.",
+      "category": "Apparel",
+      "brand": "ThreadHouse",
+      "price": "2278.00",
+      "currency": "INR",
+      "rating": 3.95,
+      "stock_quantity": 68,
+      "available": true,
+      "features": [
+        "Everyday regular fit",
+        "Size XS",
+        "Machine-washable fabric"
+      ],
+      "attributes": {
+        "series": "Urban",
+        "catalog": "Synthetic demonstration",
+        "model": "THR-116"
+      },
+      "image_url": "/product_images/expanded/apparel/qq-YDhd3bbg.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Casual Jacket"
+    },
+    {
+      "id": "D173",
+      "name": "StrideWay Metro Running Sneakers",
+      "description": "StrideWay Metro Running Sneakers for everyday walking. Cushioned footbed. UK size 5. Textured outsole.",
+      "category": "Footwear",
+      "brand": "StrideWay",
+      "price": "1474.00",
+      "currency": "INR",
+      "rating": 4.0,
+      "stock_quantity": 59,
+      "available": true,
+      "features": [
+        "Cushioned footbed",
+        "UK size 5",
+        "Textured outsole"
+      ],
+      "attributes": {
+        "series": "Metro",
+        "catalog": "Synthetic demonstration",
+        "model": "STR-101"
+      },
+      "image_url": "/product_images/expanded/footwear/FyqHfW3jCc0.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Running Sneakers"
+    },
+    {
+      "id": "D174",
+      "name": "StrideWay Summit Running Sneakers",
+      "description": "StrideWay Summit Running Sneakers for a comfortable daily commute. Cushioned footbed. UK size 6. Textured outsole.",
+      "category": "Footwear",
+      "brand": "StrideWay",
+      "price": "1606.00",
+      "currency": "INR",
+      "rating": 4.05,
+      "stock_quantity": 69,
+      "available": true,
+      "features": [
+        "Cushioned footbed",
+        "UK size 6",
+        "Textured outsole"
+      ],
+      "attributes": {
+        "series": "Summit",
+        "catalog": "Synthetic demonstration",
+        "model": "STR-102"
+      },
+      "image_url": "/product_images/expanded/footwear/dYgEvR2gdgk.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Running Sneakers"
+    },
+    {
+      "id": "D175",
+      "name": "StrideWay Harbor Running Sneakers",
+      "description": "StrideWay Harbor Running Sneakers for weekend outings. Cushioned footbed. UK size 7. Textured outsole.",
+      "category": "Footwear",
+      "brand": "StrideWay",
+      "price": "1741.00",
+      "currency": "INR",
+      "rating": 4.1,
+      "stock_quantity": 79,
+      "available": true,
+      "features": [
+        "Cushioned footbed",
+        "UK size 7",
+        "Textured outsole"
+      ],
+      "attributes": {
+        "series": "Harbor",
+        "catalog": "Synthetic demonstration",
+        "model": "STR-103"
+      },
+      "image_url": "/product_images/expanded/footwear/8drAKKl1-_8.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Running Sneakers"
+    },
+    {
+      "id": "D176",
+      "name": "StrideWay Studio Running Sneakers",
+      "description": "StrideWay Studio Running Sneakers for an active daily routine. Cushioned footbed. UK size 8. Textured outsole.",
+      "category": "Footwear",
+      "brand": "StrideWay",
+      "price": "1870.00",
+      "currency": "INR",
+      "rating": 4.15,
+      "stock_quantity": 89,
+      "available": true,
+      "features": [
+        "Cushioned footbed",
+        "UK size 8",
+        "Textured outsole"
+      ],
+      "attributes": {
+        "series": "Studio",
+        "catalog": "Synthetic demonstration",
+        "model": "STR-104"
+      },
+      "image_url": "/product_images/expanded/footwear/x_XDSQODS54.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Running Sneakers"
+    },
+    {
+      "id": "D177",
+      "name": "StrideWay Vista Running Sneakers",
+      "description": "StrideWay Vista Running Sneakers for everyday walking. Cushioned footbed. UK size 9. Textured outsole.",
+      "category": "Footwear",
+      "brand": "StrideWay",
+      "price": "2002.00",
+      "currency": "INR",
+      "rating": 4.2,
+      "stock_quantity": 99,
+      "available": true,
+      "features": [
+        "Cushioned footbed",
+        "UK size 9",
+        "Textured outsole"
+      ],
+      "attributes": {
+        "series": "Vista",
+        "catalog": "Synthetic demonstration",
+        "model": "STR-105"
+      },
+      "image_url": "/product_images/expanded/footwear/2nST4hbvTkc.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Running Sneakers"
+    },
+    {
+      "id": "D178",
+      "name": "StrideWay Roam Running Sneakers",
+      "description": "StrideWay Roam Running Sneakers for a comfortable daily commute. Cushioned footbed. UK size 10. Textured outsole.",
+      "category": "Footwear",
+      "brand": "StrideWay",
+      "price": "2134.00",
+      "currency": "INR",
+      "rating": 4.25,
+      "stock_quantity": 16,
+      "available": true,
+      "features": [
+        "Cushioned footbed",
+        "UK size 10",
+        "Textured outsole"
+      ],
+      "attributes": {
+        "series": "Roam",
+        "catalog": "Synthetic demonstration",
+        "model": "STR-106"
+      },
+      "image_url": "/product_images/expanded/footwear/ksrsdzqxCPg.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Running Sneakers"
+    },
+    {
+      "id": "D179",
+      "name": "StrideWay Pulse Running Sneakers",
+      "description": "StrideWay Pulse Running Sneakers for weekend outings. Cushioned footbed. UK size 11. Textured outsole.",
+      "category": "Footwear",
+      "brand": "StrideWay",
+      "price": "2266.00",
+      "currency": "INR",
+      "rating": 4.3,
+      "stock_quantity": 26,
+      "available": true,
+      "features": [
+        "Cushioned footbed",
+        "UK size 11",
+        "Textured outsole"
+      ],
+      "attributes": {
+        "series": "Pulse",
+        "catalog": "Synthetic demonstration",
+        "model": "STR-107"
+      },
+      "image_url": "/product_images/expanded/footwear/164_6wVEHfI.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Running Sneakers"
+    },
+    {
+      "id": "D180",
+      "name": "StrideWay Atlas Running Sneakers",
+      "description": "StrideWay Atlas Running Sneakers for an active daily routine. Cushioned footbed. UK size 5. Textured outsole.",
+      "category": "Footwear",
+      "brand": "StrideWay",
+      "price": "2398.00",
+      "currency": "INR",
+      "rating": 4.35,
+      "stock_quantity": 36,
+      "available": true,
+      "features": [
+        "Cushioned footbed",
+        "UK size 5",
+        "Textured outsole"
+      ],
+      "attributes": {
+        "series": "Atlas",
+        "catalog": "Synthetic demonstration",
+        "model": "STR-108"
+      },
+      "image_url": "/product_images/expanded/footwear/Y4fKN-RlMV4.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Running Sneakers"
+    },
+    {
+      "id": "D181",
+      "name": "StrideWay Breeze Lace-Up Shoes",
+      "description": "StrideWay Breeze Lace-Up Shoes for everyday walking. Cushioned footbed. UK size 6. Textured outsole.",
+      "category": "Footwear",
+      "brand": "StrideWay",
+      "price": "2530.00",
+      "currency": "INR",
+      "rating": 4.4,
+      "stock_quantity": 46,
+      "available": true,
+      "features": [
+        "Cushioned footbed",
+        "UK size 6",
+        "Textured outsole"
+      ],
+      "attributes": {
+        "series": "Breeze",
+        "catalog": "Synthetic demonstration",
+        "model": "STR-109"
+      },
+      "image_url": "/product_images/expanded/footwear/99NxpMVxWDA.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Lace-Up Shoes"
+    },
+    {
+      "id": "D182",
+      "name": "StrideWay Cove Running Sneakers",
+      "description": "StrideWay Cove Running Sneakers for a comfortable daily commute. Cushioned footbed. UK size 7. Textured outsole.",
+      "category": "Footwear",
+      "brand": "StrideWay",
+      "price": "2662.00",
+      "currency": "INR",
+      "rating": 4.45,
+      "stock_quantity": 56,
+      "available": true,
+      "features": [
+        "Cushioned footbed",
+        "UK size 7",
+        "Textured outsole"
+      ],
+      "attributes": {
+        "series": "Cove",
+        "catalog": "Synthetic demonstration",
+        "model": "STR-110"
+      },
+      "image_url": "/product_images/expanded/footwear/LxVxPA1LOVM.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Running Sneakers"
+    },
+    {
+      "id": "D183",
+      "name": "StrideWay Stride Lace-Up Shoes",
+      "description": "StrideWay Stride Lace-Up Shoes for weekend outings. Cushioned footbed. UK size 8. Textured outsole.",
+      "category": "Footwear",
+      "brand": "StrideWay",
+      "price": "2794.00",
+      "currency": "INR",
+      "rating": 4.5,
+      "stock_quantity": 0,
+      "available": false,
+      "features": [
+        "Cushioned footbed",
+        "UK size 8",
+        "Textured outsole"
+      ],
+      "attributes": {
+        "series": "Stride",
+        "catalog": "Synthetic demonstration",
+        "model": "STR-111"
+      },
+      "image_url": "/product_images/expanded/footwear/FkNIKhdnnjQ.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Lace-Up Shoes"
+    },
+    {
+      "id": "D184",
+      "name": "StrideWay Orbit Running Sneakers",
+      "description": "StrideWay Orbit Running Sneakers for an active daily routine. Cushioned footbed. UK size 9. Textured outsole.",
+      "category": "Footwear",
+      "brand": "StrideWay",
+      "price": "2926.00",
+      "currency": "INR",
+      "rating": 4.55,
+      "stock_quantity": 76,
+      "available": true,
+      "features": [
+        "Cushioned footbed",
+        "UK size 9",
+        "Textured outsole"
+      ],
+      "attributes": {
+        "series": "Orbit",
+        "catalog": "Synthetic demonstration",
+        "model": "STR-112"
+      },
+      "image_url": "/product_images/expanded/footwear/J2-wAQDckus.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Running Sneakers"
+    },
+    {
+      "id": "D185",
+      "name": "StrideWay Drift Running Sneakers",
+      "description": "StrideWay Drift Running Sneakers for everyday walking. Cushioned footbed. UK size 10. Textured outsole.",
+      "category": "Footwear",
+      "brand": "StrideWay",
+      "price": "3058.00",
+      "currency": "INR",
+      "rating": 4.6,
+      "stock_quantity": 86,
+      "available": true,
+      "features": [
+        "Cushioned footbed",
+        "UK size 10",
+        "Textured outsole"
+      ],
+      "attributes": {
+        "series": "Drift",
+        "catalog": "Synthetic demonstration",
+        "model": "STR-113"
+      },
+      "image_url": "/product_images/expanded/footwear/XPBYi4K8vFI.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Running Sneakers"
+    },
+    {
+      "id": "D186",
+      "name": "StrideWay Trail Running Sneakers",
+      "description": "StrideWay Trail Running Sneakers for a comfortable daily commute. Cushioned footbed. UK size 11. Textured outsole.",
+      "category": "Footwear",
+      "brand": "StrideWay",
+      "price": "3190.00",
+      "currency": "INR",
+      "rating": 4.65,
+      "stock_quantity": 96,
+      "available": true,
+      "features": [
+        "Cushioned footbed",
+        "UK size 11",
+        "Textured outsole"
+      ],
+      "attributes": {
+        "series": "Trail",
+        "catalog": "Synthetic demonstration",
+        "model": "STR-114"
+      },
+      "image_url": "/product_images/expanded/footwear/SxAXphIPWeg.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Running Sneakers"
+    },
+    {
+      "id": "D187",
+      "name": "StrideWay Tempo Running Sneakers",
+      "description": "StrideWay Tempo Running Sneakers for weekend outings. Cushioned footbed. UK size 5. Textured outsole.",
+      "category": "Footwear",
+      "brand": "StrideWay",
+      "price": "3322.00",
+      "currency": "INR",
+      "rating": 4.7,
+      "stock_quantity": 13,
+      "available": true,
+      "features": [
+        "Cushioned footbed",
+        "UK size 5",
+        "Textured outsole"
+      ],
+      "attributes": {
+        "series": "Tempo",
+        "catalog": "Synthetic demonstration",
+        "model": "STR-115"
+      },
+      "image_url": "/product_images/expanded/footwear/UC8F4jvYjjE.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Running Sneakers"
+    },
+    {
+      "id": "D188",
+      "name": "StrideWay Urban Lace-Up Shoes",
+      "description": "StrideWay Urban Lace-Up Shoes for an active daily routine. Cushioned footbed. UK size 6. Textured outsole.",
+      "category": "Footwear",
+      "brand": "StrideWay",
+      "price": "3454.00",
+      "currency": "INR",
+      "rating": 4.75,
+      "stock_quantity": 23,
+      "available": true,
+      "features": [
+        "Cushioned footbed",
+        "UK size 6",
+        "Textured outsole"
+      ],
+      "attributes": {
+        "series": "Urban",
+        "catalog": "Synthetic demonstration",
+        "model": "STR-116"
+      },
+      "image_url": "/product_images/expanded/footwear/VQxKattL-X4.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Lace-Up Shoes"
+    },
+    {
+      "id": "D189",
+      "name": "HomeHarbor Metro Cushion Set",
+      "description": "HomeHarbor Metro Cushion Set for a comfortable living room. Soft woven covers. 40 cm square. Living-room styling.",
+      "category": "Home",
+      "brand": "HomeHarbor",
+      "price": "490.00",
+      "currency": "INR",
+      "rating": 4.8,
+      "stock_quantity": 14,
+      "available": true,
+      "features": [
+        "Soft woven covers",
+        "40 cm square",
+        "Living-room styling"
+      ],
+      "attributes": {
+        "series": "Metro",
+        "catalog": "Synthetic demonstration",
+        "model": "HOM-101"
+      },
+      "image_url": "/product_images/expanded/home/jV5Jqlgp4h0.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Cushion Set"
+    },
+    {
+      "id": "D190",
+      "name": "HomeHarbor Summit Desk Lamp",
+      "description": "HomeHarbor Summit Desk Lamp for an organized home. Adjustable reading light. Compact desk footprint. Indoor use.",
+      "category": "Home",
+      "brand": "HomeHarbor",
+      "price": "558.00",
+      "currency": "INR",
+      "rating": 3.8,
+      "stock_quantity": 24,
+      "available": true,
+      "features": [
+        "Adjustable reading light",
+        "Compact desk footprint",
+        "Indoor use"
+      ],
+      "attributes": {
+        "series": "Summit",
+        "catalog": "Synthetic demonstration",
+        "model": "HOM-102"
+      },
+      "image_url": "/product_images/expanded/home/mNXTZu7AeGA.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Desk Lamp"
+    },
+    {
+      "id": "D191",
+      "name": "HomeHarbor Harbor Reusable Water Bottle",
+      "description": "HomeHarbor Harbor Reusable Water Bottle for everyday home use. 1000 ml capacity. Screw-cap closure. Everyday hydration.",
+      "category": "Home",
+      "brand": "HomeHarbor",
+      "price": "626.00",
+      "currency": "INR",
+      "rating": 3.85,
+      "stock_quantity": 34,
+      "available": true,
+      "features": [
+        "1000 ml capacity",
+        "Screw-cap closure",
+        "Everyday hydration"
+      ],
+      "attributes": {
+        "series": "Harbor",
+        "catalog": "Synthetic demonstration",
+        "model": "HOM-103"
+      },
+      "image_url": "/product_images/expanded/home/GAJrJphCCwE.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Reusable Water Bottle"
+    },
+    {
+      "id": "D192",
+      "name": "HomeHarbor Studio Reusable Water Bottle",
+      "description": "HomeHarbor Studio Reusable Water Bottle for a compact apartment. 1250 ml capacity. Screw-cap closure. Everyday hydration.",
+      "category": "Home",
+      "brand": "HomeHarbor",
+      "price": "694.00",
+      "currency": "INR",
+      "rating": 3.9,
+      "stock_quantity": 44,
+      "available": true,
+      "features": [
+        "1250 ml capacity",
+        "Screw-cap closure",
+        "Everyday hydration"
+      ],
+      "attributes": {
+        "series": "Studio",
+        "catalog": "Synthetic demonstration",
+        "model": "HOM-104"
+      },
+      "image_url": "/product_images/expanded/home/UK_jYMqoHxE.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Reusable Water Bottle"
+    },
+    {
+      "id": "D193",
+      "name": "HomeHarbor Vista Water Bottle",
+      "description": "HomeHarbor Vista Water Bottle for a comfortable living room. 500 ml capacity. Screw-cap closure. Everyday hydration.",
+      "category": "Home",
+      "brand": "HomeHarbor",
+      "price": "762.00",
+      "currency": "INR",
+      "rating": 3.95,
+      "stock_quantity": 54,
+      "available": true,
+      "features": [
+        "500 ml capacity",
+        "Screw-cap closure",
+        "Everyday hydration"
+      ],
+      "attributes": {
+        "series": "Vista",
+        "catalog": "Synthetic demonstration",
+        "model": "HOM-105"
+      },
+      "image_url": "/product_images/expanded/home/uY4ZZZQ7uGE.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Water Bottle"
+    },
+    {
+      "id": "D194",
+      "name": "HomeHarbor Roam Desk Lamp",
+      "description": "HomeHarbor Roam Desk Lamp for an organized home. Adjustable reading light. Compact desk footprint. Indoor use.",
+      "category": "Home",
+      "brand": "HomeHarbor",
+      "price": "830.00",
+      "currency": "INR",
+      "rating": 4.0,
+      "stock_quantity": 64,
+      "available": true,
+      "features": [
+        "Adjustable reading light",
+        "Compact desk footprint",
+        "Indoor use"
+      ],
+      "attributes": {
+        "series": "Roam",
+        "catalog": "Synthetic demonstration",
+        "model": "HOM-106"
+      },
+      "image_url": "/product_images/expanded/home/at5-1nW3UCY.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Desk Lamp"
+    },
+    {
+      "id": "D195",
+      "name": "HomeHarbor Pulse Water Bottle",
+      "description": "HomeHarbor Pulse Water Bottle for everyday home use. 1000 ml capacity. Screw-cap closure. Everyday hydration.",
+      "category": "Home",
+      "brand": "HomeHarbor",
+      "price": "801.00",
+      "currency": "INR",
+      "rating": 4.05,
+      "stock_quantity": 74,
+      "available": true,
+      "features": [
+        "1000 ml capacity",
+        "Screw-cap closure",
+        "Everyday hydration"
+      ],
+      "attributes": {
+        "series": "Pulse",
+        "catalog": "Synthetic demonstration",
+        "model": "HOM-107"
+      },
+      "image_url": "/product_images/expanded/home/Z2NCX2qIIjg.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Water Bottle"
+    },
+    {
+      "id": "D196",
+      "name": "HomeHarbor Atlas Desk Lamp",
+      "description": "HomeHarbor Atlas Desk Lamp for a compact apartment. Adjustable reading light. Compact desk footprint. Indoor use.",
+      "category": "Home",
+      "brand": "HomeHarbor",
+      "price": "869.00",
+      "currency": "INR",
+      "rating": 4.1,
+      "stock_quantity": 84,
+      "available": true,
+      "features": [
+        "Adjustable reading light",
+        "Compact desk footprint",
+        "Indoor use"
+      ],
+      "attributes": {
+        "series": "Atlas",
+        "catalog": "Synthetic demonstration",
+        "model": "HOM-108"
+      },
+      "image_url": "/product_images/expanded/home/0WySxD8YeNI.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Desk Lamp"
+    },
+    {
+      "id": "D197",
+      "name": "HomeHarbor Breeze Reusable Water Bottle",
+      "description": "HomeHarbor Breeze Reusable Water Bottle for a comfortable living room. 500 ml capacity. Screw-cap closure. Everyday hydration.",
+      "category": "Home",
+      "brand": "HomeHarbor",
+      "price": "937.00",
+      "currency": "INR",
+      "rating": 4.15,
+      "stock_quantity": 94,
+      "available": true,
+      "features": [
+        "500 ml capacity",
+        "Screw-cap closure",
+        "Everyday hydration"
+      ],
+      "attributes": {
+        "series": "Breeze",
+        "catalog": "Synthetic demonstration",
+        "model": "HOM-109"
+      },
+      "image_url": "/product_images/expanded/home/0_he2akLhyA.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Reusable Water Bottle"
+    },
+    {
+      "id": "D198",
+      "name": "HomeHarbor Cove Reusable Water Bottle",
+      "description": "HomeHarbor Cove Reusable Water Bottle for an organized home. 750 ml capacity. Screw-cap closure. Everyday hydration.",
+      "category": "Home",
+      "brand": "HomeHarbor",
+      "price": "1005.00",
+      "currency": "INR",
+      "rating": 4.2,
+      "stock_quantity": 11,
+      "available": true,
+      "features": [
+        "750 ml capacity",
+        "Screw-cap closure",
+        "Everyday hydration"
+      ],
+      "attributes": {
+        "series": "Cove",
+        "catalog": "Synthetic demonstration",
+        "model": "HOM-110"
+      },
+      "image_url": "/product_images/expanded/home/OUjR8lrGccs.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Reusable Water Bottle"
+    },
+    {
+      "id": "D199",
+      "name": "HomeHarbor Stride Cushion Set",
+      "description": "HomeHarbor Stride Cushion Set for everyday home use. Soft woven covers. 45 cm square. Living-room styling.",
+      "category": "Home",
+      "brand": "HomeHarbor",
+      "price": "1073.00",
+      "currency": "INR",
+      "rating": 4.25,
+      "stock_quantity": 0,
+      "available": false,
+      "features": [
+        "Soft woven covers",
+        "45 cm square",
+        "Living-room styling"
+      ],
+      "attributes": {
+        "series": "Stride",
+        "catalog": "Synthetic demonstration",
+        "model": "HOM-111"
+      },
+      "image_url": "/product_images/expanded/home/zTY9OwAfOrg.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Cushion Set"
+    },
+    {
+      "id": "D200",
+      "name": "HomeHarbor Orbit Cushion Set",
+      "description": "HomeHarbor Orbit Cushion Set for a compact apartment. Soft woven covers. 50 cm square. Living-room styling.",
+      "category": "Home",
+      "brand": "HomeHarbor",
+      "price": "1141.00",
+      "currency": "INR",
+      "rating": 4.3,
+      "stock_quantity": 31,
+      "available": true,
+      "features": [
+        "Soft woven covers",
+        "50 cm square",
+        "Living-room styling"
+      ],
+      "attributes": {
+        "series": "Orbit",
+        "catalog": "Synthetic demonstration",
+        "model": "HOM-112"
+      },
+      "image_url": "/product_images/expanded/home/UR_eZMMmVn4.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Cushion Set"
+    },
+    {
+      "id": "D201",
+      "name": "HomeHarbor Drift Water Bottle",
+      "description": "HomeHarbor Drift Water Bottle for a comfortable living room. 500 ml capacity. Screw-cap closure. Everyday hydration.",
+      "category": "Home",
+      "brand": "HomeHarbor",
+      "price": "1209.00",
+      "currency": "INR",
+      "rating": 4.35,
+      "stock_quantity": 41,
+      "available": true,
+      "features": [
+        "500 ml capacity",
+        "Screw-cap closure",
+        "Everyday hydration"
+      ],
+      "attributes": {
+        "series": "Drift",
+        "catalog": "Synthetic demonstration",
+        "model": "HOM-113"
+      },
+      "image_url": "/product_images/expanded/home/kFc1_G1GvKA.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Water Bottle"
+    },
+    {
+      "id": "D202",
+      "name": "HomeHarbor Trail Water Bottle",
+      "description": "HomeHarbor Trail Water Bottle for an organized home. 750 ml capacity. Screw-cap closure. Everyday hydration.",
+      "category": "Home",
+      "brand": "HomeHarbor",
+      "price": "1277.00",
+      "currency": "INR",
+      "rating": 4.4,
+      "stock_quantity": 51,
+      "available": true,
+      "features": [
+        "750 ml capacity",
+        "Screw-cap closure",
+        "Everyday hydration"
+      ],
+      "attributes": {
+        "series": "Trail",
+        "catalog": "Synthetic demonstration",
+        "model": "HOM-114"
+      },
+      "image_url": "/product_images/expanded/home/edBR3b2JAuA.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Water Bottle"
+    },
+    {
+      "id": "D203",
+      "name": "HomeHarbor Tempo Cushion Set",
+      "description": "HomeHarbor Tempo Cushion Set for everyday home use. Soft woven covers. 50 cm square. Living-room styling.",
+      "category": "Home",
+      "brand": "HomeHarbor",
+      "price": "1345.00",
+      "currency": "INR",
+      "rating": 4.45,
+      "stock_quantity": 61,
+      "available": true,
+      "features": [
+        "Soft woven covers",
+        "50 cm square",
+        "Living-room styling"
+      ],
+      "attributes": {
+        "series": "Tempo",
+        "catalog": "Synthetic demonstration",
+        "model": "HOM-115"
+      },
+      "image_url": "/product_images/expanded/home/rf3u4jac6go.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Cushion Set"
+    },
+    {
+      "id": "D204",
+      "name": "HomeHarbor Urban Cushion Set",
+      "description": "HomeHarbor Urban Cushion Set for a compact apartment. Soft woven covers. 40 cm square. Living-room styling.",
+      "category": "Home",
+      "brand": "HomeHarbor",
+      "price": "1413.00",
+      "currency": "INR",
+      "rating": 4.5,
+      "stock_quantity": 71,
+      "available": true,
+      "features": [
+        "Soft woven covers",
+        "40 cm square",
+        "Living-room styling"
+      ],
+      "attributes": {
+        "series": "Urban",
+        "catalog": "Synthetic demonstration",
+        "model": "HOM-116"
+      },
+      "image_url": "/product_images/expanded/home/b0kTwnDM1O0.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Cushion Set"
+    },
+    {
+      "id": "D205",
+      "name": "MoveWell Metro Training Dumbbell",
+      "description": "MoveWell Metro Training Dumbbell for home workouts. 2 kg weight. Textured grip. Home strength training.",
+      "category": "Sports",
+      "brand": "MoveWell",
+      "price": "709.00",
+      "currency": "INR",
+      "rating": 4.55,
+      "stock_quantity": 62,
+      "available": true,
+      "features": [
+        "2 kg weight",
+        "Textured grip",
+        "Home strength training"
+      ],
+      "attributes": {
+        "series": "Metro",
+        "catalog": "Synthetic demonstration",
+        "model": "MOV-101"
+      },
+      "image_url": "/product_images/expanded/sports/w45roKo6QYw.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Training Dumbbell"
+    },
+    {
+      "id": "D206",
+      "name": "MoveWell Summit Skipping Rope",
+      "description": "MoveWell Summit Skipping Rope for strength and mobility sessions. Adjustable training length. Easy-grip handles. Cardio exercise.",
+      "category": "Sports",
+      "brand": "MoveWell",
+      "price": "837.00",
+      "currency": "INR",
+      "rating": 4.6,
+      "stock_quantity": 72,
+      "available": true,
+      "features": [
+        "Adjustable training length",
+        "Easy-grip handles",
+        "Cardio exercise"
+      ],
+      "attributes": {
+        "series": "Summit",
+        "catalog": "Synthetic demonstration",
+        "model": "MOV-102"
+      },
+      "image_url": "/product_images/expanded/sports/mPjPZmEfohI.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Skipping Rope"
+    },
+    {
+      "id": "D207",
+      "name": "MoveWell Harbor Resistance Band",
+      "description": "MoveWell Harbor Resistance Band for a regular fitness routine. Stretch resistance. Portable fitness accessory. Mobility training.",
+      "category": "Sports",
+      "brand": "MoveWell",
+      "price": "965.00",
+      "currency": "INR",
+      "rating": 4.65,
+      "stock_quantity": 82,
+      "available": true,
+      "features": [
+        "Stretch resistance",
+        "Portable fitness accessory",
+        "Mobility training"
+      ],
+      "attributes": {
+        "series": "Harbor",
+        "catalog": "Synthetic demonstration",
+        "model": "MOV-103"
+      },
+      "image_url": "/product_images/expanded/sports/oLStrTTMz2s.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Resistance Band"
+    },
+    {
+      "id": "D208",
+      "name": "MoveWell Studio Training Dumbbell Set",
+      "description": "MoveWell Studio Training Dumbbell Set for indoor exercise. 5 kg weight. Textured grip. Home strength training.",
+      "category": "Sports",
+      "brand": "MoveWell",
+      "price": "1093.00",
+      "currency": "INR",
+      "rating": 4.7,
+      "stock_quantity": 92,
+      "available": true,
+      "features": [
+        "5 kg weight",
+        "Textured grip",
+        "Home strength training"
+      ],
+      "attributes": {
+        "series": "Studio",
+        "catalog": "Synthetic demonstration",
+        "model": "MOV-104"
+      },
+      "image_url": "/product_images/expanded/sports/0OpVPmVS2vg.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Training Dumbbell Set"
+    },
+    {
+      "id": "D209",
+      "name": "MoveWell Vista Training Dumbbell",
+      "description": "MoveWell Vista Training Dumbbell for home workouts. 6 kg weight. Textured grip. Home strength training.",
+      "category": "Sports",
+      "brand": "MoveWell",
+      "price": "1221.00",
+      "currency": "INR",
+      "rating": 4.75,
+      "stock_quantity": 9,
+      "available": true,
+      "features": [
+        "6 kg weight",
+        "Textured grip",
+        "Home strength training"
+      ],
+      "attributes": {
+        "series": "Vista",
+        "catalog": "Synthetic demonstration",
+        "model": "MOV-105"
+      },
+      "image_url": "/product_images/expanded/sports/zEAX0E0KJxs.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Training Dumbbell"
+    },
+    {
+      "id": "D210",
+      "name": "MoveWell Roam Training Dumbbell",
+      "description": "MoveWell Roam Training Dumbbell for strength and mobility sessions. 7 kg weight. Textured grip. Home strength training.",
+      "category": "Sports",
+      "brand": "MoveWell",
+      "price": "1349.00",
+      "currency": "INR",
+      "rating": 4.8,
+      "stock_quantity": 19,
+      "available": true,
+      "features": [
+        "7 kg weight",
+        "Textured grip",
+        "Home strength training"
+      ],
+      "attributes": {
+        "series": "Roam",
+        "catalog": "Synthetic demonstration",
+        "model": "MOV-106"
+      },
+      "image_url": "/product_images/expanded/sports/erUC4fTtCuo.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Training Dumbbell"
+    },
+    {
+      "id": "D211",
+      "name": "MoveWell Pulse Training Dumbbell Set",
+      "description": "MoveWell Pulse Training Dumbbell Set for a regular fitness routine. 8 kg weight. Textured grip. Home strength training.",
+      "category": "Sports",
+      "brand": "MoveWell",
+      "price": "1477.00",
+      "currency": "INR",
+      "rating": 3.8,
+      "stock_quantity": 29,
+      "available": true,
+      "features": [
+        "8 kg weight",
+        "Textured grip",
+        "Home strength training"
+      ],
+      "attributes": {
+        "series": "Pulse",
+        "catalog": "Synthetic demonstration",
+        "model": "MOV-107"
+      },
+      "image_url": "/product_images/expanded/sports/mTorQ9gFfOg.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Training Dumbbell Set"
+    },
+    {
+      "id": "D212",
+      "name": "MoveWell Atlas Training Dumbbell",
+      "description": "MoveWell Atlas Training Dumbbell for indoor exercise. 9 kg weight. Textured grip. Home strength training.",
+      "category": "Sports",
+      "brand": "MoveWell",
+      "price": "1605.00",
+      "currency": "INR",
+      "rating": 3.85,
+      "stock_quantity": 39,
+      "available": true,
+      "features": [
+        "9 kg weight",
+        "Textured grip",
+        "Home strength training"
+      ],
+      "attributes": {
+        "series": "Atlas",
+        "catalog": "Synthetic demonstration",
+        "model": "MOV-108"
+      },
+      "image_url": "/product_images/expanded/sports/udE7Kh7QHbM.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Training Dumbbell"
+    },
+    {
+      "id": "D213",
+      "name": "MoveWell Breeze Yoga Mat Set",
+      "description": "MoveWell Breeze Yoga Mat Set for home workouts. Non-slip practice surface. Lightweight roll-up design. Indoor stretching.",
+      "category": "Sports",
+      "brand": "MoveWell",
+      "price": "1733.00",
+      "currency": "INR",
+      "rating": 3.9,
+      "stock_quantity": 49,
+      "available": true,
+      "features": [
+        "Non-slip practice surface",
+        "Lightweight roll-up design",
+        "Indoor stretching"
+      ],
+      "attributes": {
+        "series": "Breeze",
+        "catalog": "Synthetic demonstration",
+        "model": "MOV-109"
+      },
+      "image_url": "/product_images/expanded/sports/gJtDg6WfMlQ.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Yoga Mat Set"
+    },
+    {
+      "id": "D214",
+      "name": "MoveWell Cove Skipping Rope",
+      "description": "MoveWell Cove Skipping Rope for strength and mobility sessions. Adjustable training length. Easy-grip handles. Cardio exercise.",
+      "category": "Sports",
+      "brand": "MoveWell",
+      "price": "1861.00",
+      "currency": "INR",
+      "rating": 3.95,
+      "stock_quantity": 59,
+      "available": true,
+      "features": [
+        "Adjustable training length",
+        "Easy-grip handles",
+        "Cardio exercise"
+      ],
+      "attributes": {
+        "series": "Cove",
+        "catalog": "Synthetic demonstration",
+        "model": "MOV-110"
+      },
+      "image_url": "/product_images/expanded/sports/ktiSvzEOnxY.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Skipping Rope"
+    },
+    {
+      "id": "D215",
+      "name": "MoveWell Stride Training Dumbbell",
+      "description": "MoveWell Stride Training Dumbbell for a regular fitness routine. 3 kg weight. Textured grip. Home strength training.",
+      "category": "Sports",
+      "brand": "MoveWell",
+      "price": "1989.00",
+      "currency": "INR",
+      "rating": 4.0,
+      "stock_quantity": 0,
+      "available": false,
+      "features": [
+        "3 kg weight",
+        "Textured grip",
+        "Home strength training"
+      ],
+      "attributes": {
+        "series": "Stride",
+        "catalog": "Synthetic demonstration",
+        "model": "MOV-111"
+      },
+      "image_url": "/product_images/expanded/sports/JWK2H-2qz1Y.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Training Dumbbell"
+    },
+    {
+      "id": "D216",
+      "name": "MoveWell Orbit Yoga Mat Set",
+      "description": "MoveWell Orbit Yoga Mat Set for indoor exercise. Non-slip practice surface. Lightweight roll-up design. Indoor stretching.",
+      "category": "Sports",
+      "brand": "MoveWell",
+      "price": "2117.00",
+      "currency": "INR",
+      "rating": 4.05,
+      "stock_quantity": 79,
+      "available": true,
+      "features": [
+        "Non-slip practice surface",
+        "Lightweight roll-up design",
+        "Indoor stretching"
+      ],
+      "attributes": {
+        "series": "Orbit",
+        "catalog": "Synthetic demonstration",
+        "model": "MOV-112"
+      },
+      "image_url": "/product_images/expanded/sports/PS2aiW-YOJI.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Yoga Mat Set"
+    },
+    {
+      "id": "D217",
+      "name": "MoveWell Drift Training Dumbbell",
+      "description": "MoveWell Drift Training Dumbbell for home workouts. 5 kg weight. Textured grip. Home strength training.",
+      "category": "Sports",
+      "brand": "MoveWell",
+      "price": "2245.00",
+      "currency": "INR",
+      "rating": 4.1,
+      "stock_quantity": 89,
+      "available": true,
+      "features": [
+        "5 kg weight",
+        "Textured grip",
+        "Home strength training"
+      ],
+      "attributes": {
+        "series": "Drift",
+        "catalog": "Synthetic demonstration",
+        "model": "MOV-113"
+      },
+      "image_url": "/product_images/expanded/sports/QCUr6O8gr14.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Training Dumbbell"
+    },
+    {
+      "id": "D218",
+      "name": "MoveWell Trail Training Dumbbell Set",
+      "description": "MoveWell Trail Training Dumbbell Set for strength and mobility sessions. 6 kg weight. Textured grip. Home strength training.",
+      "category": "Sports",
+      "brand": "MoveWell",
+      "price": "2373.00",
+      "currency": "INR",
+      "rating": 4.15,
+      "stock_quantity": 99,
+      "available": true,
+      "features": [
+        "6 kg weight",
+        "Textured grip",
+        "Home strength training"
+      ],
+      "attributes": {
+        "series": "Trail",
+        "catalog": "Synthetic demonstration",
+        "model": "MOV-114"
+      },
+      "image_url": "/product_images/expanded/sports/MXTLJI4lTT0.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Training Dumbbell Set"
+    },
+    {
+      "id": "D219",
+      "name": "MoveWell Tempo Yoga Mat Set",
+      "description": "MoveWell Tempo Yoga Mat Set for a regular fitness routine. Non-slip practice surface. Lightweight roll-up design. Indoor stretching.",
+      "category": "Sports",
+      "brand": "MoveWell",
+      "price": "2501.00",
+      "currency": "INR",
+      "rating": 4.2,
+      "stock_quantity": 16,
+      "available": true,
+      "features": [
+        "Non-slip practice surface",
+        "Lightweight roll-up design",
+        "Indoor stretching"
+      ],
+      "attributes": {
+        "series": "Tempo",
+        "catalog": "Synthetic demonstration",
+        "model": "MOV-115"
+      },
+      "image_url": "/product_images/expanded/sports/YmaOkRjoBVc.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Yoga Mat Set"
+    },
+    {
+      "id": "D220",
+      "name": "MoveWell Urban Yoga Mat Set",
+      "description": "MoveWell Urban Yoga Mat Set for indoor exercise. Non-slip practice surface. Lightweight roll-up design. Indoor stretching.",
+      "category": "Sports",
+      "brand": "MoveWell",
+      "price": "2632.00",
+      "currency": "INR",
+      "rating": 4.25,
+      "stock_quantity": 26,
+      "available": true,
+      "features": [
+        "Non-slip practice surface",
+        "Lightweight roll-up design",
+        "Indoor stretching"
+      ],
+      "attributes": {
+        "series": "Urban",
+        "catalog": "Synthetic demonstration",
+        "model": "MOV-116"
+      },
+      "image_url": "/product_images/expanded/sports/b8Q5fHBsyik.jpg",
+      "source": "synthetic_expanded_demo",
+      "product_type": "Yoga Mat Set"
     }
   ],
   "customers": [

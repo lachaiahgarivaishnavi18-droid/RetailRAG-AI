@@ -53,6 +53,9 @@ export default function Workspace({streamlitUrl,generationEnabled,demoMode=false
   const [category,setCategory]=useState('');
   const [available,setAvailable]=useState(false);
   const [page,setPage]=useState(1);
+  const [minPrice,setMinPrice]=useState('');
+  const [maxPrice,setMaxPrice]=useState('');
+  const [appliedFilters,setAppliedFilters]=useState('');
   const [busy,setBusy]=useState(false);
   const [error,setError]=useState('');
   const [connected,setConnected]=useState(false);
@@ -63,7 +66,7 @@ export default function Workspace({streamlitUrl,generationEnabled,demoMode=false
     Promise.all([
       api<{status:string}>('ready',undefined,controller.signal),
       api<Overview>('analytics/overview',undefined,controller.signal),
-      api<Page<Product>>('products?limit=100',undefined,controller.signal),
+      api<Page<Product>>('products?limit=9',undefined,controller.signal),
       api<Page<{id:string;name:string}>>('customers?limit=100',undefined,controller.signal),
       api<Page<History>>('recommendations?limit=20',undefined,controller.signal),
       fetch('/product-photos.json',{signal:controller.signal}).then(r=>{if(!r.ok)throw new Error('Photo mapping unavailable');return r.json() as Promise<Record<string,Photo>>;})
@@ -74,12 +77,24 @@ export default function Workspace({streamlitUrl,generationEnabled,demoMode=false
     return ()=>controller.abort();
   },[]);
 
+  async function loadCatalog(nextPage:number, filters=appliedFilters) {
+    const params=new URLSearchParams(filters);params.set('limit','9');params.set('offset',String((nextPage-1)*9));
+    const catalog=await api<Page<Product>>('products?'+params);
+    setProducts(catalog.items);setTotalProducts(catalog.total);setPage(nextPage);setAppliedFilters(filters);
+  }
+  async function browse(nextPage:number) {
+    setBusy(true);setError('');
+    try {await loadCatalog(nextPage);}catch(e){setError(e instanceof Error?e.message:'Catalog unavailable.');}finally{setBusy(false);}
+  }
+
   async function submit(event:React.FormEvent) {
     event.preventDefault();setError('');setBusy(true);setResult(null);setWorkflow(null);
     try {
       if(section==='Product Discovery') {
-        const params=new URLSearchParams({q:query,limit:'100'});if(category)params.set('category',category);if(available)params.set('available','true');
-        const catalog=await api<Page<Product>>('products?'+params);setProducts(catalog.items);setTotalProducts(catalog.total);setPage(1);
+        if(minPrice&&maxPrice&&Number(minPrice)>Number(maxPrice))throw new Error('Minimum price must not exceed maximum price.');
+        const params=new URLSearchParams({q:query});if(category)params.set('category',category);if(available)params.set('available','true');
+        if(minPrice)params.set('min_price',minPrice);if(maxPrice)params.set('max_price',maxPrice);
+        await loadCatalog(1,params.toString());
       } else {
         if(!query.trim())throw new Error('Enter a shopping request.');
         const payload={query:query.trim(),channel,customer_id:customer||null,available_only:true,limit:5};
@@ -107,7 +122,7 @@ export default function Workspace({streamlitUrl,generationEnabled,demoMode=false
     </aside>
     <main><header><span className="eyebrow">CONTEXT CART / INTELLIGENT SHOPPING</span><span className="connection">{connected?(demoMode?'● Read-only cloud demo':'● Backend connected'):'○ Backend not verified'}</span></header>
       <h1>{title}</h1><p className="subtitle">Context-aware recommendations, grounded in product evidence.</p>
-      {demoMode&&<p className="note">Free cloud demo: 24 synthetic products, local lexical evidence search, and sample activity. No external AI keys. Full Chroma RAG, document upload, LangGraph and saved records run in the local application.</p>}
+      {demoMode&&<p className="note">Free cloud demo: an expanded synthetic catalog, local keyword evidence search, and sample activity. No external AI keys. Full Chroma RAG, document upload, LangGraph and saved records run in the local application.</p>}
       {error&&<div className="alert" role="alert">{error}</div>}{busy&&<p className="loading" role="status">Loading application data…</p>}
       {section==='Dashboard'&&<>
         <div className="metrics">{[['Products',overview?.totals.products],['Customers',overview?.totals.customers],['Recommendations',overview?.totals.recommendations],['Shopping interactions',overview?.totals.interactions]].map(([name,value])=><div key={name}><small>{name}</small><strong>{value??'—'}</strong></div>)}</div>
@@ -120,13 +135,14 @@ export default function Workspace({streamlitUrl,generationEnabled,demoMode=false
         <form className="panel" onSubmit={submit}><label>{section==='Product Discovery'?'Search the catalog':'Your shopping request'}<input value={query} maxLength={section==='Product Discovery'?200:2000} onChange={e=>setQuery(e.target.value)} placeholder="Wireless headphones under INR 3000"/></label>
           <div className="form-row">{section==='Product Discovery'?<><label>Category<select value={category} onChange={e=>setCategory(e.target.value)}><option value="">All categories</option>{Object.keys(photos).length>0&&[...new Set(Object.values(photos).map(p=>p.category))].sort().map(c=><option key={c}>{c}</option>)}</select></label><label className="check"><input type="checkbox" checked={available} onChange={e=>setAvailable(e.target.checked)}/>In stock only</label></>:<><label>Customer<select value={customer} onChange={e=>setCustomer(e.target.value)}><option value="">Guest shopper</option>{customers.map(c=><option key={c.id} value={c.id}>{c.name} ({c.id})</option>)}</select></label><label>Channel<select value={channel} onChange={e=>setChannel(e.target.value)}>{['ecommerce','mobile','store'].map(c=><option key={c}>{c}</option>)}</select></label></>}</div>
           {saving&&!generationEnabled&&<p className="note">Saved generation is disabled in this preparation build. Enable it only after configuring deployment access controls. Existing records remain readable.</p>}
+          {section==='Product Discovery'&&<div className="form-row"><label>Minimum price (INR)<input type="number" min="0" step="1" value={minPrice} onChange={e=>setMinPrice(e.target.value)} placeholder="No minimum"/></label><label>Maximum price (INR)<input type="number" min="0" step="1" value={maxPrice} onChange={e=>setMaxPrice(e.target.value)} placeholder="No maximum"/></label></div>}
           <button className="primary" disabled={busy||(saving&&!generationEnabled)}>{section==='Product Discovery'?'Search products':section==='AI Shopping Assistant'?'Retrieve product evidence':section==='Agent Workflow'?'Run existing LangGraph workflow':'Generate & save recommendations'}</button>
           {section==='Product Discovery'&&<small>Keyword search. Use the AI Shopping Assistant for natural-language constraints.</small>}
           {saving&&<small>Creates a saved record. After a timeout, check history before retrying.</small>}
         </form>
         {section==='AI Shopping Assistant'&&<p className="note">{demoMode?'Searches bundled product descriptions locally using word matching and budget filters. No cloud AI or conversational memory.':'Uses the existing RAG search endpoint. No dedicated chat API or conversational memory is implied. Index synchronization remains in Streamlit.'}</p>}
       </>}
-      {section==='Product Discovery'&&<><p>{totalProducts} matching products · {products.length} loaded (API limit 100)</p><div className="product-grid">{products.slice((page-1)*9,page*9).map(p=><ProductCard key={p.id} product={p} photo={photos[p.id]}/>)}</div>{!products.length&&!busy&&<p className="panel">No matching products.</p>}<div className="pagination"><button disabled={page===1} onClick={()=>setPage(p=>p-1)}>Previous</button><span>Page {page}</span><button disabled={page*9>=products.length} onClick={()=>setPage(p=>p+1)}>Next</button></div></>}
+      {section==='Product Discovery'&&<><p>{totalProducts} matching products · {products.length?((page-1)*9+1):0}–{Math.min(page*9,totalProducts)} shown</p><div className="product-grid">{products.map(p=><ProductCard key={p.id} product={p} photo={photos[p.id]}/>)}</div>{!products.length&&!busy&&<p className="panel">No matching products. Try fewer keywords or adjust the filters.</p>}<div className="pagination"><button disabled={busy||page===1} onClick={()=>browse(page-1)}>Previous</button><span>Page {page} of {Math.max(1,Math.ceil(totalProducts/9))}</span><button disabled={busy||page*9>=totalProducts} onClick={()=>browse(page+1)}>Next</button></div></>}
       {section==='Recommendation History'&&<section className="panel"><h2>Latest saved recommendations</h2><p>Opening a record is read-only. Showing up to 20 recent records.</p>{!history.length&&<p>No saved recommendations loaded.</p>}<div className="history">{history.map(r=><button key={r.id} disabled={busy} onClick={()=>openSaved(r.id)}><strong>#{r.id} · {r.query||'Personalized request'}</strong><small>{r.customer_id||'Guest'} · {r.channel} · {r.item_count} products · {new Date(r.created_at).toLocaleDateString()}</small></button>)}</div></section>}
       {workflow&&<section className="panel"><h2>Workflow {workflow.status}</h2><small>{workflow.run_id}</small>{workflow.error&&<p role="alert">{workflow.error}</p>}<div className="trace">{workflow.steps.map((s,i)=><div key={i}><strong>{s.agent}</strong><span>{s.status} · {s.duration_ms??'—'} ms</span></div>)}</div></section>}
       {result&&<section><h2>{result.id?`Saved recommendation #${result.id}`:'Product evidence'}</h2><p className="panel">{result.answer||result.message}</p>{result.generation&&<p className="note">{result.generation} · LLM used: {String(result.llm_used)}</p>}{result.warnings?.map(w=><p key={w} className="note">{w}</p>)}{!result.items.length&&<p>No matching products returned.</p>}<div className="product-grid">{result.items.map(i=><ProductCard key={i.product.id} product={i.product} item={i} photo={photos[i.product.id]}/>)}</div><details><summary>Returned evidence and preference context</summary><pre>{JSON.stringify(result,null,2)}</pre></details></section>}
