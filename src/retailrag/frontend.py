@@ -415,6 +415,9 @@ def main() -> None:
         return
     st.caption("CONTEXT CART  /  " + ("RESEARCH WORKSPACE" if page in cart.RESEARCH else "SHOPPING WORKSPACE"))
     st.title(cart.PRIMARY.get(page, page))
+    if page == "Document Workspace":
+        document_workspace()
+        return
     if page == "Product Discovery":
         cart.discovery(api_get, api_post)
         return
@@ -439,7 +442,7 @@ def main() -> None:
         st.write("Environment:", settings.environment)
         st.write("Backend URL:", str(settings.api_base_url))
         st.caption("Edit .env and restart the services to apply configuration changes.")
-        st.info("Recommendations use local TF-IDF. RAG generation uses deterministic fallback by default; optional LLM selection must be configured explicitly.")
+        st.info("Recommendations use local TF-IDF. RAG answers work locally without keys. Auto mode uses OpenAI when configured; DEMO_MODE=true keeps all AI local.")
         backend = api_get("/settings")
         if backend is not None:
             st.subheader("Backend capabilities")
@@ -479,6 +482,35 @@ def main() -> None:
     if page == "Omnichannel Analytics":
         omnichannel_page(api_get, api_post)
         return
+
+
+def document_workspace():
+    st.caption("Local document search and extractive chat. No API keys. Supports UTF-8 TXT, Markdown, CSV and JSON; PDF/OCR is not supported.")
+    if st.button("Process sample document"):
+        if api_post("/documents/sample", {}, operation="Document processing"):
+            st.success("Sample store policy processed")
+    uploaded = st.file_uploader("Upload a document", type=["txt", "md", "csv", "json"])
+    if st.button("Process uploaded document", disabled=uploaded is None):
+        try:
+            if uploaded.size > 2_000_000:
+                st.error("Maximum document size is 2 MB")
+            elif api_post("/documents/upload", {"filename": uploaded.name, "content": uploaded.getvalue().decode("utf-8-sig")}, operation="Document processing"):
+                st.success("Document processed locally")
+        except UnicodeDecodeError:
+            st.error("Please upload a UTF-8 text document")
+    documents = api_get("/documents")
+    if documents and documents["items"]:
+        st.dataframe(documents["items"], hide_index=True, width="stretch")
+    messages = st.session_state.setdefault("document_messages", [])
+    for message in messages:
+        with st.chat_message(message["role"]):
+            st.write(message["content"])
+    question = st.chat_input("Ask about your uploaded documents", key="document_question")
+    if question:
+        result = api_post("/documents/search", {"query": question}, operation="Document search")
+        if result:
+            messages.extend([{"role": "user", "content": question}, {"role": "assistant", "content": result["answer"]}])
+            st.rerun()
 
 
 if __name__ == "__main__":

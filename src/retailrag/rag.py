@@ -128,11 +128,11 @@ def search_products(session, store, request, *, allow_llm=True):
     attempted, used = False, False
     llm_status = "disabled"
     generation = "deterministic_fallback"
-    if allow_llm and store.settings.rag_generation_mode == "openai":
+    if allow_llm and store.settings.demo_mode != "true" and store.settings.rag_generation_mode in {"auto", "openai"}:
         key = store.settings.openai_api_key
         if key is None or not key.get_secret_value().strip():
             llm_status = "missing_credentials"
-            warnings.append("LLM credentials are unavailable; deterministic grounded fallback was used.")
+            warnings.append("Demo mode: local grounded answers are active; no external AI credentials are required.")
         elif not items:
             llm_status = "no_evidence"
         else:

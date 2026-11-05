@@ -2,6 +2,18 @@
 
 An agentic retrieval-augmented architecture for context-aware product recommendations in omnichannel retail.
 
+## Credential-free local startup
+
+Run `.\.venv\Scripts\python.exe -m retailrag.local` from the project folder.
+The launcher starts FastAPI and the existing Streamlit UI together (normally
+http://127.0.0.1:8514), using SQLite and local Chroma. No migration URI or cloud
+credential is required. Set `DEMO_MODE=true` to disable external AI even when a
+key is saved; default `auto` uses configured OpenAI selection with local fallback.
+See [LOCAL_DEMO.md](LOCAL_DEMO.md) for installation, ports, and scope.
+The added Research workspace → Document Workspace supports local UTF-8 text
+upload, sample processing, source-grounded document search, and extractive chat.
+
+
 ## Current delivery: Phases 1–14 complete
 
 The existing data, database, ML, RAG, LangGraph, and eleven public tools are preserved. The completed local application adds atomic three-channel shopping simulation, shared customer preferences, database-derived analytics, catalog management, readiness/configuration endpoints, and a responsive Streamlit dashboard with Plotly charts, product cards, and light/dark styling. Tools and workflows require no credentials and never call an LLM; standalone RAG retains its separately configured optional selector. This is a functioning local research/demo application; the limitations below describe the boundary to production deployment.

@@ -1,0 +1,765 @@
+{
+  "products": [
+    {
+      "id": "P001",
+      "name": "Wireless Everyday Headphones",
+      "description": "Bluetooth headphones with cushioned ear cups and USB-C charging",
+      "category": "Electronics",
+      "brand": "SoundNest",
+      "price": "2499.00",
+      "currency": "INR",
+      "rating": 4.0,
+      "stock_quantity": 35,
+      "features": [
+        "wireless",
+        "over-ear",
+        "USB-C"
+      ],
+      "attributes": {
+        "connectivity": "Bluetooth",
+        "color": "navy"
+      },
+      "image_url": "",
+      "available": true
+    },
+    {
+      "id": "P002",
+      "name": "Quiet Focus Headphones",
+      "description": "Over-ear headphones with active noise cancellation for focused work",
+      "category": "Electronics",
+      "brand": "SoundNest",
+      "price": "5999.00",
+      "currency": "INR",
+      "rating": 4.2,
+      "stock_quantity": 12,
+      "features": [
+        "noise cancellation",
+        "wireless",
+        "microphone"
+      ],
+      "attributes": {
+        "color": "black"
+      },
+      "image_url": "",
+      "available": true
+    },
+    {
+      "id": "P003",
+      "name": "Pocket Wireless Earbuds",
+      "description": "Compact wireless earbuds with charging case for daily listening",
+      "category": "Electronics",
+      "brand": "WaveCraft",
+      "price": "1799.00",
+      "currency": "INR",
+      "rating": 4.4,
+      "stock_quantity": 42,
+      "features": [
+        "wireless",
+        "charging case"
+      ],
+      "attributes": {
+        "color": "white"
+      },
+      "image_url": "",
+      "available": true
+    },
+    {
+      "id": "P004",
+      "name": "Studio Wired Headphones",
+      "description": "Wired headphones with a 3.5mm connector for home listening",
+      "category": "Electronics",
+      "brand": "WaveCraft",
+      "price": "1299.00",
+      "currency": "INR",
+      "rating": 4.6,
+      "stock_quantity": 0,
+      "features": [
+        "wired",
+        "over-ear"
+      ],
+      "attributes": {
+        "connector": "3.5mm"
+      },
+      "image_url": "",
+      "available": false
+    },
+    {
+      "id": "P005",
+      "name": "Everyday Running Shoes",
+      "description": "Lightweight running shoes with breathable mesh and cushioned soles",
+      "category": "Footwear",
+      "brand": "StrideWay",
+      "price": "2999.00",
+      "currency": "INR",
+      "rating": 4.8,
+      "stock_quantity": 28,
+      "features": [
+        "running",
+        "breathable",
+        "lightweight"
+      ],
+      "attributes": {
+        "size": "UK 8",
+        "color": "blue"
+      },
+      "image_url": "",
+      "available": true
+    },
+    {
+      "id": "P006",
+      "name": "Trail Walking Shoes",
+      "description": "Walking shoes with a textured outsole for outdoor trails",
+      "category": "Footwear",
+      "brand": "TrailForm",
+      "price": "4499.00",
+      "currency": "INR",
+      "rating": 3.8,
+      "stock_quantity": 15,
+      "features": [
+        "walking",
+        "outdoor",
+        "grip"
+      ],
+      "attributes": {
+        "size": "UK 9",
+        "color": "grey"
+      },
+      "image_url": "",
+      "available": true
+    },
+    {
+      "id": "P007",
+      "name": "Classic Casual Sneakers",
+      "description": "Everyday casual sneakers with a soft fabric lining",
+      "category": "Footwear",
+      "brand": "StrideWay",
+      "price": "1999.00",
+      "currency": "INR",
+      "rating": 4.0,
+      "stock_quantity": 50,
+      "features": [
+        "casual",
+        "sneakers"
+      ],
+      "attributes": {
+        "size": "UK 7",
+        "color": "white"
+      },
+      "image_url": "",
+      "available": true
+    },
+    {
+      "id": "P008",
+      "name": "Training Court Shoes",
+      "description": "Supportive training shoes with a durable rubber outsole",
+      "category": "Footwear",
+      "brand": "TrailForm",
+      "price": "3499.00",
+      "currency": "INR",
+      "rating": 4.2,
+      "stock_quantity": 20,
+      "features": [
+        "training",
+        "support"
+      ],
+      "attributes": {
+        "size": "UK 8",
+        "color": "black"
+      },
+      "image_url": "",
+      "available": true
+    },
+    {
+      "id": "P009",
+      "name": "Cotton Everyday T-Shirt",
+      "description": "Soft cotton crew-neck t-shirt for everyday wear",
+      "category": "Apparel",
+      "brand": "ThreadHouse",
+      "price": "699.00",
+      "currency": "INR",
+      "rating": 4.4,
+      "stock_quantity": 80,
+      "features": [
+        "cotton",
+        "casual"
+      ],
+      "attributes": {
+        "size": "M",
+        "color": "navy",
+        "material": "cotton"
+      },
+      "image_url": "",
+      "available": true
+    },
+    {
+      "id": "P010",
+      "name": "Lightweight Sports Jacket",
+      "description": "Lightweight zip jacket with pockets for workouts",
+      "category": "Apparel",
+      "brand": "ActiveLoom",
+      "price": "2499.00",
+      "currency": "INR",
+      "rating": 4.6,
+      "stock_quantity": 18,
+      "features": [
+        "sports",
+        "zip pockets"
+      ],
+      "attributes": {
+        "size": "L",
+        "color": "blue"
+      },
+      "image_url": "",
+      "available": true
+    },
+    {
+      "id": "P011",
+      "name": "Relaxed Cotton Trousers",
+      "description": "Relaxed fit trousers with cotton fabric and side pockets",
+      "category": "Apparel",
+      "brand": "ThreadHouse",
+      "price": "1599.00",
+      "currency": "INR",
+      "rating": 4.8,
+      "stock_quantity": 30,
+      "features": [
+        "cotton",
+        "relaxed fit"
+      ],
+      "attributes": {
+        "size": "M",
+        "color": "beige"
+      },
+      "image_url": "",
+      "available": true
+    },
+    {
+      "id": "P012",
+      "name": "Warm Fleece Hoodie",
+      "description": "Warm fleece hoodie with an adjustable hood",
+      "category": "Apparel",
+      "brand": "ActiveLoom",
+      "price": "1899.00",
+      "currency": "INR",
+      "rating": 3.8,
+      "stock_quantity": 0,
+      "features": [
+        "fleece",
+        "hood"
+      ],
+      "attributes": {
+        "size": "L",
+        "color": "grey"
+      },
+      "image_url": "",
+      "available": false
+    },
+    {
+      "id": "P013",
+      "name": "Insulated Steel Bottle",
+      "description": "Reusable insulated steel bottle with a screw-top lid",
+      "category": "Home",
+      "brand": "HomeHarbor",
+      "price": "899.00",
+      "currency": "INR",
+      "rating": 4.0,
+      "stock_quantity": 60,
+      "features": [
+        "insulated",
+        "reusable"
+      ],
+      "attributes": {
+        "capacity": "750ml",
+        "material": "steel"
+      },
+      "image_url": "",
+      "available": true
+    },
+    {
+      "id": "P014",
+      "name": "Adjustable Desk Lamp",
+      "description": "LED desk lamp with adjustable brightness for reading",
+      "category": "Home",
+      "brand": "LumaDesk",
+      "price": "1499.00",
+      "currency": "INR",
+      "rating": 4.2,
+      "stock_quantity": 25,
+      "features": [
+        "LED",
+        "dimmable",
+        "reading"
+      ],
+      "attributes": {
+        "color": "white"
+      },
+      "image_url": "",
+      "available": true
+    },
+    {
+      "id": "P015",
+      "name": "Cotton Cushion Cover Set",
+      "description": "Set of two cotton cushion covers for living rooms",
+      "category": "Home",
+      "brand": "HomeHarbor",
+      "price": "599.00",
+      "currency": "INR",
+      "rating": 4.4,
+      "stock_quantity": 45,
+      "features": [
+        "cotton",
+        "set of two"
+      ],
+      "attributes": {
+        "size": "40x40cm",
+        "color": "teal"
+      },
+      "image_url": "",
+      "available": true
+    },
+    {
+      "id": "P016",
+      "name": "Compact Study Organizer",
+      "description": "Desk organizer with compartments for stationery",
+      "category": "Home",
+      "brand": "LumaDesk",
+      "price": "799.00",
+      "currency": "INR",
+      "rating": 4.6,
+      "stock_quantity": 22,
+      "features": [
+        "desk",
+        "storage"
+      ],
+      "attributes": {
+        "material": "wood",
+        "color": "natural"
+      },
+      "image_url": "",
+      "available": true
+    },
+    {
+      "id": "P017",
+      "name": "Non-Slip Yoga Mat",
+      "description": "Textured exercise mat for yoga and stretching",
+      "category": "Sports",
+      "brand": "MoveWell",
+      "price": "1199.00",
+      "currency": "INR",
+      "rating": 4.8,
+      "stock_quantity": 40,
+      "features": [
+        "yoga",
+        "non-slip"
+      ],
+      "attributes": {
+        "thickness": "6mm",
+        "color": "purple"
+      },
+      "image_url": "",
+      "available": true
+    },
+    {
+      "id": "P018",
+      "name": "Resistance Band Set",
+      "description": "Set of three resistance bands for home training",
+      "category": "Sports",
+      "brand": "FlexPeak",
+      "price": "999.00",
+      "currency": "INR",
+      "rating": 3.8,
+      "stock_quantity": 33,
+      "features": [
+        "resistance",
+        "home workout"
+      ],
+      "attributes": {
+        "levels": "light medium heavy"
+      },
+      "image_url": "",
+      "available": true
+    },
+    {
+      "id": "P019",
+      "name": "Adjustable Skipping Rope",
+      "description": "Adjustable skipping rope with comfortable handles",
+      "category": "Sports",
+      "brand": "MoveWell",
+      "price": "399.00",
+      "currency": "INR",
+      "rating": 4.0,
+      "stock_quantity": 75,
+      "features": [
+        "cardio",
+        "adjustable"
+      ],
+      "attributes": {
+        "color": "black"
+      },
+      "image_url": "",
+      "available": true
+    },
+    {
+      "id": "P020",
+      "name": "Training Dumbbell Pair",
+      "description": "Pair of fixed-weight dumbbells for strength training",
+      "category": "Sports",
+      "brand": "FlexPeak",
+      "price": "2199.00",
+      "currency": "INR",
+      "rating": 4.2,
+      "stock_quantity": 0,
+      "features": [
+        "strength",
+        "pair"
+      ],
+      "attributes": {
+        "weight": "5kg each"
+      },
+      "image_url": "",
+      "available": false
+    },
+    {
+      "id": "P021",
+      "name": "Everyday Laptop Backpack",
+      "description": "Padded laptop backpack with an organizer pocket",
+      "category": "Accessories",
+      "brand": "CarryLane",
+      "price": "2299.00",
+      "currency": "INR",
+      "rating": 4.4,
+      "stock_quantity": 27,
+      "features": [
+        "laptop",
+        "padded",
+        "organizer"
+      ],
+      "attributes": {
+        "capacity": "22L",
+        "color": "black"
+      },
+      "image_url": "",
+      "available": true
+    },
+    {
+      "id": "P022",
+      "name": "Compact Crossbody Bag",
+      "description": "Compact crossbody bag with adjustable strap",
+      "category": "Accessories",
+      "brand": "UrbanLoop",
+      "price": "1299.00",
+      "currency": "INR",
+      "rating": 4.6,
+      "stock_quantity": 38,
+      "features": [
+        "crossbody",
+        "adjustable strap"
+      ],
+      "attributes": {
+        "color": "tan"
+      },
+      "image_url": "",
+      "available": true
+    },
+    {
+      "id": "P023",
+      "name": "Travel Packing Cubes",
+      "description": "Set of three packing cubes for organized travel",
+      "category": "Accessories",
+      "brand": "CarryLane",
+      "price": "899.00",
+      "currency": "INR",
+      "rating": 4.8,
+      "stock_quantity": 55,
+      "features": [
+        "travel",
+        "set of three"
+      ],
+      "attributes": {
+        "color": "grey"
+      },
+      "image_url": "",
+      "available": true
+    },
+    {
+      "id": "P024",
+      "name": "Minimal Everyday Wallet",
+      "description": "Slim wallet with card slots and a note compartment",
+      "category": "Accessories",
+      "brand": "UrbanLoop",
+      "price": "799.00",
+      "currency": "INR",
+      "rating": 3.8,
+      "stock_quantity": 48,
+      "features": [
+        "wallet",
+        "card slots"
+      ],
+      "attributes": {
+        "color": "brown"
+      },
+      "image_url": "",
+      "available": true
+    }
+  ],
+  "customers": [
+    {
+      "id": "C001",
+      "name": "Demo Customer 1"
+    },
+    {
+      "id": "C002",
+      "name": "Demo Customer 2"
+    },
+    {
+      "id": "C003",
+      "name": "Demo Customer 3"
+    },
+    {
+      "id": "C004",
+      "name": "Demo Customer 4"
+    },
+    {
+      "id": "C005",
+      "name": "Demo Customer 5"
+    },
+    {
+      "id": "C006",
+      "name": "Demo Customer 6"
+    },
+    {
+      "id": "C007",
+      "name": "Demo Customer 7"
+    },
+    {
+      "id": "C008",
+      "name": "Demo Customer 8"
+    }
+  ],
+  "interactions": [
+    {
+      "product_id": "P001",
+      "channel": "ecommerce"
+    },
+    {
+      "product_id": "P002",
+      "channel": "mobile"
+    },
+    {
+      "product_id": "P003",
+      "channel": "store"
+    },
+    {
+      "product_id": "P004",
+      "channel": "ecommerce"
+    },
+    {
+      "product_id": "P001",
+      "channel": "mobile"
+    },
+    {
+      "product_id": "P002",
+      "channel": "store"
+    },
+    {
+      "product_id": "P003",
+      "channel": "ecommerce"
+    },
+    {
+      "product_id": "P004",
+      "channel": "mobile"
+    },
+    {
+      "product_id": "P005",
+      "channel": "mobile"
+    },
+    {
+      "product_id": "P006",
+      "channel": "store"
+    },
+    {
+      "product_id": "P007",
+      "channel": "ecommerce"
+    },
+    {
+      "product_id": "P008",
+      "channel": "mobile"
+    },
+    {
+      "product_id": "P005",
+      "channel": "store"
+    },
+    {
+      "product_id": "P006",
+      "channel": "ecommerce"
+    },
+    {
+      "product_id": "P007",
+      "channel": "mobile"
+    },
+    {
+      "product_id": "P008",
+      "channel": "store"
+    },
+    {
+      "product_id": "P009",
+      "channel": "store"
+    },
+    {
+      "product_id": "P010",
+      "channel": "ecommerce"
+    },
+    {
+      "product_id": "P011",
+      "channel": "mobile"
+    },
+    {
+      "product_id": "P012",
+      "channel": "store"
+    },
+    {
+      "product_id": "P009",
+      "channel": "ecommerce"
+    },
+    {
+      "product_id": "P010",
+      "channel": "mobile"
+    },
+    {
+      "product_id": "P011",
+      "channel": "store"
+    },
+    {
+      "product_id": "P012",
+      "channel": "ecommerce"
+    },
+    {
+      "product_id": "P013",
+      "channel": "ecommerce"
+    },
+    {
+      "product_id": "P014",
+      "channel": "mobile"
+    },
+    {
+      "product_id": "P015",
+      "channel": "store"
+    },
+    {
+      "product_id": "P016",
+      "channel": "ecommerce"
+    },
+    {
+      "product_id": "P013",
+      "channel": "mobile"
+    },
+    {
+      "product_id": "P014",
+      "channel": "store"
+    },
+    {
+      "product_id": "P015",
+      "channel": "ecommerce"
+    },
+    {
+      "product_id": "P016",
+      "channel": "mobile"
+    },
+    {
+      "product_id": "P017",
+      "channel": "mobile"
+    },
+    {
+      "product_id": "P018",
+      "channel": "store"
+    },
+    {
+      "product_id": "P019",
+      "channel": "ecommerce"
+    },
+    {
+      "product_id": "P020",
+      "channel": "mobile"
+    },
+    {
+      "product_id": "P017",
+      "channel": "store"
+    },
+    {
+      "product_id": "P018",
+      "channel": "ecommerce"
+    },
+    {
+      "product_id": "P019",
+      "channel": "mobile"
+    },
+    {
+      "product_id": "P020",
+      "channel": "store"
+    },
+    {
+      "product_id": "P021",
+      "channel": "store"
+    },
+    {
+      "product_id": "P022",
+      "channel": "ecommerce"
+    },
+    {
+      "product_id": "P023",
+      "channel": "mobile"
+    },
+    {
+      "product_id": "P024",
+      "channel": "store"
+    },
+    {
+      "product_id": "P021",
+      "channel": "ecommerce"
+    },
+    {
+      "product_id": "P022",
+      "channel": "mobile"
+    },
+    {
+      "product_id": "P023",
+      "channel": "store"
+    },
+    {
+      "product_id": "P024",
+      "channel": "ecommerce"
+    },
+    {
+      "product_id": "P001",
+      "channel": "ecommerce"
+    },
+    {
+      "product_id": "P002",
+      "channel": "mobile"
+    },
+    {
+      "product_id": "P003",
+      "channel": "store"
+    },
+    {
+      "product_id": "P004",
+      "channel": "ecommerce"
+    },
+    {
+      "product_id": "P001",
+      "channel": "mobile"
+    },
+    {
+      "product_id": "P002",
+      "channel": "store"
+    },
+    {
+      "product_id": "P003",
+      "channel": "ecommerce"
+    },
+    {
+      "product_id": "P004",
+      "channel": "mobile"
+    }
+  ]
+}

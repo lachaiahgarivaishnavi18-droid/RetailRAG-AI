@@ -19,6 +19,7 @@ from retailrag.workflow_api import router as workflow_router
 from retailrag.tool_api import router as tool_router
 from retailrag.omnichannel import router as omnichannel_router
 from retailrag.analytics import router as analytics_router
+from retailrag.documents import router as documents_router
 
 
 class HealthResponse(BaseModel):
@@ -49,6 +50,8 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         description="Retail catalog, TF-IDF recommendations, persistent Chroma RAG, and auditable deterministic LangGraph workflows. Standalone RAG can use explicitly configured optional LLM selection.",
         lifespan=lifespan,
     )
+    application.state.config = config
+    application.include_router(documents_router)
     application.include_router(router)
     application.include_router(recommendation_router)
     application.include_router(rag_router)
@@ -60,7 +63,7 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     @application.get("/settings", tags=["Configuration"])
     def public_settings():
         from sqlalchemy.engine import make_url
-        return {"app_name": config.app_name, "environment": config.environment,
+        return {"demo_mode": not config.use_real_ai, "document_engine": "local_tfidf", "app_name": config.app_name, "environment": config.environment,
                 "database_backend": make_url(config.database_url).get_backend_name(),
                 "rag_directory": str(config.rag_directory), "rag_collection": config.rag_collection,
                 "rag_generation_mode": config.rag_generation_mode, "rag_embedding": "local_lsa_v1",

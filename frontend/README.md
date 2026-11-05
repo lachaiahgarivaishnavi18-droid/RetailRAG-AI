@@ -40,3 +40,14 @@ pnpm typecheck
 Build prepares 24 verified photographs from the original asset folder without editing them, generates a local photo mapping, and runs the Next.js production build/type checks. Keep the lockfile committed. Tests use Node's built-in test runner and do not need a paid service or deployment. No live saved recommendation/agent request is required to build the frontend.
 
 `GET /api/backend/ready` checks the configured upstream database connection. `GET /api/backend/health` checks its liveness. An unconfigured backend produces a real 503 message. Read-only history browsing never generates another recommendation. Existing FastAPI validation errors remain visible.
+# Free Vercel cloud demo
+
+When BACKEND_API_URL is absent, this frontend serves a clearly labeled read-only
+demo from the bundled synthetic CSV snapshot: 24 products, sample activity,
+keyword browsing, and lexical shopping answers with budget/stock filters.
+No API key, database credentials, or local server is needed for this mode.
+History is empty; saved recommendations and LangGraph execution are disabled.
+Document upload and full Chroma/LangGraph functionality remain in the retained
+local Python application. Set BACKEND_API_URL to switch to the real backend,
+or VERCEL_DEMO_MODE=false to require a configured backend instead of the demo.
+
