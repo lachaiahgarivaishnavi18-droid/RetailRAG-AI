@@ -1,6 +1,6 @@
-# Context Cart Vercel frontend — preparation only
+# Context Cart Vercel frontend
 
-An additive Next.js / TypeScript client for the existing RetailRAG FastAPI API. The original Streamlit app and all Python implementation/data are retained. Nothing has been deployed.
+An additive Next.js / TypeScript client for the existing RetailRAG FastAPI API, with a deployed read-only synthetic catalog demo. The original Streamlit app and all Python implementation/data are retained. See [CATALOG.md](CATALOG.md) for the 244-product expansion and search/pagination behavior.
 
 See [the deployment plan](../deploy/README.md) for API routes, persistent storage, restore/access-control requirements, Vercel settings, and optional Streamlit hosting. Vercel project root: **`frontend`**. Include source files outside that root for the original photo assets.
 
@@ -43,7 +43,7 @@ Build prepares 24 verified photographs from the original asset folder without ed
 # Free Vercel cloud demo
 
 When BACKEND_API_URL is absent, this frontend serves a clearly labeled read-only
-demo from the bundled synthetic CSV snapshot: 24 products, sample activity,
+demo from the persisted synthetic catalog: 244 products, sample activity,
 keyword browsing, and lexical shopping answers with budget/stock filters.
 No API key, database credentials, or local server is needed for this mode.
 History is empty; saved recommendations and LangGraph execution are disabled.

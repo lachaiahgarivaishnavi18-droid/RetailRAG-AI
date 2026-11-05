@@ -1,9 +1,9 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {cloudDemo,demoResponse} from '../lib/demo.mjs';
-test('cloud demo contains 24 products and never pretends saved history exists',async()=>{
+test('cloud demo persists at least 200 products and never pretends saved history exists',async()=>{
  assert.equal(cloudDemo({}),true);assert.equal(cloudDemo({BACKEND_API_URL:'https://example.com'}),false);
- let r=await demoResponse(new Request('https://demo.example/api/backend/products'),['products']);assert.equal((await r.json()).total,24);
+ let r=await demoResponse(new Request('https://demo.example/api/backend/products'),['products']);assert.ok((await r.json()).total>=200);
  r=await demoResponse(new Request('https://demo.example/api/backend/recommendations'),['recommendations']);assert.deepEqual((await r.json()).items,[]);
 });
 test('demo search grounds product facts and applies a natural budget',async()=>{
