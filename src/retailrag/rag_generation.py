@@ -40,10 +40,11 @@ def select_with_openai(settings, query, items, limit):
 
 
 def render_grounded_answer(items, generation):
-    label = "LLM-assisted selection; product facts rendered from validated retrieved evidence." if generation == "llm_assisted" else "Deterministic retrieval fallback; no LLM-generated facts."
+    label = "LLM-assisted selection; product facts rendered from validated retrieved evidence." if generation == "llm_assisted" else "Deterministic local demo assistant — answers grounded in retrieved catalog evidence; no external AI call."
     if not items:
         return label + "\nNo indexed products matched the query and filters. No filters were relaxed."
     lines = [label]
+    lines.append("Here are the closest matches to your request. Compare their prices and availability below; ranking reflects retrieved evidence, not a guarantee of suitability.")
     for item in items:
         product = item.product
         availability = f"in stock ({product.stock_quantity} units)" if product.available else "out of stock"

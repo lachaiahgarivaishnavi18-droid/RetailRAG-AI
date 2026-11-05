@@ -37,7 +37,7 @@ function ProductCard({product:p, item, photo}: {product:Product; item?:Item; pho
 
 const SECTIONS = ['Dashboard','Product Discovery','AI Shopping Assistant','Recommendations','Agent Workflow','Recommendation History'];
 
-export default function Workspace({streamlitUrl,generationEnabled}:{streamlitUrl:string;generationEnabled:boolean}) {
+export default function Workspace({streamlitUrl,generationEnabled,demoMode=false}:{streamlitUrl:string;generationEnabled:boolean;demoMode?:boolean}) {
   const [section,setSection]=useState('Dashboard');
   const [overview,setOverview]=useState<Overview|null>(null);
   const [products,setProducts]=useState<Product[]>([]);
@@ -105,8 +105,9 @@ export default function Workspace({streamlitUrl,generationEnabled}:{streamlitUrl
         {streamlitUrl?<a href={streamlitUrl} target="_blank" rel="noreferrer">Open Streamlit ↗</a>:<small>Set STREAMLIT_APP_URL after separate hosting.</small>}</div>
       <small className="sidebar-footer">Synthetic catalog. Real application records.</small>
     </aside>
-    <main><header><span className="eyebrow">CONTEXT CART / INTELLIGENT SHOPPING</span><span className="connection">{connected?'● Backend connected':'○ Backend not verified'}</span></header>
+    <main><header><span className="eyebrow">CONTEXT CART / INTELLIGENT SHOPPING</span><span className="connection">{connected?(demoMode?'● Read-only cloud demo':'● Backend connected'):'○ Backend not verified'}</span></header>
       <h1>{title}</h1><p className="subtitle">Context-aware recommendations, grounded in product evidence.</p>
+      {demoMode&&<p className="note">Free cloud demo: 24 synthetic products, local lexical evidence search, and sample activity. No external AI keys. Full Chroma RAG, document upload, LangGraph and saved records run in the local application.</p>}
       {error&&<div className="alert" role="alert">{error}</div>}{busy&&<p className="loading" role="status">Loading application data…</p>}
       {section==='Dashboard'&&<>
         <div className="metrics">{[['Products',overview?.totals.products],['Customers',overview?.totals.customers],['Recommendations',overview?.totals.recommendations],['Shopping interactions',overview?.totals.interactions]].map(([name,value])=><div key={name}><small>{name}</small><strong>{value??'—'}</strong></div>)}</div>
@@ -123,7 +124,7 @@ export default function Workspace({streamlitUrl,generationEnabled}:{streamlitUrl
           {section==='Product Discovery'&&<small>Keyword search. Use the AI Shopping Assistant for natural-language constraints.</small>}
           {saving&&<small>Creates a saved record. After a timeout, check history before retrying.</small>}
         </form>
-        {section==='AI Shopping Assistant'&&<p className="note">Uses the existing RAG search endpoint. No dedicated chat API or conversational memory is implied. Index synchronization remains in Streamlit.</p>}
+        {section==='AI Shopping Assistant'&&<p className="note">{demoMode?'Searches bundled product descriptions locally using word matching and budget filters. No cloud AI or conversational memory.':'Uses the existing RAG search endpoint. No dedicated chat API or conversational memory is implied. Index synchronization remains in Streamlit.'}</p>}
       </>}
       {section==='Product Discovery'&&<><p>{totalProducts} matching products · {products.length} loaded (API limit 100)</p><div className="product-grid">{products.slice((page-1)*9,page*9).map(p=><ProductCard key={p.id} product={p} photo={photos[p.id]}/>)}</div>{!products.length&&!busy&&<p className="panel">No matching products.</p>}<div className="pagination"><button disabled={page===1} onClick={()=>setPage(p=>p-1)}>Previous</button><span>Page {page}</span><button disabled={page*9>=products.length} onClick={()=>setPage(p=>p+1)}>Next</button></div></>}
       {section==='Recommendation History'&&<section className="panel"><h2>Latest saved recommendations</h2><p>Opening a record is read-only. Showing up to 20 recent records.</p>{!history.length&&<p>No saved recommendations loaded.</p>}<div className="history">{history.map(r=><button key={r.id} disabled={busy} onClick={()=>openSaved(r.id)}><strong>#{r.id} · {r.query||'Personalized request'}</strong><small>{r.customer_id||'Guest'} · {r.channel} · {r.item_count} products · {new Date(r.created_at).toLocaleDateString()}</small></button>)}</div></section>}

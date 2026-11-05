@@ -14,7 +14,7 @@ PRIMARY = {"Overview": "Dashboard", "Product Discovery": "Product Discovery",
            "AI Shopping Assistant": "AI Shopping Assistant", "AI Recommendations": "Recommendations",
            "Product Comparison": "Product Comparison", "Inventory & Store Availability": "Inventory & Store Availability",
            "Evaluation Dashboard": "Evaluation Dashboard", "Settings": "Settings", "About": "About"}
-RESEARCH = ["Product Catalog", "Customer Context", "RAG Search", "Agent Workflow", "Omnichannel Analytics", "Tool Explorer", "Recommendation History"]
+RESEARCH = ["Product Catalog", "Customer Context", "RAG Search", "Agent Workflow", "Omnichannel Analytics", "Tool Explorer", "Recommendation History", "Document Workspace"]
 SUGGESTIONS = ["Wireless headphones under INR 3000", "Running shoes under INR 3500", "A backpack for everyday travel"]
 
 
@@ -357,4 +357,4 @@ def about():
             st.write(body)
     st.info("Academic demonstration using fictional products, customers, and shopping events. No real retailer, payment, fulfillment, or store inventory integration is connected.")
     st.write("Built with Streamlit, FastAPI, SQLAlchemy, scikit-learn, Chroma, LangChain, LangGraph, and Plotly.")
-    st.caption("Recommendations and agents work without API credentials. Optional LLM selection is limited to explicitly configured standalone RAG requests.")
+    st.caption("Recommendations and agents work without API credentials. Standalone RAG uses local answers without a key; auto mode can use configured OpenAI selection. DEMO_MODE=true keeps AI local.")

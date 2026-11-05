@@ -220,6 +220,15 @@ def test_final_grounding_validator_rejects_price_and_document_tampering(indexed)
         validate_grounding([altered], current, docs)
 
 
+def test_forced_demo_never_calls_openai_even_with_key(indexed):
+    from pydantic import SecretStr
+    _, store = indexed
+    store.settings = store.settings.model_copy(update={"rag_generation_mode": "auto", "demo_mode": "true", "openai_api_key": SecretStr("test-only")})
+    with patch("retailrag.rag.select_with_openai", side_effect=AssertionError("External AI forbidden")):
+        response = retrieve(indexed, query="wireless headphones")
+    assert response.items and not response.llm_attempted and not response.llm_used
+
+
 def test_missing_key_and_llm_transport_or_invalid_selection_fall_back(indexed):
     _, store = indexed
     store.settings = store.settings.model_copy(update={"rag_generation_mode": "openai", "openai_api_key": None})
